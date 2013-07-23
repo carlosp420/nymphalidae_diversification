@@ -56,9 +56,19 @@ sample of 1000 trees using Burntrees v.0.1.9 (http://www.abc.se/~nylander/)
 (supp. mat. 02) in order to correct for phylogenetic uncertainty when 
 performing the diversification analyses.
 
-We compiled species richness data for Nymphalidae genera from several sources including the specialist-curated lists on http://tolweb.org, Lamas (2004) and curated lists of Global Butterfly Names project http://www.ucl.ac.uk/taxome/gbn/. We assigned the species numbers of genera not included in the phylogeny to the closest related genus that was included in Wahlberg et al. (2009) study (supp. mat. 03).
+We compiled species richness data for Nymphalidae genera from several sources
+including the specialist-curated lists on http://tolweb.org, Lamas (2004) and
+curated lists of Global Butterfly Names project http://www.ucl.ac.uk/taxome/gbn/.
+We assigned the species numbers of genera not included in the phylogeny to the
+closest related genus that was included in Wahlberg et al. (2009) study 
+(supp. mat. 03).
 
-Hostplant data for Nymphalidae species were compiled from several sources including Ackery (1988), HOSTS database (http://bit.ly/YI7nwW), Dyer and Gentry (2002) and others (supp. mat. 04; supp. mat. 05) for a total of 6586 hostplant records, including 428 Nymphalidae genera and 143 plant families and 1070 plant genera. It was not possible to find any hostplant data for 35 butterfly genera (supp. mat. 04).
+Hostplant data for Nymphalidae species were compiled from several sources 
+including Ackery (1988), HOSTS database (http://bit.ly/YI7nwW), Dyer and Gentry (2002)
+and others (supp. mat. 04; supp. mat. 05) for a total of 6586 hostplant records,
+including 428 Nymphalidae genera and 143 plant families and 1070 plant genera.
+It was not possible to find any hostplant data for 35 butterfly genera
+(supp. mat. 04).
 
 
 
