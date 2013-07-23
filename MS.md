@@ -46,7 +46,15 @@ In this study, we used a time calibrated genus-level phylogenetic hypothesis for
 ## Methods
 
 ### Data
-For analyses, we used the phylogenetic trees from the study of Wahlberg, et al. (2009) that were generated using DNA sequence data from 10 gene regions for 398 of the 540 valid genera in Nymphalidae. We employed Wahlberg, et al. (2009) maximum clade credibility tree (supp. mat. 01) as well as a random sample of 1000 trees from their BEAST run after burnin. Their original BEAST run was for 40 million generations. We used a burnin of 25 million generations and took a random sample of 1000 trees using Burntrees v.0.1.9 (http://www.abc.se/~nylander/) (supp. mat. 02) in order to correct for phylogenetic uncertainty when performing the diversification analyses.
+For analyses, we used the phylogenetic trees from the study of @wahlberg2009 
+that were generated using DNA sequence data from 10 gene regions for 398 of
+the 540 valid genera in Nymphalidae. We employed @wahlberg2009 maximum clade
+credibility tree (supp. mat. 01) as well as a random sample of 1000 trees from
+their BEAST run after burnin. Their original BEAST run was for 40 million 
+generations. We used a burnin of 25 million generations and took a random
+sample of 1000 trees using Burntrees v.0.1.9 (http://www.abc.se/~nylander/) 
+(supp. mat. 02) in order to correct for phylogenetic uncertainty when 
+performing the diversification analyses.
 
 We compiled species richness data for Nymphalidae genera from several sources including the specialist-curated lists on http://tolweb.org, Lamas (2004) and curated lists of Global Butterfly Names project http://www.ucl.ac.uk/taxome/gbn/. We assigned the species numbers of genera not included in the phylogeny to the closest related genus that was included in Wahlberg et al. (2009) study (supp. mat. 03).
 
@@ -205,7 +213,6 @@ Somoza, R. 1998. Updated Nazca (Farallon) - South America relative motions durin
 
 Voje, K. L., C. Hemp, Ø. Flagstad, G.-P. Saetre, and N. C. Stenseth. 2009. Climatic change as an engine for speciation in flightless Orthoptera species inhabiting African mountains. Mol Ecol. 18:93–108.
 
-Wahlberg, N., J. Leneveu, U. Kodandaramaiah, C. Peña, S. Nylin, A. V. L. Freitas, and A. V. Z. Brower. 2009. Nymphalid butterflies diversify following near demise at the Cretaceous/Tertiary boundary. Proc Biol Sci. 276:4295–4302.
 
 Wahlberg, N., and D. Rubinoff. 2011. Vagility across Vanessa (Lepidoptera: Nymphalidae): mobility in butterfly species does not inhibit the formation and persistence of isolated sister taxa. Syst Entomol. 36:362–370.
 
