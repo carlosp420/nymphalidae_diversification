@@ -1,4 +1,5 @@
-#install.packages("~/Downloads/phyloch_1.5-3.tar.gz", repos=NULL, type="source")
+#install.packages("phyloch_1.5-3.tar.gz", repos=NULL, type="source")
+#install.packages("turboMEDUSA_0.1.tar.gz", repos=NULL, type="source")
 library(phyloch)
 library(turboMEDUSA)
 
