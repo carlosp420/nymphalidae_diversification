@@ -169,7 +169,7 @@ the BEAST run after burnin from Wahlberg et al. (2009).
 
 ### MEDUSA	 	 	
 We analyzed patterns of diversification in Nymphalidae by using Turbo-MEDUSA 
-version 1.0 (Harmon et al. 2011) on the maximum credibility tree from 
+version 0.1 (Harmon et al. 2011) on the maximum credibility tree from 
 Wahlberg et al. (2009). Turbo-MEDUSA, and the original algorithm MEDUSA, fit 
 alternative birth-death likelihood models to a phylogenetic tree in order to 
 estimate changes in net diversification rates along branches. MEDUSA estimates 
