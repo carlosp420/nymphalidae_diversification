@@ -29,7 +29,12 @@ for( i in 1:1000 ) {
     set <- orig_set[j:1000]
     
     # append mct
-    set[[1000]] <- mct
+    k <- i
+    while( k > 0 ) {
+        end <- 1001 - k
+        set[[end]] <- mct
+        k <- k - 1
+    }
     
     # save set as set_i.nex
     write.nexus(set, file=paste0("set_", i, ".nex", sep=""))
