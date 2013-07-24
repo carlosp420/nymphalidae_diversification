@@ -26,3 +26,16 @@ save(res, file="../output/medusa_on_mct.txt", ascii=TRUE)
 pdf(file="../output/medusa_on_mct.pdf", width=9, height=19)
 summarize.turboMEDUSA(res, cex=0.3)
 dev.off()
+
+# get posterior probabilities for nodes that are diversification shifts
+sum <- capture.output(summarize.turboMEDUSA(res, cex=0.3))
+
+nodes_with_breaks <- c()
+pattern <- '[0-9]{1,2}\\s+([0-9]{3})\\s.+';
+for( i in 1:length(sum)) {
+    if( length(grep(pattern, sum[i])) > 0) {
+        print(sum[i])
+        node <- sub(pattern, "\\1", sum[i])
+        nodes_with_breaks <- c(nodes_with_breaks, as.integer(node))
+    }
+}
