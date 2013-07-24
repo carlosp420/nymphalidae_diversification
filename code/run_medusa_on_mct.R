@@ -34,3 +34,4 @@ dev.off()
 n_low_prob <- length(which(posterior_prob < 0.95))/length(posterior_prob)
 n_high_prob <- 1 - n_low_prob
 
+
