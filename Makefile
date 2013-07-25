@@ -12,6 +12,5 @@ output/set_1000.nex: code/create_sets_of_1000_trees.R data/supp_mat01_genus.nex 
 
 # use Treeannotator to get MCT for each set of 1000 trees
 output/set_1000.nex_mct.nex: output/set_1000.nex
-	for f in output/set_*.nex; do \
-		$(TREEANNOTATOR) -burnin 0 -heights mean $$f "$$f""_mct.nex"; done
+	ls output/set_*.nex | parallel $(TREEANNOTATOR) -burnin 0 -heights mean {} {}_mct.nex; done
 	
