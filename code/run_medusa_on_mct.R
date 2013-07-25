@@ -1,14 +1,20 @@
-install.packages("phyloch_1.5-3.tar.gz", repos=NULL, type="source")
-install.packages("turboMEDUSA_0.1.tar.gz", repos=NULL, type="source")
+#install.packages("phyloch_1.5-3.tar.gz", repos=NULL, type="source")
+#install.packages("turboMEDUSA_0.1.tar.gz", repos=NULL, type="source")
 library(phyloch)
 library(turboMEDUSA)
 
 # load a modified version of the summarize function to 
 # be able to save plotted tree to user file
-source("summarize.turboMEDUSA.R")
+source("code/summarize.turboMEDUSA.R")
 
-tax <- read.csv(file="../data/supp_mat_03_richness.csv")
-phy <- read.beast("../data/supp_mat01_genus.nex")
+# This script should be invocked from the command line
+# The input tree file should be used as 1st argument
+# for example:
+#    Rscript run_medusa_on_mct.R my_mct.nex
+args <- commandArgs(trailingOnly = TRUE)
+
+tax <- read.csv(file="data/supp_mat_03_richness.csv")
+phy <- read.beast(as.character(args[1]))
 phy <- ladderize(phy)
 posterior_prob <- phy$posterior
 
@@ -18,14 +24,23 @@ model.limit <- 25
 res <- runTurboMEDUSA(phy=phy,
                       richness=tax,
                       model.limit=model.limit,
+                      mc = TRUE,
+                      num.cores = 4,
                       initial.r = 0.05,
                       initial.e = 0.5)
 
 # save MEDUSA results as R object
-save(res, file="../output/medusa_on_mct.txt", ascii=TRUE)
+# output file should be 2nd argument
+# for example:
+#    Rscript run_medusa_on_mct.R output/my_mct.nex output/my_mct_out.txt
+save(res, file=as.character(args[2]), ascii=TRUE)
 
-load("../output/medusa_on_mct.txt")
-pdf(file="../output/medusa_on_mct.pdf", width=9, height=19)
+#load("output/medusa_on_mct.txt")
+# save tree as PDF 
+# output file should be 3nd argument
+# for example:
+#    Rscript run_medusa_on_mct.R output/my_mct.nex output/my_mct_out.txt output/my_mct_out.pdf
+pdf(file=as.character(args[3]), width=9, height=19)
 summarize.turboMEDUSA(res, cex=0.3)
 dev.off()
 
@@ -33,5 +48,12 @@ dev.off()
 # values lower than 0.95
 n_low_prob <- length(which(posterior_prob < 0.95))/length(posterior_prob)
 n_high_prob <- 1 - n_low_prob
+
+# save to file only percentage of nodes with posterior
+# probability more than 0.95
+file_conn <- file("output/percentage_nodes_high_post_prob.csv", open="at");
+writeLines(c(paste(args[1],n_high_prob, sep=",")), file_conn)
+close(file_conn);
+
 
 
