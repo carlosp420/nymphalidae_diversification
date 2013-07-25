@@ -20,8 +20,8 @@ library(ape)
 # but how???
 
 # read original set of 1000 trees
-mct <- read.nexus("../data/supp_mat01_genus.nex")
-orig_set <- read.nexus("../data/supp_mat_02_1000_random_trees_no_outgroups.nex")
+mct <- read.nexus("data/supp_mat01_genus.nex")
+orig_set <- read.nexus("data/supp_mat_02_1000_random_trees_no_outgroups.nex")
 
 for( i in 1:1000 ) {
     # drop i
@@ -37,5 +37,5 @@ for( i in 1:1000 ) {
     }
     
     # save set as set_i.nex
-    write.nexus(set, file=paste0("set_", i, ".nex", sep=""))
+    write.nexus(set, file=paste0("output/set_", i, ".nex", sep=""))
 }
