@@ -24,7 +24,20 @@ medusa_run: output/medusa_on_mct.txt output/medusa_on_mct.pdf
 output/medusa_on_mct.txt output/medusa_on_mct.pdf: code/run_medusa_on_mct.R data/supp_mat01_genus.nex data/supp_mat_03_richness.csv
 	Rscript code/run_medusa_on_mct.R data/supp_mat01_genus.nex output/medusa_on_mct.txt output/medusa_on_mct.pdf
 
-# run MEDUSA on each of the mct and save some statistics
+
+
+####################################################################
+# Run multiMEDUSA on our data
+#
+multiMEDUSA_run: output/raw_data.csv output/raw_data_summary.csv
+
+output/raw_data.csv output/raw_data_summary.csv: data/supp_mat_02_1000_random_trees_no_outgroups.nex data/supp_mat01_genus.nex code/supp_mat_06_multiMEDUSA.R
+	Rscript code/supp_mat_06_multiMEDUSA.R data/supp_mat_02_1000_random_trees_no_outgroups.nex data/supp_mat01_genus.nex output/raw_data_summary.csv output/raw_data.csv
+
+
+
+####################################################################
+# run MEDUSA on each of the MCTs and save some statistics
 # * % high posterior probabilities
 # * % low posterior probabilities
 # breaks in mct

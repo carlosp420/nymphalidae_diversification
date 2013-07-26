@@ -1,24 +1,32 @@
-install.packages("auteur_0.12.1010.tar.gz", repos=NULL, type="source")
+#install.packages("auteur_0.12.1010.tar.gz", repos=NULL, type="source")
 library(turboMEDUSA)
 library(ape)
 library(auteur)
 library(phytools)
 library(reshape)
 
+rm(list=ls())
+
+# This script should be invoked from the command line
+# Input data should be entered as arguments
+# for example:
+#     Rscript supp_mat_06_multiMEDUSA.R data/set_1000_trees.nex data/mct.tree output/raw_data_set_1000_summary.csv output/raw_data_set_1000.csv
+args <- commandArgs(trailingOnly = TRUE)
+
+
 # clear workspace
 
-rm(list=ls())
 
 # read in trees
 
-dfg <- read.nexus(file="../data/supp_mat_02_1000_random_trees_no_outgroups.nex"); # trees from MrBayes run
-tax <- read.csv(file="../data/supp_mat_03_richness.csv"); # two column dataframe of genera (match tip.lables) and species richness
-mct <- read.nexus("../data/supp_mat01_genus.nex"); # mct is the maximum credibility tree
+dfg <- read.nexus(file=as.character(args[1])); # trees from MrBayes run
+tax <- read.csv(file="data/supp_mat_03_richness.csv"); # two column dataframe of genera (match tip.lables) and species richness
+mct <- read.nexus(as.character(args[2])); # mct is the maximum credibility tree
 
 # subset dfg for testing purposes, replace with
 # dfg <- dfg[1:1000]
 
-dfg <- dfg[1:1000]
+dfg <- dfg[1:10]
 
 # get list of all clades in mct
 
@@ -59,7 +67,7 @@ for (tree.rep in 1:length(dfg)) {
                  richness = tax,
                  model.limit = model.limit,
                  mc = TRUE,
-                 num.cores=3,
+                 num.cores=4,
                  stop = "model.limit",
                  initial.r = 0.05,
                  initial.e = 0.5)
@@ -137,22 +145,22 @@ output <- cbind(d.c.length[1:3], d.c.mean[4], d.c.sd[4], d.c.mean[5], d.c.sd[5],
 names(output) <- c("index", "tip", "sample size (N)", "r (mean)", "r (sd)", "epsilon (mean)", "epsilon (sd)","lnlik (mean)","lnlik (sd)")
 
 output
-write.table(output, file="raw_data_summary.csv", row.names=FALSE)
-cat("\nThe output variable contains a summary of the statistics from 
-      turboMEDUSA on the processed trees. It was saved into file\"raw_data_summary.csv\"\n")
+write.table(output, file=as.character(args[3]), row.names=FALSE)
+cat(paste("\n\nThe output variable contains a summary of the statistics from 
+      turboMEDUSA on the processed trees. It was saved into file", args[3], sep=" "))
 
-cat("\nThe raw data was written to the file \"raw_data.csv\"\n")
-write.table(d, file="raw_data.csv", row.names=FALSE)
+cat(paste("\n\nThe raw data was written to the file", args[4], sep=" "))
+write.table(d, file=as.character(args[4]), row.names=FALSE)
 
 cat("\n
 ##############################################
 ## Use the index number to identify the taxa in each clade.
 ##
 ## If the clade is a tip (i.e., tip = y),
-## type:  mct$tip['insert index value her']
+## type:  mct$tip['insert index value here']
 ##
 ## If the clade is not a tip (i.e., tip = n),
-## type:  mct.clades.names[['insert index value her']]
+## type:  mct.clades.names[['insert index value here']]
 ##
 ## In both cases, a string of taxon names will be returned.
 ##############################################\n
