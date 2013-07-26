@@ -19,7 +19,10 @@ output/set_1000.nex_mct.nex: output/set_1000.nex
 ####################################################################
 # Run MEDUSA on our MCT tree
 #
-medusa_run: code/run_medusa_on_mct.R data/supp_mat01_genus.nex data/supp_mat_03_richness.csv
+medusa_run: output/medusa_on_mct.txt output/medusa_on_mct.pdf
+
+output/medusa_on_mct.txt output/medusa_on_mct.pdf:
+	code/run_medusa_on_mct.R data/supp_mat01_genus.nex data/supp_mat_03_richness.csv
 	Rscript code/run_medusa_on_mct.R data/supp_mat01_genus.nex output/medusa_on_mct.txt output/medusa_on_mct.pdf
 
 # run MEDUSA on each of the mct and save some statistics
