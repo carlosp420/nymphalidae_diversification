@@ -37,10 +37,14 @@ output/raw_data.csv output/raw_data_summary.csv: data/supp_mat_02_1000_random_tr
 
 
 ####################################################################
-# run MEDUSA on each of the MCTs and save some statistics
+# run MEDUSA on each of the 1000 MCTs and save some statistics
 # * % high posterior probabilities
 # * % low posterior probabilities
 # breaks in mct
 #
 # run multiMEDUSA on the set for that mct and save some stats
 # number of breaks found in more than 95% of the trees
+1000_medusa_runs: output/set_9.nex_mct.nex_medusa.txt output/set_9.nex_mct.nex_medusa.pdf
+
+output/set_9.nex_mct.nex_medusa.txt output/set_9.nex_mct.nex_medusa.pdf: code/run_medusa_on_mct.R output/set_9.nex_mct.nex data/supp_mat_03_richness.csv
+	for f in output/*_mct.nex; do Rscript code/run_medusa_on_mct.R $$f "$$f""_medusa.txt" "$$f""_medusa.pdf"; done
