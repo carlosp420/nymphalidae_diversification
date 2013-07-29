@@ -39,7 +39,6 @@ output/raw_data.csv output/raw_data_summary.csv: data/supp_mat_02_1000_random_tr
 ####################################################################
 # run MEDUSA on each of the 1000 MCTs and save some statistics
 # * % high posterior probabilities
-# * % low posterior probabilities
 # breaks in mct
 #
 # run multiMEDUSA on the set for that mct and save some stats
@@ -48,3 +47,20 @@ output/raw_data.csv output/raw_data_summary.csv: data/supp_mat_02_1000_random_tr
 
 output/set_9.nex_mct.nex_medusa.txt output/set_9.nex_mct.nex_medusa.pdf: code/run_medusa_on_mct.R output/set_9.nex_mct.nex data/supp_mat_03_richness.csv
 	for f in output/*_mct.nex; do Rscript code/run_medusa_on_mct.R $$f "$$f""_medusa.txt" "$$f""_medusa.pdf"; done
+	cat output/percentage_nodes_high_post_prob.csv | sed 's/output\/set_//g' | sed 's/\.nex_mct\.nex//g' | sort -n > tmp
+	mv tmp output/percentage_nodes_high_post_prob.csv
+
+
+
+
+####################################################################
+# run multiMEDUSA on each of the 1000 set of trees and save
+#
+# raw_output raw_output_summary to folder output/
+# also save a file with the number of consistently recovered nodes
+# meaning those split nodes that were found in more than 950 trees
+# of the set of 1000
+1000_multiMEDUSA_runs: output/set_9.nex_raw_data.csv output/set_9.nex_raw_data_summary.csv output/multimedusa_output.csv
+
+output/set_9.nex_raw_data.csv output/set_9.nex_raw_data_summary.csv output/multimedusa_output.csv: output/set_9.nex output/set_9.nex_mct.nex code/supp_mat_06_multiMEDUSA.R 
+	ls output/set*nex | grep -v mct | while read MYFILE; do Rscript code/supp_mat_06_multiMEDUSA.R "$${MYFILE}" "$${MYFILE}""_mct.nex" "$${MYFILE}""_raw_data_summary.csv" "$${MYFILE}""_raw_data.csv"; done

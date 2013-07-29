@@ -26,7 +26,7 @@ mct <- read.nexus(as.character(args[2])); # mct is the maximum credibility tree
 # subset dfg for testing purposes, replace with
 # dfg <- dfg[1:1000]
 
-dfg <- dfg[1:10]
+dfg <- dfg[1:1000]
 
 # get list of all clades in mct
 
@@ -165,3 +165,14 @@ cat("\n
 ## In both cases, a string of taxon names will be returned.
 ##############################################\n
     ")
+
+################################
+# save some statistics to file
+file_conn <- file("output/multimedusa_output.csv", open="at");
+
+# calculate number of consistently recovered split nodes across the
+# set of 1000 trees (those found in more than 95% of the sampled trees)
+n <- length(which(output$"sample size (N)" > 950))
+writeLines(c(paste(args[1], n, sep=",")), file_conn)
+close(file_conn);
+
