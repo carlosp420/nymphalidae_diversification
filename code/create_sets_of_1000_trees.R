@@ -23,6 +23,8 @@ library(ape)
 mct <- read.nexus("data/supp_mat01_genus.nex")
 orig_set <- read.nexus("data/supp_mat_02_1000_random_trees_no_outgroups.nex")
 
+write.nexus(orig_set, file="output/set_1.nex")
+
 for( i in 1:999) {
     # drop i
     j <- i + 1
