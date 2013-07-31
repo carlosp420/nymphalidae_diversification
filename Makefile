@@ -64,3 +64,15 @@ output/set_9.nex_mct.nex_medusa.txt output/set_9.nex_mct.nex_medusa.pdf: code/ru
 
 output/set_9.nex_raw_data.csv output/set_9.nex_raw_data_summary.csv output/multimedusa_output.csv: output/set_9.nex output/set_9.nex_mct.nex code/supp_mat_06_multiMEDUSA.R 
 	ls output/set*nex | grep -v mct | while read MYFILE; do Rscript code/supp_mat_06_multiMEDUSA.R "$${MYFILE}" "$${MYFILE}""_mct.nex" "$${MYFILE}""_raw_data_summary.csv" "$${MYFILE}""_raw_data.csv"; done
+
+
+
+
+####################################################################
+# plot MEDUSA and multiMEDUSA tests 
+#
+#
+plot_medusa_tests: code/plot_medusa_tests.R output/multimedusa_output.csv output/percentage_nodes_high_post_prob.csv 
+	sed -i -r 's/output\/set_([0-9]{1,4})\.nex/\1/g' output/multimedusa_output.csv
+	cat output/multimedusa_output.csv | sort -n > tmp
+	mv tmp output/multimedusa_output.csv
