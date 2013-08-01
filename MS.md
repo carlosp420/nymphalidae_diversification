@@ -505,8 +505,8 @@ hypothesis (Janz 2011, Nyman et al. 2012).
 ## Acknowledgments
 We are thankful to Mark Cornwall for help with the script to extend MEDUSA to include
 phylogenetic uncertainty, Niklas Wahlberg for commenting on the manuscript and giving
-us the posterior distribution of trees,Luke Harmon for commenting on the manuscript, 
-anonymous reviewers for their comments, which greatly improved the manuscript, 
+us the posterior distribution of trees, Luke Harmon for commenting on the manuscript
+and anonymous reviewers for their comments, which greatly improved the manuscript, 
 Jessica Slove Davidson and Niklas Janz for access to their hostplant data. The study
 was supported by a Kone Foundation grant (awarded to Niklas Wahlberg), Finland
 (C. Peña) and the Research Council of Norway (grant no. 204308 to M. Espeland).
