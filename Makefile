@@ -72,7 +72,10 @@ output/set_9.nex_raw_data.csv output/set_9.nex_raw_data_summary.csv output/multi
 # plot MEDUSA and multiMEDUSA tests 
 #
 #
-plot_medusa_tests: code/plot_medusa_tests.R output/multimedusa_output.csv output/percentage_nodes_high_post_prob.csv 
+plot_medusa_tests: code/plot_medusa_tests.R output/multimedusa_output.csv output/percentage_nodes_high_post_prob.csv figures/plot_medusa_multimedusa_tests.png figures/plot_medusa_multimedusa_tests_2.png
 	sed -i -r 's/output\/set_([0-9]{1,4})\.nex/\1/g' output/multimedusa_output.csv
 	cat output/multimedusa_output.csv | sort -n > tmp
 	mv tmp output/multimedusa_output.csv
+
+figures/plot_medusa_multimedusa_tests_2.png figures/plot_medusa_multimedusa_tests.png: code/plot_medusa_tests.R
+	R --no-save < code/plot_medusa_tests.R
