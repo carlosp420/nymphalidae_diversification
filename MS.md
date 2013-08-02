@@ -397,7 +397,7 @@ diversification rate in more than 95% of the posterior distribution of trees
 ### Hostplant use and diversification in Nymphalidae
 #### Ithomiini
 Keith Brown suggested that feeding on Solanacaeae was an important event in the
-diversification of Ithomiini butterflies (Brown 1987). Ithomiini butterflies
+diversification of Ithomiini butterflies [@brown1987]. Ithomiini butterflies
 are exclusively Neotropical and most species feed on Solanaceae hostplants during
 larval stage (supp. mat. 04; Willmott and Freitas, 2006). Optimizations of the
 evolution of hostplant use on phylogenies evidence a probable shift from
@@ -427,7 +427,7 @@ metabolites.
 Solanaceae plants contain chemical compounds and it has been suggested that the high
 diversity of Ithomiini is consistent with the “escape-and-radiate scenario” due to
 a shift onto Solanaceae (Fordyce 2010) and radiation scenarios among chemically
-different lineages of Solanaceae plants (Brown, 1987; Willmott and Freitas, 2006).
+different lineages of Solanaceae plants [@brown1987; Willmott and Freitas, 2006].
 According to this theory, the shift from Apocynaceae to Solanaceae allowed Ithomiini
 to invade newly available resources due to a possible key innovation that allowed
 them cope with secondary metabolites of the new hosts. Additional studies are needed
