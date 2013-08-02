@@ -140,7 +140,7 @@ closest related genus that was included in @wahlberg2009 study
 (supp. mat. 03).
 
 Hostplant data for Nymphalidae species were compiled from several sources 
-including Ackery (1988), HOSTS database (http://bit.ly/YI7nwW), Dyer and Gentry (2002)
+including @ackery1988, HOSTS database (http://bit.ly/YI7nwW), Dyer and Gentry (2002)
 and others (supp. mat. 04; supp. mat. 05) for a total of 6586 hostplant records,
 including 428 Nymphalidae genera and 143 plant families and 1070 plant genera.
 It was not possible to find any hostplant data for 35 butterfly genera
@@ -482,7 +482,7 @@ The genus Charaxes contain 193 species distributed in the Old World with highest
 diversity in the Afrotropical region. These butterflies are also very strong fliers,
 but contrary to Danaina, which are specialized Apocynaceae feeders,
 Charaxes are known to feed on at least 28 plant families in 18 orders 
-(Ackery, 1988) and some species appear to be polyphagous (Müller et al. 2010).
+[@ackery1988] and some species appear to be polyphagous (Müller et al. 2010).
 Aduse-Poku et al. (2009) showed that most of the diversification of the
 genus occurred from the late Oligocene to the Miocene when there were 
 drastic global climatic fluctuations, indicating that the diversity mainly
