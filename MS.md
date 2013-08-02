@@ -483,7 +483,7 @@ diversity in the Afrotropical region. These butterflies are also very strong fli
 but contrary to Danaina, which are specialized Apocynaceae feeders,
 Charaxes are known to feed on at least 28 plant families in 18 orders 
 [@ackery1988] and some species appear to be polyphagous (Müller et al. 2010).
-Aduse-Poku et al. (2009) showed that most of the diversification of the
+@aduse2009 showed that most of the diversification of the
 genus occurred from the late Oligocene to the Miocene when there were 
 drastic global climatic fluctuations, indicating that the diversity mainly
 is driven by climate change. Müller et al. (2010) found that climatic 
