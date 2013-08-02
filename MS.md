@@ -442,7 +442,7 @@ strong evidence for a model of speciation congruent with Ehrlich and Raven’s
 hypothesis in Pieridae butterflies due to, in addition to the identification of a
 key innovation, a burst of diversification in glucosinolate-feeding taxa shortly
 afterwards (with a lag of ~10 MY). According to a recent dated phylogeny of the 
-Angiosperms (Bell et al. 2010), the family Solanaceae split from its sister group
+Angiosperms [@bell2010], the family Solanaceae split from its sister group
 about 59 (49-68) MYA and diversification started (crown group age) around 37 (29-47) 
 MYA. @wahlberg2009 give the corresponding ages for Ithomiini as 45 
 (39-53) and 37 (32-43) MYA, respectively. Thus, current evidence shows that
