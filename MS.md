@@ -80,8 +80,8 @@ major radiations (current subfamilies) appeared shortly after the
 Cretaceous-Paleogene (K-Pg) boundary (Heikkilä et al. 2012). Several studies 
 have used calibrated phylogenies and diversification models to reconstruct the
 evolutionary history of the group to identify patterns of accelerated or 
-decelerated diversification of some Nymphalidae clades (Elias et al. 2009; 
-Fordyce 2010; Wahlberg et al. 2009; Heikkilä et al. 2012). For example, it has
+decelerated diversification of some Nymphalidae clades [Elias et al. 2009; 
+Fordyce 2010; @wahlberg2009; Heikkilä et al. 2012]. For example, it has
 been suggested that climate change in the Oligocene and the subsequent 
 diversification of grasses has led to diversification of the subfamily Satyrinae
 (Peña and Wahlberg 2008) due to the abundance of grasses over extensive geographic
@@ -105,7 +105,7 @@ chemically different hostplant groups, climatic change, geography, ecological
 opportunity, or other factors.
 
 In this study, we used a time calibrated genus-level phylogenetic hypothesis 
-for Nymphalidae butterflies (taken from Wahlberg, et al. 2009) to investigate 
+for Nymphalidae butterflies [taken from @wahlberg2009] to investigate 
 patterns of diversification. We applied MEDUSA (modelling evolutionary diversity
 using stepwise AIC, Alfaro et al. 2009; Harmon et al. 2011), a recently developed
 statistical method, to study the diversification pattern of Nymphalidae butterflies.
@@ -136,7 +136,7 @@ We compiled species richness data for Nymphalidae genera from several sources
 including the specialist-curated lists on http://tolweb.org, Lamas (2004) and
 curated lists of Global Butterfly Names project http://www.ucl.ac.uk/taxome/gbn/.
 We assigned the species numbers of genera not included in the phylogeny to the
-closest related genus that was included in Wahlberg et al. (2009) study 
+closest related genus that was included in @wahlberg2009 study 
 (supp. mat. 03).
 
 Hostplant data for Nymphalidae species were compiled from several sources 
@@ -153,7 +153,7 @@ We used the statistical software R version 2.15.1 (R Core Team, 2012) in
 combination with the APE (Paradis et al. 2004), GEIGER (Harmon et al. 2008) and
 diversitree (FitzJohn, 2012) packages along with our own scripts to perform the
 analyses (included as supplementary materials). All analyses were run on the 
-1000 random trees from Wahlberg et al. (2009) as well as on the maximum 
+1000 random trees from @wahlberg2009 as well as on the maximum 
 credibility tree.
 
 
@@ -162,13 +162,13 @@ credibility tree.
 We obtained semilogarithmic lineages-through-time (LTT) plots after removing 
 outgroups and including the maximum credibility tree and 95% credibility interval
 obtained by random sampling of 1000 trees from the posterior distribution of 
-the BEAST run after burnin from Wahlberg et al. (2009).
+the BEAST run after burnin from @wahlberg2009.
 
 
 ### MEDUSA	 	 	
 We analyzed patterns of diversification in Nymphalidae by using Turbo-MEDUSA 
 version 0.1 (Harmon et al. 2011) on the maximum credibility tree from 
-Wahlberg et al. (2009). Turbo-MEDUSA, and the original algorithm MEDUSA, fit 
+@wahlberg2009. Turbo-MEDUSA, and the original algorithm MEDUSA, fit 
 alternative birth-death likelihood models to a phylogenetic tree in order to 
 estimate changes in net diversification rates along branches. MEDUSA estimates 
 likelihood and AIC scores for the simplest birth-death model, with two parameters
@@ -241,7 +241,7 @@ able to run it on a sample of 250 trees.
 
 ### LTT plot
 LTT plots of the 1000 randomly chosen trees, along with the maximum credibility
-tree, from the posterior distribution of trees from Wahlberg et al. (2009) are
+tree, from the posterior distribution of trees from @wahlberg2009 are
 shown in Figure 1. This figure shows that the accumulation of lineages in 
 Nymphalidae is congruent with a pattern of increase in diversification rate 
 starting at around 50 MYA. However, it should be noted that we used a genus 
@@ -371,8 +371,8 @@ appear to be strongly affected by long-branch attraction artifacts
 (Peña et al. 2011). Thus, the bayesian runs are expected to recover alternative
 topologies on the posterior distribution of trees, resulting in low support
 and posterior probability values for the nodes. For example, posterior
-probability values for clades in Satyrini are very low (0.5 to 0.6;
-Wahlberg et al. 2009). As a result, MEDUSA inferred a diversification
+probability values for clades in Satyrini are very low [0.5 to 0.6;
+@wahlberg2009]. As a result, MEDUSA inferred a diversification
 rate increase for part of Satyrini in the maximum credibility tree, but this
 was recovered only in 17% of the trees from the posterior distribution.
 
@@ -389,8 +389,8 @@ while estimating splits for other lineages in only a fraction of the
 posterior distribution of trees.
 
 The clade Ithomiini and the non-basal danaids are well supported by high
-posterior probability values in Wahlberg et al. (2009; supplementary information,
-        fig. 3S). Therefore our MEDUSA analyses recovered an increase in 
+posterior probability values in @wahlberg2009  [supplementary information,
+        fig. 3S]. Therefore our MEDUSA analyses recovered an increase in 
 diversification rate in more than 95% of the posterior distribution of trees 
 (Figure 3).
 
@@ -444,7 +444,7 @@ key innovation, a burst of diversification in glucosinolate-feeding taxa shortly
 afterwards (with a lag of ~10 MY). According to a recent dated phylogeny of the 
 Angiosperms (Bell et al. 2010), the family Solanaceae split from its sister group
 about 59 (49-68) MYA and diversification started (crown group age) around 37 (29-47) 
-MYA. Wahlberg et al. (2009) give the corresponding ages for Ithomiini as 45 
+MYA. @wahlberg2009 give the corresponding ages for Ithomiini as 45 
 (39-53) and 37 (32-43) MYA, respectively. Thus, current evidence shows that
 Solanaceae and Ithomiini might have diversified around the same time, during 
 the Late Eocene and Oligocene, and this is congruent with the diffuse 
@@ -456,7 +456,7 @@ that affected the flora and fauna of the time, which coincides with the
 diversification of modern montane plant and animal taxa (Hoorn et al. 2010) including
 Ithomiini butterflies and Solanaceae hostplants. Moreover, all Solanaceae clades
 currently present in New World originated in South America (Olmstead, 2013) as well
-as Ithomiini butterflies (Wahlberg et al. 2009). Therefore, there is evidence for
+as Ithomiini butterflies [@wahlberg2009]. Therefore, there is evidence for
 a process of “diffuse cospeciation” of Ithomiinae and hostplants.
 
 
@@ -496,9 +496,9 @@ hostplant, grasses, during the climatic cooling in the Oligocene
 (Peña and Wahlberg, 2008). Thus, it is somewhat surprising that part of Satyrini
 (the subtribes Euptychiina, Satyrina and Pronophilina) were found to have
 accelerated diversification in only 17% of the trees from the posterior distribution.
-Although this can be attributed to low phylogenetic signal (posterior probability
-value = 0.6 for this clade in Wahlberg et al. 2009), the clade Satyrini is
-very robust (posterior probability value = 1.0 for this clade in Wahlberg et al. 2009)
+Although this can be attributed to low phylogenetic signal [posterior probability
+value = 0.6 for this clade in @wahlberg2009], the clade Satyrini is
+very robust [posterior probability value = 1.0 for this clade in @wahlberg2009]
 and MEDUSA failed to identify any significant accelerated diversification rate
 for Satyrini. It appears that the radiation of Satyrini as a whole was not
 remarkably fast and therefore not picked up by MEDUSA.
