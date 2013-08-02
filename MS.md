@@ -18,9 +18,7 @@
 
 **Pre-peer review:** This manuscript has been peer-reviewed by two anonymous referees using Peerage of Science. The peer-review process can be accessed via [https://www.peerageofscience.org/?link=71445](https://www.peerageofscience.org/?link=71445) using the following credentials:
 
-*Username: 516d0b07d93fc@Evolution*
 
-*Password: 961q85kg*
 
 
 
@@ -190,6 +188,29 @@ diversification rates are significant if they are found at the same node in at
 least 95% of the trees. We also expected to find similar r and epsilon values 
 across the 1000 trees for the nodes where changes in diversification tempo 
 occurs. We let MEDUSA estimate up to 25 turnover points in our trees.
+
+### Effect of the quality of posterior distribution of trees on MEDUSA and Multi-MEDUSA
+We tested the effect of topology uncertainty and width of confidence intervals
+of ages on the number of diversification splits inferred by the MEDUSA and
+Multi-MEDUSA approaches.
+We created a thousand sets of 1000 trees with increasinly better support for the 
+topology by replacing each of the trees of our posterior distribution of 
+trees by our MCT. We measured the degree of topology uncertainty for each 
+set as the ratio of nodes with high posterior probability (> 0.95) on
+the MCT of each set of thousand trees.
+For each set of 1000 trees, we run Multi-MEDUSA on all the trees, and 
+counted the number of consistently recovered diversification splits inferred
+across more than 95% of the trees.
+
+To test for an effect of confidence interval widths of node ages, we
+created a thousand sets of 1000 trees with narrower confidence intervals
+on the estimated ages for all the nodes.
+We achieved this by running a BEAST analysis and forcing a fixed topology
+(our MCT) so different branch lengths were allowed. We randomly selected
+1000 trees from the posterior distribution of trees after burning and replaced
+each of the trees with the MCT to create a thousand sets of 1000 trees.
+We plotted the relationship between increasinly narrower confidence intervals
+and number of consistently inferred diversification splits.
 
 
 ### BiSSE
