@@ -140,7 +140,7 @@ closest related genus that was included in @wahlberg2009 study
 (supp. mat. 03).
 
 Hostplant data for Nymphalidae species were compiled from several sources 
-including @ackery1988, HOSTS database (http://bit.ly/YI7nwW), Dyer and Gentry (2002)
+including @ackery1988, HOSTS database (http://bit.ly/YI7nwW), @dyer2002
 and others (supp. mat. 04; supp. mat. 05) for a total of 6586 hostplant records,
 including 428 Nymphalidae genera and 143 plant families and 1070 plant genera.
 It was not possible to find any hostplant data for 35 butterfly genera
