@@ -106,8 +106,8 @@ opportunity, or other factors.
 
 In this study, we used a time calibrated genus-level phylogenetic hypothesis 
 for Nymphalidae butterflies [taken from @wahlberg2009] to investigate 
-patterns of diversification. We applied MEDUSA (modelling evolutionary diversity
-using stepwise AIC, Alfaro et al. 2009; Harmon et al. 2011), a recently developed
+patterns of diversification. We applied MEDUSA [modelling evolutionary diversity
+using stepwise AIC, @alfaro2009; Harmon et al. 2011], a recently developed
 statistical method, to study the diversification pattern of Nymphalidae butterflies.
 Particularly, we wanted to study the effects of phylogenetic uncertainty and 
 modified the current MEDUSA method to take this into account (Multi-MEDUSA). 
@@ -176,7 +176,7 @@ likelihood and AIC scores for the simplest birth-death model, with two parameter
 are then compared with incrementally more complex models until the addition of
 parameters do not improve the AIC scores beyond a cutoff value. MEDUSA finds the
 likelihood of the models after taking into account branch lengths and number of
-species per lineage (Alfaro et al. 2009). To our knowledge, studies using MEDUSA
+species per lineage [@alfaro2009]. To our knowledge, studies using MEDUSA
 and Turbo-MEDUSA have so far only run the method on a single tree, usually the
 maximum credibility tree, which makes the assumption that this tree is correct.
 We wanted to study the effects of phylogenetic uncertainty on estimation of 
@@ -346,7 +346,7 @@ hostplants. Thus, BiSSE is expected to produce robust results (Davis et al. 2013
 ## Discussion
 ### Effects of phylogenetic uncertainty on the performance of MEDUSA 
 The MEDUSA method has been used to infer changes in diversification rates 
-along a phylogenetic tree. Since its publication (Alfaro et al. 2009), the
+along a phylogenetic tree. Since its publication [@alfaro2009] the
 results of using MEDUSA on a single tree, the maximum clade credibility tree,
 have been used for generation of hypotheses and discussion (e.g. 
 Litman et al. 2011; Heikkilä et al. 2012; Ryberg and Matheny, 2012).
