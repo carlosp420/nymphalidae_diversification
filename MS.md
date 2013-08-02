@@ -337,11 +337,11 @@ intervals in supp. mat. 15).
 A BiSSE analysis to test whether the trait “feeding on Apocynaceae” had any
 effect on increased diversification rates found similar speciation rates for
 lineages feeding on Apocynaceae and other plants (Figure 7). It has been shown
-that BiSSE performs poorly under certain conditions (Davis et al. 2013). 
+that BiSSE performs poorly under certain conditions [@davis2013]. 
 However, our data has adequate number of taxa under analysis (more than 300 tips),
 adequate speciation bias (between 1.5x and 2.0x), character state bias 
 (around 8x) and extinction bias (around 4x) for the analysis of Solanaceae
-hostplants. Thus, BiSSE is expected to produce robust results (Davis et al. 2013).
+hostplants. Thus, BiSSE is expected to produce robust results [@davis2013].
 
 ## Discussion
 ### Effects of phylogenetic uncertainty on the performance of MEDUSA 
