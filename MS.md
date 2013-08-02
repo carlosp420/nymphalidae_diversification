@@ -400,8 +400,9 @@ Keith Brown suggested that feeding on Solanacaeae was an important event in the
 diversification of Ithomiini butterflies (Brown 1987). Ithomiini butterflies
 are exclusively Neotropical and most species feed on Solanaceae hostplants during
 larval stage (supp. mat. 04; Willmott and Freitas, 2006). Optimizations of the
-evolution of hostplant use on phylogenies evidence a probable shift from Apocynaceae
-to Solanaceae (Brower et al. 2006; Willmott and Freitas, 2006). Fordyce (2010)
+evolution of hostplant use on phylogenies evidence a probable shift from
+Apocynaceae
+to Solanaceae [@brower2006; Willmott and Freitas, 2006]. Fordyce (2010)
 found that the Gamma statistics, a LTT plot of an Ithomiini phylogeny and the fit
 of the density-dependent model of diversification are consistent with a burst of
 diversification in Ithomiini following the shift from Apocynaeae to Solanacaeae.
