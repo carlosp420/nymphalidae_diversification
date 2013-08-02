@@ -295,6 +295,21 @@ of the 1000 trees. Some of the splits in the MCT are recovered in very few trees
 for example the split for the clade (Euptychiina + Pronophilina + Satyrina + 
 Maniolina) (see supp. mat. 09-10). 
 
+### MEDUSA performance due to phylogenetic uncertainty
+We found that most of the diversification splits were consistently recovered
+across more than 95% of the trees from the posterior distribution when
+there was a higher ratio of nodes with high posterior probability 
+(Fig. XX). For our data, it would be necessary to obtain a set of trees
+from the Bayesian run with almost 99% of the nodes with posterior 
+probability higher than 0.95, almost no phylogenetic uncertainty, in order
+to obtain most of the diversification splits from MCT on the posterior
+distribution of trees. For example the MCT of the set of trees number 949 
+had 99.75% of the nodes with posterior probability > 0.95 and it was
+possible to recover only 12 diversification shifts (out of a total of 14)
+across more than 95% of the trees (supp. mat. XX).
+
+[*write results of confidence intervals on the Multi-MEDUSA*]
+
 ### BiSSE
 The MEDUSA analyses taking into account phylogenetic uncertainty estimated
 a diversification rate increase in part of the clade Ithomiini across more
