@@ -149,7 +149,7 @@ It was not possible to find any hostplant data for 35 butterfly genera
 
 
 ### Analyses of Diversification
-We used the statistical software R version 2.15.1 (R Core Team, 2012) in 
+We used the statistical software R version 2.15.1 [@r2013] in 
 combination with the APE (Paradis et al. 2004), GEIGER (Harmon et al. 2008) and
 diversitree (FitzJohn, 2012) packages along with our own scripts to perform the
 analyses (included as supplementary materials). All analyses were run on the 
