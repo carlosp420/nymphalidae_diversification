@@ -256,8 +256,8 @@ Table 1). The estimated cutoff value (corrected threshold) of AICc scores for
 selecting the optimal model was estimated as 7.8 units. The background 
 diversification rate for Nymphalidae was estimated as r = 0.081 lineages per 
 Million of years. Some of the 13 changes in diversification correspond to rate 
-increases in very species-rich genera: Ypthima (r = 0.264), Charaxes (r = 0.251), 
-Callicore + Diaethria (r = 0.220), Pedaliodes (r = 0.196) and Taenaris 
+increases in very species-rich genera: *Ypthima* (r = 0.264), *Charaxes* (r = 0.251), 
+*Callicore* + *Diaethria* (r = 0.220), *Pedaliodes* (r = 0.196) and *Taenaris* 
 (r = 0.238). We found rate increases for other clades as well such as: Lethina
 + Mycalesina (r = 0.130), Oleriina + Ithomiina + Napeogenina + Dircennina + 
 Godyrina (r = 0.181), Euptychiina + Pronophilina + Maniolina + Satyrina 
@@ -283,11 +283,11 @@ the posterior distribution of trees. A boxplot of the diversification rate
 values estimated for the clades that appear in the MCT shows that some shifts
 are estimated as increased or slowed diversification pace depending on the tree
 used for analysis (Figure 4). This variation is especially wide for the clade
-formed by the genera Magneuptychia and Caeruleuptychia because MEDUSA estimated
+formed by the genera *Magneuptychia* and *Caeruleuptychia* because MEDUSA estimated
 diversification values from three times the background diversification rate 
 (r = 0.2755) to almost zero (r = 2.4e-07). The diversification rates estimates
-for the root (background diversification rate) and the clades (Tirumala + 
-Danaus + Amauris + Parantica + Ideopsis + Euploea + Idea) and (Oleriina + 
+for the root (background diversification rate) and the clades (*Tirumala* + 
+*Danaus* + *Amauris* + *Parantica* + *Ideopsis* + *Euploea* + *Idea*) and (Oleriina + 
 Ithomiina + Napeogenina + Dircennina + Godyrina) are relatively consistent 
 across the 1000 trees (Figure 4). It is also evident that not all the 
 diversification shifts estimated on the MCT are consistently recovered in most
