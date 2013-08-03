@@ -81,12 +81,12 @@ Cretaceous-Paleogene (K-Pg) boundary (Heikkilä et al. 2012). Several studies
 have used calibrated phylogenies and diversification models to reconstruct the
 evolutionary history of the group to identify patterns of accelerated or 
 decelerated diversification of some Nymphalidae clades [@elias2009; 
-Fordyce 2010; @wahlberg2009; Heikkilä et al. 2012]. For example, it has
+@fordyce2010; @wahlberg2009; Heikkilä et al. 2012]. For example, it has
 been suggested that climate change in the Oligocene and the subsequent 
 diversification of grasses has led to diversification of the subfamily Satyrinae
 (Peña and Wahlberg 2008) due to the abundance of grasses over extensive geographic
 areas (“resource abundance-dependent diversity dynamics” hypothesis). 
-Fordyce (2010) found increased diversification rates in some Nymphalidae lineages
+@fordyce2010 found increased diversification rates in some Nymphalidae lineages
 after a major hostplant shift, which appears to be in agreement with @ehrlich1964
 “escape-and-radiate” model of diversification. 
  	 	
@@ -96,7 +96,7 @@ modern techniques to investigate whether the diversification patterns of
 Nymphalidae are in agreement with the theoretical predictions. It is necessary
 to test whether the overall diversification pattern of Nymphalidae is congruent
 with events of sudden diversification bursts due to hostplant shift 
-("radiate-and-escape" hypothesis, eg. Fordyce 2010), climatic events and shifts
+["radiate-and-escape" hypothesis, eg. @fordyce2010], climatic events and shifts
 to closely related hostplants ("diffuse cospeciation hypothesis", eg. 
 McLeish et al. 2007; Voje et al. 2009) or resource-abundance dynamics hypothesis
 (eg. Peña and Wahlberg, 2008). If patterns of diversification bursts are 
@@ -402,7 +402,7 @@ are exclusively Neotropical and most species feed on Solanaceae hostplants durin
 larval stage (supp. mat. 04; Willmott and Freitas, 2006). Optimizations of the
 evolution of hostplant use on phylogenies evidence a probable shift from
 Apocynaceae
-to Solanaceae [@brower2006; Willmott and Freitas, 2006]. Fordyce (2010)
+to Solanaceae [@brower2006; Willmott and Freitas, 2006]. @fordyce2010
 found that the Gamma statistics, a LTT plot of an Ithomiini phylogeny and the fit
 of the density-dependent model of diversification are consistent with a burst of
 diversification in Ithomiini following the shift from Apocynaeae to Solanacaeae.
@@ -416,7 +416,7 @@ Solanaceae” had any effect on the diversification of the group.
 Our BiSSE analysis, extended to take into account missing taxa, shows a significantly
 higher net diversification rate for Ithomiini taxa, which can be attributed to the
 trait “feeding on Solanaceae hostplants” (Figure 5). This is in agreement with the
-findings of Fordyce (2010) using other statistical methods. Due to the fact that
+findings of @fordyce2010 using other statistical methods. Due to the fact that
 Ithomiini are virtually the only nymphalids using Solanacaeae as hostplants (except 
 for Hypanartia, Vanessa and Acraea; supp. mat.04), it is possible that the
 trait responsible for a higher diversification of Ithomiini might not be the hostplant
@@ -426,7 +426,7 @@ metabolites.
 
 Solanaceae plants contain chemical compounds and it has been suggested that the high
 diversity of Ithomiini is consistent with the “escape-and-radiate scenario” due to
-a shift onto Solanaceae (Fordyce 2010) and radiation scenarios among chemically
+a shift onto Solanaceae [@fordyce2010] and radiation scenarios among chemically
 different lineages of Solanaceae plants [@brown1987; Willmott and Freitas, 2006].
 According to this theory, the shift from Apocynaceae to Solanaceae allowed Ithomiini
 to invade newly available resources due to a possible key innovation that allowed
