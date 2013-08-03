@@ -54,7 +54,7 @@ Hostplant shifts have been invoked to be responsible for a great part of the
 biodiversity of herbivorous insects (Mitter et al. 1988). The study of the 
 evolution of hostplant use has spawned several theories explaining the evolutionary
 interactions between plants and insects (reviewed by Nyman et al. 2012). The 
-"escape-and-radiate" hypothesis (Ehrlich and Raven, 1964) states that plants and
+"escape-and-radiate" hypothesis [@ehrlich1964] states that plants and
 herbivore butterflies are involved in an evolutionary arms race in which newly 
 acquired adaptive characters in plants act as defense against herbivores. This
 would allow the plant lineage to escape the herbivorous pressure and diversify.
@@ -87,8 +87,8 @@ diversification of grasses has led to diversification of the subfamily Satyrinae
 (Peña and Wahlberg 2008) due to the abundance of grasses over extensive geographic
 areas (“resource abundance-dependent diversity dynamics” hypothesis). 
 Fordyce (2010) found increased diversification rates in some Nymphalidae lineages
-after a major hostplant shift, which appears to be in agreement with Ehrlich and
-Raven (1964) “escape-and-radiate” model of diversification. 
+after a major hostplant shift, which appears to be in agreement with @ehrlich1964
+“escape-and-radiate” model of diversification. 
  	 	
 Although it has been suggested that part of the great diversity of Nymphalidae
 butterflies is a result of hostplant-insect dynamics, it is necessary to use 
@@ -438,7 +438,7 @@ on Brassicales hosts  (Wheat et al. 2007).
 The diffuse cospeciation hypothesis predicts almost identical ages of insects and 
 their hostplants, while the “resource abundance-dependent diversity” and the
 “escape-and-radiate” hypotheses state that insects diversify after their hostplants
-(Ehrlich and Raven, 1964; Janz, 2011; Nyman et al. 2012). Wheat et al. (2007) found 
+[@ehrlich1964; Janz, 2011; Nyman et al. 2012]. Wheat et al. (2007) found 
 strong evidence for a model of speciation congruent with Ehrlich and Raven’s
 hypothesis in Pieridae butterflies due to, in addition to the identification of a
 key innovation, a burst of diversification in glucosinolate-feeding taxa shortly
