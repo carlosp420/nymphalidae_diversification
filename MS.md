@@ -80,7 +80,7 @@ major radiations (current subfamilies) appeared shortly after the
 Cretaceous-Paleogene (K-Pg) boundary (Heikkilä et al. 2012). Several studies 
 have used calibrated phylogenies and diversification models to reconstruct the
 evolutionary history of the group to identify patterns of accelerated or 
-decelerated diversification of some Nymphalidae clades [Elias et al. 2009; 
+decelerated diversification of some Nymphalidae clades [@elias2009; 
 Fordyce 2010; @wahlberg2009; Heikkilä et al. 2012]. For example, it has
 been suggested that climate change in the Oligocene and the subsequent 
 diversification of grasses has led to diversification of the subfamily Satyrinae
