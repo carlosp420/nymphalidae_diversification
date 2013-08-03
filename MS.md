@@ -115,7 +115,7 @@ We also tested whether hostplant association dynamics can explain the
 diversification patterns of component Nymphalidae lineages by testing whether 
 character states of hostplant use affected the diversification pattern of those
 lineages employing the method BiSSE as implemented in the R package diversitree
-(FitzJohn, 2012).
+[@fitzjohn2012].
 
 
 
@@ -151,7 +151,7 @@ It was not possible to find any hostplant data for 35 butterfly genera
 ### Analyses of Diversification
 We used the statistical software R version 2.15.1 [@r2013] in 
 combination with the APE (Paradis et al. 2004), GEIGER (Harmon et al. 2008) and
-diversitree (FitzJohn, 2012) packages along with our own scripts to perform the
+diversitree [@fitzjohn2012] packages along with our own scripts to perform the
 analyses (included as supplementary materials). All analyses were run on the 
 1000 random trees from @wahlberg2009 as well as on the maximum 
 credibility tree.
@@ -217,7 +217,7 @@ and number of consistently inferred diversification splits.
 We tested whether diversification of Nymphalidae lineages is driven by 
 hostplant by using the “binary state speciation and extinction” 
 (BiSSE; Maddison, Midford, Otto, 2007) bayesian approach as implemented in the
-R package diversitree (FitzJohn, 2012). MuSSE (FitzJohn, 2012) is designed to
+R package diversitree [@fitzjohn2012]. MuSSE [@fitzjohn2012] is designed to
 examine the joint effects of two or more traits on speciation. Because most of
 Nymphalidae butterflies are restricted to use one plant family as hostplant, 
 the character states can be coded as presence/absence, for which the BiSSE 
@@ -410,7 +410,7 @@ diversification in Ithomiini following the shift from Apocynaeae to Solanacaeae.
 In this study, we investigated whether the strong signal for an increase in 
 diversification rate for Ithomiini (found by MEDUSA) can be explained due to the
 use of Solanaceae plants as hosts during larval stage. For this, we used a bayesian
-approach (BiSSE; FitzJohn et al. 2009) to test whether the trait “feeding on 
+approach [BiSSE; @fitzjohn2009] to test whether the trait “feeding on 
 Solanaceae” had any effect on the diversification of the group. 
 
 Our BiSSE analysis, extended to take into account missing taxa, shows a significantly
