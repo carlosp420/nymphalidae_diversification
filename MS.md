@@ -456,7 +456,7 @@ during the Oligocene (Somoza, 1998). This caused climatic changes in the region
 that affected the flora and fauna of the time, which coincides with the
 diversification of modern montane plant and animal taxa [@hoorn2010] including
 Ithomiini butterflies and Solanaceae hostplants. Moreover, all Solanaceae clades
-currently present in New World originated in South America (Olmstead, 2013) as well
+currently present in New World originated in South America [@olmstead2013] as well
 as Ithomiini butterflies [@wahlberg2009]. Therefore, there is evidence for
 a process of “diffuse cospeciation” of Ithomiinae and hostplants.
 
