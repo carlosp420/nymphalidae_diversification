@@ -53,7 +53,7 @@ insect-hostplant dynamics
 Hostplant shifts have been invoked to be responsible for a great part of the 
 biodiversity of herbivorous insects [@mitter1988]. The study of the 
 evolution of hostplant use has spawned several theories explaining the evolutionary
-interactions between plants and insects (reviewed by Nyman et al. 2012). The 
+interactions between plants and insects [reviewed by @nyman2012]. The 
 "escape-and-radiate" hypothesis [@ehrlich1964] states that plants and
 herbivore butterflies are involved in an evolutionary arms race in which newly 
 acquired adaptive characters in plants act as defense against herbivores. This
@@ -61,15 +61,15 @@ would allow the plant lineage to escape the herbivorous pressure and diversify.
 Eventually, the butterflies would also acquire a character to overcome this 
 barrier and radiate onto the available plant resource. An alternative hypothesis
 of herbivore diversification is the “oscillation hypothesis” [@janz2011] or 
-"diffuse cospeciation" (Nyman et al. 2012) in which range expansions of plants
+"diffuse cospeciation" [@nyman2012] in which range expansions of plants
 and insects facilitate allopatric speciation and cross-colonization of insects
 onto related plants. This hypothesis predicts near-simultaneous diversification
-of plants and insects that feed on them (Nyman et al. 2012). The “resource 
+of plants and insects that feed on them [@nyman2012]. The “resource 
 abundance-dependent diversity dynamics” hypothesis states that plant groups that
 are common and widely distributed will host a higher diversity of herbivores by
 facilitating their speciation over wider geographic distributions. According to
 this hypothesis, there should be a time lag between the diversification of 
-hostplants and insects that feed on them (Nyman et al. 2012). 
+hostplants and insects that feed on them [@nyman2012]. 
 
 The butterfly family Nymphalidae has been an important taxon for developing 
 some of the mentioned hypotheses. Nymphalidae contains around 6000 species 
@@ -438,7 +438,7 @@ on Brassicales hosts  (Wheat et al. 2007).
 The diffuse cospeciation hypothesis predicts almost identical ages of insects and 
 their hostplants, while the “resource abundance-dependent diversity” and the
 “escape-and-radiate” hypotheses state that insects diversify after their hostplants
-[@ehrlich1964; @janz2011; Nyman et al. 2012]. Wheat et al. (2007) found 
+[@ehrlich1964; @janz2011; @nyman2012]. Wheat et al. (2007) found 
 strong evidence for a model of speciation congruent with Ehrlich and Raven’s
 hypothesis in Pieridae butterflies due to, in addition to the identification of a
 key innovation, a burst of diversification in glucosinolate-feeding taxa shortly
@@ -537,7 +537,7 @@ diversification splits in Nymphalidae. Our BiSSE analysis found that the trait
 diversification rate of Ithomiini, but the trait “feeding on Apocynaceae” is not 
 responsible for the slowdown of diversification in Danaina. Ithomiini and Solanaceae 
 diversified near simultaneously, which is in agreement with the diffuse co-speciation
-hypothesis (@janz2011, Nyman et al. 2012). 
+hypothesis [@janz2011; @nyman2012]. 
 
 ## Acknowledgments
 We are thankful to Mark Cornwall for help with the script to extend MEDUSA to include
