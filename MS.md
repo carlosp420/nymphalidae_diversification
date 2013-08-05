@@ -368,7 +368,7 @@ and conclusions can be completely contradictory depending on tree choice.
 In this study, the effect of phylogenetic uncertainty on the inferred 
 diversification splits by MEDUSA is amplified because some Nymphalidae taxa 
 appear to be strongly affected by long-branch attraction artifacts
-(Peña et al. 2011). Thus, the bayesian runs are expected to recover alternative
+[@pena2011]. Thus, the bayesian runs are expected to recover alternative
 topologies on the posterior distribution of trees, resulting in low support
 and posterior probability values for the nodes. For example, posterior
 probability values for clades in Satyrini are very low [0.5 to 0.6;
@@ -506,7 +506,7 @@ remarkably fast and therefore not picked up by MEDUSA.
 
 The origin of the tribe Satyrini is not completely clear (originated either in the
 Neotropical or Eastern Palaearctic, Oriental and/or Indo-Australian regions
-(Peña et al. 2011) and their radiation involved colonizing almost all
+[@pena2011] and their radiation involved colonizing almost all
 continents starting from their place of origin. For butterflies, a 
 prerequisite for colonizing new areas is that suitable hostplants are 
 already present. Therefore, it should be expected that the diversification
