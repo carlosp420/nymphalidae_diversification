@@ -452,7 +452,7 @@ the Late Eocene and Oligocene, and this is congruent with the diffuse
 cospeciation hypothesis.
 
 The uplift of the Andes was a major tectonic event that underwent higher activity
-during the Oligocene (Somoza, 1998). This caused climatic changes in the region
+during the Oligocene [@somoza1998]. This caused climatic changes in the region
 that affected the flora and fauna of the time, which coincides with the
 diversification of modern montane plant and animal taxa [@hoorn2010] including
 Ithomiini butterflies and Solanaceae hostplants. Moreover, all Solanaceae clades
