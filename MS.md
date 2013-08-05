@@ -51,7 +51,7 @@ insect-hostplant dynamics
 
 ## Introduction
 Hostplant shifts have been invoked to be responsible for a great part of the 
-biodiversity of herbivorous insects (Mitter et al. 1988). The study of the 
+biodiversity of herbivorous insects [@mitter1988]. The study of the 
 evolution of hostplant use has spawned several theories explaining the evolutionary
 interactions between plants and insects (reviewed by Nyman et al. 2012). The 
 "escape-and-radiate" hypothesis [@ehrlich1964] states that plants and
