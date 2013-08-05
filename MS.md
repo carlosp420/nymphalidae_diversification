@@ -133,7 +133,7 @@ sample of 1000 trees using Burntrees v.0.1.9 (http://www.abc.se/~nylander/)
 performing the diversification analyses.
 
 We compiled species richness data for Nymphalidae genera from several sources
-including the specialist-curated lists on http://tolweb.org, Lamas (2004) and
+including the specialist-curated lists on http://tolweb.org, @lamas2004 and
 curated lists of Global Butterfly Names project http://www.ucl.ac.uk/taxome/gbn/.
 We assigned the species numbers of genera not included in the phylogeny to the
 closest related genus that was included in @wahlberg2009 study 
