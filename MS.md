@@ -348,8 +348,8 @@ hostplants. Thus, BiSSE is expected to produce robust results [@davis2013].
 The MEDUSA method has been used to infer changes in diversification rates 
 along a phylogenetic tree. Since its publication [@alfaro2009] the
 results of using MEDUSA on a single tree, the maximum clade credibility tree,
-have been used for generation of hypotheses and discussion (e.g. 
-@litman2011; @heikkila2012; Ryberg and Matheny, 2012).
+have been used for generation of hypotheses and discussion [e.g. 
+@litman2011; @heikkila2012; @ryberg2012].
 However, we found that MEDUSA estimated different diversification
 shifts and different rates of diversification for certain lineages
 when phylogenetic uncertainty was taken into account by using MEDUSA
