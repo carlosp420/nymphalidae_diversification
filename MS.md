@@ -454,7 +454,7 @@ cospeciation hypothesis.
 The uplift of the Andes was a major tectonic event that underwent higher activity
 during the Oligocene (Somoza, 1998). This caused climatic changes in the region
 that affected the flora and fauna of the time, which coincides with the
-diversification of modern montane plant and animal taxa (Hoorn et al. 2010) including
+diversification of modern montane plant and animal taxa [@hoorn2010] including
 Ithomiini butterflies and Solanaceae hostplants. Moreover, all Solanaceae clades
 currently present in New World originated in South America (Olmstead, 2013) as well
 as Ithomiini butterflies [@wahlberg2009]. Therefore, there is evidence for
