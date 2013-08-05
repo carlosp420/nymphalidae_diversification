@@ -77,11 +77,11 @@ some of the mentioned hypotheses. Nymphalidae contains around 6000 species
 butterflies. The family most likely originated around 94 MYA in the mid 
 Cretaceous. Diversification of the group began in the Late Cretaceous and most
 major radiations (current subfamilies) appeared shortly after the 
-Cretaceous-Paleogene (K-Pg) boundary (Heikkilä et al. 2012). Several studies 
+Cretaceous-Paleogene (K-Pg) boundary [@heikkila2012]. Several studies 
 have used calibrated phylogenies and diversification models to reconstruct the
 evolutionary history of the group to identify patterns of accelerated or 
 decelerated diversification of some Nymphalidae clades [@elias2009; 
-@fordyce2010; @wahlberg2009; Heikkilä et al. 2012]. For example, it has
+@fordyce2010; @wahlberg2009; @heikkila2012]. For example, it has
 been suggested that climate change in the Oligocene and the subsequent 
 diversification of grasses has led to diversification of the subfamily Satyrinae
 (Peña and Wahlberg 2008) due to the abundance of grasses over extensive geographic
@@ -349,7 +349,7 @@ The MEDUSA method has been used to infer changes in diversification rates
 along a phylogenetic tree. Since its publication [@alfaro2009] the
 results of using MEDUSA on a single tree, the maximum clade credibility tree,
 have been used for generation of hypotheses and discussion (e.g. 
-Litman et al. 2011; Heikkilä et al. 2012; Ryberg and Matheny, 2012).
+Litman et al. 2011; @heikkila2012; Ryberg and Matheny, 2012).
 However, we found that MEDUSA estimated different diversification
 shifts and different rates of diversification for certain lineages
 when phylogenetic uncertainty was taken into account by using MEDUSA
