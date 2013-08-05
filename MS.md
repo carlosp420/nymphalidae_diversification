@@ -98,7 +98,7 @@ to test whether the overall diversification pattern of Nymphalidae is congruent
 with events of sudden diversification bursts due to hostplant shift 
 ["radiate-and-escape" hypothesis, eg. @fordyce2010], climatic events and shifts
 to closely related hostplants ("diffuse cospeciation hypothesis", eg. 
-McLeish et al. 2007; Voje et al. 2009) or resource-abundance dynamics hypothesis
+@mcleish2007; Voje et al. 2009) or resource-abundance dynamics hypothesis
 (eg. Peña and Wahlberg, 2008). If patterns of diversification bursts are 
 identified, it is necessary to test whether this is caused by a shift onto 
 chemically different hostplant groups, climatic change, geography, ecological 
