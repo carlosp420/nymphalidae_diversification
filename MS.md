@@ -223,7 +223,7 @@ Nymphalidae butterflies are restricted to use one plant family as hostplant,
 the character states can be coded as presence/absence, for which the BiSSE 
 analysis is better suited. BiSSE was designed to test whether a binary character
 state has had any effect on increased diversification rate for a clade 
-(Maddison et al. 2007). We used our compiled data of hostplant use to produce
+[@maddison2007]. We used our compiled data of hostplant use to produce
 binary datasets for the characters “feeding on the plant family Solanaceae or 
 Apocynaceae” (supp. mat. 07) which are the main hostplants of the diverse 
 Ithomiini butterflies and closest relatives (Willmott and Freitas 2006) and 
@@ -420,7 +420,7 @@ findings of @fordyce2010 using other statistical methods. Due to the fact that
 Ithomiini are virtually the only nymphalids using Solanacaeae as hostplants (except 
 for Hypanartia, Vanessa and Acraea; supp. mat.04), it is possible that the
 trait responsible for a higher diversification of Ithomiini might not be the hostplant
-character. As noted by Maddison et al. (2007), the responsible trait might be a 
+character. As noted by @maddison2007, the responsible trait might be a 
 codistributed character such as a trait related to the ability to digest secondary
 metabolites.
 
