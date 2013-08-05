@@ -433,12 +433,12 @@ to invade newly available resources due to a possible key innovation that allowe
 them cope with secondary metabolites of the new hosts. Additional studies are needed
 to identify the actual enzymes that Ithomiini species might be using for detoxification
 of ingested food. A detoxification mechanism has been found in Pieridae larvae feeding
-on Brassicales hosts  (Wheat et al. 2007).
+on Brassicales hosts  [@wheat2007].
 
 The diffuse cospeciation hypothesis predicts almost identical ages of insects and 
 their hostplants, while the “resource abundance-dependent diversity” and the
 “escape-and-radiate” hypotheses state that insects diversify after their hostplants
-[@ehrlich1964; @janz2011; @nyman2012]. Wheat et al. (2007) found 
+[@ehrlich1964; @janz2011; @nyman2012]. @wheat2007 found 
 strong evidence for a model of speciation congruent with Ehrlich and Raven’s
 hypothesis in Pieridae butterflies due to, in addition to the identification of a
 key innovation, a burst of diversification in glucosinolate-feeding taxa shortly
