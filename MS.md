@@ -107,7 +107,7 @@ opportunity, or other factors.
 In this study, we used a time calibrated genus-level phylogenetic hypothesis 
 for Nymphalidae butterflies [taken from @wahlberg2009] to investigate 
 patterns of diversification. We applied MEDUSA [modelling evolutionary diversity
-using stepwise AIC, @alfaro2009; Harmon et al. 2011], a recently developed
+using stepwise AIC, @alfaro2009; @harmon2011], a recently developed
 statistical method, to study the diversification pattern of Nymphalidae butterflies.
 Particularly, we wanted to study the effects of phylogenetic uncertainty and 
 modified the current MEDUSA method to take this into account (Multi-MEDUSA). 
@@ -167,7 +167,7 @@ the BEAST run after burnin from @wahlberg2009.
 
 ### MEDUSA	 	 	
 We analyzed patterns of diversification in Nymphalidae by using Turbo-MEDUSA 
-version 0.1 (Harmon et al. 2011) on the maximum credibility tree from 
+version 0.1 [@harmon2011] on the maximum credibility tree from 
 @wahlberg2009. Turbo-MEDUSA, and the original algorithm MEDUSA, fit 
 alternative birth-death likelihood models to a phylogenetic tree in order to 
 estimate changes in net diversification rates along branches. MEDUSA estimates 
