@@ -476,7 +476,7 @@ be involved in preventing allopatric speciation. It has been found in highly vag
 species in the nymphalid genus Vanessa that dispersal has homogenized populations
 due to gene flow, as old and vagile species seem to be genetically homogeneous 
 while younger widespread species show higher genetic differentiation in their
-populations (Wahlberg and Rubinoff, 2011).
+populations  [@wahlberg2011].
 
 #### Charaxes
 The genus Charaxes contain 193 species distributed in the Old World with highest
