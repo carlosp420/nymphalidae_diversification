@@ -84,7 +84,7 @@ decelerated diversification of some Nymphalidae clades [@elias2009;
 @fordyce2010; @wahlberg2009; @heikkila2012]. For example, it has
 been suggested that climate change in the Oligocene and the subsequent 
 diversification of grasses has led to diversification of the subfamily Satyrinae
-(Peña and Wahlberg 2008) due to the abundance of grasses over extensive geographic
+[@pena2008] due to the abundance of grasses over extensive geographic
 areas (“resource abundance-dependent diversity dynamics” hypothesis). 
 @fordyce2010 found increased diversification rates in some Nymphalidae lineages
 after a major hostplant shift, which appears to be in agreement with @ehrlich1964
@@ -96,10 +96,10 @@ modern techniques to investigate whether the diversification patterns of
 Nymphalidae are in agreement with the theoretical predictions. It is necessary
 to test whether the overall diversification pattern of Nymphalidae is congruent
 with events of sudden diversification bursts due to hostplant shift 
-["radiate-and-escape" hypothesis, eg. @fordyce2010], climatic events and shifts
-to closely related hostplants ("diffuse cospeciation hypothesis", eg. 
+["radiate-and-escape" hypothesis, e.g. @fordyce2010], climatic events and shifts
+to closely related hostplants ("diffuse cospeciation hypothesis", e.g. 
 @mcleish2007; Voje et al. 2009) or resource-abundance dynamics hypothesis
-(eg. Peña and Wahlberg, 2008). If patterns of diversification bursts are 
+[e.g. @pena2008]. If patterns of diversification bursts are 
 identified, it is necessary to test whether this is caused by a shift onto 
 chemically different hostplant groups, climatic change, geography, ecological 
 opportunity, or other factors.
@@ -494,7 +494,7 @@ might have been responsible for the high diversification of the genus.
 #### Satyrini
 The diverse tribe Satyrini radiated simultaneously with the radiation of their main 
 hostplant, grasses, during the climatic cooling in the Oligocene
-(Peña and Wahlberg, 2008). Thus, it is somewhat surprising that part of Satyrini
+[@pena2008]. Thus, it is somewhat surprising that part of Satyrini
 (the subtribes Euptychiina, Satyrina and Pronophilina) were found to have
 accelerated diversification in only 17% of the trees from the posterior distribution.
 Although this can be attributed to low phylogenetic signal [posterior probability
