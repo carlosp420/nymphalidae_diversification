@@ -226,7 +226,7 @@ state has had any effect on increased diversification rate for a clade
 [@maddison2007]. We used our compiled data of hostplant use to produce
 binary datasets for the characters “feeding on the plant family Solanaceae or 
 Apocynaceae” (supp. mat. 07) which are the main hostplants of the diverse 
-Ithomiini butterflies and closest relatives (Willmott and Freitas 2006) and 
+Ithomiini butterflies and closest relatives [@willmott2006] and 
 Danaini (Apocynaceae). We analyzed the data using BiSSE employing the markov 
 chain monte carlo algorithm on the maximum credibility tree, taking into account
 missing taxa by using the parameter “sampling factor” (sampling.f) in diversitree.
@@ -399,10 +399,10 @@ diversification rate in more than 95% of the posterior distribution of trees
 Keith Brown suggested that feeding on Solanacaeae was an important event in the
 diversification of Ithomiini butterflies [@brown1987]. Ithomiini butterflies
 are exclusively Neotropical and most species feed on Solanaceae hostplants during
-larval stage (supp. mat. 04; Willmott and Freitas, 2006). Optimizations of the
+larval stage [supp. mat. 04; @willmott2006]. Optimizations of the
 evolution of hostplant use on phylogenies evidence a probable shift from
 Apocynaceae
-to Solanaceae [@brower2006; Willmott and Freitas, 2006]. @fordyce2010
+to Solanaceae [@brower2006; willmott2006]. @fordyce2010
 found that the Gamma statistics, a LTT plot of an Ithomiini phylogeny and the fit
 of the density-dependent model of diversification are consistent with a burst of
 diversification in Ithomiini following the shift from Apocynaeae to Solanacaeae.
@@ -427,7 +427,7 @@ metabolites.
 Solanaceae plants contain chemical compounds and it has been suggested that the high
 diversity of Ithomiini is consistent with the “escape-and-radiate scenario” due to
 a shift onto Solanaceae [@fordyce2010] and radiation scenarios among chemically
-different lineages of Solanaceae plants [@brown1987; Willmott and Freitas, 2006].
+different lineages of Solanaceae plants [@brown1987; @willmott2006].
 According to this theory, the shift from Apocynaceae to Solanaceae allowed Ithomiini
 to invade newly available resources due to a possible key innovation that allowed
 them cope with secondary metabolites of the new hosts. Additional studies are needed
