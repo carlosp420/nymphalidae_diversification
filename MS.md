@@ -73,7 +73,7 @@ hostplants and insects that feed on them (Nyman et al. 2012).
 
 The butterfly family Nymphalidae has been an important taxon for developing 
 some of the mentioned hypotheses. Nymphalidae contains around 6000 species 
-(van Nieukerken et al. 2011), and is the largest family within the true 
+[@van_nieukerken2011], and is the largest family within the true 
 butterflies. The family most likely originated around 94 MYA in the mid 
 Cretaceous. Diversification of the group began in the Late Cretaceous and most
 major radiations (current subfamilies) appeared shortly after the 
