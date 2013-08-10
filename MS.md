@@ -558,95 +558,6 @@ was supported by a Kone Foundation grant (awarded to Niklas Wahlberg), Finland
 (C. Peña) and the Research Council of Norway (grant no. 204308 to M. Espeland).
 
 
-## LITERATURE CITED
-Ackery, P. R. 1988. Hostplants and classification: a review of nymphalid butterflies. Biol J Linn Soc. 33:95–203.
-
-Aduse-Poku, K., E. Vingerhoedt, and N. Wahlberg. 2009. Out-of-Africa again: a phylogenetic hypothesis of the genus Charaxes (Lepidoptera: Nymphalidae) based on 5 gene regions. Mol Phylogenet Evol. 53:463–478.
-
-Alfaro, M. E., F. Santini, C. Brock, H. Alamillo, A. Dornburg, D. L. Rabosky, G. Carnevale, and L. J. Harmon. 2009. Nine exceptional radiations plus high turnover explain species diversity in jawed vertebrates. PNAS 106:13410–13414.
-
-Bell, C. D., D. E. Soltis, and P. S. Soltis. 2010. The age and diversification of the angiosperms re-revisited. Am J Bot. 97:1296–1303.
-
-Brower, A. V. Z., A. V. L. Freitas, L. Ming-Min, K. L. Silva-Brandão, A. Whinnett, and K. R. Willmott. 2006. Phylogenetic relationships among the Ithomiini (Lepidoptera: Nymphalidae) inferred from one mitochondrial and two nuclear gene regions. Syst Entomol. 31:288–301.
-
-Brown Jr., K. S. 1987. Chemistry at the Solanaceae/Ithomiinae Interface. Ann Mo Bot Gard. 74:359–397.
-
-Core Team, R. D. 2012. R: A Language and Environment for Statistical Computing. Vienna, Austria.
-
-Davis, M. P., P. E. Midford, and W. Maddison. 2013. Exploring power and parameter estimation of the BiSSE method for analyzing species diversification. BMC Evol Biol. 13:38.
-
-De-Silva, D. L., A. S. Vásquez, and J. Mallet. 2011. Selection for enemy-free space: eggs placed away from the host plant increase survival of a neotropical ithomiine butterfly. Ecol Entomol. 36:667–672.
-
-Dyer, L. A., and G. L. Gentry. 2002. Caterpillars and parasitoids of a tropical lowland wet forest. Available at http://www.caterpillars.org. Accessed 17 Apr 2013.
-
-Ehrlich, P. R., and P. H. Raven. 1964. Butterflies and plants: a study in coevolution. Evolution 18:586–608.
-
-Elias, M., M. Joron, K. R. Willmott, K. L. Silva-Brandão, V. Kaiser, C. F. Arias, L. M. Gomez Piñerez, S. Uribe, A. V. Z. Brower, A. V. L. Freitas, and C. D. Jiggins. 2009. Out of the Andes: patterns of diversification in clearwing butterflies.Mol Ecol. 18:1716–29.
-
-FitzJohn, R. G. 2012. Diversitree: comparative phylogenetic analyses of diversification in R. Methods Ecol Evol. 3:1084–1092.
-
-FitzJohn, R. G., W. P. Maddison, and S. P. Otto. 2009. Estimating trait-dependent speciation and extinction rates from incompletely resolved phylogenies. Syst Biol. 58:595–611.
-
-Fordyce, J. A. 2010. Host shifts and evolutionary radiations of butterflies. Proc Biol Sci. 277:3735–43.
-
-Harmon, L. J., D. L. Rabosky, R. G. FitzJohn, and J. W. Brown. 2011. turboMEDUSA: MEDUSA: Modeling Evolutionary Diversification Using Stepwise AIC. Available at http://www.webpages.uidaho.edu/~lukeh/software/software.html Accessed Jan 13, 2013.
-
-Harmon, L. J., J. T. Weir, C. D. Brock, R. E. Glor, and W. Challenger. 2008. GEIGER: investigating evolutionary radiations. Bioinformatics 24:129–131.
-
-Heikkilä, M., L. Kaila, M. Mutanen, C. Peña, and N. Wahlberg. 2012. Cretaceous origin and repeated tertiary diversification of the redefined butterflies. Proc Biol Sci. 279:1093–1099.
-
-Hoorn, C., F. P. Wesselingh, H. ter Steege, M. A. Bermudez, A. Mora, J. Sevink, I. Sanmartín, A. Sanchez-Meseguer, C. L. Anderson, J. P. Figueiredo, C. Jaramillo, D. Riff, F. R. Negri, H. Hooghiemstra, J. Lundberg, T. Stadler, T. Särkinen, and A. Antonelli. 2010. Amazonia through time: Andean uplift, climate change, landscape evolution, and biodiversity. Science 330:927–931.
-
-Janz, N. 2011. Ehrlich and Raven Revisited: Mechanisms Underlying Codiversification of Plants and Enemies. Annu Rev Ecol Evol Systemat. 42:71–89.
-
-Lamas, G. 2004. Checklist: Part 4A. Hesperioidea-Papilionoidea. Gainesville.
-
-Litman, J. R., B. N. Danforth, C. D. Eardley, and C. J. Praz. 2011. Why do leafcutter bees cut leaves? New insights into the early evolution of bees. Proc Biol Sci. 278:3593–3600.
-
-Maddison, W. P., P. E. Midford, and S. P. Otto. 2007. Estimating a binary character's effect on speciation and extinction. Syst Biol. 56:701–710.
-
-McLeish, M. J., T. W. Chapman, and M. P. Schwarz. 2007. Host-driven diversification of gall-inducing Acacia thrips and the aridification of Australia. BMC Biol. 13:1–13.
-
-Mitter, C., B. Farrel, and B. Wiegmann. 1988. The phylogenetic study of adaptive zones: has phytophagy promoted insect diversification?: Am Nat.. 132:107–128.
-
-Müller, C. J., N. Wahlberg, and L. B. Beheregaray. 2010. "After Africa:" the evolutionary history and systematics of the genus Charaxes Ochsenheimer (Lepidoptera: Nymphalidae) in the Indo-Pacific region. Biol J Linn Soc 100:457–481.
-
-van Nieukerken, E. J., L. Kaila, I. J. Kitching, N. P. Kristensen, D. C. Lees, J. Minet, C. Mitter, M. Mutanen, C. Regier, T. J. Simonsen, N. Wahlberg, S.-H. Yen, R. Zahiri, D. Adamski, J. Baixeras, D. Bartsch, B. Å. Bengtsson, J. W. Brown, S. R. Bucheli, D. R. Davis, J. D. Prins, W. D. Prins, M. E. Epstein, P. Gentili-Poole, P. Hättenschwiler, A. Hausmann, J. D. Holloway, A. Kallies, O. Karsholt, A. Y. Kawahara, S. J. C. Koster, M. V. Kozlov, J. D. Lafontaine, G. Lamas, J.-F. Landry, S. Lee, M. Nuss, K.-T. Park, C. Penz, J. Rota, A. Schintlmeister, B. C. Schmidt, J.-C. Sohn, M. A. Solis, G. M. Tarmann, and A. D. Warren. 2011. Order Lepidoptera. In: Zhang, Z.-Q. (Ed.), Animal biodiversity: An outline of higher-level classification and survey of taxonomic richness. Zootaxa 3148: 212–221.
-
-Nyman, T., H. P. Linder, C. Peña, T. Malm, and N. Wahlberg. 2012. Climate-driven diversity dynamics in plants and plant-feeding insects. Ecol Lett. 14:1–10.
-
-Olmstead, R. G. 2013. Phylogeny and biogeography in Solanaceae, Verbenaceae and Bignoniaceae: a comparison of continental and intercontinental diversification patterns. Bot J Linn Soc. 171:80–102.
-
-Paradis, E., J. Claude, and K. Strimmer. 2004. APE: Analyses of Phylogenetics and Evolution in R language. Bioinformatics 20:289–290.
-
-Peña, C., S. Nylin, and N. Wahlberg. 2011. The radiation of Satyrini butterflies (Nymphalidae: Satyrinae): a challenge for phylogenetic methods. Zool J Linn Soc. 161:64–87.
-
-Peña, C., and N. Wahlberg. 2008. Prehistorical climate change increased diversification of a group of butterflies. Biol Lett. 4:274–278.
-
-Ryberg, M., and P. B. Matheny. 2012. Asynchronous origins of ectomycorrhizal clades of Agaricales. Proc Biol Sci. 279:2003–2011.
-
-Somoza, R. 1998. Updated Nazca (Farallon) - South America relative motions during the last 40 My: implications for mountain building in the central Andean region. J S Am Earth Sci. 11:211–215.
-
-Voje, K. L., C. Hemp, Ø. Flagstad, G.-P. Saetre, and N. C. Stenseth. 2009. Climatic change as an engine for speciation in flightless Orthoptera species inhabiting African mountains. Mol Ecol. 18:93–108.
-
-
-Wahlberg, N., and D. Rubinoff. 2011. Vagility across Vanessa (Lepidoptera: Nymphalidae): mobility in butterfly species does not inhibit the formation and persistence of isolated sister taxa. Syst Entomol. 36:362–370.
-
-Wheat, C. W., H. Vogel, U. Wittstock, M. B. Braby, D. Underwood, and T. Mitchell-Olds. 2007. The genetic basis of a plant-insect coevolutionary key innovation. PNAS 104:20427–20431.
-
-Willmott, K. R., and A. V. L. Freitas. 2006. Higher-level phylogeny of the Ithomiinae (Lepidoptera: Nymphalidae): classification, patterns of larval hostplant colonization and diversification. Cladistics 22:297–368.
-
-
-
-
-
-
-
-
-
-
-
-
 ## Figure legends
 
 Figure 1. Lineage through time plot for the maximum credibility tree (black) and 1000 random trees from the posterior distribution (coloured lines) of the nymphalid phylogeny. Since this is a genus level phylogeny, the observed slowdown of diversification in the last 20 MYA is an artifact and should be disregarded. 
@@ -666,3 +577,6 @@ Figure 7. BiSSE analysis of diversification of nymphalids due to feeding on Apoc
 Table 1. Significant diversification rate shifts found in the Turbo-MEDUSA analysis of the Nymphalid maximum credibility tree. Split.Node = node number, r = net diversification rate, epsilon = relative extinction rate, LnLik.part = log likelihood value 
 
 Table 2. Likelihood ratio test between the model of increased diversification of nymphalids feeding on Solanaceae against a model forcing equal speciation rates (no effect on diversification).
+
+## References
+
