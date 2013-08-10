@@ -27,12 +27,14 @@ dev.off()
 par(new=TRUE)
 png(filename="figures/plot_medusa_multimedusa_tests_2.png")
 data <- as.data.frame(cbind(medusa$V2, multimedusa$V2))
-p <- qplot(data$V1, data$V2, geom="point",  main="Effect of percentage of
-            nodes with high posterior probability on multiMEDUSA results",
-            xlab="percentage of nodes with post. prob. > 0.95",
-            ylab="number of nodes consistenly recovered from the
-            multiMEDUSA analyses")
-p + geom_smooth(method="lm", se=FALSE, aes(data$V1)) + theme_bw()
+p <- qplot(data$V1, data$V2, geom="point")
+p + geom_smooth(method="lm", se=FALSE, aes(data$V1))    + 
+    scale_y_continuous(breaks=c(5, 7.5, 10, 12.5, 15), 
+    labels=c("5", "7.5", "10", "12.5", "15"))           + 
+    labs(title="Effect of percentage of \n nodes with high posterior probability on multiMEDUSA results") +
+    xlab("percentage of nodes with post. prob. > 0.95") +
+    ylab("number of nodes consistenly recovered from the \n multiMEDUSA analyses") +
+    theme_bw()
 dev.off()
 
 
