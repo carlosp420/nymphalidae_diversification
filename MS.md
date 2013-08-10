@@ -210,8 +210,9 @@ We achieved this by running a BEAST analysis and forcing a fixed topology
 (our MCT) so different branch lengths were allowed. We randomly selected
 1000 trees from the posterior distribution of trees after burning and replaced
 each of the trees with the MCT to create a thousand sets of 1000 trees.
-We plotted the relationship between increasinly narrower confidence intervals
-and number of consistently inferred diversification splits.
+We plotted the relationship between decreasing width of confidence intervals
+and the number diversification splits inferred across more than 95% of the
+posterior distribution of trees.
 
 
 ### BiSSE
@@ -302,14 +303,21 @@ across more than 95% of the trees from the posterior distribution when
 there was a higher ratio of nodes with high posterior probability 
 (Fig. XX). For our data, it would be necessary to obtain a set of trees
 from the Bayesian run with almost 99% of the nodes with posterior 
-probability higher than 0.95, almost no phylogenetic uncertainty, in order
-to obtain most of the diversification splits from MCT on the posterior
+probability higher than 0.95 (almost no phylogenetic uncertainty) in order
+to obtain most of the diversification splits from the MCT on the posterior
 distribution of trees. For example the MCT of the set of trees number 949 
 had 99.75% of the nodes with posterior probability > 0.95 and it was
 possible to recover only 12 diversification shifts (out of a total of 14)
 across more than 95% of the trees (supp. mat. XX).
 
-[*write results of confidence intervals on the Multi-MEDUSA*]
+The figure XY shows that the width of confidence intervals on the estimated
+ages of diversification is correlated with the number of 
+diversification splits that are consistently recovered across the posterior
+distribution of trees. Very narrow confidence intervals are needed in
+order to recover all 14 diversification splits across more than 95% of 
+trees from the posterior distribution (Fig XXY *which should be a tree
+of set 99?*).
+
 
 ### BiSSE
 The MEDUSA analyses taking into account phylogenetic uncertainty estimated
