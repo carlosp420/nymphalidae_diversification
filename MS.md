@@ -369,8 +369,8 @@ percentage of the 1000 randomly sampled trees from the posterior
 distribution (Figure 3). We also found that, even though MEDUSA could
 estimate the same diversification splits on two or more trees, the 
 estimated diversification rates could vary widely (Figure 4). For example,
-in our Nymphalidae trees, we found that the split for Magneuptychia and 
-Caeruleuptychia had a variation from r = 0.2755, higher than the background
+in our Nymphalidae trees, we found that the split for *Magneuptychia* and 
+*Caeruleuptychia* had a variation from r = 0.2755, higher than the background
 diversification rate, to almost zero. This means that observed patterns 
 and conclusions can be completely contradictory depending on tree choice.
 
@@ -385,6 +385,19 @@ probability values for clades in Satyrini are very low [0.5 to 0.6;
 rate increase for part of Satyrini in the maximum credibility tree, but this
 was recovered only in 17% of the trees from the posterior distribution.
 
+We run Multi-MEDUSA on sets of thousand trees that gradually decrease in
+phylogenetic uncertainty (degree of conflicting topology and width of
+confidence intervals). 
+It appears that the number of nodes with high posterior probability 
+and width of confidence intervals for the estimated ages of diversification
+on the MCT greatly affect the number of diversification splits from the MCT
+that are consistently found on most trees from the posterior distribution.
+In order to recover most diversification splits, it is necessary to 
+obtain a set of trees from a BEAST run with almost no phylogenetic 
+uncertainty, i.e. very narrow confidence intervals and almost no conflicting 
+topologies so that most of the nodes are recovered with high posterior
+probability.
+
 If there is strong phylogenetic signal for increases or decreases in
 diversification rates for a node, it is expected that these splits would be
 inferred by MEDUSA in most of the posterior distribution of trees. However,
@@ -393,7 +406,7 @@ absent in some trees and MEDUSA will be unable to estimate any
 diversification shift (due to a non-existent node). This is the 
 reason why MEDUSA estimated diversification rate splits in more than
 95% of the posterior distribution of trees for only three splits: 
-the genus Charaxes, part of Danaini and part of Ithomiini (Figure 3),
+the genus *Charaxes*, part of Danaini and part of Ithomiini (Figure 3),
 while estimating splits for other lineages in only a fraction of the
 posterior distribution of trees.
 
