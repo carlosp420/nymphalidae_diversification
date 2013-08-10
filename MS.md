@@ -128,19 +128,20 @@ the 540 valid genera in Nymphalidae. We employed @wahlberg2009 maximum clade
 credibility tree (supp. mat. 01) as well as a random sample of 1000 trees from
 their BEAST run after burnin. Their original BEAST run was for 40 million 
 generations. We used a burnin of 25 million generations and took a random
-sample of 1000 trees using Burntrees v.0.1.9 (http://www.abc.se/~nylander/) 
+sample of 1000 trees using Burntrees v.0.1.9 <http://www.abc.se/~nylander/>
 (supp. mat. 02) in order to correct for phylogenetic uncertainty when 
 performing the diversification analyses.
 
 We compiled species richness data for Nymphalidae genera from several sources
-including the specialist-curated lists on http://tolweb.org, @lamas2004 and
-curated lists of Global Butterfly Names project http://www.ucl.ac.uk/taxome/gbn/.
+including the specialist-curated lists on <http://tolweb.org>, @lamas2004 and
+curated lists of Global Butterfly Names project 
+(<http://www.ucl.ac.uk/taxome/gbn/>).
 We assigned the species numbers of genera not included in the phylogeny to the
 closest related genus that was included in @wahlberg2009 study 
 (supp. mat. 03).
 
 Hostplant data for Nymphalidae species were compiled from several sources 
-including @ackery1988, HOSTS database (http://bit.ly/YI7nwW), @dyer2002
+including @ackery1988, HOSTS database (<http://bit.ly/YI7nwW>), @dyer2002
 and others (supp. mat. 04; supp. mat. 05) for a total of 6586 hostplant records,
 including 428 Nymphalidae genera and 143 plant families and 1070 plant genera.
 It was not possible to find any hostplant data for 35 butterfly genera
