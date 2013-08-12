@@ -301,22 +301,21 @@ Maniolina) (see supp. mat. 09-10).
 We found that most of the diversification splits were consistently recovered
 across more than 95% of the trees from the posterior distribution when
 there was a higher ratio of nodes with high posterior probability 
-(Fig. XX). For our data, it would be necessary to obtain a set of trees
+(Figure 5). For our data, it would be necessary to obtain a set of trees
 from the Bayesian run with almost 99% of the nodes with posterior 
 probability higher than 0.95 (almost no phylogenetic uncertainty) in order
 to obtain most of the diversification splits from the MCT on the posterior
 distribution of trees. For example the MCT of the set of trees number 949 
 had 99.75% of the nodes with posterior probability > 0.95 and it was
 possible to recover only 12 diversification shifts (out of a total of 14)
-across more than 95% of the trees (supp. mat. XX).
+across more than 95% of the trees (supp. mat. 11-12).
 
-The figure XY shows that the width of confidence intervals on the estimated
+The figure 6 shows that the width of confidence intervals on the estimated
 ages of diversification is correlated with the number of 
 diversification splits that are consistently recovered across the posterior
 distribution of trees. Very narrow confidence intervals are needed in
 order to recover all 14 diversification splits across more than 95% of 
-trees from the posterior distribution (Fig XXY *which should be a tree
-of set 99?*).
+trees from the posterior distribution (supp. mat. 13).
 
 
 ### BiSSE
