@@ -546,8 +546,13 @@ credibility tree. However, by using a Multi-MEDUSA approach, we found that some 
 this splits might be greatly affected by phylogenetic uncertainty. Moreover, some of
 these splits can be recovered either as increases or decreases in diversification
 rate depending on the tree from the posterior distribution that was used for analysis.
-This means that contradictory conclusions would be made if only the maximum credibility
-tree was used for analysis.
+This means that contradictory conclusions would be made if only the maximum
+credibility tree was used for analysis. MEDUSA appears to be sensitive to the
+number of nodes with high posterior probability and width of confidence intervals.
+For our data, it would be necessary to obtain a posterior distribution of trees
+with no conflicting topology, and very similar estimated ages for nodes in order to
+consistently recover most of the diversification splits on the posterior
+distribution of trees that were inferred by MEDUSA on the MCT.
 
 Our Multi-MEDUSA approach to perform analyses on the posterior distribution of trees
 found strong support for an increase in diversification rate in the tribe Ithomiini
