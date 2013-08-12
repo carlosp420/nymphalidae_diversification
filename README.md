@@ -1,5 +1,7 @@
 # Nymphalidae diversification paper
 
+See the preprint here <http://arxiv.org/abs/1302.6294>
+
 Software in ``code`` folder taken from:
 
 * [turboMEDUSA](https://github.com/josephwb/turboMEDUSA)
