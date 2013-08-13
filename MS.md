@@ -195,13 +195,12 @@ We tested the effect of topology uncertainty and width of confidence intervals
 of ages on the number of diversification splits inferred by the MEDUSA and
 Multi-MEDUSA approaches.
 We created a thousand sets of 1000 trees with increasinly better support for the 
-topology by replacing each of the trees of our posterior distribution of 
-trees by our MCT. We measured the degree of topology uncertainty for each 
+topology by replacing each of the trees in the posterior distribution with our MCT.
+We measured the degree of topology uncertainty for each 
 set as the ratio of nodes with high posterior probability (> 0.95) on
 the MCT of each set of thousand trees.
-For each set of 1000 trees, we run Multi-MEDUSA on all the trees, and 
-counted the number of consistently recovered diversification splits inferred
-across more than 95% of the trees.
+We run Multi-MEDUSA on all the sets of trees, and counted the number of consistently
+recovered diversification splits inferred across more than 95% of the trees.
 
 To test for an effect of confidence interval widths of node ages, we
 created a thousand sets of 1000 trees with narrower confidence intervals
@@ -210,7 +209,7 @@ We achieved this by running a BEAST analysis and forcing a fixed topology
 (our MCT) so different branch lengths were allowed. We randomly selected
 1000 trees from the posterior distribution of trees after burning and replaced
 each of the trees with the MCT to create a thousand sets of 1000 trees.
-We plotted the relationship between decreasing width of confidence intervals
+We plotted the relationship between width of confidence intervals
 and the number diversification splits inferred across more than 95% of the
 posterior distribution of trees.
 
@@ -300,13 +299,13 @@ Maniolina) (see supp. mat. 09-10).
 ### MEDUSA performance due to phylogenetic uncertainty
 We found that most of the diversification splits were consistently recovered
 across more than 95% of the trees from the posterior distribution when
-there was a higher ratio of nodes with high posterior probability 
+there was a high ratio of nodes with high posterior probability 
 (Figure 5). For our data, it would be necessary to obtain a set of trees
 from the Bayesian run with almost 99% of the nodes with posterior 
 probability higher than 0.95 (almost no phylogenetic uncertainty) in order
 to obtain most of the diversification splits from the MCT on the posterior
 distribution of trees. For example the MCT of the set of trees number 949 
-had 99.75% of the nodes with posterior probability > 0.95 and it was
+had 99.75% of the nodes with posterior probability > 0.95, however it was
 possible to recover only 12 diversification shifts (out of a total of 14)
 across more than 95% of the trees (supp. mat. 11-12).
 
