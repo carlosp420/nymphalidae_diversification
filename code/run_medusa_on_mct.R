@@ -14,7 +14,14 @@ source("code/summarize.turboMEDUSA.R")
 args <- commandArgs(trailingOnly = TRUE)
 
 tax <- read.csv(file="data/supp_mat_03_richness.csv")
+
+# our tree is the original nexus file with outgroups
+# with posterior prob values for the nodes
 phy <- read.beast(as.character(args[1]))
+# we have to remove the tips
+tips <- c("Achlyodes", "Graphium", "Parnassius", "Baronia", "Troides", "Papilio1", "Papilio2", "Pieris", "Aporia", "Styx", "Hamearis", "Euselasia", "Nymphidium", "Emesis", "Crocozona", "Riodina", "Amarynthis", "Baliochila", "Poritia", "Miletus", "Liphyra", "Lycaena", "Celastrina", "Thecla", "Lucia", "Curetis", "Eurema", "Colias", "Leptidea", "Pseudopontia", "Libyt")
+phy <- drop.tip2(phy, tips)
+
 phy <- ladderize(phy)
 posterior_prob <- phy$posterior
 
