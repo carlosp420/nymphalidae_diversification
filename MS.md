@@ -188,7 +188,10 @@ diversification rates for nodes across all trees. Patterns of change in
 diversification rates are significant if they are found at the same node in at
 least 95% of the trees. We also expected to find similar r and epsilon values 
 across the 1000 trees for the nodes where changes in diversification tempo 
-occurs. We let MEDUSA estimate up to 25 turnover points in our trees.
+occurs. To select among increasingly complex alternative models, we considered
+an AICc threshold of 7.8 units as the limit for a significantly better fit 
+of the model. We let MEDUSA estimate up to 25 turnover points in our trees as
+the maximum number of shifts found in all trees was only 21.
 
 ### Effect of the quality of posterior distribution of trees on MEDUSA and Multi-MEDUSA
 We tested the effect of topology uncertainty and width of confidence intervals
