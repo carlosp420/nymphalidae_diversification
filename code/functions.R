@@ -23,7 +23,7 @@ library(turboMEDUSA)
     # but how???
 
 # read original set of 1000 trees
-mct <- read.nexus("../data/supp_mat01_genus.nex")
+mct <- read.nexus("../data/supp_mat_01_genus.nex")
 orig_set <- read.nexus("../data/supp_mat_02_1000_random_trees_no_outgroups.nex")
 
 for( i in 1:1000 ) {
@@ -40,7 +40,7 @@ for( i in 1:1000 ) {
     
 
 # get nodes with significant shifts and their descendants for our MCT
-phy <- read.nexus("../data/supp_mat01_genus.nex")
+phy <- read.nexus("../data/supp_mat_01_genus.nex")
 load("../output/medusa_on_mct.txt")
 sum <- capture.output(summarize.turboMEDUSA(res))
 

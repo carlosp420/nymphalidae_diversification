@@ -5,7 +5,7 @@ TREEANNOTATOR = /home/carlosp420/Desktop/phylo_software/BEASTv1.7.5/bin/treeanno
 # replaced with the MCT
 tree_sets: output/set_1000.nex output/set_1000.nex_mct.nex
 	
-output/set_1000.nex: code/create_sets_of_1000_trees.R data/supp_mat01_genus.nex data/supp_mat_02_1000_random_trees_no_outgroups.nex
+output/set_1000.nex: code/create_sets_of_1000_trees.R data/supp_mat_01_genus.nex data/supp_mat_02_1000_random_trees_no_outgroups.nex
 	R --save < code/create_sets_of_1000_trees.R
 	# correct start of tree so that it can be read by BEAST
 	sed -i 's/TREE\s\*\s*[tree]*\s*/tree /g' output/set_*nex
@@ -22,8 +22,8 @@ output/set_1000.nex_mct.nex: output/set_1000.nex
 #
 medusa_run: output/medusa_on_mct.txt output/medusa_on_mct.pdf
 
-output/medusa_on_mct.txt output/medusa_on_mct.pdf: code/run_medusa_on_mct.R data/supp_mat01_genus.nex data/supp_mat_03_richness.csv
-	Rscript code/run_medusa_on_mct.R data/supp_mat01_genus.nex output/medusa_on_mct.txt output/medusa_on_mct.pdf
+output/medusa_on_mct.txt output/medusa_on_mct.pdf: code/run_medusa_on_mct.R data/supp_mat_01_genus.nex data/supp_mat_03_richness.csv
+	Rscript code/run_medusa_on_mct.R data/supp_mat_01_genus.nex output/medusa_on_mct.txt output/medusa_on_mct.pdf
 
 
 
@@ -32,8 +32,8 @@ output/medusa_on_mct.txt output/medusa_on_mct.pdf: code/run_medusa_on_mct.R data
 #
 multiMEDUSA_run: output/raw_data.csv output/raw_data_summary.csv
 
-output/raw_data.csv output/raw_data_summary.csv: data/supp_mat_02_1000_random_trees_no_outgroups.nex data/supp_mat01_genus.nex code/supp_mat_06_multiMEDUSA.R
-	Rscript code/supp_mat_06_multiMEDUSA.R data/supp_mat_02_1000_random_trees_no_outgroups.nex data/supp_mat01_genus.nex output/raw_data_summary.csv output/raw_data.csv
+output/raw_data.csv output/raw_data_summary.csv: data/supp_mat_02_1000_random_trees_no_outgroups.nex data/supp_mat_01_genus.nex code/supp_mat_06_multiMEDUSA.R
+	Rscript code/supp_mat_06_multiMEDUSA.R data/supp_mat_02_1000_random_trees_no_outgroups.nex data/supp_mat_01_genus.nex output/raw_data_summary.csv output/raw_data.csv
 
 
 

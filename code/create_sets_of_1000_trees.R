@@ -20,10 +20,15 @@ library(ape)
 # but how???
 
 # read original set of 1000 trees
-mct <- read.nexus("data/supp_mat_1000_trees_fixed_topology_mct.nex")
-orig_set <- read.nexus("data/supp_mat_1000_trees_fixed_topology.nex")
+mct <- read.nexus("data/supp_mat_01_genus.nex")
+# remove outgroups from our tree
+tips <- c("Achlyodes", "Graphium", "Parnassius", "Baronia", "Troides", "Papilio1", "Papilio2", "Pieris", "Aporia", "Styx", "Hamearis", "Euselasia", "Nymphidium", "Emesis", "Crocozona", "Riodina", "Amarynthis", "Baliochila", "Poritia", "Miletus", "Liphyra", "Lycaena", "Celastrina", "Thecla", "Lucia", "Curetis", "Eurema", "Colias", "Leptidea", "Pseudopontia", "Libyt");
+mct <- drop.tip(mct, tips)
+#mct <- read.nexus("data/supp_mat_1000_trees_fixed_topology_mct.nex")
+orig_set <- read.nexus("data/supp_mat_02_1000_random_trees_no_outgroups.nex")
+#orig_set <- read.nexus("data/supp_mat_1000_trees_fixed_topology.nex")
 
-write.nexus(orig_set, file="output/fixed_topology/set_1.nex")
+write.nexus(orig_set, file="output/variable_topology/set_1.nex")
 
 for( i in 1:999) {
     # drop i
