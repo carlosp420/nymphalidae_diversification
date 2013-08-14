@@ -77,3 +77,26 @@ plot_medusa_tests: code/plot_medusa_tests.R output/multimedusa_output.csv output
 
 figures/plot_medusa_multimedusa_tests_2.png figures/plot_medusa_multimedusa_tests.png: code/plot_medusa_tests.R
 	R --no-save < code/plot_medusa_tests.R
+
+
+
+####################################################################
+# count number of splits retained for each MEDUSA analysis?
+# was 25 splits enough?
+# It iterates through all raw_data.csv output files on the 1000 multiMEDUSA runs
+#
+# For each raw_data.csv file it counts the number of max splits on each file and
+# sort the results trying to find the max number of splits ever. So do we reach
+# 25 splits? ever?
+#
+
+count_number_splits: output/variable_topology/set_9.nex_raw_data.csv
+	ls output/variable_topology/ | grep data.csv | while read FILE; do cat output/variable_topology/"$${FILE}" | sort -n | awk -F ' ' '{print $$1}' | uniq -c | sort -n | tail -n 1; done > output/number_of_splits.txt
+	cat output/number_of_splits.txt | sort -n | tail -n 1
+	rm output/number_of_splits.txt
+
+
+count_number_splits2: output/fixed_topology/set_9.nex_raw_data.csv
+	ls output/fixed_topology/ | grep data.csv | while read FILE; do cat output/fixed_topology/"$${FILE}" | sort -n | awk -F ' ' '{print $$1}' | uniq -c | sort -n | tail -n 1; done > output/number_of_splits.txt
+	cat output/number_of_splits.txt | sort -n | tail -n 1
+	rm output/number_of_splits.txt
