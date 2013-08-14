@@ -91,6 +91,12 @@ figures/plot_medusa_multimedusa_tests_2.png figures/plot_medusa_multimedusa_test
 	R --no-save < code/plot_medusa_tests.R
 
 
+####################################################################
+# create sh files to run multiMEDUSA on CSC computer cluster
+# need to copy temporaly nex files to the output/ folder for running multiMEDUSA
+sh_files: code/script_for_multimedusa_in_cluster.sh code/create_script_files.sh
+	bash code/create_script_files.sh
+
 
 ####################################################################
 # count number of splits retained for each MEDUSA analysis?

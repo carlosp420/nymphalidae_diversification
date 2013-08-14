@@ -1,6 +1,6 @@
 #!/bin/bash -l
 # author: pena
-#SBATCH -J multimedusa_%j
+#SBATCH -J multi_%j
 #SBATCH -o multi_out_%j
 #SBATCH -e multi_err_%j
 #SBATCH -N 1
@@ -8,7 +8,7 @@
 #SBATCH -c 16
 #SBATCH -t 71:00:00
 #SBATCH --mem-per-cpu=2000
-#SBATCH --mail-type=ALL
+#SBATCH --mail-type=FAIL
 #SBATCH --mail-user=mycalesis@gmail.com
 
 # commands to manage the batch script
