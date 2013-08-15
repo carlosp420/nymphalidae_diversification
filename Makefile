@@ -7,7 +7,7 @@ TREEANNOTATOR = /home/carlosp420/Desktop/phylo_software/BEASTv1.7.5/bin/treeanno
 # Trees of variable topology
 tree_sets: output/variable_topology/set_1000.nex output/variable_topology/set_1000.nex_mct.nex
 	
-output/set_1000.nex: code/create_sets_of_1000_trees.R data/supp_mat_01_genus.nex data/supp_mat_02_1000_random_trees_no_outgroups.nex
+output/variable_topology/set_1000.nex: code/create_sets_of_1000_trees.R data/supp_mat_01_genus.nex data/supp_mat_02_1000_random_trees_no_outgroups.nex
 	R --save < code/create_sets_of_1000_trees.R
 	# correct start of tree so that it can be read by BEAST
 	sed -i 's/TREE\s\*\s*[tree]*\s*/tree /g' output/variable_topology/set_*nex
