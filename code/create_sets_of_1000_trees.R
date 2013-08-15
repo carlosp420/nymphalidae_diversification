@@ -44,5 +44,5 @@ for( i in 1:999) {
     }
     
     # save set as set_i.nex
-    write.nexus(set, file=paste0("output/fixed_topology/set_", j, ".nex", sep=""))
+    write.nexus(set, file=paste0("output/variable_topology/set_", j, ".nex", sep=""))
 }
