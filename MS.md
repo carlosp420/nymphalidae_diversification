@@ -261,11 +261,11 @@ artifact and should be interpreted very carefully.
 ### Detecting diversification shifts on a maximum clade credibility tree
 The MEDUSA analysis on the MCC tree in combination with richness data estimated
 13 changes in the tempo of diversification in Nymphalidae history (Figure 2; 
-Table 1). The estimated corrected threshold of AICc scores for 
+Table 1; supp. mat. 10). The estimated corrected threshold of AICc scores for 
 selecting the optimal model was estimated as 7.8 units. In all MEDUSA analyses, 
 the maximum number of inferred diversification splits in all trees was 21. Thus
 a ``model.limit`` of 25 splits was adequate enough. The background 
-diversification rate for Nymphalidae was estimated as r = 0.081 lineages per 
+diversification rate for Nymphalidae was estimated as ``r = 0.081`` lineages per 
 Million of years. Some of the 13 changes in diversification correspond to rate 
 increases in very species-rich genera: *Ypthima* (r = 0.264), *Charaxes* (r = 0.251), 
 *Callicore* + *Diaethria* (r = 0.220), *Pedaliodes* (r = 0.196) and *Taenaris* 
