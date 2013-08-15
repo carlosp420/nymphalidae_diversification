@@ -17,16 +17,16 @@ output/variable_topology/set_1000.nex_mct.nex: output/variable_topology/set_1000
 	ls output/variable_topology/set_*.nex | parallel $(TREEANNOTATOR) -burnin 0 -heights mean {} {}_mct.nex; done
 	
 
-tree_sets2: output/tmp_fixed_topo/set_1000.nex output/tmp_fixed_topo/set_1000.nex_mct.nex
+tree_sets2: output/fixed_topology/set_1000.nex output/fixed_topology/set_1000.nex_mct.nex
 	
-output/tmp_fixed_topo/set_1000.nex: code/create_sets_of_1000_trees_2.R data/supp_mat_1000_trees_fixed_topology_mct.nex data/supp_mat_1000_trees_fixed_topology.nex
+output/fixed_topology/set_1000.nex: code/create_sets_of_1000_trees_2.R data/supp_mat_1000_trees_fixed_topology_mct.nex data/supp_mat_1000_trees_fixed_topology.nex
 	R --save < code/create_sets_of_1000_trees_2.R
 	# correct start of tree so that it can be read by BEAST
-	sed -i 's/TREE\s\*\s*[tree]*\s*/tree /g' output/set_*nex
+	sed -i 's/TREE\s\*\s*[tree]*\s*/tree /g' output/fixed_topology/set_*nex
 
 # use Treeannotator to get MCT for each set of 1000 trees
-output/tmp_fixed_topo/set_1000.nex_mct.nex: output/tmp_fixed_topo/set_1000.nex
-	ls output/tmp_fixed_topo/set_*.nex | parallel $(TREEANNOTATOR) -burnin 0 -heights mean {} {}_mct.nex; done
+output/fixed_topology/set_1000.nex_mct.nex: output/fixed_topology/set_1000.nex
+	ls output/fixed_topology/set_*.nex | parallel $(TREEANNOTATOR) -burnin 0 -heights mean {} {}_mct.nex; done
 	
 
 

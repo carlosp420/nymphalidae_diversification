@@ -1,4 +1,5 @@
 library(ape)
+library(multicore)
 
 ## Generate a set of 1000 trees 
 # This is for the fixed topology
@@ -23,9 +24,9 @@ library(ape)
 mct <- read.nexus("data/supp_mat_1000_trees_fixed_topology_mct.nex");
 orig_set <- read.nexus("data/supp_mat_1000_trees_fixed_topology.nex")
 
-write.nexus(orig_set, file="output/tmp_fixed_topo/set_1.nex")
+write.nexus(orig_set, file="output/fixed_topology/set_1.nex")
 
-for( i in 1:999) {
+create_set <- function(i) {
     # drop i
     j <- i + 1
     set <- orig_set[j:1000]
@@ -39,5 +40,8 @@ for( i in 1:999) {
     }
     
     # save set as set_i.nex
-    write.nexus(set, file=paste0("output/tmp_fixed_topo/set_", j, ".nex", sep=""))
+    write.nexus(set, file=paste0("output/fixed_topology/set_", j, ".nex", sep=""))
 }
+
+mclapply(1:999, create_set);
+
