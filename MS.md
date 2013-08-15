@@ -143,7 +143,7 @@ closest related genus that was included in @wahlberg2009 study
 
 Hostplant data for Nymphalidae species were compiled from several sources 
 including @ackery1988, HOSTS database (<http://bit.ly/YI7nwW>), @dyer2002
-and others (supp. mat. 04; supp. mat. 05) for a total of 6586 hostplant records,
+and others (supp. mat. 04--05) for a total of 6586 hostplant records,
 including 428 Nymphalidae genera and 143 plant families and 1070 plant genera.
 It was not possible to find any hostplant data for 35 butterfly genera
 (supp. mat. 04).
@@ -233,8 +233,8 @@ the character states can be coded as presence/absence, for which the BiSSE
 analysis is better suited. BiSSE was designed to test whether a binary character
 state has had any effect on increased diversification rate for a clade 
 [@maddison2007]. We used our compiled data of hostplant use to produce
-binary datasets for the characters “feeding on the plant family Solanaceae or 
-Apocynaceae” (supp. mat. 09) which are the main hostplants of the diverse 
+binary datasets for the characters "feeding on the plant family Solanaceae or 
+Apocynaceae" (supp. mat. 09) which are the main hostplants of the diverse 
 Ithomiini butterflies and closest relatives [@willmott2006] and 
 Danaini (Apocynaceae). We analyzed the data using BiSSE employing the Markov 
 Chain Monte Carlo algorithm on the maximum clade credibility tree, taking into account
@@ -267,21 +267,22 @@ the maximum number of inferred diversification splits in all trees was 21. Thus
 a ``model.limit`` of 25 splits was adequate enough. The background 
 diversification rate for Nymphalidae was estimated as ``r = 0.081`` lineages per 
 Million of years. Some of the 13 changes in diversification correspond to rate 
-increases in very species-rich genera: *Ypthima* (r = 0.264), *Charaxes* (r = 0.251), 
-*Callicore* + *Diaethria* (r = 0.220), *Pedaliodes* (r = 0.196) and *Taenaris* 
-(r = 0.238). We found rate increases for other clades as well such as: Lethina
-+ Mycalesina (r = 0.130), Oleriina + Ithomiina + Napeogenina + Dircennina + 
-Godyrina (r = 0.181), Euptychiina + Pronophilina + Maniolina + Satyrina 
-(r = 0.114), Phyciodina in part (r = 0.227) and Satyrina (r = 0.220).
+increases in very species-rich genera: *Ypthima* (``r = 0.264``), *Charaxes* 
+(``r = 0.251``), *Callicore* + *Diaethria* (``r = 0.220``), *Pedaliodes* 
+(``r = 0.196``) and *Taenaris* (``r = 0.238``). We found rate increases for other
+clades as well such as: Lethina + Mycalesina (``r = 0.130``), Oleriina + Ithomiina
++ Napeogenina + Dircennina + Godyrina (``r = 0.181``), Euptychiina + Pronophilina
++ Maniolina + Satyrina (``r = 0.114``), Phyciodina in part (``r = 0.227``) and 
+Satyrina (``r = 0.220``).
 
 ### Phylogenetic uncertainty in the Multi-MEDUSA approach
 We found that the analyses by MEDUSA on the 1000 trees did not estimate the same
 diversification shifts as in the MCC tree (the background diversification and all 
 shifts found by MEDUSA on the 1000 
-trees are provided in supp. mat. 08). In order to obtain the diversification 
+trees are provided in supp. mat. 11). In order to obtain the diversification 
 shifts that were estimated in most of the 1000 trees, we plotted the 
 diversification shifts (index number) versus number of trees containing that 
-particular diversification shift (Figure 3, supp. mat. 09-10) as estimated by 
+particular diversification shift (Figure 3, supp. mat. 12--13) as estimated by 
 MEDUSA. There were three diversification shifts found in more
 than 95% of the trees: (i) diversification rate increase in the genus *Charaxes*;
 (ii) rate increase in Ithomiini subtribes Oleriina + Ithomiina + Napeogenina +
@@ -289,7 +290,7 @@ Dircennina + Godyrina, and (iii) slowed diversification in part of Danaini
 (Figure 3).
 
 We obtained mean and standard deviation statistics for the diversification 
-values found on the shifts on the 1000 trees (supp. mat. 09). We found that 
+values found on the shifts on the 1000 trees (supp. mat. 11). We found that 
 some of the changes in diversification rate values had great variation across
 the posterior distribution of trees. A boxplot of the diversification rate 
 values estimated for the clades that appear in the MCC tree shows that some shifts
@@ -297,7 +298,7 @@ are estimated as increased or slowed diversification pace depending on the tree
 used for analysis (Figure 4). This variation is especially wide for the clade
 formed by the genera *Magneuptychia* and *Caeruleuptychia* because MEDUSA estimated
 diversification values from three times the background diversification rate 
-(r = 0.2755) to almost zero (r = 2.4e-07). The diversification rates estimates
+(``r = 0.2755``) to almost zero (``r = 2.4e-07``). The diversification rates estimates
 for the root (background diversification rate) and the clades (*Tirumala* + 
 *Danaus* + *Amauris* + *Parantica* + *Ideopsis* + *Euploea* + *Idea*) and (Oleriina + 
 Ithomiina + Napeogenina + Dircennina + Godyrina) are relatively consistent 
@@ -305,7 +306,7 @@ across the 1000 trees (Figure 4). It is also evident that not all the
 diversification shifts estimated on the MCC tree are consistently recovered in most
 of the 1000 trees. Some of the splits in the MCC tree are recovered in very few trees,
 for example the split for the clade (Euptychiina + Pronophilina + Satyrina + 
-Maniolina) (see supp. mat. 09-10). 
+Maniolina) (see supp. mat. 12--13). 
 
 ### MEDUSA performance due to phylogenetic uncertainty
 We found that most of the diversification splits were consistently recovered
@@ -318,14 +319,14 @@ to obtain most of the diversification splits from the MCC tree on the posterior
 distribution of trees. For example the MCC tree of the set of trees number 949 
 had 99.75% of the nodes with posterior probability > 0.95, however it was
 possible to recover only 12 diversification shifts (out of a total of 14)
-across more than 95% of the trees (supp. mat. 11-12).
+across more than 95% of the trees (supp. mat. 14--15).
 
 The figure 6 shows that the width of confidence intervals on the estimated
 ages of diversification is correlated with the number of 
 diversification splits that are consistently recovered across the posterior
 distribution of trees. Very narrow confidence intervals are needed in
 order to recover all 14 diversification splits across more than 95% of 
-trees from the posterior distribution (supp. mat. 13).
+trees from the posterior distribution (supp. mat. 16).
 
 
 ### Estimation of trait-dependent speciation rates
