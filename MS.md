@@ -234,7 +234,7 @@ analysis is better suited. BiSSE was designed to test whether a binary character
 state has had any effect on increased diversification rate for a clade 
 [@maddison2007]. We used our compiled data of hostplant use to produce
 binary datasets for the characters “feeding on the plant family Solanaceae or 
-Apocynaceae” (supp. mat. 07) which are the main hostplants of the diverse 
+Apocynaceae” (supp. mat. 09) which are the main hostplants of the diverse 
 Ithomiini butterflies and closest relatives [@willmott2006] and 
 Danaini (Apocynaceae). We analyzed the data using BiSSE employing the Markov 
 Chain Monte Carlo algorithm on the maximum clade credibility tree, taking into account
