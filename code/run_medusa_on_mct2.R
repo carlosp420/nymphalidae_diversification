@@ -1,7 +1,7 @@
 #
-# This script runs MEDUSA on our MCC tree
+# This script is used to run MEDUSA on 1000 trees 
 #
-##install.packages("phyloch_1.5-3.tar.gz", repos=NULL, type="source")
+#install.packages("phyloch_1.5-3.tar.gz", repos=NULL, type="source")
 #install.packages("turboMEDUSA_0.1.tar.gz", repos=NULL, type="source")
 library(phyloch)
 library(turboMEDUSA)
@@ -22,9 +22,6 @@ tax <- read.csv(file="data/supp_mat_03_richness.csv")
 # with posterior prob values for the nodes
 phy <- read.beast(as.character(args[1]))
 # we have to remove the tips
-tips <- c("Achlyodes", "Graphium", "Parnassius", "Baronia", "Troides", "Papilio1", "Papilio2", "Pieris", "Aporia", "Styx", "Hamearis", "Euselasia", "Nymphidium", "Emesis", "Crocozona", "Riodina", "Amarynthis", "Baliochila", "Poritia", "Miletus", "Liphyra", "Lycaena", "Celastrina", "Thecla", "Lucia", "Curetis", "Eurema", "Colias", "Leptidea", "Pseudopontia", "Libyt")
-phy <- drop.tip2(phy, tips)
-
 phy <- ladderize(phy)
 posterior_prob <- phy$posterior
 

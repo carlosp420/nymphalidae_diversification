@@ -59,11 +59,11 @@ output/raw_data.csv output/raw_data_summary.csv: data/supp_mat_02_1000_random_tr
 # breaks in mct
 #
 # number of breaks found in more than 95% of the trees
-1000_medusa_runs: output/set_9.nex_mct.nex_medusa.txt output/set_9.nex_mct.nex_medusa.pdf
-output/set_9.nex_mct.nex_medusa.txt output/set_9.nex_mct.nex_medusa.pdf: code/run_medusa_on_mct.R output/set_9.nex_mct.nex data/supp_mat_03_richness.csv
-	for f in output/*_mct.nex; do Rscript code/run_medusa_on_mct.R $$f "$$f""_medusa.txt" "$$f""_medusa.pdf"; done
-	cat output/percentage_nodes_high_post_prob.csv | sed 's/output\/set_//g' | sed 's/\.nex_mct\.nex//g' | sort -n > tmp
-	mv tmp output/percentage_nodes_high_post_prob.csv
+1000_medusa_runs: output/variable_topology/set_9.nex_mct.nex_medusa.txt output/variable_topology/set_9.nex_mct.nex_medusa.pdf
+output/variable_topology/set_9.nex_mct.nex_medusa.txt output/variable_topology/set_9.nex_mct.nex_medusa.pdf: code/run_medusa_on_mct2.R output/variable_topology/set_9.nex_mct.nex data/supp_mat_03_richness.csv
+	for f in output/variable_topology/*_mct.nex; do Rscript code/run_medusa_on_mct2.R $$f "$$f""_medusa.txt" "$$f""_medusa.pdf"; done
+	cat output/variable_topology/percentage_nodes_high_post_prob.csv | sed 's/output\/variable_topology\/set_//g' | sed 's/\.nex_mct\.nex//g' | sort -n > tmp
+	mv tmp output/variable_topology/percentage_nodes_high_post_prob.csv
 
 
 
