@@ -214,8 +214,9 @@ created a thousand sets of 1000 trees with narrower confidence intervals
 on the estimated ages for all the nodes.
 We achieved this by running a BEAST analysis and forcing a fixed topology
 (our MCC tree) so different branch lengths were allowed. We randomly selected
-1000 trees from the posterior distribution of trees after burning and replaced
-each of the trees with the MCC tree to create a thousand sets of 1000 trees.
+1000 trees from the posterior distribution of trees after burning (supp. mat. 07)
+and replaced each of the trees with the MCC tree (supp. mat. 08) to create a thousand
+sets of 1000 trees.
 We plotted the relationship between width of confidence intervals
 and the number diversification splits inferred across more than 95% of the
 posterior distribution of trees.
