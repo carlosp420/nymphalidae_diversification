@@ -13,8 +13,8 @@ output/variable_topology/set_1000.nex: code/create_sets_of_1000_trees.R data/sup
 # use Treeannotator to get MCT for each set of 1000 trees
 output/variable_topology/set_1000.nex_mct.nex: output/variable_topology/set_1000.nex
 	# correct start of tree so that it can be read by BEAST
-	ls output/variable_topology/set_*.nex | parallel sed -i 's/TREE\s\*\s*[tree]*\s*/tree\s/g' {}
-	ls output/variable_topology/set_*.nex | parallel sed -i 's/tree\stree/tree/g' {}
+	ls output/variable_topology/set_*.nex | parallel sed -i -e 's/TREE\\s\*\\*/tree/g' {}
+	ls output/variable_topology/set_*.nex | parallel sed -i -e 's/tree\\s\*tree/tree/g' {}
 	ls output/variable_topology/set_*.nex | parallel $(TREEANNOTATOR) -burnin 0 -heights mean {} {}_mct.nex; done
 	
 
@@ -26,8 +26,8 @@ output/fixed_topology/set_1000.nex: code/create_sets_of_1000_trees_2.R data/supp
 # use Treeannotator to get MCT for each set of 1000 trees
 output/fixed_topology/set_1000.nex_mct.nex: output/fixed_topology/set_1000.nex
 	# correct start of tree so that it can be read by BEAST
-	ls output/fixed_topology/set_*.nex | parallel sed -i 's/TREE\s\*\s*[tree]*\s*/tree\s/g' {}
-	ls output/fixed_topology/set_*.nex | parallel sed -i 's/tree\stree/tree/g' {}
+	ls output/fixed_topology/set_*.nex | parallel sed -i -e 's/TREE\\s\*\\*/tree/g' {}
+	ls output/fixed_topology/set_*.nex | parallel sed -i -e 's/tree\\s\*tree/tree/g' {}
 	ls output/fixed_topology/set_*.nex | parallel $(TREEANNOTATOR) -burnin 0 -heights mean {} {}_mct.nex; done
 	
 
