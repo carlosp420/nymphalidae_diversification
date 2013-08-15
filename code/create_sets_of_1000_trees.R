@@ -1,4 +1,5 @@
 library(ape)
+library(multicore)
 
 ## Generate a set of 1000 trees
 # each set will be the random 1000 trees minus one,
@@ -30,7 +31,8 @@ orig_set <- read.nexus("data/supp_mat_02_1000_random_trees_no_outgroups.nex")
 
 write.nexus(orig_set, file="output/variable_topology/set_1.nex")
 
-for( i in 1:999) {
+create_set <- function(i) {
+    # var i should be from 1 to 999
     # drop i
     j <- i + 1
     set <- orig_set[j:1000]
@@ -44,5 +46,7 @@ for( i in 1:999) {
     }
     
     # save set as set_i.nex
-    write.nexus(set, file=paste0("output/variable_topology/set_", j, ".nex", sep=""))
+    write.nexus(set, file=paste0("output/variable_topology/set_", j, ".nex", sep=""));
 }
+
+mclapply(1:999, create_set);
