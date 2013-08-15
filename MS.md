@@ -260,7 +260,7 @@ The MEDUSA analysis on the MCT tree in combination with richness data estimated
 Table 1). The estimated corrected threshold of AICc scores for 
 selecting the optimal model was estimated as 7.8 units. In all MEDUSA analyses, 
 the maximum number of inferred diversification splits in all trees was 21. Thus
-allowing a model.limit of 25 splits was adequate enough. The background 
+a ``model.limit`` of 25 splits was adequate enough. The background 
 diversification rate for Nymphalidae was estimated as r = 0.081 lineages per 
 Million of years. Some of the 13 changes in diversification correspond to rate 
 increases in very species-rich genera: *Ypthima* (r = 0.264), *Charaxes* (r = 0.251), 
@@ -279,7 +279,7 @@ shifts that were estimated in most of the 1000 trees, we plotted the
 diversification shifts (index number) versus number of trees containing that 
 particular diversification shift (Figure 3, supp. mat. 09-10) as estimated by 
 MEDUSA. There were three diversification shifts found in more
-than 95% of the trees: (i) diversification rate increase in the genus Charaxes;
+than 95% of the trees: (i) diversification rate increase in the genus *Charaxes*;
 (ii) rate increase in Ithomiini subtribes Oleriina + Ithomiina + Napeogenina +
 Dircennina + Godyrina, and (iii) slowed diversification in part of Danaini 
 (Figure 3).
@@ -429,7 +429,7 @@ are exclusively Neotropical and most species feed on Solanaceae hostplants durin
 larval stage [supp. mat. 04; @willmott2006]. Optimizations of the
 evolution of hostplant use on phylogenies evidence a probable shift from
 Apocynaceae
-to Solanaceae [@brower2006; willmott2006]. @fordyce2010
+to Solanaceae [@brower2006; @willmott2006]. @fordyce2010
 found that the Gamma statistics, a LTT plot of an Ithomiini phylogeny and the fit
 of the density-dependent model of diversification are consistent with a burst of
 diversification in Ithomiini following the shift from Apocynaeae to Solanacaeae.
@@ -445,7 +445,7 @@ higher net diversification rate for Ithomiini taxa, which can be attributed to t
 trait “feeding on Solanaceae hostplants” (Figure 5). This is in agreement with the
 findings of @fordyce2010 using other statistical methods. Due to the fact that
 Ithomiini are virtually the only nymphalids using Solanacaeae as hostplants (except 
-for Hypanartia, Vanessa and Acraea; supp. mat.04), it is possible that the
+for *Hypanartia*, *Vanessa* and *Acraea*; supp. mat.04), it is possible that the
 trait responsible for a higher diversification of Ithomiini might not be the hostplant
 character. As noted by @maddison2007, the responsible trait might be a 
 codistributed character such as a trait related to the ability to digest secondary
@@ -484,8 +484,8 @@ that affected the flora and fauna of the time, which coincides with the
 diversification of modern montane plant and animal taxa [@hoorn2010] including
 Ithomiini butterflies and Solanaceae hostplants. Moreover, all Solanaceae clades
 currently present in New World originated in South America [@olmstead2013] as well
-as Ithomiini butterflies [@wahlberg2009]. Therefore, there is evidence for
-a process of “diffuse cospeciation” of Ithomiinae and hostplants.
+as Ithomiini butterflies [@wahlberg2009]. This suggests a process of "diffuse
+cospeciation" of Ithomiinae and hostplants.
 
 
 #### Danaini
@@ -496,20 +496,20 @@ for the observed slowdown of diversification in the Danaina. As expected, our Bi
 analysis of Apocynaceae feeders shows that there is no effect of feeding on this
 plant family on the diversification rates of Nymphalidae lineages. Many of the
 Danaina are large, strong fliers, highly migratory and involved in mimicry rings.
-Among them is for example the monarch (Danaus plexippus), probably the most well
+Among them is for example the monarch (*Danaus plexippus*), probably the most well
 known of all migratory butterflies. The causes for a lower diversification rate
 in the Danaina remains to be investigated, but their great dispersal power might
 be involved in preventing allopatric speciation. It has been found in highly vagile
-species in the nymphalid genus Vanessa that dispersal has homogenized populations
+species in the nymphalid genus *Vanessa* that dispersal has homogenized populations
 due to gene flow, as old and vagile species seem to be genetically homogeneous 
 while younger widespread species show higher genetic differentiation in their
 populations  [@wahlberg2011].
 
-#### Charaxes
-The genus Charaxes contain 193 species distributed in the Old World with highest
+#### *Charaxes*
+The genus *Charaxes* contain 193 species distributed in the Old World with highest
 diversity in the Afrotropical region. These butterflies are also very strong fliers,
 but contrary to Danaina, which are specialized Apocynaceae feeders,
-Charaxes are known to feed on at least 28 plant families in 18 orders 
+*Charaxes* are known to feed on at least 28 plant families in 18 orders 
 [@ackery1988] and some species appear to be polyphagous [@muller2010].
 @aduse2009 showed that most of the diversification of the
 genus occurred from the late Oligocene to the Miocene when there were 
@@ -562,11 +562,11 @@ distribution of trees that were inferred by MEDUSA on the MCT.
 
 Our Multi-MEDUSA approach to perform analyses on the posterior distribution of trees
 found strong support for an increase in diversification rate in the tribe Ithomiini
-and the genus Charaxes, and for a decrease in diversification rate in the subtribe
+and the genus *Charaxes*, and for a decrease in diversification rate in the subtribe
 Danaina. Due to phylogenetic uncertainty, we did not obtain strong support for other
 diversification splits in Nymphalidae. Our BiSSE analysis found that the trait 
-“feeding on Solanaceae”, or a codistributed character, is responsible for the higher
-diversification rate of Ithomiini, but the trait “feeding on Apocynaceae” is not 
+"feeding on Solanaceae", or a codistributed character, is responsible for the higher
+diversification rate of Ithomiini, but the trait "feeding on Apocynaceae" is not 
 responsible for the slowdown of diversification in Danaina. Ithomiini and Solanaceae 
 diversified near simultaneously, which is in agreement with the diffuse co-speciation
 hypothesis [@janz2011; @nyman2012]. 
