@@ -29,7 +29,7 @@ insect-hostplant dynamics predict accelerated diversification in some scenarios.
 We investigated whether phylogenetic uncertainty affects a commonly used method
 (MEDUSA, modelling evolutionary diversity using stepwise AIC) for estimating 
 shifts in diversification rates in lineages, by extending the method across a 
-random sample of trees from the posterior distribution of a bayesian run. We 
+random sample of trees from the posterior distribution of a Bayesian run. We 
 found that phylogenetic uncertainty greatly affects diversification rate 
 estimates. Different trees produced diversification rates ranging from high 
 values to almost zero for the same clade, and both significant rate increase 
@@ -97,7 +97,7 @@ Nymphalidae are in agreement with the theoretical predictions. It is necessary
 to test whether the overall diversification pattern of Nymphalidae is congruent
 with events of sudden diversification bursts due to hostplant shift 
 ["radiate-and-escape" hypothesis, e.g. @fordyce2010], climatic events and shifts
-to closely related hostplants ["diffuse cospeciation hypothesis", e.g. 
+to closely related hostplants ["diffuse cospeciation hypothesis" e.g. 
 @mcleish2007; @voje2009] or resource-abundance dynamics hypothesis
 [e.g. @pena2008]. If patterns of diversification bursts are 
 identified, it is necessary to test whether this is caused by a shift onto 
@@ -173,7 +173,7 @@ version 0.1 [@harmon2011] on the maximum credibility tree from
 alternative birth-death likelihood models to a phylogenetic tree in order to 
 estimate changes in net diversification rates along branches. MEDUSA estimates 
 likelihood and AIC scores for the simplest birth-death model, with two parameters
-(b: speciation and d: extinction). The AIC scores of the two-parameter model 
+(``b``: speciation and ``d``: extinction). The AIC scores of the two-parameter model 
 are then compared with incrementally more complex models until the addition of
 parameters do not improve the AIC scores beyond a cutoff value. MEDUSA finds the
 likelihood of the models after taking into account branch lengths and number of
@@ -186,7 +186,8 @@ Turbo-MEDUSA across 1000 random genus-level trees from the posterior distributio
 (Multi-MEDUSA, supp. mat. 06) and summarize the estimated changes in 
 diversification rates for nodes across all trees. Patterns of change in 
 diversification rates are significant if they are found at the same node in at
-least 95% of the trees. We also expected to find similar r and epsilon values 
+least 95% of the trees. We also expected to find similar values of net diversification
+(``r = b - d``) and relative extinction rate ($\varepsilon$ ``= d/b``) values 
 across the 1000 trees for the nodes where changes in diversification tempo 
 occurs. We used the AICc threshold of 7.8 units, as estimated by MEDUSA,
 as the limit for a significantly better fit to
@@ -221,7 +222,7 @@ posterior distribution of trees.
 ### BiSSE
 We tested whether diversification of Nymphalidae lineages is driven by 
 hostplant by using the “binary state speciation and extinction” 
-(BiSSE; Maddison, Midford, Otto, 2007) bayesian approach as implemented in the
+(BiSSE; Maddison, Midford, Otto, 2007) Bayesian approach as implemented in the
 R package diversitree [@fitzjohn2012]. MuSSE [@fitzjohn2012] is designed to
 examine the joint effects of two or more traits on speciation. Because most of
 Nymphalidae butterflies are restricted to use one plant family as hostplant, 
@@ -232,8 +233,8 @@ state has had any effect on increased diversification rate for a clade
 binary datasets for the characters “feeding on the plant family Solanaceae or 
 Apocynaceae” (supp. mat. 07) which are the main hostplants of the diverse 
 Ithomiini butterflies and closest relatives [@willmott2006] and 
-Danaini (Apocynaceae). We analyzed the data using BiSSE employing the markov 
-chain monte carlo algorithm on the maximum credibility tree, taking into account
+Danaini (Apocynaceae). We analyzed the data using BiSSE employing the Markov 
+Chain Monte Carlo algorithm on the maximum credibility tree, taking into account
 missing taxa by using the parameter “sampling factor” (sampling.f) in diversitree.
 We also used constrained analyses forcing no effect of hostplant use on
 diversification and likelihood ratio tests to find out whether the hypothesis 
@@ -330,7 +331,7 @@ a diversification rate increase in part of the clade Ithomiini across more
 than 95% of the trees. Our BiSSE analysis found a positive effect of the 
 character state “feeding on Solanaceae” on the diversification rate on part
 of Ithomiini (Oleriina + Ithomiina + Napeogenina + Dircennina + Godyrina) 
-(Figure 5). The markov chain monte carlo algorithm was run for 10000
+(Figure 5). The Markov Chain Monte Carlo algorithm was run for 10000
 generations discarding the first 7500 as burnin. The estimated mean 
 diversification rate for taxa that do not feed on Solanaceae was r = 0.10
 while the diversification rate for the Solanaceae feeders was r = 0.14 (see
@@ -368,7 +369,7 @@ However, we found that MEDUSA estimated different diversification
 shifts and different rates of diversification for certain lineages
 when phylogenetic uncertainty was taken into account by using MEDUSA
 on a random sample of trees from the posterior distribution of a
-bayesian run. We found that some diversification splits, estimated
+Bayesian run. We found that some diversification splits, estimated
 on the Nymphalidae maximum credibility tree, were found in a very small
 percentage of the 1000 randomly sampled trees from the posterior
 distribution (Figure 3). We also found that, even though MEDUSA could
@@ -382,7 +383,7 @@ and conclusions can be completely contradictory depending on tree choice.
 In this study, the effect of phylogenetic uncertainty on the inferred 
 diversification splits by MEDUSA is amplified because some Nymphalidae taxa 
 appear to be strongly affected by long-branch attraction artifacts
-[@pena2011]. Thus, the bayesian runs are expected to recover alternative
+[@pena2011]. Thus, the Bayesian runs are expected to recover alternative
 topologies on the posterior distribution of trees, resulting in low support
 and posterior probability values for the nodes. For example, posterior
 probability values for clades in Satyrini are very low [0.5 to 0.6;
@@ -436,7 +437,7 @@ diversification in Ithomiini following the shift from Apocynaeae to Solanacaeae.
 
 In this study, we investigated whether the strong signal for an increase in 
 diversification rate for Ithomiini (found by MEDUSA) can be explained due to the
-use of Solanaceae plants as hosts during larval stage. For this, we used a bayesian
+use of Solanaceae plants as hosts during larval stage. For this, we used a Bayesian
 approach [BiSSE; @fitzjohn2009] to test whether the trait “feeding on 
 Solanaceae” had any effect on the diversification of the group. 
 
