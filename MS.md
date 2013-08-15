@@ -166,7 +166,7 @@ obtained by random sampling of 1000 trees from the posterior distribution of
 the BEAST run after burnin from @wahlberg2009.
 
 
-### MEDUSA	 	 	
+### Detecting diversification shifts on phylogenetic trees
 We analyzed patterns of diversification in Nymphalidae by using Turbo-MEDUSA 
 version 0.1 [@harmon2011] on the maximum credibility tree from 
 @wahlberg2009. Turbo-MEDUSA, and the original algorithm MEDUSA, fit 
@@ -219,7 +219,7 @@ and the number diversification splits inferred across more than 95% of the
 posterior distribution of trees.
 
 
-### BiSSE
+### Estimation of trait-dependent speciation rates
 We tested whether diversification of Nymphalidae lineages is driven by 
 hostplant by using the “binary state speciation and extinction” 
 (BiSSE; Maddison, Midford, Otto, 2007) Bayesian approach as implemented in the
@@ -255,7 +255,7 @@ level phylogeny with very incomplete sampling at the species level. Thus, the
 slowdown of diversification that is apparent during the last 20 MYA is an 
 artifact and should be interpreted very carefully.
 
-### MEDUSA
+### Detecting diversification shifts on a maximum clade credibility tree
 The MEDUSA analysis on the MCT tree in combination with richness data estimated
 13 changes in the tempo of diversification in Nymphalidae history (Figure 2; 
 Table 1). The estimated corrected threshold of AICc scores for 
@@ -325,11 +325,11 @@ order to recover all 14 diversification splits across more than 95% of
 trees from the posterior distribution (supp. mat. 13).
 
 
-### BiSSE
+### Estimation of trait-dependent speciation rates
 The MEDUSA analyses taking into account phylogenetic uncertainty estimated
 a diversification rate increase in part of the clade Ithomiini across more
 than 95% of the trees. Our BiSSE analysis found a positive effect of the 
-character state “feeding on Solanaceae” on the diversification rate on part
+character state "feeding on Solanaceae" on the diversification rate on part
 of Ithomiini (Oleriina + Ithomiina + Napeogenina + Dircennina + Godyrina) 
 (Figure 5). The Markov Chain Monte Carlo algorithm was run for 10000
 generations discarding the first 7500 as burnin. The estimated mean 
