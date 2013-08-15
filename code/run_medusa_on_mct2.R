@@ -58,7 +58,7 @@ n_high_prob <- 1 - n_low_prob
 
 # save to file only percentage of nodes with posterior
 # probability more than 0.95
-file_conn <- file("output/percentage_nodes_high_post_prob.csv", open="at");
+file_conn <- file("output/variable_topology/percentage_nodes_high_post_prob.csv", open="at");
 writeLines(c(paste(args[1],n_high_prob, sep=",")), file_conn)
 close(file_conn);
 
