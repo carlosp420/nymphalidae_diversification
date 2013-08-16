@@ -238,7 +238,7 @@ Apocynaceae" (supp. mat. 09) which are the main hostplants of the diverse
 Ithomiini butterflies and closest relatives [@willmott2006] and 
 Danaini (Apocynaceae). We analyzed the data using BiSSE employing the Markov 
 Chain Monte Carlo algorithm on the maximum clade credibility tree, taking into account
-missing taxa by using the parameter “sampling factor” (sampling.f) in diversitree.
+missing taxa by using the parameter "sampling factor" (``sampling.f``) in diversitree.
 We also used constrained analyses forcing no effect of hostplant use on
 diversification and likelihood ratio tests to find out whether the hypothesis 
 of effect on diversification has a significantly better likelihood than the 

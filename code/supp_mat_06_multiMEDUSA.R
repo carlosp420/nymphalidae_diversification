@@ -19,9 +19,11 @@ args <- commandArgs(trailingOnly = TRUE)
 
 # read in trees
 
-dfg <- read.nexus(file=as.character(args[1])); # trees from MrBayes run
+dfg <- read.nexus(file=as.character(args[1])); # tree from MrBayes run
 tax <- read.csv(file="data/supp_mat_03_richness.csv"); # two column dataframe of genera (match tip.lables) and species richness
 mct <- read.nexus(as.character(args[2])); # mct is the maximum credibility tree
+tips <- c("Achlyodes", "Graphium", "Parnassius", "Baronia", "Troides", "Papilio1", "Papilio2", "Pieris", "Aporia", "Styx", "Hamearis", "Euselasia", "Nymphidium", "Emesis", "Crocozona", "Riodina", "Amarynthis", "Baliochila", "Poritia", "Miletus", "Liphyra", "Lycaena", "Celastrina", "Thecla", "Lucia", "Curetis", "Eurema", "Colias", "Leptidea", "Pseudopontia", "Libyt");
+mct  <- drop.tip(mct, tips)
 
 # subset dfg for testing purposes, replace with
 # dfg <- dfg[1:1000]
