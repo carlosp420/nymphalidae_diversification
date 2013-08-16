@@ -380,7 +380,7 @@ distribution (Figure 3). We also found that, even though MEDUSA could
 estimate the same diversification splits on two or more trees, the 
 estimated diversification rates could vary widely (Figure 4). For example,
 in our Nymphalidae trees, we found that the split for *Magneuptychia* and 
-*Caeruleuptychia* had a variation from r = 0.2755, higher than the background
+*Caeruleuptychia* had a variation from ``r = 0.2755``, higher than the background
 diversification rate, to almost zero. This means that observed patterns 
 and conclusions can be completely contradictory depending on tree choice.
 
@@ -584,6 +584,8 @@ and anonymous reviewers for their comments, which greatly improved the manuscrip
 Jessica Slove Davidson and Niklas Janz for access to their hostplant data. The study
 was supported by a Kone Foundation grant (awarded to Niklas Wahlberg), Finland
 (C. Peña) and the Research Council of Norway (grant no. 204308 to M. Espeland).
+We acknowledge CSC--IT Center for Science Ltd. (Finland) for the allocation of 
+computational resources.
 
 
 ## Figure legends
