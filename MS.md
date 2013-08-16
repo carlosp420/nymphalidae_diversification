@@ -390,7 +390,7 @@ appear to be strongly affected by long-branch attraction artifacts
 [@pena2011]. Thus, the Bayesian runs are expected to recover alternative
 topologies on the posterior distribution of trees, resulting in low support
 and posterior probability values for the nodes. For example, posterior
-probability values for clades in Satyrini are very low [0.5 to 0.6;
+probability values for clades in Satyrini are very low [``0.5 to 0.6``;
 @wahlberg2009]. As a result, MEDUSA inferred a diversification
 rate increase for part of Satyrini in the maximum clade credibility tree, but this
 was recovered only in 17% of the trees from the posterior distribution.
