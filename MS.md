@@ -316,7 +316,7 @@ there was a high ratio of nodes with high posterior probability
 from the Bayesian run with almost 99% of the nodes with posterior 
 probability higher than 0.95 (almost no phylogenetic uncertainty) in order
 to obtain most of the diversification splits from the MCC tree on the posterior
-distribution of trees. For example the MCC tree of the set of trees number 949 
+distribution of trees. For example the MCC tree of the set of trees number 950 
 had 99.75% of the nodes with posterior probability > 0.95, however it was
 possible to recover only 12 diversification shifts (out of a total of 14)
 across more than 95% of the trees (supp. mat. 14--15).
