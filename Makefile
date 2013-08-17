@@ -131,3 +131,10 @@ count_number_splits2: output/fixed_topology/set_9.nex_raw_data.csv
 	ls output/fixed_topology/ | grep data.csv | while read FILE; do cat output/fixed_topology/"$${FILE}" | sort -n | awk -F ' ' '{print $$1}' | uniq -c | sort -n | tail -n 1; done > output/number_of_splits.txt
 	cat output/number_of_splits.txt | sort -n | tail -n 1
 	rm output/number_of_splits.txt
+
+
+pdf: MS.pdf
+
+MS.pdf: header.latex MS.md refs.bib mystyle.csl 
+	pandoc --latex-engine=xelatex -s -S --template header.latex -f markdown -V geometry:margin=1in  MS.md --bibliography=refs.bib  --csl=mystyle.csl  -o MS.pdf
+	
