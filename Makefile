@@ -133,8 +133,20 @@ count_number_splits2: output/fixed_topology/set_9.nex_raw_data.csv
 	rm output/number_of_splits.txt
 
 
+# 
+# make manuscript in PDF
+#
 pdf: MS.pdf
 
 MS.pdf: header.latex MS.md refs.bib mystyle.csl 
 	pandoc --latex-engine=xelatex -s -S --template header.latex -f markdown -V geometry:margin=1in  MS.md --bibliography=refs.bib  --csl=mystyle.csl  -o MS.pdf
 	
+
+
+#
+# make figures
+#
+figures: ancillary/fig03.svg
+
+ancillary/fig03.svg: code/plot_N_clade_sizes.R ancillary/supp_mat_12_multiMEDUSA_summary.csv
+	R --no-save < code/plot_N_clade_sizes.R

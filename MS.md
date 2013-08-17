@@ -258,7 +258,7 @@ level phylogeny with very incomplete sampling at the species level. Thus, the
 slowdown of diversification that is apparent during the last 20 MYA is an 
 artifact and should be interpreted very carefully.
 
-### Detecting diversification shifts on a maximum clade credibility tree
+### Detecting diversification shifts on the maximum clade credibility tree
 The MEDUSA analysis on the MCC tree in combination with richness data estimated
 13 changes in the tempo of diversification in Nymphalidae history (Figure 2; 
 Table 1; supp. mat. 10). The estimated corrected threshold of AICc scores for 

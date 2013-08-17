@@ -1,9 +1,9 @@
 library(RSvgDevice)
 
-devSVG(file="Rplot.svg")
+devSVG(file="ancillary/fig03.svg")
 
 # plot Number sizes of times a split has been found across 1000 trees
-x <- read.csv("Nymp_multiMEDUSA_1000trees_summary2.csv", sep=" ")
+x <- read.csv("ancillary/supp_mat_12_multiMEDUSA_summary.csv", sep=" ")
 
 n <- x$sample.size..N.
 n <- as.table(n)
@@ -22,8 +22,9 @@ abline(h="950")
 # clades: 49 15
 #sig <- which(n > 950)
 
-legend.txt <- c("1:\troot", "224:\tCharaxes",    "49:\tTirumala, Danaus, Amauris, Parantica, Ideopsis, Euploea, Idea",                "15:\tOleriina, Ithomiina, Napeogenina, Dircennina, Godyrina")
+legend.txt <- c("224:\tCharaxes",    "49:\tTirumala, Danaus, Amauris, Parantica, Ideopsis, Euploea, Idea",                "15:\tOleriina, Ithomiina, Napeogenina, Dircennina, Godyrina")
 
-legend("right", legend.txt, pch=19,        title="Indexes that appear in more than 950 trees:", cex=0.9)
+legend("right", legend.txt, pch=19,        
+       title="Diversification events estimated in more 95% of trees:", cex=0.9)
 
 dev.off()
