@@ -146,7 +146,10 @@ MS.pdf: header.latex MS.md refs.bib mystyle.csl
 #
 # make figures
 #
-figures: ancillary/fig03.svg
+figures: ancillary/fig02.svg ancillary/fig03.svg
+
+ancillary/fig02.svg: code/summarize.turboMEDUSA.R code/make_figure_02_medusa.R ancillary/supp_mat_10_MEDUSA_Nymphalidae_raw_data.csv
+	Rscript code/make_figure_02_medusa.R ancillary/fig02.svg
 
 ancillary/fig03.svg: code/plot_N_clade_sizes.R ancillary/supp_mat_12_multiMEDUSA_summary.csv
 	R --no-save < code/plot_N_clade_sizes.R
