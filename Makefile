@@ -146,10 +146,29 @@ MS.pdf: header.latex MS.md refs.bib mystyle.csl
 #
 # make figures
 #
-figures: ancillary/fig02.svg ancillary/fig03.svg
+figures: ancillary/fig02.svg ancillary/fig03.svg ancillary/fig04.svg
 
 ancillary/fig02.svg: code/summarize.turboMEDUSA.R code/make_figure_02_medusa.R ancillary/supp_mat_10_MEDUSA_Nymphalidae_raw_data.csv
 	Rscript code/make_figure_02_medusa.R ancillary/fig02.svg
 
 ancillary/fig03.svg: code/plot_N_clade_sizes.R ancillary/supp_mat_12_multiMEDUSA_summary.csv
 	R --no-save < code/plot_N_clade_sizes.R
+
+ancillary/fig04.svg: data/boxplot.txt code/make_figure_04_boxplots.R
+	R --no-save < code/make_figure_04_boxplots.R
+data/boxplot.txt: ancillary/supp_mat_12_multiMEDUSA_summary.csv
+	cat ancillary/supp_mat_11_multiMEDUSA_raw_data.csv | head -n 1 > data/boxplot.txt
+	cat ancillary/supp_mat_11_multiMEDUSA_raw_data.csv | grep -v 'y' | egrep  '^[0-9]+\s1 ' >> data/boxplot.txt
+	cat ancillary/supp_mat_11_multiMEDUSA_raw_data.csv | grep -v 'y' | egrep  '^[0-9]+\s15 ' >> data/boxplot.txt
+	cat ancillary/supp_mat_11_multiMEDUSA_raw_data.csv | grep -v 'y' | egrep  '^[0-9]+\s49 ' >> data/boxplot.txt
+	cat ancillary/supp_mat_11_multiMEDUSA_raw_data.csv | grep -v 'y' | egrep  '^[0-9]+\s57 ' >> data/boxplot.txt
+	cat ancillary/supp_mat_11_multiMEDUSA_raw_data.csv | grep -v 'y' | egrep  '^[0-9]+\s155 ' >> data/boxplot.txt
+	cat ancillary/supp_mat_11_multiMEDUSA_raw_data.csv | grep -v 'y' | egrep  '^[0-9]+\s195 ' >> data/boxplot.txt
+	cat ancillary/supp_mat_11_multiMEDUSA_raw_data.csv | grep -v 'y' | egrep  '^[0-9]+\s256 ' >> data/boxplot.txt
+	cat ancillary/supp_mat_11_multiMEDUSA_raw_data.csv | grep -v 'y' | egrep  '^[0-9]+\s269 ' >> data/boxplot.txt
+	cat ancillary/supp_mat_11_multiMEDUSA_raw_data.csv | grep -v 'y' | egrep  '^[0-9]+\s288 ' >> data/boxplot.txt
+	cat ancillary/supp_mat_11_multiMEDUSA_raw_data.csv | grep -v 'y' | egrep  '^[0-9]+\s318 ' >> data/boxplot.txt
+	cat ancillary/supp_mat_11_multiMEDUSA_raw_data.csv | grep -v 'n' | egrep  '^[0-9]+\s224 ' >> data/boxplot.txt
+	cat ancillary/supp_mat_11_multiMEDUSA_raw_data.csv | grep -v 'n' | egrep  '^[0-9]+\s299 ' >> data/boxplot.txt
+	cat ancillary/supp_mat_11_multiMEDUSA_raw_data.csv | grep -v 'n' | egrep  '^[0-9]+\s355 ' >> data/boxplot.txt
+	cat ancillary/supp_mat_11_multiMEDUSA_raw_data.csv | grep -v 'n' | egrep  '^[0-9]+\s377 ' >> data/boxplot.txt
