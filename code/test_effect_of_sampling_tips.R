@@ -137,7 +137,7 @@ new_data[,4] <- new_clades_tax
 colnames(new_data) <- c("clades", "branching_times", "stem_ages", "species_numbers")
 head(new_data)
 
-write.csv(new_data, file="data/strict_phylogeny_24.csv")
+write.csv(new_data, file="data/strict_phylogeny_24.csv", row.names=FALSE)
 #####
 # try to run the formulas
 
