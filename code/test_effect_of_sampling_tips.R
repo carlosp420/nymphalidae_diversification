@@ -92,3 +92,53 @@ x_cut
 
 ####
 cut_off <- "24.4 Mya";
+
+###################################
+### Using data from Folmer Bokma
+###################################
+dd <- read.csv("data/strict_cutoff_24.csv")
+dd <- dd[ order(dd[,1]), ]
+
+tax <- read.csv("ancillary/supp_mat_03_richness.csv")
+tax <- tax[ order(tax[,1]), ]
+
+# adding richnes to data.frame
+dd$taxa <- tax[,2]
+
+new_clades <- sort(dd[,2])
+new_clades <- unique(new_clades)
+
+# dd[,7][dd[,2]==130]
+
+add_taxa <- function(clade_number) {
+  # clade_number = 130
+  # dd => new tree as data matrix from Bokma
+  # return => sum of taxa for that clade number
+  taxa_from_genera <- dd[,7][dd[,2] == clade_number]
+  taxa_from_genera <- sum(taxa_from_genera)
+  taxa_from_genera
+  }
+
+new_clades_tax <- unlist(lapply(new_clades, add_taxa))
+
+####
+# create dataset needed to use the SysBio formulae
+new_data <- data.frame(new_clades);
+
+# branching times 
+new_data[,2] <- dd[ order(dd[,3]), ][1:212,][,6]
+
+# stem ages
+new_data[,3] <- dd[ order(dd[,3]), ][1:212,][,4]
+
+# species numbers
+new_data[,4] <- new_clades_tax
+
+colnames(new_data) <- c("clades", "branching_times", "stem_ages", "species_numbers")
+head(new_data)
+
+write.csv(new_data, file="data/strict_phylogeny_24.csv")
+#####
+# try to run the formulas
+
+# p0(t)
