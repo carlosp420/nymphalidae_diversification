@@ -196,6 +196,13 @@ select among increasingly complex alternative models.
 We let MEDUSA estimate up to 25 turnover points in our trees as
 the maximum number of shifts found in all trees was only 21.
 
+We also tested for a possible effect on the overall speciationand mutation rates 
+on our MCC tree due to non-random sampling of the genera used for the Nymphalidae trees.
+We defined a strict higher level phylogeny [@stadler2013] by applying a cut-off 
+limit at 24 Mya and collapsing the subclades younger than the cut-off into existing
+older clades. Speciation and extinction rates were estimated for the resulting tree
+following the methods in @stadler2013.
+
 ### Effect of the quality of posterior distribution of trees on MEDUSA and Multi-MEDUSA
 We tested the effect of topology uncertainty and width of confidence intervals
 of ages on the number of diversification splits inferred by the MEDUSA and
@@ -220,6 +227,8 @@ sets of 1000 trees.
 We plotted the relationship between width of confidence intervals
 and the number diversification splits inferred across more than 95% of the
 posterior distribution of trees.
+
+
 
 
 ### Estimation of trait-dependent speciation rates
