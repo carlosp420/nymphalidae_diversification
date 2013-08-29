@@ -196,11 +196,11 @@ select among increasingly complex alternative models.
 We let MEDUSA estimate up to 25 turnover points in our trees as
 the maximum number of shifts found in all trees was only 21.
 
-We also tested for a possible effect on the overall speciationand mutation rates 
-on our MCC tree due to non-random sampling of the genera used for the Nymphalidae trees.
-We defined a strict higher level phylogeny [@stadler2013] by applying a cut-off 
-limit at 24 Mya and collapsing the subclades younger than the cut-off into existing
-older clades. Speciation and extinction rates were estimated for the resulting tree
+We also tested for a possible effect of non-random sampling of genera on the estimated 
+speciation and mutation rates of our MCC tree.
+We defined a strict higher level phylogeny [@stadler2013] by applying a cutoff 
+limit at 24 MYA and collapsing the subclades younger than the cutoff into existing
+older clades (Fig. S1). Speciation and extinction rates were estimated for the resulting tree
 following the methods in @stadler2013.
 
 ### Effect of the quality of posterior distribution of trees on MEDUSA and Multi-MEDUSA
@@ -431,7 +431,7 @@ posterior distribution of trees.
 
 The clade Ithomiini and the non-basal danaids are well supported by high
 posterior probability values in @wahlberg2009  [supplementary information,
-        fig. 3S]. Therefore our MEDUSA analyses recovered an increase in 
+        fig. XX3S]. Therefore our MEDUSA analyses recovered an increase in 
 diversification rate in more than 95% of the posterior distribution of trees 
 (Figure 3).
 
@@ -616,6 +616,10 @@ Figure 7. BiSSE analysis of diversification of nymphalids due to feeding on Apoc
 Table 1. Significant diversification rate shifts found in the Turbo-MEDUSA analysis of the Nymphalid maximum clade credibility tree. Split.Node = node number, r = net diversification rate, epsilon = relative extinction rate, LnLik.part = log likelihood value 
 
 Table 2. Likelihood ratio test between the model of increased diversification of nymphalids feeding on Solanaceae against a model forcing equal speciation rates (no effect on diversification).
+
+
+Figure S1. MCC tree defined as strict highe level phylogeny but collapsin all clades younger than
+the cutoff value 24 MYA.
 
 ## References
 

@@ -146,7 +146,10 @@ MS.pdf: header.latex MS.md refs.bib mystyle.csl
 #
 # make figures
 #
-figures: ancillary/fig02.svg ancillary/fig03.svg ancillary/fig04.svg
+figures: ancillary/fig02.svg ancillary/fig03.svg ancillary/fig04.svg ancillary/figS01.pdf
+
+ancillary/figS01.pdf: code/test_effect_of_sampling_tips.R data/strict_cutoff_24.csv ancillary/supp_mat_03_richness.csv ancillary/supp_mat_01_genus.nex code/summarize.turboMEDUSA.R
+	R --no-save < code/test_effect_of_sampling_tips.R
 
 ancillary/fig02.svg: code/summarize.turboMEDUSA.R code/make_figure_02_medusa.R ancillary/supp_mat_10_MEDUSA_Nymphalidae_raw_data.csv
 	Rscript code/make_figure_02_medusa.R ancillary/fig02.svg

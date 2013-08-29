@@ -94,7 +94,7 @@ names(tax) <- "sp"
 phy <- getTipdata(tax, phy)
 fitNDR_1rate(phy)
 
-####
+########################
 # recreate the tree used in strict level phylogeny
 dd <- read.csv("data/strict_cutoff_24.csv")
 new_clades <- unique(dd[2])
@@ -128,6 +128,21 @@ tips_to_drop   <- unlist(lapply(new_clades, get_tips_to_drop))
 # this is our strict high level phylogeny
 phy <- drop.tip(phy, tips_to_drop)
 
+
+
+# save our phylogeny as figure S1
+pdf(file="ancillary/figS01.pdf", width=9, height=12)
+phy <- ladderize(phy)
+plot(phy, cex=0.3)
+axisPhylo()
+
+# cut-off is 24mya, calculate it to plot it
+cutoff <- max(branching.times(phy)) - 24
+abline(v=cutoff)
+dev.off()
+
+
+
 # fit birth death model using phylogeny and taxonomy (species richness)
 tmp <- read.csv("data/strict_phylogeny_24.csv")
 species_numbers <- tmp[4]
@@ -152,7 +167,7 @@ names(taxa) <- c("taxon","n.taxa")
 model.limit <- 25
 phy <- ladderize(phy)
 
-res <- runTurboMEDUSA(phy=phy, richness=taxa, model.limit, mc=TRUE, num.cores=4, initial.r=0.05, initial.e=0.5)
-pdf(file="data/medusa_on_strict_high_level_phylo.pdf", width=9, height=19)
-summarize.turboMEDUSA(res, cex=0.4)
-dev.off()
+#res <- runTurboMEDUSA(phy=phy, richness=taxa, model.limit, mc=TRUE, num.cores=4, initial.r=0.05, initial.e=0.5)
+#pdf(file="data/medusa_on_strict_high_level_phylo.pdf", width=9, height=19)
+#summarize.turboMEDUSA(res, cex=0.4)
+#dev.off()
