@@ -57,7 +57,7 @@ write.csv(new_data, file="data/strict_phylogeny_24.csv", row.names=FALSE)
 
 # p0(t)
 
-### results: conditioned on species ; conditioned on mrca
+### results from Bokma: conditioned on species ; conditioned on mrca
 res <- read.csv("data/strict_phylogeny_24_results2.csv", sep=",")
 col <- c("#004165", "#eaab00", "#03253f", "#8e6803", "cyan2", "cyan3");
 
@@ -69,9 +69,18 @@ add.alpha <- function(col, alpha=.5) {
 col.fill <- add.alpha(col, 0.5)
 profiles.plot(c(res[2], res[3], res[5], res[6]), col.line=col)
 
-x <- sapply(c(res[2],res[3],res[5],res[6]), quantile, c(0.025,0.975))
+# get boxplot of net diversification rate versu epsilon
+# conditioned on species versus conditioned on time
+x <- sapply(c(res[2],res[3], res[5],res[6]), quantile, c(0.025,0.975))
 boxplot(x, col=col)
-boxplot(c(res[2]-res[3], res[5]-res[6]))
+boxplot(x, varwidth=T, outline=T, ylab=expression(paste("estimates of ", lambda, " and ", mu)), xlab="", main="", axes=FALSE);
+axis(2)
+axis(1, at=seq(1,4, by=1), labels=c(
+    expression(lambda["cond. especies"]), 
+    expression(mu["cond. especies"]), 
+    expression(lambda["cond. mcra"]),
+    expression(mu["cond. mrca"])));
+
 
 # net diversification rate
 boxplot(c(res[2]-res[3], res[5]-res[6]))

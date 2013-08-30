@@ -280,11 +280,13 @@ selecting the optimal model was estimated as 7.8 units. In all MEDUSA analyses,
 the maximum number of inferred diversification splits in all trees was 21. Thus
 a ``model.limit`` of 25 splits was adequate enough. The background 
 diversification rate for Nymphalidae was estimated as ``r = 0.081`` lineages per 
-Million of years and the AICc value was 5158.6 (Table 1). MEDUSA also
+Million of years and the AICc score for the best fit model was 5158.6 (Table 1).
+MEDUSA also
 estimated the speciation and mutation rates under the basic constant birth--death
 model (AICc ``= 5449.3``, ``r = 0.074``, $\varepsilon$ ``= 0.78``).
-The estimated values for the constant birth--date model estimated on a strict
-higher level phylogeny of Nymphalidae as defined by @stadler2013.
+The estimated rates for the constant birth--date model estimated on a strict
+higher level phylogeny of Nymphalidae as defined by @stadler2013 were XX YY
+very similar/different than the one estimated by MEDUSA.
 
 Some of the 13 changes in diversification correspond to rate 
 increases in very species-rich genera: *Ypthima* (``r = 0.264``), *Charaxes* 
