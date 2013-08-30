@@ -283,10 +283,10 @@ diversification rate for Nymphalidae was estimated as ``r = 0.081`` lineages per
 Million of years and the AICc score for the best fit model was 5158.6 (Table 1).
 MEDUSA also
 estimated the speciation and mutation rates under the basic constant birth--death
-model (AICc ``= 5449.3``, ``r = 0.074``, $\varepsilon$ ``= 0.78``).
-The estimated rates for the constant birth--date model estimated on a strict
-higher level phylogeny of Nymphalidae as defined by @stadler2013 were XX YY
-very similar/different than the one estimated by MEDUSA.
+model (AICc ``= 5449.3``, $\lambda$ = ``0.3405``, $\mu$ ``= 0.2664``).
+These values are lower than the estimated rates for the constant birth--date model
+estimated on a strict higher level phylogeny of Nymphalidae as defined by @stadler2013
+and fall outside the 95% confidence interval (boxplot S02 $\lambda$ [0.35-0.56] $\mu$ = [0.27-0.51].
 
 Some of the 13 changes in diversification correspond to rate 
 increases in very species-rich genera: *Ypthima* (``r = 0.264``), *Charaxes* 
