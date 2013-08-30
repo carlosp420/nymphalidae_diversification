@@ -619,8 +619,8 @@ Table 1. Significant diversification rate shifts found in the Turbo-MEDUSA analy
 Table 2. Likelihood ratio test between the model of increased diversification of nymphalids feeding on Solanaceae against a model forcing equal speciation rates (no effect on diversification).
 
 
-Figure S1. MCC tree defined as strict highe level phylogeny but collapsin all clades younger than
-the cutoff value 24 MYA.
+Figure S1. MCC tree defined as strict higher level phylogeny but collapsing all clades younger
+than the cutoff value at 24 MYA.
 
 ## References
 
