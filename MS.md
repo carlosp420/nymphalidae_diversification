@@ -198,10 +198,15 @@ the maximum number of shifts found in all trees was only 21.
 
 We also tested for a possible effect of non-random sampling of genera on the estimated 
 speciation and mutation rates of our MCC tree.
-We defined a strict higher level phylogeny [@stadler2013] by applying a cutoff 
-limit at 24 MYA and collapsing the subclades younger than the cutoff into existing
-older clades (Fig. S1). Speciation and extinction rates were estimated for the resulting tree
-following the methods in @stadler2013.
+It has been found that the estimation of diversification rates can be biased in incomplete
+phylogenies if species were sampled non-randomly and rates are estimated assuming random sampling. 
+@stadler2013 presented a method to estimate birth and death rates in the constant birth--death
+model for strict higher level phylogenies by applying a cutoff limit and collapsing the subclades 
+younger than the cutoff into existing older clades.
+We defined a strict higher level phylogeny by applying a cutoff limit at 24 MYA (Fig. S1).
+The number of species for each clade were recalculated and assigned to remaining clades. Speciation
+and extinction rates were estimated for the resulting tree following the methods in @stadler2013.
+
 
 ### Effect of the quality of posterior distribution of trees on MEDUSA and Multi-MEDUSA
 We tested the effect of topology uncertainty and width of confidence intervals
@@ -275,7 +280,13 @@ selecting the optimal model was estimated as 7.8 units. In all MEDUSA analyses,
 the maximum number of inferred diversification splits in all trees was 21. Thus
 a ``model.limit`` of 25 splits was adequate enough. The background 
 diversification rate for Nymphalidae was estimated as ``r = 0.081`` lineages per 
-Million of years. Some of the 13 changes in diversification correspond to rate 
+Million of years and the AICc value was 5158.6 (Table 1). MEDUSA also
+estimated the speciation and mutation rates under the basic constant birth--death
+model (AICc ``= 5449.3``, ``r = 0.074``, $\varepsilon$ ``= 0.78``).
+The estimated values for the constant birth--date model estimated on a strict
+higher level phylogeny of Nymphalidae as defined by @stadler2013.
+
+Some of the 13 changes in diversification correspond to rate 
 increases in very species-rich genera: *Ypthima* (``r = 0.264``), *Charaxes* 
 (``r = 0.251``), *Callicore* + *Diaethria* (``r = 0.220``), *Pedaliodes* 
 (``r = 0.196``) and *Taenaris* (``r = 0.238``). We found rate increases for other
