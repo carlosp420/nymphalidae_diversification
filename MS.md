@@ -322,7 +322,7 @@ are estimated as increased or slowed diversification pace depending on the tree
 used for analysis (Figure 4). This variation is especially wide for the clade
 formed by the genera *Magneuptychia* and *Caeruleuptychia* because MEDUSA 
 estimated diversification values from three times the background
-diversification rate (``r = 0.2755``) to almost zero (``r = 2.4e-07``). The 
+diversification rate (``r = 0.2755``) to almost zero (``r = 2.04e-07``). The 
 diversification rates estimates for the root (background diversification rate)
 and the clades (*Tirumala* + *Danaus* + *Amauris* + *Parantica* + *Ideopsis* +
 *Euploea* + *Idea*) and (Oleriina + Ithomiina + Napeogenina + Dircennina +

@@ -146,7 +146,7 @@ MS.pdf: header.latex MS.md refs.bib mystyle.csl
 #
 # make figures including ancillary material
 #
-figures: ancillary/fig02.svg ancillary/fig03.svg ancillary/fig04.svg ancillary/figS01.pdf ancillary/supp_mat_13_list_of_clades_and_tips_MultiMEDUSA.csv
+figures: ancillary/fig02.svg ancillary/fig03.svg ancillary/fig04.svg ancillary/figS01.pdf ancillary/supp_mat_13_list_of_clades_and_tips_MultiMEDUSA.csv data/clade_288.csv
 
 ancillary/figS01.pdf: code/test_effect_of_sampling_tips.R data/strict_cutoff_24.csv ancillary/supp_mat_03_richness.csv ancillary/supp_mat_01_genus.nex code/summarize.turboMEDUSA.R
 	R --no-save < code/test_effect_of_sampling_tips.R
@@ -162,7 +162,7 @@ ancillary/fig03.svg: code/plot_N_clade_sizes.R ancillary/supp_mat_12_multiMEDUSA
 
 ancillary/fig04.svg: data/boxplot.txt code/make_figure_04_boxplots.R
 	R --no-save < code/make_figure_04_boxplots.R
-data/boxplot.txt: ancillary/supp_mat_12_multiMEDUSA_summary.csv
+data/boxplot.txt: ancillary/supp_mat_11_multiMEDUSA_raw_data.csv
 	cat ancillary/supp_mat_11_multiMEDUSA_raw_data.csv | head -n 1 > data/boxplot.txt
 	cat ancillary/supp_mat_11_multiMEDUSA_raw_data.csv | grep -v 'y' | egrep  '^[0-9]+\s1 ' >> data/boxplot.txt
 	cat ancillary/supp_mat_11_multiMEDUSA_raw_data.csv | grep -v 'y' | egrep  '^[0-9]+\s15 ' >> data/boxplot.txt
@@ -181,3 +181,8 @@ data/boxplot.txt: ancillary/supp_mat_12_multiMEDUSA_summary.csv
 
 ancillary/supp_mat_13_list_of_clades_and_tips_MultiMEDUSA.csv: code/get_list_of_indexes_and_taxa.R data/supp_mat_03_richness.csv ancillary/supp_mat_01_genus.nex
 	R --no-save < code/get_list_of_indexes_and_taxa.R
+
+data/clade_288.csv: ancillary/supp_mat_11_multiMEDUSA_raw_data.csv code/get_max_min_r_values.R
+	cat ancillary/supp_mat_11_multiMEDUSA_raw_data.csv | grep -v 'y' | egrep '^[0-9]+\s288' | awk '{print $$3}' > data/clade_288.csv
+	R --no-save < code/get_max_min_r_values.R
+	
