@@ -89,6 +89,7 @@ boxplot(c(res[2]-res[3], res[5]-res[6]))
 # now get bd values for models without strict higher level phylogenies
 
 phy <- read.nexus("ancillary/supp_mat_01_genus.nex")
+tips <- c("Achlyodes", "Graphium", "Parnassius", "Baronia", "Troides", "Papilio1", "Papilio2", "Pieris", "Aporia", "Styx", "Hamearis", "Euselasia", "Nymphidium", "Emesis", "Crocozona", "Riodina", "Amarynthis", "Baliochila", "Poritia", "Miletus", "Liphyra", "Lycaena", "Celastrina", "Thecla", "Lucia", "Curetis", "Eurema", "Colias", "Leptidea", "Pseudopontia", "Libyt");
 phy <- drop.tip(phy, tips)
 tax <- read.csv("ancillary/supp_mat_03_richness.csv")
 
