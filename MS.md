@@ -306,7 +306,7 @@ shifts found by MEDUSA on the 1000
 trees are provided in supp. mat. 11). In order to obtain the diversification 
 shifts that were estimated in most of the 1000 trees, we plotted the 
 diversification shifts versus number of trees containing that 
-particular diversification shift (Figure 3, supp. mat. 12) as estimated by 
+particular diversification shift (Figure 3, supp. mat. 12--13) as estimated by 
 MEDUSA. There were three diversification shifts found in more
 than 95% of the trees: (i) diversification rate increase in the genus *Charaxes*;
 (ii) rate increase in Ithomiini subtribes Oleriina + Ithomiina + Napeogenina +
@@ -330,7 +330,7 @@ Godyrina) are relatively consistent across the 1000 trees (Figure 4). It is
 also evident that not all the diversification shifts estimated on the MCC tree
 are consistently recovered in most of the 1000 trees. Some of the splits in the
 MCC tree are recovered in very few trees, for example the split for the clade
-(Euptychiina + Pronophilina + Satyrina + Maniolina) (see supp. mat. 12). 
+(Euptychiina + Pronophilina + Satyrina + Maniolina) (see supp. mat. 12--13). 
 
 ### MEDUSA performance due to phylogenetic uncertainty
 We found that most of the diversification splits were consistently recovered
@@ -343,14 +343,14 @@ to obtain most of the diversification splits from the MCC tree on the posterior
 distribution of trees. For example the MCC tree of the set of trees number 950 
 had 99.75% of the nodes with posterior probability > 0.95, however it was
 possible to recover only 12 diversification shifts (out of a total of 14)
-across more than 95% of the trees (supp. mat. 13--14).
+across more than 95% of the trees (supp. mat. 14--15).
 
 The figure 6 shows that the width of confidence intervals on the estimated
 ages of diversification is correlated with the number of 
 diversification splits that are consistently recovered across the posterior
 distribution of trees. Very narrow confidence intervals are needed in
 order to recover all 14 diversification splits across more than 95% of 
-trees from the posterior distribution (supp. mat. 15).
+trees from the posterior distribution (supp. mat. 16).
 
 
 ### Estimation of trait-dependent speciation rates

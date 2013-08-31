@@ -144,9 +144,9 @@ MS.pdf: header.latex MS.md refs.bib mystyle.csl
 
 
 #
-# make figures
+# make figures including ancillary material
 #
-figures: ancillary/fig02.svg ancillary/fig03.svg ancillary/fig04.svg ancillary/figS01.pdf ancillary/figS02.pdf
+figures: ancillary/fig02.svg ancillary/fig03.svg ancillary/fig04.svg ancillary/figS01.pdf ancillary/supp_mat_13_list_of_clades_and_tips_MultiMEDUSA.csv
 
 ancillary/figS01.pdf: code/test_effect_of_sampling_tips.R data/strict_cutoff_24.csv ancillary/supp_mat_03_richness.csv ancillary/supp_mat_01_genus.nex code/summarize.turboMEDUSA.R
 	R --no-save < code/test_effect_of_sampling_tips.R
@@ -178,3 +178,6 @@ data/boxplot.txt: ancillary/supp_mat_12_multiMEDUSA_summary.csv
 	cat ancillary/supp_mat_11_multiMEDUSA_raw_data.csv | grep -v 'n' | egrep  '^[0-9]+\s299 ' >> data/boxplot.txt
 	cat ancillary/supp_mat_11_multiMEDUSA_raw_data.csv | grep -v 'n' | egrep  '^[0-9]+\s355 ' >> data/boxplot.txt
 	cat ancillary/supp_mat_11_multiMEDUSA_raw_data.csv | grep -v 'n' | egrep  '^[0-9]+\s377 ' >> data/boxplot.txt
+
+ancillary/supp_mat_13_list_of_clades_and_tips_MultiMEDUSA.csv: code/get_list_of_indexes_and_taxa.R data/supp_mat_03_richness.csv ancillary/supp_mat_01_genus.nex
+	R --no-save < code/get_list_of_indexes_and_taxa.R
