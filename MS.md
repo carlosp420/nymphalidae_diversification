@@ -320,17 +320,17 @@ the posterior distribution of trees. A boxplot of the diversification rate
 values estimated for the clades that appear in the MCC tree shows that some shifts
 are estimated as increased or slowed diversification pace depending on the tree
 used for analysis (Figure 4). This variation is especially wide for the clade
-formed by the genera *Magneuptychia* and *Caeruleuptychia* because MEDUSA estimated
-diversification values from three times the background diversification rate 
-(``r = 0.2755``) to almost zero (``r = 2.4e-07``). The diversification rates estimates
-for the root (background diversification rate) and the clades (*Tirumala* + 
-*Danaus* + *Amauris* + *Parantica* + *Ideopsis* + *Euploea* + *Idea*) and (Oleriina + 
-Ithomiina + Napeogenina + Dircennina + Godyrina) are relatively consistent 
-across the 1000 trees (Figure 4). It is also evident that not all the 
-diversification shifts estimated on the MCC tree are consistently recovered in most
-of the 1000 trees. Some of the splits in the MCC tree are recovered in very few trees,
-for example the split for the clade (Euptychiina + Pronophilina + Satyrina + 
-Maniolina) (see supp. mat. 12). 
+formed by the genera *Magneuptychia* and *Caeruleuptychia* because MEDUSA 
+estimated diversification values from three times the background
+diversification rate (``r = 0.2755``) to almost zero (``r = 2.4e-07``). The 
+diversification rates estimates for the root (background diversification rate)
+and the clades (*Tirumala* + *Danaus* + *Amauris* + *Parantica* + *Ideopsis* +
+*Euploea* + *Idea*) and (Oleriina + Ithomiina + Napeogenina + Dircennina +
+Godyrina) are relatively consistent across the 1000 trees (Figure 4). It is
+also evident that not all the diversification shifts estimated on the MCC tree
+are consistently recovered in most of the 1000 trees. Some of the splits in the
+MCC tree are recovered in very few trees, for example the split for the clade
+(Euptychiina + Pronophilina + Satyrina + Maniolina) (see supp. mat. 12). 
 
 ### MEDUSA performance due to phylogenetic uncertainty
 We found that most of the diversification splits were consistently recovered
