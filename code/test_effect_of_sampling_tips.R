@@ -69,18 +69,24 @@ add.alpha <- function(col, alpha=.5) {
 col.fill <- add.alpha(col, 0.5)
 profiles.plot(c(res[2], res[3], res[5], res[6]), col.line=col)
 
-# get boxplot of net diversification rate versu epsilon
+# get boxplot of net diversification rate versus epsilon
 # conditioned on species versus conditioned on time
 x <- sapply(c(res[2],res[3], res[5],res[6]), quantile, c(0.025,0.975))
-boxplot(x, col=col)
-boxplot(x, varwidth=T, outline=T, ylab=expression(paste("estimates of ", lambda, " and ", mu)), xlab="", main="", axes=FALSE);
-axis(2)
-axis(1, at=seq(1,4, by=1), labels=c(
+
+pdf(file="ancillary/figS02.pdf")
+boxplot(x, varwidth=T, outline=T, 
+        ylab=expression(paste("estimates of ", lambda, " and ", mu)), 
+        xlab="", 
+        ylim=c(0.2, 0.7),
+        main="", axes=FALSE);
+axis(2, at=seq(0.2, 0.6, by=0.1), labels=seq(0.2,0.6, by=0.1), las=1)
+axis(1, at=seq(0,4, by=1), labels=c(
+    "",
     expression(lambda["cond. especies"]), 
     expression(mu["cond. especies"]), 
     expression(lambda["cond. mcra"]),
     expression(mu["cond. mrca"])));
-
+dev.off()
 
 # net diversification rate
 boxplot(c(res[2]-res[3], res[5]-res[6]))
