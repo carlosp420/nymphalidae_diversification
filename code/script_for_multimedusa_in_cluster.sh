@@ -1,6 +1,6 @@
 #!/bin/bash -l
 # author: pena
-#SBATCH -J multi_%j
+#SBATCH -J multi_
 #SBATCH -o multi_out_%j
 #SBATCH -e multi_err_%j
 #SBATCH -N 1
