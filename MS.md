@@ -197,7 +197,7 @@ We let MEDUSA estimate up to 25 turnover points in our trees as
 the maximum number of shifts found in all trees was only 21.
 
 We also tested for a possible effect of non-random sampling of genera on the estimated 
-speciation and mutation rates of our MCC tree.
+speciation and extinction rates of our MCC tree.
 It has been found that the estimation of diversification rates can be biased in incomplete
 phylogenies if species were sampled non-randomly and rates are estimated assuming random sampling. 
 @stadler2013 presented a method to estimate birth and death rates in the constant birth--death
@@ -280,13 +280,15 @@ selecting the optimal model was estimated as 7.8 units. In all MEDUSA analyses,
 the maximum number of inferred diversification splits in all trees was 21. Thus
 a ``model.limit`` of 25 splits was adequate enough. The background 
 diversification rate for Nymphalidae was estimated as ``r = 0.081`` lineages per 
-Million of years and the AICc score for the best fit model was 5158.6 (Table 1).
+Million of years and the AICc score for the best fit model was ``5158.6`` 
+(Table 1).
 MEDUSA also
-estimated the speciation and mutation rates under the basic constant birth--death
+estimated the speciation and extinction rates under the basic constant birth--death
 model (AICc ``= 5449.3``, $\lambda$ = ``0.3405``, $\mu$ ``= 0.2664``).
-These values are lower than the estimated rates for the constant birth--date model
-estimated on a strict higher level phylogeny of Nymphalidae as defined by @stadler2013
-and fall outside the 95% confidence interval (boxplot S02 $\lambda$ [0.35-0.56] $\mu$ = [0.27-0.51].
+These values are lower than the estimated rates for the constant birth--date
+model estimated on a strict higher level phylogeny of Nymphalidae as defined 
+by @stadler2013 and fall outside the 95% confidence interval (Fig S2;
+$\lambda$ = [0.35--0.56]; $\mu$ = [0.27--0.51]).
 
 Some of the 13 changes in diversification correspond to rate 
 increases in very species-rich genera: *Ypthima* (``r = 0.264``), *Charaxes* 
@@ -303,7 +305,7 @@ diversification shifts as in the MCC tree (the background diversification and al
 shifts found by MEDUSA on the 1000 
 trees are provided in supp. mat. 11). In order to obtain the diversification 
 shifts that were estimated in most of the 1000 trees, we plotted the 
-diversification shifts (index number) versus number of trees containing that 
+diversification shifts versus number of trees containing that 
 particular diversification shift (Figure 3, supp. mat. 12--13) as estimated by 
 MEDUSA. There were three diversification shifts found in more
 than 95% of the trees: (i) diversification rate increase in the genus *Charaxes*;
@@ -632,8 +634,13 @@ Table 1. Significant diversification rate shifts found in the Turbo-MEDUSA analy
 Table 2. Likelihood ratio test between the model of increased diversification of nymphalids feeding on Solanaceae against a model forcing equal speciation rates (no effect on diversification).
 
 
-Figure S1. MCC tree defined as strict higher level phylogeny but collapsing all clades younger
-than the cutoff value at 24 MYA.
+Figure S1. MCC tree defined as strict higher level phylogeny but collapsing all
+clades younger than the cutoff value at 24 MYA.
+
+Figure S2. Boxplot of the 95% confidence intervals for estimated speciation and
+extinction rates on an enforced strict higher level phylogeny of our MCC tree by
+collapsing all clades younger than the cutoff value at 24 MYA (see figure S1).
+Estimated rates using the method in @stadler2013.
 
 ## References
 

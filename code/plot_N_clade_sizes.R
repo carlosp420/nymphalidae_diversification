@@ -17,7 +17,7 @@ b <- barplot(n, border=NA, ylim=c(0,1), width=4,
         cex.main=1.8,
         ylab="Proportion of trees with diversification event", axisname=FALSE,
         xlim=c(0,200), xlab="Nodes of MCC phylogenetic tree", axes=F, cex.lab=1.5, mgp=c(4,1,1))
-axis(2, cex.axis=1.5)
+axis(2, cex.axis=1.5, las=1)
 b <- b[1:4,1] + 1.5;
 b[2] <- b[2] + 0.2
 b[3] <- b[3] + 0.2
