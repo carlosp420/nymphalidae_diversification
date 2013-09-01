@@ -180,12 +180,12 @@ data/boxplot.txt: ancillary/supp_mat_11_multiMEDUSA_raw_data.csv
 	cat ancillary/supp_mat_11_multiMEDUSA_raw_data.csv | grep -v 'n' | egrep  '^[0-9]+\s377 ' >> data/boxplot.txt
 
 ancillary/fig05.svg: code/plot_medusa_tests.R ancillary/supp_mat_14-consistently_recovered_splits_multimedusa_variable_topology.csv ancillary/supp_mat_16-percentage_nodes_high_post_prob.csv
-	rm ancillary/supp_mat_16-percentage_nodes_high_post_prob.csv
 	R --no-save < code/plot_medusa_tests.R
-	
+
 ancillary/supp_mat_16-percentage_nodes_high_post_prob.csv: output/variable_topology/set_9.nex_mct.nex
-	ancillary/supp_mat_16-percentage_nodes_high_post_prob.csv code/get_percentage_of_nodes_with_high_post_prob.R
+	rm ancillary/supp_mat_16-percentage_nodes_high_post_prob.csv
 	R --no-save < code/get_percentage_of_nodes_with_high_post_prob.R
+	touch ancillary/supp_mat_16-percentage_nodes_high_post_prob.csv
 
 
 
