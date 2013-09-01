@@ -629,6 +629,9 @@ Figure 5. Correlation between percentage on nodes with posterior probability
 ``> 0.95`` and number of diversification splits consistently recovered in 
 Multi-MEDUSA analyses.
 
+Figure 6. Correlation between width of confidence intervals for nodes and number
+of diversification splits consistently recovered in Multi-MEDUSA analyses.
+
 Figure . BiSSE analysis of diversification of nymphalids due to feeding on Solanaceae hostplants. Speciation and diversification rates are significantly higher in Solanaceae feeders.
 
 Figure . Boxplot of speciation (lambda), extinction (mu) and transition (q) parameter values of the BiSSE analysis on diversification due to feeding on Solanaceae hostplants.
