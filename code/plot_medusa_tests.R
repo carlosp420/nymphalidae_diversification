@@ -5,7 +5,7 @@
 library(ggplot2)
 
 multimedusa <- read.csv("ancillary/supp_mat_14-consistently_recovered_splits_multimedusa_variable_topology.csv", header=FALSE)
-medusa      <- read.csv("ancillary/supp_mat_16-percentage_nodes_high_post_prob.csv", header=FALSE)
+medusa      <- read.csv("ancillary/supp_mat_15-percentage_nodes_high_post_prob.csv", header=FALSE)
 
 #png(filename="figures/plot_medusa_multimedusa_tests.png")
 par(bty="l", cex.main=2, cex.lab=2)
