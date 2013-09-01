@@ -10,7 +10,7 @@ get_percentages <- function(phy) {
     n_high_prob
 }
 
-for( i in 1:2) {
+for( i in 1:1000) {
     # read MCT files, get percentage of high post prob nodes
     phy <- read.beast(paste(
             "output/variable_topology/set_",

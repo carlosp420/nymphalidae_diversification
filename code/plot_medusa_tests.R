@@ -7,7 +7,7 @@ library(ggplot2)
 multimedusa <- read.csv("ancillary/supp_mat_14-consistently_recovered_splits_multimedusa_variable_topology.csv", header=FALSE)
 medusa      <- read.csv("ancillary/supp_mat_16-percentage_nodes_high_post_prob.csv", header=FALSE)
 
-png(filename="figures/plot_medusa_multimedusa_tests.png")
+#png(filename="figures/plot_medusa_multimedusa_tests.png")
 par(bty="l", cex.main=2, cex.lab=2)
 par(mar=c(5,7,4,6)+0.1)
 
@@ -20,7 +20,7 @@ axis(4)
 mtext("percentage of nodes with\n high posterior probability", side=4, line=3, cex=2)
 legend("topleft", legend=c("MEDUSA","multiMEDUSA"), lty=1, pch=1, col=c("blue","red"), inset=0.2)
 
-dev.off()
+#dev.off()
 
 
 ## plot percentage of good nodes versus consistently recovered nodes
@@ -41,7 +41,7 @@ dev.off()
 ## plot width of confidence intervals for estimated ages versus consistently recovered nodes
 multimedusa <- read.csv("output/multimedusa_output.csv", header=FALSE)
 par(new=TRUE)
-png(filename="figures/plot_multimedusa_tests_on_confidence_intervals.png")
+#png(filename="figures/plot_multimedusa_tests_on_confidence_intervals.png")
 p <- qplot(multimedusa$V1, multimedusa$V2, geom="line",  size=I(1),
             main="Effect of confidence interval width of estimated ages
             on multiMEDUSA results",
@@ -50,4 +50,4 @@ p <- qplot(multimedusa$V1, multimedusa$V2, geom="line",  size=I(1),
             multiMEDUSA analyses")
 p + scale_y_continuous(breaks=c(5, 7.5, 10, 12.5, 15), 
                        labels=c("5", "7.5", "10", "12.5", "15")) + theme_bw()
-dev.off()
+#dev.off()

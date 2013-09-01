@@ -146,7 +146,7 @@ MS.pdf: header.latex MS.md refs.bib mystyle.csl
 #
 # make figures including ancillary material
 #
-figures: ancillary/fig02.svg ancillary/fig03.svg ancillary/fig04.svg ancillary/figS01.pdf ancillary/supp_mat_13_list_of_clades_and_tips_MultiMEDUSA.csv data/clade_288.csv
+figures: ancillary/fig02.svg ancillary/fig03.svg ancillary/fig04.svg ancillary/fig05.svg ancillary/figS01.pdf ancillary/supp_mat_13_list_of_clades_and_tips_MultiMEDUSA.csv data/clade_288.csv
 
 ancillary/figS01.pdf: code/test_effect_of_sampling_tips.R data/strict_cutoff_24.csv ancillary/supp_mat_03_richness.csv ancillary/supp_mat_01_genus.nex code/summarize.turboMEDUSA.R
 	R --no-save < code/test_effect_of_sampling_tips.R
@@ -178,6 +178,8 @@ data/boxplot.txt: ancillary/supp_mat_11_multiMEDUSA_raw_data.csv
 	cat ancillary/supp_mat_11_multiMEDUSA_raw_data.csv | grep -v 'n' | egrep  '^[0-9]+\s299 ' >> data/boxplot.txt
 	cat ancillary/supp_mat_11_multiMEDUSA_raw_data.csv | grep -v 'n' | egrep  '^[0-9]+\s355 ' >> data/boxplot.txt
 	cat ancillary/supp_mat_11_multiMEDUSA_raw_data.csv | grep -v 'n' | egrep  '^[0-9]+\s377 ' >> data/boxplot.txt
+
+fig05: ancillary/fig05.svg
 
 ancillary/fig05.svg: code/plot_medusa_tests.R ancillary/supp_mat_14-consistently_recovered_splits_multimedusa_variable_topology.csv ancillary/supp_mat_16-percentage_nodes_high_post_prob.csv
 	R --no-save < code/plot_medusa_tests.R

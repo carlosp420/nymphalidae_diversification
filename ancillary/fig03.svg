@@ -58,12 +58,12 @@
 <line x1="50.83" y1="231.43" x2="46.67" y2="231.43" style="stroke-width:1;stroke:#000000;fill:#000000;stroke-opacity:1.000000;fill-opacity:0.000000"/>
 <line x1="50.83" y1="132.80" x2="46.67" y2="132.80" style="stroke-width:1;stroke:#000000;fill:#000000;stroke-opacity:1.000000;fill-opacity:0.000000"/>
 <line x1="50.83" y1="34.17" x2="46.67" y2="34.17" style="stroke-width:1;stroke:#000000;fill:#000000;stroke-opacity:1.000000;fill-opacity:0.000000"/>
-<text transform="translate(42.50,537.87) rotate(-90)"  style="font-size:15" >0.0</text>
-<text transform="translate(42.50,439.24) rotate(-90)"  style="font-size:15" >0.2</text>
-<text transform="translate(42.50,340.60) rotate(-90)"  style="font-size:15" >0.4</text>
-<text transform="translate(42.50,241.97) rotate(-90)"  style="font-size:15" >0.6</text>
-<text transform="translate(42.50,143.34) rotate(-90)"  style="font-size:15" >0.8</text>
-<text transform="translate(42.50,44.71) rotate(-90)"  style="font-size:15" >1.0</text>
+<text transform="translate(21.42,533.58)"  style="font-size:15" >0.0</text>
+<text transform="translate(21.42,434.94)"  style="font-size:15" >0.2</text>
+<text transform="translate(21.42,336.31)"  style="font-size:15" >0.4</text>
+<text transform="translate(21.42,237.68)"  style="font-size:15" >0.6</text>
+<text transform="translate(21.42,139.05)"  style="font-size:15" >0.8</text>
+<text transform="translate(21.42,40.42)"  style="font-size:15" >1.0</text>
 <text transform="translate(88.10,517.46) rotate(-90)"  style="font-size:15" >root</text>
 <text transform="translate(103.24,517.46) rotate(-90)"  style="font-size:15" >224: Charaxes</text>
 <text transform="translate(117.78,517.46) rotate(-90)"  style="font-size:15" >49: Tirumala, Danaus, Amauris, Parantica, Ideopsis, Euploea, Idea</text>
