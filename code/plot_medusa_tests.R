@@ -25,7 +25,7 @@ dev.off()
 
 ## plot percentage of good nodes versus consistently recovered nodes
 par(new=TRUE)
-png(filename="figures/plot_medusa_multimedusa_tests_2.png")
+svg(filename="ancillary/fig05.svg")
 data <- as.data.frame(cbind(medusa$V2, multimedusa$V2))
 p <- qplot(data$V1, data$V2, geom="point")
 p + geom_smooth(method="lm", se=FALSE, aes(data$V1))    + 
