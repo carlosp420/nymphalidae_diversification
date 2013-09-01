@@ -337,7 +337,8 @@ of the trees (see supp. mat. 12--13).
 We found that most of the diversification splits were consistently recovered
 across more than 95% of the trees from the posterior distribution when
 there was a high ratio of nodes with high posterior probability 
-(Figure 5). For our data, it would be necessary to obtain a set of trees
+(Figure 5; supp. mat. 14).
+For our data, it would be necessary to obtain a set of trees
 from the Bayesian run with almost 99% of the nodes with posterior 
 probability higher than 0.95 (almost no phylogenetic uncertainty) in order
 to obtain most of the diversification splits from the MCC tree on the posterior

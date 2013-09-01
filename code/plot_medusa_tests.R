@@ -4,8 +4,8 @@
 #   is the number of node splits found in more than 950 trees.
 library(ggplot2)
 
-multimedusa <- read.csv("output/multimedusa_output.csv", header=FALSE)
-medusa      <- read.csv("output/percentage_nodes_high_post_prob.csv", header=FALSE)
+multimedusa <- read.csv("ancillary/supp_mat_14-consistently_recovered_splits_multimedusa_variable_topology.csv", header=FALSE)
+medusa      <- read.csv("ancillary/supp_mat_16-percentage_nodes_high_post_prob.csv", header=FALSE)
 
 png(filename="figures/plot_medusa_multimedusa_tests.png")
 par(bty="l", cex.main=2, cex.lab=2)
