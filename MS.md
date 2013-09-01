@@ -142,10 +142,10 @@ closest related genus that was included in @wahlberg2009 study
 (supp. mat. 03).
 
 Hostplant data for Nymphalidae species were compiled from several sources 
-including @ackery1988, HOSTS database (<http://bit.ly/YI7nwW>), @dyer2002
-and others (supp. mat. 04--05) for a total of 6586 hostplant records,
-including 428 Nymphalidae genera and 143 plant families and 1070 plant genera.
-It was not possible to find any hostplant data for 35 butterfly genera
+including @ackery1988, HOSTS database (<http://bit.ly/YI7nwW>), @dyer2002,
+@beccaloni2008, @janzen2009 and others (supp. mat. 04--05) for a total of 6586 hostplant
+records, including 428 Nymphalidae genera and 143 plant families and 1070 plant
+genera. It was not possible to find any hostplant data for 35 butterfly genera
 (supp. mat. 04).
 
 
@@ -246,11 +246,14 @@ Nymphalidae butterflies are restricted to use one plant family as hostplant,
 the character states can be coded as presence/absence, for which the BiSSE 
 analysis is better suited. BiSSE was designed to test whether a binary character
 state has had any effect on increased diversification rate for a clade 
-[@maddison2007]. We used our compiled data of hostplant use to produce
-binary datasets for the characters "feeding on the plant family Solanaceae or 
-Apocynaceae" (supp. mat. 09) which are the main hostplants of the diverse 
-Ithomiini butterflies and closest relatives [@willmott2006] and 
-Danaini (Apocynaceae). We analyzed the data using BiSSE employing the Markov 
+[@maddison2007]. We used our compiled data of hostplant use to produce a
+binary dataset for the character "feeding on the plant family Solanaceae" with
+two states (absence = 0; presence = 1) (supp. mat. 09), which is the main
+hostplants of the diverse Ithomiini butterflies and closest relatives
+[@willmott2006]. Other hostplant shifts were not tested for effect on 
+diversification rates due to the low support for diversification shifts
+found in the MEDUSA analyses.
+We analyzed the data using BiSSE employing the Markov 
 Chain Monte Carlo algorithm on the maximum clade credibility tree, taking into
 account missing taxa by using the parameter "sampling factor" (``sampling.f``)
 in diversitree.
@@ -304,6 +307,9 @@ clades as well such as: Lethina + Mycalesina (``r = 0.130``), Oleriina + Ithomii
 + Napeogenina + Dircennina + Godyrina (``r = 0.181``), Euptychiina + Pronophilina
 + Maniolina + Satyrina (``r = 0.114``), Phyciodina in part (``r = 0.227``) and 
 Satyrina (``r = 0.220``).
+We also found decreases in diversification rates for Limenitidinae + Heliconiinae
+(``r = 0.0539``), part of Danaini (``r = 0.0555``) and *Caeruleuptychia* + 
+*Magneuptychia* (``r = 0.0685``) (Table 1).
 
 ### Phylogenetic uncertainty in the Multi-MEDUSA approach
 We found that the analyses by MEDUSA on the 1000 trees did not estimate the same
@@ -378,8 +384,8 @@ whether the model of different speciation rates is a significantly better
 explanation for the data. A likelihood ratio test found that the model for
 increased diversification rate for nymphalids feeding on Solanaceae is a
 significantly better explanation than this character state having no effect
-on diversification (p < 0.001) (Table 2; character states available in supp.
-mat. 07, code in supp. mat. 11, and mcmc run in supp. mat. 12). We
+on diversification (``p < 0.001``) (Table 2; character states available in supp.
+mat. 09, code in supp. mat. 17, and mcmc run in supp. mat. 18). We
 combined the post-burnin mcmc generations from running BiSSE on 250 trees from
 the posterior distribution and found the same pattern as the BiSSE analysis on
 the maximum clade credibility tree (combined mcmc run in supp. mat. 13; profiles plot
