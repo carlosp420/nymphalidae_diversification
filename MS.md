@@ -330,7 +330,8 @@ Godyrina) are relatively consistent across the 1000 trees (Figure 4). It is
 also evident that not all the diversification shifts estimated on the MCC tree
 are consistently recovered in most of the 1000 trees. Some of the splits in the
 MCC tree are recovered in very few trees, for example the split for the clade
-(Euptychiina + Pronophilina + Satyrina + Maniolina) (see supp. mat. 12--13). 
+(Euptychiina + Pronophilina + Satyrina + Maniolina) is present in only in 18%
+of the trees (see supp. mat. 12--13). 
 
 ### MEDUSA performance due to phylogenetic uncertainty
 We found that most of the diversification splits were consistently recovered
@@ -514,7 +515,7 @@ diversification of modern montane plant and animal taxa [@hoorn2010] including
 Ithomiini butterflies and Solanaceae hostplants. Moreover, all Solanaceae clades
 currently present in New World originated in South America [@olmstead2013] as well
 as Ithomiini butterflies [@wahlberg2009]. This suggests a process of "diffuse
-cospeciation" of Ithomiinae and hostplants.
+cospeciation" of Ithomiini and hostplants.
 
 
 #### Danaini

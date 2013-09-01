@@ -18,7 +18,7 @@ boxplot(varwidth=T, r~index, data=x, outline=T, pars=list(outcex=0.8, outcol=rgb
         main="Boxplot of diversification values for each node with significant bursts \n as found by MEDUSA, only clades/tips present in MCC tree",
         axes=F, cex.lab=1.5, cex.axis=1.5, cex.main=1.5);
 axis(2, at=seq(0,0.4,0.1), las=1)
-axis(1, at=1:14, labels=c("root","Ithomiinni","Danaini","Limenitidinae \n + Heliconiinae","Phyciodina",
+axis(1, at=1:14, labels=c("root","Ithomiini","Danaini","Limenitidinae \n + Heliconiinae","Phyciodina",
  "Callicore \n + Diaethria","Charaxes","Lethina + Mycalesina",
  "Euptychiina + Pronophilina \n + Maniolina + Satyrina",
   "Caeruleuptychia \n + Magneuptychia",

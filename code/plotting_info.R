@@ -37,7 +37,7 @@ phy <- read.tree("genus.tree")
 plot.phylo(phy, cex=0.1);
 
 
-## node 413. index 15. Ithomiinae in part
+## node 413. index 15. Ithomiini in part
 node <- mrca(phy)["Hyposcada", "Episcada"];
 node.leaves(phy, node);
 
