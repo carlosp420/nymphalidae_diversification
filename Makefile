@@ -198,6 +198,9 @@ ancillary/fig06.svg: code/plot_medusa_tests_fig6.R ancillary/supp_mat_16-multime
 
 
 
+ancillary/bisse_run_on_MCT.svg: ancillary/supp_mat_09_states.csv ancillary/supp_mat_01_genus.nex ancillary/supp_mat_03_richness.csv ancillary/supp_mat_17_bisse_source.R
+	R --no-save < ancillary/supp_mat_17_bisse_source.R
+
 
 ancillary/supp_mat_13_list_of_clades_and_tips_MultiMEDUSA.csv: code/get_list_of_indexes_and_taxa.R data/supp_mat_03_richness.csv ancillary/supp_mat_01_genus.nex
 	R --no-save < code/get_list_of_indexes_and_taxa.R
