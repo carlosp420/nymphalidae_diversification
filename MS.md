@@ -238,8 +238,8 @@ posterior distribution of trees.
 
 ### Estimation of trait-dependent speciation rates
 We tested whether diversification of Nymphalidae lineages is driven by 
-hostplant by using the “binary state speciation and extinction” 
-(BiSSE; Maddison, Midford, Otto, 2007) Bayesian approach as implemented in the
+hostplants by using the "binary state speciation and extinction" 
+[BiSSE; @maddison2007] Bayesian approach as implemented in the
 R package diversitree [@fitzjohn2012]. MuSSE [@fitzjohn2012] is designed to
 examine the joint effects of two or more traits on speciation. Because most of
 Nymphalidae butterflies are restricted to use one plant family as hostplant, 
@@ -251,19 +251,25 @@ binary datasets for the characters "feeding on the plant family Solanaceae or
 Apocynaceae" (supp. mat. 09) which are the main hostplants of the diverse 
 Ithomiini butterflies and closest relatives [@willmott2006] and 
 Danaini (Apocynaceae). We analyzed the data using BiSSE employing the Markov 
-Chain Monte Carlo algorithm on the maximum clade credibility tree, taking into account
-missing taxa by using the parameter "sampling factor" (``sampling.f``) in diversitree.
+Chain Monte Carlo algorithm on the maximum clade credibility tree, taking into
+account missing taxa by using the parameter "sampling factor" (``sampling.f``)
+in diversitree.
 We also used constrained analyses forcing no effect of hostplant use on
 diversification and likelihood ratio tests to find out whether the hypothesis 
 of effect on diversification has a significantly better likelihood than the 
 null hypothesis (no effect). Due to computational constraints, we could not 
 run BiSSE on the 1000 trees from the posterior distribution. However, we were 
 able to run it on a sample of 250 trees.
+The records of *Vanessa* and *Hypanartia* feeding on Solanaceae 
+[@scott1986; @dyer2002] might be erroneous and the might not be feeding on this
+plant family. We tested whether coding these two genera as not feeding on 
+Solanaceae affected our results.
 
 ## Results
 
 ### LTT plot
-LTT plots of the 1000 randomly chosen trees, along with the maximum clade credibility
+LTT plots of the 1000 randomly chosen trees, along with the maximum clade
+credibility
 tree, from the posterior distribution of trees from @wahlberg2009 are
 shown in Figure 1. This figure shows that the accumulation of lineages in 
 Nymphalidae is congruent with a pattern of increase in diversification rate 
@@ -282,9 +288,9 @@ a ``model.limit`` of 25 splits was adequate enough. The background
 diversification rate for Nymphalidae was estimated as ``r = 0.081`` lineages per 
 Million of years and the AICc score for the best fit model was ``5158.6`` 
 (Table 1).
-MEDUSA also
-estimated the speciation and extinction rates under the basic constant birth--death
-model (AICc ``= 5449.3``, $\lambda$ = ``0.3405``, $\mu$ ``= 0.2664``).
+MEDUSA also estimated the speciation and extinction rates under the basic
+constant birth--death model (AICc ``= 5449.3``, $\lambda$ = ``0.3405``,
+$\mu$ ``= 0.2664``).
 These values are lower than the estimated rates for the constant birth--date
 model estimated on a strict higher level phylogeny of Nymphalidae as defined 
 by @stadler2013 and fall outside the 95% confidence interval (Fig S2;
@@ -361,7 +367,7 @@ a diversification rate increase in part of the clade Ithomiini across more
 than 95% of the trees. Our BiSSE analysis found a positive effect of the 
 character state "feeding on Solanaceae" on the diversification rate on part
 of Ithomiini (Oleriina + Ithomiina + Napeogenina + Dircennina + Godyrina) 
-(Figure 5). The Markov Chain Monte Carlo algorithm was run for 10000
+(Figure 7). The Markov Chain Monte Carlo algorithm was run for 10000
 generations discarding the first 7500 as burnin. The estimated mean 
 diversification rate for taxa that do not feed on Solanaceae was r = 0.10
 while the diversification rate for the Solanaceae feeders was r = 0.14 (see
@@ -632,11 +638,11 @@ Multi-MEDUSA analyses.
 Figure 6. Correlation between width of confidence intervals for nodes and number
 of diversification splits consistently recovered in Multi-MEDUSA analyses.
 
-Figure . BiSSE analysis of diversification of nymphalids due to feeding on Solanaceae hostplants. Speciation and diversification rates are significantly higher in Solanaceae feeders.
+Figure 7. BiSSE analysis of diversification of nymphalids due to feeding on Solanaceae hostplants. Speciation and diversification rates are significantly higher in Solanaceae feeders.
 
-Figure . Boxplot of speciation (lambda), extinction (mu) and transition (q) parameter values of the BiSSE analysis on diversification due to feeding on Solanaceae hostplants.
+Figure 8. Boxplot of speciation (lambda), extinction (mu) and transition (q) parameter values of the BiSSE analysis on diversification due to feeding on Solanaceae hostplants.
 
-Figure 7. BiSSE analysis of diversification of nymphalids due to feeding on Apocynaceae hostplants. There is no effect of this trait either on speciation or diversification rates.
+Figure 9. BiSSE analysis of diversification of nymphalids due to feeding on Apocynaceae hostplants. There is no effect of this trait either on speciation or diversification rates.
 
 Table 1. Significant diversification rate shifts found in the Turbo-MEDUSA analysis of the Nymphalid maximum clade credibility tree. Split.Node = node number, r = net diversification rate, epsilon = relative extinction rate, LnLik.part = log likelihood value 
 
