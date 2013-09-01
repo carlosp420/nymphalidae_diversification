@@ -337,12 +337,12 @@ of the trees (see supp. mat. 12--13).
 We found that most of the diversification splits were consistently recovered
 across more than 95% of the trees from the posterior distribution when
 there was a high ratio of nodes with high posterior probability 
-(Figure 5; supp. mat. 14).
+(Figure 5; supp. mat. 14--15).
 For our data, it would be necessary to obtain a set of trees
 from the Bayesian run with almost 99% of the nodes with posterior 
 probability higher than 0.95 (almost no phylogenetic uncertainty) in order
 to obtain most of the diversification splits from the MCC tree on the posterior
-distribution of trees. For example the MCC tree of the set of trees number 950 
+distribution of trees. For example the MCC tree of the set of trees number 949 
 had 99.75% of the nodes with posterior probability > 0.95, however it was
 possible to recover only 12 diversification shifts (out of a total of 14)
 across more than 95% of the trees (supp. mat. 14--15).
@@ -619,15 +619,19 @@ computational resources.
 
 Figure 1. Lineage through time plot for the maximum clade credibility tree (black) and 1000 random trees from the posterior distribution (coloured lines) of the nymphalid phylogeny. Since this is a genus level phylogeny, the observed slowdown of diversification in the last 20 MYA is an artifact and should be disregarded. 
 
-Figure 2. Results of the MEDUSA analysis run on the maximum clade credibility tree. Rate shifts were estimated for the following nodes (besides the background rate): 2) Limenitidinae + Heliconiinae, 3) Ypthima, 4) Charaxes, 5) Mycalesina + Lethina, 6) Ithomiini in part, 7) Satyrini in part, 8) Phyciodina in part, 9) Danaini in part, 10) Caeruleuptychia + Magneuptychia, 11) Satyrina, 12) Callicore + Diaethria, 13) Pedaliodes, 14) Taenaris.
+Figure 2. Results of the MEDUSA analysis run on the maximum clade credibility tree. Rate shifts were estimated for the following nodes (besides the background rate): 2) Limenitidinae + Heliconiinae, 3) *Ypthima*, 4) *Charaxes*, 5) Mycalesina + Lethina, 6) Ithomiini in part, 7) Satyrini in part, 8) Phyciodina in part, 9) Danaini in part, 10) *Caeruleuptychia* + *Magneuptychia*, 11) Satyrina, 12) *Callicore* + *Diaethria*, 13) *Pedaliodes*, 14) *Taenaris*.
 
-FIgure 3. Results of the Multi-MEDUSA analysis on 1000 random trees from the posterior distribution of the Nymphalidae phylogeny. Bars show the number of trees where MEDUSA found significant increases or decreases in diversification rates for tips or clades in Nymphalidae. Tip and clade indexes are detailed in supplementary material 10.
+Figure 3. Results of the Multi-MEDUSA analysis on 1000 random trees from the posterior distribution of the Nymphalidae phylogeny. Bars show the number of trees where MEDUSA found significant increases or decreases in diversification rates for tips or clades in Nymphalidae. 
 
 Figure 4. Boxplot of the range of diversification values for tips or clades estimated by MEDUSA on the 1000 random trees from the posterior distribution of the Nymphalidae phylogeny. The tips or clades shown are those present on the maximum clade credibility tree.
 
-Figure 5. BiSSE analysis of diversification of nymphalids due to feeding on Solanaceae hostplants. Speciation and diversification rates are significantly higher in Solanaceae feeders.
+Figure 5. Correlation between percentage on nodes with posterior probability
+``> 0.95`` and number of diversification splits consistently recovered in 
+Multi-MEDUSA analyses.
 
-Figure 6. Boxplot of speciation (lambda), extinction (mu) and transition (q) parameter values of the BiSSE analysis on diversification due to feeding on Solanaceae hostplants.
+Figure . BiSSE analysis of diversification of nymphalids due to feeding on Solanaceae hostplants. Speciation and diversification rates are significantly higher in Solanaceae feeders.
+
+Figure . Boxplot of speciation (lambda), extinction (mu) and transition (q) parameter values of the BiSSE analysis on diversification due to feeding on Solanaceae hostplants.
 
 Figure 7. BiSSE analysis of diversification of nymphalids due to feeding on Apocynaceae hostplants. There is no effect of this trait either on speciation or diversification rates.
 
