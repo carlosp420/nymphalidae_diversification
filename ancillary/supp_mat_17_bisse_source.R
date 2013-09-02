@@ -121,7 +121,9 @@ dev.off()
 ## If the intervals do not overlap, then we have posterior Bayesian support for a difference in rates
 x <- sapply(samples[,2:7],quantile,c(0.025,0.975))
 
+pdf("ancillary/figS03.pdf")
 boxplot(x);
+dev.off()
 
 ####
 # do a likelihood ratio test of forcing equal speciation rates lambda0 = lambda1
