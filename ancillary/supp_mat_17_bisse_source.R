@@ -127,7 +127,7 @@ dev.off()
 
 ####
 # do a likelihood ratio test of forcing equal speciation rates lambda0 = lambda1
-samples <- read.csv("bisse_mcmc_run.csv")
+samples <- read.csv("ancillary/supp_mat_18_bisse_mcmc_run.csv")
 samples2 <- subset(samples, i > 7500);
 x <- sapply(samples2[,2:7],quantile,c(0.025,0.975))
 
@@ -136,17 +136,23 @@ x <- sapply(samples2[,2:7],quantile,c(0.025,0.975))
 # now using the mean of the 95% confidence intervals
 pars <- c(mean(x[,1]), mean(x[,2]), mean(x[,3]), mean(x[,4]), mean(x[,5]), mean(x[,6]))
 fit <- find.mle(lik, pars)
-logLik(fit)  #'log Lik.' -1612.288 (df=6)
-AIC(fit)     # 3236.577
+logLik(fit)  #'log Lik.' -1613.274 (df=6)
+AIC(fit)     # 3238.549
 
 lik.l <- constrain(lik, lambda0 ~ lambda1)
 fit.l <- find.mle(lik.l, pars[-2])
 logLik(fit.l)  #'log Lik.' -1619.4 (df=5)
-AIC(fit.l)     # 3248.8
+AIC(fit.l)     # 3248.85
 
-anova(fit, equal.lambda=fit.l)
+table2 <- anova(fit, equal.lambda=fit.l)
+table2$lnLik <- round(table2$lnLik, digits=1)
+table2$AIC <- round(table2$AIC, digits=1)
+table2$ChiSq <- round(table2$ChiSq, digits=1)
+table2[5] <- round(table2[5])
+
+write.table(table2, file="ancillary/Table_2.csv", sep=",")
 # Df   lnLik    AIC  ChiSq Pr(>|Chi|)    
-# full          6 -1612.3 3236.6                      
-# equal.lambda  5 -1619.4 3248.8 14.223  0.0001624 ***
+# full          6 -1613.3 3238.5                      
+# equal.lambda  5 -1619.4 3248.9 12.303  0.0004522 ***
 # ---
 # Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
