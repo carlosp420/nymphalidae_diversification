@@ -374,29 +374,35 @@ than 95% of the trees. Our BiSSE analysis found a positive effect of the
 character state "feeding on Solanaceae" on the diversification rate on part
 of Ithomiini (Oleriina + Ithomiina + Napeogenina + Dircennina + Godyrina) 
 (Figure 7). The Markov Chain Monte Carlo algorithm was run for 10000
-generations discarding the first 7500 as burnin. The estimated mean 
-diversification rate for taxa that do not feed on Solanaceae was r = 0.10
-while the diversification rate for the Solanaceae feeders was r = 0.14 (see
-Figure 6 for a boxplot of speciation and extinction values for the 95%
-credibility intervals). We constrained the BiSSE likelihood model to
+generations discarding the first 7500 as burnin. 
+The estimated mean diversification rate for taxa that do not feed on 
+Solanaceae was ``r = 0.10`` while the diversification rate for the Solanaceae
+feeders was ``r = 0.14`` (see
+Figure S3 for a boxplot of speciation and extinction values for the 95%
+credibility intervals).
+The same analysis considering *Vanessa* and *Hypanartia* as non-Solanaceae
+due to dubious records produced the same pattern, and values (Fig S4) and
+did not affect the results.
+We constrained the BiSSE likelihood model to
 force equal rates of speciation for both character states in order to test
 whether the model of different speciation rates is a significantly better
 explanation for the data. A likelihood ratio test found that the model for
 increased diversification rate for nymphalids feeding on Solanaceae is a
 significantly better explanation than this character state having no effect
-on diversification (``p < 0.001``) (Table 2; character states available in supp.
-mat. 09, code in supp. mat. 17, and mcmc run in supp. mat. 18). We
+on diversification (``p < 0.001``) (Table 2; character states available in
+supp. mat. 09, code in supp. mat. 17, and mcmc run in supp. mat. 18).
+We
 combined the post-burnin mcmc generations from running BiSSE on 250 trees from
 the posterior distribution and found the same pattern as the BiSSE analysis on
-the maximum clade credibility tree (combined mcmc run in supp. mat. 13; profiles plot
-of speciation rates in supp. mat. 14; boxplot of 95% credibility
-intervals in supp. mat. 15).
-A BiSSE analysis to test whether the trait “feeding on Apocynaceae” had any
+the maximum clade credibility tree (combined mcmc run in supp. mat. 19;
+profiles plot of speciation rates in supp. mat. 20; boxplot of 95% credibility
+intervals in supp. mat. 21).
+A BiSSE analysis to test whether the trait "feeding on Apocynaceae" had any
 effect on increased diversification rates found similar speciation rates for
-lineages feeding on Apocynaceae and other plants (Figure 7). It has been shown
+lineages feeding on Apocynaceae and other plants (Figure S5). It has been shown
 that BiSSE performs poorly under certain conditions [@davis2013]. 
-However, our data has adequate number of taxa under analysis (more than 300 tips),
-adequate speciation bias (between 1.5x and 2.0x), character state bias 
+However, our data has adequate number of taxa under analysis (more than 300
+tips), adequate speciation bias (between 1.5x and 2.0x), character state bias 
 (around 8x) and extinction bias (around 4x) for the analysis of Solanaceae
 hostplants. Thus, BiSSE is expected to produce robust results [@davis2013].
 
@@ -466,7 +472,7 @@ diversification rate in more than 95% of the posterior distribution of trees
 
 ### Hostplant use and diversification in Nymphalidae
 #### Ithomiini
-Keith Brown suggested that feeding on Solanacaeae was an important event in the
+Keith Brown suggested that feeding on Solanaceae was an important event in the
 diversification of Ithomiini butterflies [@brown1987]. Ithomiini butterflies
 are exclusively Neotropical and most species feed on Solanaceae hostplants during
 larval stage [supp. mat. 04; @willmott2006]. Optimizations of the
@@ -475,7 +481,7 @@ Apocynaceae
 to Solanaceae [@brower2006; @willmott2006]. @fordyce2010
 found that the Gamma statistics, a LTT plot of an Ithomiini phylogeny and the fit
 of the density-dependent model of diversification are consistent with a burst of
-diversification in Ithomiini following the shift from Apocynaeae to Solanacaeae.
+diversification in Ithomiini following the shift from Apocynaeae to Solanaceae.
 
 In this study, we investigated whether the strong signal for an increase in 
 diversification rate for Ithomiini (found by MEDUSA) can be explained due to the
@@ -487,7 +493,7 @@ Our BiSSE analysis, extended to take into account missing taxa, shows a signific
 higher net diversification rate for Ithomiini taxa, which can be attributed to the
 trait “feeding on Solanaceae hostplants” (Figure 5). This is in agreement with the
 findings of @fordyce2010 using other statistical methods. Due to the fact that
-Ithomiini are virtually the only nymphalids using Solanacaeae as hostplants (except 
+Ithomiini are virtually the only nymphalids using Solanaceae as hostplants (except 
 for *Hypanartia*, *Vanessa* and *Acraea*; supp. mat.04), it is possible that the
 trait responsible for a higher diversification of Ithomiini might not be the hostplant
 character. As noted by @maddison2007, the responsible trait might be a 

@@ -81,7 +81,7 @@ samples <- mcmc(lik, fit$par, nsteps=10000, w=w, lower=0,
                 prior=prior, save.every=1000, save.file="bisse_mcmc_run.csv");
 
 # read markov chain from saved data file
-samples <- read.csv("bisse_mcmc_run.csv")
+#samples <- read.csv("bisse_mcmc_run.csv")
 
 # do burnin
 samples <- subset(samples, i > 7500)
@@ -110,7 +110,7 @@ legend <- c(expression(paste(lambda[0],"\tnon-Solanaceae feeders")),
                        );
 
 # plot diversification rate of taxa not using and using solanaceae as hostplants
-svg(filename="ancillary/bisse_run_on_MCT.svg")
+svg(filename="ancillary/fig07.svg")
 profiles.plot(c(samples[2], samples[3], diversification0, diversification1),
               col.line=col, las=1, ylab="Posterior probability density", 
               xlab="Speciation/Diversification rate", legend.pos="");
