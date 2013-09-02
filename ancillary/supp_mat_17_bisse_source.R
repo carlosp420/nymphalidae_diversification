@@ -6,7 +6,11 @@ add.alpha <- function(col, alpha=.5) {
     rgb(tmp[1,], tmp[2,], tmp[3,], alpha=alpha)
 }
 
-
+phy <- read.nexus("ancillary/supp_mat_01_genus.nex");
+tips <- c("Achlyodes", "Graphium", "Parnassius", "Baronia", "Troides", "Papilio1", "Papilio2", "Pieris", "Aporia", "Styx", "Hamearis", "Euselasia", "Nymphidium", "Emesis", "Crocozona", "Riodina", "Amarynthis", "Baliochila", "Poritia", "Miletus", "Liphyra", "Lycaena", "Celastrina", "Thecla", "Lucia", "Curetis", "Eurema", "Colias", "Leptidea", "Pseudopontia", "Libyt");
+phy  <- drop.tip(phy, tips)
+new.phy <- multi2di(phy);
+phy <- new.phy;
 
 # Process data on using **Solanaceae** as hostplant
 data <- read.csv("ancillary/supp_mat_09_states.csv", sep=",", header=T, row.names=1);
@@ -18,11 +22,7 @@ data.v <- data[,2]
 
 names(data.v) <- row.names(data)
 
-phy <- read.nexus("ancillary/supp_mat_01_genus.nex");
-tips <- c("Achlyodes", "Graphium", "Parnassius", "Baronia", "Troides", "Papilio1", "Papilio2", "Pieris", "Aporia", "Styx", "Hamearis", "Euselasia", "Nymphidium", "Emesis", "Crocozona", "Riodina", "Amarynthis", "Baliochila", "Poritia", "Miletus", "Liphyra", "Lycaena", "Celastrina", "Thecla", "Lucia", "Curetis", "Eurema", "Colias", "Leptidea", "Pseudopontia", "Libyt");
-phy  <- drop.tip(phy, tips)
-new.phy <- multi2di(phy);
-phy <- new.phy;
+
 
 phy$tip.state<-data.v
 
