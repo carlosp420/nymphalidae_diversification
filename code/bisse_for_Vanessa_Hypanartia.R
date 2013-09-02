@@ -76,7 +76,7 @@ set.seed(1);
 
 tmp <- mcmc(lik, fit$par, nsteps=1000, prior=prior, lower=0, w=rep(1,6));
 
-save(tmp, file="tmp.txt");
+save(tmp, file="data/tmp_bisse_run_Hypanartia_Vanessa.csv");
 
 #w <- diff(sapply(tmp[2:7], range));
 w <- diff(sapply(tmp[2:7], quantile, c(0.05, 0.95)));
@@ -84,9 +84,10 @@ w <- diff(sapply(tmp[2:7], quantile, c(0.05, 0.95)));
 
 # this runs the markov chain
 samples <- mcmc(lik, fit$par, nsteps=10000, w=w, lower=0, 
-                prior=prior, save.every=1000, save.file="bisse_mcmc_run.csv");
+                prior=prior, save.every=1000);
 
 # read markov chain from saved data file
+save(samples, file="data/bisse_run_Hypanartia_Vanessa.csv")
 #samples <- read.csv("bisse_mcmc_run.csv")
 
 # do burnin
@@ -123,36 +124,3 @@ profiles.plot(c(samples[2], samples[3], diversification0, diversification1),
 legend("topright", legend=legend, fill=col.fill, border=col, bty="n")
 dev.off()
 
-## Now we can examine the 95% credible intervals of the posterior samples for each parameter.
-## If the intervals do not overlap, then we have posterior Bayesian support for a difference in rates
-x <- sapply(samples[,2:7],quantile,c(0.025,0.975))
-
-pdf("ancillary/figS05.pdf")
-boxplot(x);
-dev.off()
-
-####
-# do a likelihood ratio test of forcing equal speciation rates lambda0 = lambda1
-samples <- read.csv("bisse_mcmc_run.csv")
-samples2 <- subset(samples, i > 7500);
-x <- sapply(samples2[,2:7],quantile,c(0.025,0.975))
-
-# ---------------------
-# do a likelihood ratio test of forcing equal speciation rates lambda0 = lambda1
-# now using the mean of the 95% confidence intervals
-pars <- c(mean(x[,1]), mean(x[,2]), mean(x[,3]), mean(x[,4]), mean(x[,5]), mean(x[,6]))
-fit <- find.mle(lik, pars)
-logLik(fit)  #'log Lik.' -1612.288 (df=6)
-AIC(fit)     # 3236.577
-
-lik.l <- constrain(lik, lambda0 ~ lambda1)
-fit.l <- find.mle(lik.l, pars[-2])
-logLik(fit.l)  #'log Lik.' -1619.4 (df=5)
-AIC(fit.l)     # 3248.8
-
-anova(fit, equal.lambda=fit.l)
-# Df   lnLik    AIC  ChiSq Pr(>|Chi|)    
-# full          6 -1612.3 3236.6                      
-# equal.lambda  5 -1619.4 3248.8 14.223  0.0001624 ***
-# ---
-# Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
