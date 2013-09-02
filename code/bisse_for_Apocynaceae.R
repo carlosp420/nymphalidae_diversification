@@ -69,9 +69,9 @@ prior <- make.prior.exponential(1 / (2 * (p[1] - p[3])));
 set.seed(1);
 
 # 1000 steps
-tmp <- mcmc(lik, fit$par, nsteps=2, prior=prior, lower=0, w=rep(1,6));
+tmp <- mcmc(lik, fit$par, nsteps=1000, prior=prior, lower=0, w=rep(1,6));
 
-#save(tmp, file="tmp.txt");
+save(tmp, file="data/tmp_bisse_for_Apocynaceae.txt");
 
 #w <- diff(sapply(tmp[2:7], range));
 w <- diff(sapply(tmp[2:7], quantile, c(0.05, 0.95)));
@@ -79,13 +79,13 @@ w <- diff(sapply(tmp[2:7], quantile, c(0.05, 0.95)));
 
 # this runs the markov chain
 # 10000 steps save every 1000
-samples <- mcmc(lik, fit$par, nsteps=5, w=w, lower=0, 
-                prior=prior, save.every=1);
+samples <- mcmc(lik, fit$par, nsteps=10000, w=w, lower=0, 
+                prior=prior);
 
 
 # read markov chain from saved data file
 #samples <- read.csv("bisse_mcmc_run.csv")
-write(samples, file="data/bisse_run_Apocynaceae.csv")
+save(samples, file="data/bisse_run_Apocynaceae.txt")
 
 # do burnin
 samples <- subset(samples, i > 7500)
@@ -120,13 +120,5 @@ profiles.plot(c(samples[2], samples[3], diversification0, diversification1),
               col.line=col, las=1, ylab="Posterior probability density", 
               xlab="Speciation/Diversification rate", legend.pos="");
 legend("topright", legend=legend, fill=col.fill, border=col, bty="n")
-dev.off()
-
-## Now we can examine the 95% credible intervals of the posterior samples for each parameter.
-## If the intervals do not overlap, then we have posterior Bayesian support for a difference in rates
-x <- sapply(samples[,2:7],quantile,c(0.025,0.975))
-
-pdf("ancillary/figS06.pdf")
-boxplot(x);
 dev.off()
 
