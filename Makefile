@@ -146,7 +146,7 @@ MS.pdf: header.latex MS.md refs.bib mystyle.csl
 #
 # make figures including ancillary material
 #
-figures: ancillary/fig02.svg ancillary/fig03.svg ancillary/fig04.svg fig05 fig06 fig07 ancillary/figS01.pdf ancillary/supp_mat_13_list_of_clades_and_tips_MultiMEDUSA.csv data/clade_288.csv
+figures: ancillary/fig02.svg ancillary/fig03.svg ancillary/fig04.svg fig05 fig06 fig07 ancillary/figS01.pdf ancillary/figS04.svg ancillary/figS05.svg ancillary/supp_mat_13_list_of_clades_and_tips_MultiMEDUSA.csv data/clade_288.csv
 
 ancillary/figS01.pdf: code/test_effect_of_sampling_tips.R data/strict_cutoff_24.csv ancillary/supp_mat_03_richness.csv ancillary/supp_mat_01_genus.nex code/summarize.turboMEDUSA.R
 	R --no-save < code/test_effect_of_sampling_tips.R
@@ -212,3 +212,13 @@ data/clade_288.csv: ancillary/supp_mat_11_multiMEDUSA_raw_data.csv code/get_max_
 	cat ancillary/supp_mat_11_multiMEDUSA_raw_data.csv | grep -v 'y' | egrep '^[0-9]+\s288' | awk '{print $$3}' > data/clade_288.csv
 	R --no-save < code/get_max_min_r_values.R
 	
+
+figS05
+# ===================
+# Others
+#
+# bisse_Vanessa_Hypanartia assuming that they don't feed on Solanaceae, due to dubius records
+bisse_Vanessa_Hypanartia: ancillary/figS04.svg ancillary/figS05.pdf
+	
+ancillary/figS04.svg ancillary/figS05.pdf: code/bisse_for_Vanessa_Hypanartia.R ancillary/supp_mat_01_genus.nex ancillary/supp_mat_09_states.csv ancillary/supp_mat_03_richness.csv
+	R --no-save < code/bisse_for_Vanessa_Hypanartia.R

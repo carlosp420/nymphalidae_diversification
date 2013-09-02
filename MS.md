@@ -376,22 +376,20 @@ of Ithomiini (Oleriina + Ithomiina + Napeogenina + Dircennina + Godyrina)
 (Figure 7). The Markov Chain Monte Carlo algorithm was run for 10000
 generations discarding the first 7500 as burnin. 
 The estimated mean diversification rate for taxa that do not feed on 
-Solanaceae was ``r = 0.10`` while the diversification rate for the Solanaceae
-feeders was ``r = 0.14`` (see
-Figure S3 for a boxplot of speciation and extinction values for the 95%
-credibility intervals).
+Solanaceae was ``r = 0.11`` while the diversification rate for the Solanaceae
+feeders was ``r = 0.16`` (see Figure S3 for a boxplot of speciation and
+extinction values for the 95% credibility intervals).
 The same analysis considering *Vanessa* and *Hypanartia* as non-Solanaceae
-due to dubious records produced the same pattern, and values (Fig S4) and
-did not affect the results.
-We constrained the BiSSE likelihood model to
-force equal rates of speciation for both character states in order to test
+due to dubious records produced the same pattern as well as diversification
+rates, which does not affect our results (Fig S4).
+We constrained the BiSSE likelihood model to force equal rates of speciation
+for both character states in order to test
 whether the model of different speciation rates is a significantly better
 explanation for the data. A likelihood ratio test found that the model for
 increased diversification rate for nymphalids feeding on Solanaceae is a
 significantly better explanation than this character state having no effect
 on diversification (``p < 0.001``) (Table 2; character states available in
-supp. mat. 09, code in supp. mat. 17, and mcmc run in supp. mat. 18).
-We
+supp. mat. 09, code in supp. mat. 17, and mcmc run in supp. mat. 18). We
 combined the post-burnin mcmc generations from running BiSSE on 250 trees from
 the posterior distribution and found the same pattern as the BiSSE analysis on
 the maximum clade credibility tree (combined mcmc run in supp. mat. 19;
