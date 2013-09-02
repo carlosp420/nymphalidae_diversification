@@ -380,8 +380,9 @@ Solanaceae was ``r = 0.11`` while the diversification rate for the Solanaceae
 feeders was ``r = 0.16`` (see Figure S3 for a boxplot of speciation and
 extinction values for the 95% credibility intervals).
 The same analysis considering *Vanessa* and *Hypanartia* as non-Solanaceae
-due to dubious records produced the same pattern as well as diversification
-rates, which does not affect our results (Fig S4).
+feeders due to dubious records produced the same pattern and diversification
+rates (Fig S4). Therefore, the rest of the analyses were performed assuming
+these two genera as Solanaceae feeders.
 We constrained the BiSSE likelihood model to force equal rates of speciation
 for both character states in order to test
 whether the model of different speciation rates is a significantly better
@@ -393,11 +394,11 @@ supp. mat. 09, code in supp. mat. 17, and mcmc run in supp. mat. 18). We
 combined the post-burnin mcmc generations from running BiSSE on 250 trees from
 the posterior distribution and found the same pattern as the BiSSE analysis on
 the maximum clade credibility tree (combined mcmc run in supp. mat. 19;
-profiles plot of speciation rates in supp. mat. 20; boxplot of 95% credibility
-intervals in supp. mat. 21).
+profiles plot of speciation rates in figure S5; boxplot of 95% credibility
+intervals in figure S6).
 A BiSSE analysis to test whether the trait "feeding on Apocynaceae" had any
 effect on increased diversification rates found similar speciation rates for
-lineages feeding on Apocynaceae and other plants (Figure S5). It has been shown
+lineages feeding on Apocynaceae and other plants (Figure S7). It has been shown
 that BiSSE performs poorly under certain conditions [@davis2013]. 
 However, our data has adequate number of taxa under analysis (more than 300
 tips), adequate speciation bias (between 1.5x and 2.0x), character state bias 
@@ -648,7 +649,9 @@ Multi-MEDUSA analyses.
 Figure 6. Correlation between width of confidence intervals for nodes and number
 of diversification splits consistently recovered in Multi-MEDUSA analyses.
 
-Figure 7. BiSSE analysis of diversification of nymphalids due to feeding on Solanaceae hostplants. Speciation and diversification rates are significantly higher in Solanaceae feeders.
+Figure 7. BiSSE analysis of diversification of nymphalids due to feeding on
+Solanaceae hostplants. Speciation and diversification rates are significantly
+higher in Solanaceae feeders ($lambda$1, r1).
 
 Figure 8. Boxplot of speciation (lambda), extinction (mu) and transition (q) parameter values of the BiSSE analysis on diversification due to feeding on Solanaceae hostplants.
 
@@ -666,6 +669,19 @@ Figure S2. Boxplot of the 95% confidence intervals for estimated speciation and
 extinction rates on an enforced strict higher level phylogeny of our MCC tree by
 collapsing all clades younger than the cutoff value at 24 MYA (see figure S1).
 Estimated rates using the method in @stadler2013.
+
+Figure S3. Boxplot of speciation and extinction values for the 95% credibility
+intervals of values estimated by BiSSE analysis of diversification due to 
+feeding on Solanaceae plants.
+
+Figure S4. BiSSE analysis of diversification of nymphalids due to feeding on
+Solanaceae hostplants assuming *Vanessa* and *Hypanartia* as non-Solanaceae
+feeders. The same pattern is recovered, speciation and diversification rates are
+significantly higher for Solanaceae feeders ($lambda$1, r1).
+
+Figure S7. BiSSE analysis of diversification of nymphalids due to feeding on
+Apocynaceae hostplants. Speciation and diversification rates are similar.
+
 
 ## References
 

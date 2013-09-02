@@ -120,7 +120,7 @@ legend <- c(expression(paste(lambda[0],"\tnon-Solanaceae feeders")),
 svg(filename="ancillary/figS04.svg")
 profiles.plot(c(samples[2], samples[3], diversification0, diversification1),
               col.line=col, las=1, ylab="Posterior probability density", 
-              xlab="Speciation/Diversification rate", legend.pos="");
+              xlab="Speciation/Diversification rate");
 legend("topright", legend=legend, fill=col.fill, border=col, bty="n")
 dev.off()
 

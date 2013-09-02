@@ -115,7 +115,7 @@ legend <- c(expression(paste(lambda[0],"\tnon-Apocynaceae feeders")),
                        );
 
 # plot diversification rate of taxa not using and using solanaceae as hostplants
-svg(filename="ancillary/figS05.svg")
+svg(filename="ancillary/figS07.svg")
 profiles.plot(c(samples[2], samples[3], diversification0, diversification1),
               col.line=col, las=1, ylab="Posterior probability density", 
               xlab="Speciation/Diversification rate", legend.pos="");
