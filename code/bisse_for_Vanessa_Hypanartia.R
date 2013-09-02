@@ -84,7 +84,7 @@ w <- diff(sapply(tmp[2:7], quantile, c(0.05, 0.95)));
 
 # this runs the markov chain
 samples <- mcmc(lik, fit$par, nsteps=10000, w=w, lower=0, 
-                prior=prior, save.every=1000);
+                prior=prior);
 
 # read markov chain from saved data file
 save(samples, file="data/bisse_run_Hypanartia_Vanessa.csv")
