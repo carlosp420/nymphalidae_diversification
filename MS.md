@@ -514,14 +514,34 @@ to identify the actual enzymes that Ithomiini species might be using for
 detoxification of ingested food. A detoxification mechanism has been found in 
 Pieridae larvae feeding on Brassicales hosts [@wheat2007].
 
-However the diversification shift inferred by MEDUSA ocurred after the probable
+The increase in diversification inferred by MEDUSA ocurred after the probable
 shift from Apocynaceae to Solanaceae, as the Solanaceae feeders in the subtribes
 Melinaeina and Mechanitina are not included in the diversification shift (shift number
-6 in see Figure 2). This apparent clonficting results from MEDUSA and BiSSE can be
+6 in Figure 2). The apparent clonficting results from MEDUSA and BiSSE can be
 due to the low richness of the subtribes Melinaeina and Mechanitina compared to the
-other subtribes included in the shift (52 versus 272 species). It appears that MEDUSA
-is more conservative and is not including Melinaeina and Mechanitina in the shift
-due to low species numbers.
+other subtribes included in the shift (52 versus 272 species). It can be that MEDUSA
+is more conservative than BiSSE and is not including Melinaeina and Mechanitina
+in the shift due to low species numbers.
+
+Although the Solanaceae genera used by the Ithomiini clades are well known 
+[@willmott2006], we do not have any understanding on the physiological routes involved
+in the detoxification of Solanaceae compounds by the several lineages of Ithomiini.
+We can speculate that older lineages exploiting a novel toxic resource [as the subtribes
+Melinaeina and Mechanitina; @willmott2006; @wahlberg2009] might not be too efficient
+in metabolizing plant toxins and that younger lineages are able to deal with toxins
+more efficiently, so that host switching events within Solanaceae are possible, which can
+lead to higher diversification.
+Studies in *Papilio* species have reported that detoxification enzymes can become more
+efficient in metabolizing toxins than ancestral configurations of the proteins, providing 
+more opportunities for hostplant switch [@li2003].
+This might be the reason why the basal Ithomiini subtribes Melinaeina and Mechanitina
+are so species-poor and restricted to few Solanaceae hosts [@willmott2006], while
+recent subtribes are species-rich and have expanded their host range into several
+Solanaceae lineages [@willmott2006].
+It might be that the switch to feeding in Solanaceae was an important event in the 
+evolutionary history of Ithomiini, but the actual radiation occurred after critical
+physiological changes (a probable key innovation) allowed efficient detoxification of 
+Solanaceae toxins.
 
 The diffuse cospeciation hypothesis predicts almost identical ages of insects and 
 their hostplants, while the "resource abundance-dependent diversity" and the
