@@ -106,19 +106,17 @@ for (i in 1:length(samples$lambda0)) {
 diversification0 = as.data.frame(diversification0);
 diversification1 = as.data.frame(diversification1);
 
-col <- c("#004165", "#eaab00", "#03253f", "#8e6803");
+col <- c("#004165", "#eaab00");
 col.fill <- add.alpha(col, 0.5)
 legend <- c(expression(paste(lambda[0],"\tnon-Apocynaceae feeders")), 
-            expression(paste(lambda[1],"\tApocynaceae feeders")),
-            expression(paste('r'[0],"\tnon-Apocynaeceae feeders")), 
-            expression(paste('r'[1],"\tApocynaceae feeders"))
+            expression(paste(lambda[1],"\tApocynaceae feeders"))
                        );
 
 # plot diversification rate of taxa not using and using solanaceae as hostplants
 svg(filename="ancillary/figS07.svg")
-profiles.plot(c(samples[2], samples[3], diversification0, diversification1),
+profiles.plot(c(samples[2], samples[3]),
               col.line=col, las=1, ylab="Posterior probability density", 
-              xlab="Speciation/Diversification rate", legend.pos="");
+              xlab="Speciation rate", legend.pos="");
 legend("topright", legend=legend, fill=col.fill, border=col, bty="n")
 dev.off()
 
