@@ -23,9 +23,9 @@
 
 
 ## Abstract
-The speciose butterfly family Nymphalidae has been used to develop hypotheses 
-explaining evolutionary interactions between plants and insects. Theories of 
-insect-hostplant dynamics predict accelerated diversification in some scenarios.
+The speciose butterfly family Nymphalidae has been used to study 
+evolutionary interactions between plants and insects. Theories of 
+insect-hostplant dynamics predict accelerated diversification due to key innovations.
 We investigated whether phylogenetic uncertainty affects a commonly used method
 (MEDUSA, modelling evolutionary diversity using stepwise AIC) for estimating 
 shifts in diversification rates in lineages, by extending the method across a 
@@ -37,8 +37,8 @@ and decrease in some clades. Only three out of 13 significant shifts found on
 the maximum clade credibility tree were consistent across most of the sampled trees.
 Among these, we found accelerated diversification for Ithomiini butterflies. 
 We used the binary speciation and extinction model (BiSSE) and found that a 
-hostplant shift to Solanaceae is responsible for the increased diversification 
-rate in Ithomiini, congruent with the diffuse cospeciation hypothesis. Our results
+hostplant shift to Solanaceae is correlated with increased diversification 
+rates in Ithomiini, congruent with the diffuse cospeciation hypothesis. Our results
 show that taking phylogenetic uncertainty into account when estimating 
 diversification rate shifts is of great importance, and relying on the maximum
 clade credibility tree alone can potentially give erroneous results.
@@ -114,8 +114,8 @@ modified the current MEDUSA method to take this into account (Multi-MEDUSA).
 We also tested whether hostplant association dynamics can explain the 
 diversification patterns of component Nymphalidae lineages by testing whether 
 character states of hostplant use affected the diversification pattern of those
-lineages employing the method BiSSE as implemented in the R package diversitree
-[@fitzjohn2012].
+lineages employing the method BiSSE as implemented in the R package
+``diversitree`` [@fitzjohn2012].
 
 
 
@@ -138,8 +138,9 @@ including the specialist-curated lists on <http://tolweb.org>, @lamas2004 and
 curated lists of Global Butterfly Names project 
 (<http://www.ucl.ac.uk/taxome/gbn/>).
 We assigned the species numbers of genera not included in the phylogeny to the
-closest related genus that was included in @wahlberg2009 study 
-(supp. mat. 03).
+closest related genus that was included in @wahlberg2009 study according to available
+phylogenetic studies [@matos2013; @brower2010; @kodandaramaiah2010; @kodandaramaiah2010a; @ortiz2013; @desilva2010; @freitas2004; @pena2006; @penz1999; @silva2008; @pena2011; @pena2010], taxonomical classification and morphological resemblance
+when no phylogenies were available (supp. mat. 03).
 
 Hostplant data for Nymphalidae species were compiled from several sources 
 including @ackery1988, HOSTS database (<http://bit.ly/YI7nwW>), @dyer2002,
@@ -153,9 +154,9 @@ genera. It was not possible to find any hostplant data for 35 butterfly genera
 ### Analyses of Diversification
 We used the statistical software R version 2.15.1 [@r2013] in 
 combination with the APE [@paradis2004], GEIGER [@harmon2008] and
-diversitree [@fitzjohn2012] packages along with our own scripts to perform the
-analyses (included as supplementary materials). All analyses were run on the 
-1000 random trees from @wahlberg2009 as well as on the maximum 
+``diversitree`` [@fitzjohn2012] packages along with our own scripts to perform
+the analyses (included as supplementary materials). All analyses were run on
+the 1000 random trees from @wahlberg2009 as well as on the maximum 
 clade credibility tree.
 
 
@@ -193,7 +194,7 @@ across the 1000 trees for the nodes where changes in diversification tempo
 occurs. We used the AICc threshold of 7.8 units, as estimated by MEDUSA,
 as the limit for a significantly better fit to
 select among increasingly complex alternative models. 
-We let MEDUSA estimate up to 25 turnover points in our trees as
+We let MEDUSA estimate up to 25 diversification rate shifts in our trees as
 the maximum number of shifts found in all trees was only 21.
 
 We also tested for a possible effect of non-random sampling of genera on the estimated 
@@ -237,10 +238,12 @@ posterior distribution of trees.
 
 
 ### Estimation of trait-dependent speciation rates
-We tested whether diversification of Nymphalidae lineages is driven by 
-hostplants by using the "binary state speciation and extinction" 
+As the MEDUSA and Multi-MEDUSA approaches estimated an increase in 
+diversification in the clade Ithomiini, we tested whether this pattern 
+can be explained by hostplant use and performed analyses with the method
+"binary state speciation and extinction" 
 [BiSSE; @maddison2007] Bayesian approach as implemented in the
-R package diversitree [@fitzjohn2012]. MuSSE [@fitzjohn2012] is designed to
+R package ``diversitree`` [@fitzjohn2012]. MuSSE [@fitzjohn2012] is designed to
 examine the joint effects of two or more traits on speciation. Because most of
 Nymphalidae butterflies are restricted to use one plant family as hostplant, 
 the character states can be coded as presence/absence, for which the BiSSE 
@@ -256,7 +259,7 @@ found in the MEDUSA analyses.
 We analyzed the data using BiSSE employing the Markov 
 Chain Monte Carlo algorithm on the maximum clade credibility tree, taking into
 account missing taxa by using the parameter "sampling factor" (``sampling.f``)
-in diversitree.
+in ``diversitree``.
 We also used constrained analyses forcing no effect of hostplant use on
 diversification and likelihood ratio tests to find out whether the hypothesis 
 of effect on diversification has a significantly better likelihood than the 
@@ -304,7 +307,7 @@ increases in very species-rich genera: *Ypthima* (``r = 0.264``), *Charaxes*
 (``r = 0.251``), *Callicore* + *Diaethria* (``r = 0.220``), *Pedaliodes* 
 (``r = 0.196``) and *Taenaris* (``r = 0.238``). We found rate increases for other
 clades as well such as: Lethina + Mycalesina (``r = 0.130``), Oleriina + Ithomiina
-+ Napeogenina + Dircennina + Godyrina (``r = 0.181``), Euptychiina + Pronophilina
++ Napeogenina + Dircennina + Godyridina (``r = 0.181``), Euptychiina + Pronophilina
 + Maniolina + Satyrina (``r = 0.114``), Phyciodina in part (``r = 0.227``) and 
 Satyrina (``r = 0.220``).
 We also found decreases in diversification rates for Limenitidinae + Heliconiinae
@@ -322,7 +325,7 @@ particular diversification shift (Figure 3, supp. mat. 12--13) as estimated by
 MEDUSA. There were three diversification shifts found in more
 than 95% of the trees: (i) diversification rate increase in the genus *Charaxes*;
 (ii) rate increase in Ithomiini subtribes Oleriina + Ithomiina + Napeogenina +
-Dircennina + Godyrina, and (iii) slowed diversification in part of Danaini 
+Dircennina + Godyridina, and (iii) slowed diversification in part of Danaini 
 (Figure 3).
 
 We obtained mean and standard deviation statistics for the diversification 
@@ -338,7 +341,7 @@ diversification rate (``r = 0.2755``) to almost zero (``r = 2.04e-07``). The
 diversification rates estimates for the root (background diversification rate)
 and the clades (*Tirumala* + *Danaus* + *Amauris* + *Parantica* + *Ideopsis* +
 *Euploea* + *Idea*) and (Oleriina + Ithomiina + Napeogenina + Dircennina +
-Godyrina) are relatively consistent across the 1000 trees (Figure 4). It is
+Godyridina) are relatively consistent across the 1000 trees (Figure 4). It is
 also evident that not all the diversification shifts estimated on the MCC tree
 are consistently recovered in most of the 1000 trees. Some of the splits in the
 MCC tree are recovered in very few trees, for example the split for the clade
@@ -370,9 +373,10 @@ trees from the posterior distribution (supp. mat. 16).
 ### Estimation of trait-dependent speciation rates
 The MEDUSA analyses taking into account phylogenetic uncertainty estimated
 a diversification rate increase in part of the clade Ithomiini across more
-than 95% of the trees. Our BiSSE analysis found a positive effect of the 
+than 95% of the trees.
+Our BiSSE analysis found a positive effect of the 
 character state "feeding on Solanaceae" on the diversification rate on part
-of Ithomiini (Oleriina + Ithomiina + Napeogenina + Dircennina + Godyrina) 
+of Ithomiini (Oleriina + Ithomiina + Napeogenina + Dircennina + Godyridina) 
 (Figure 7). The Markov Chain Monte Carlo algorithm was run for 10000
 generations discarding the first 7500 as burnin. 
 The estimated mean diversification rate for taxa that do not feed on 
@@ -423,9 +427,10 @@ distribution (Figure 3). We also found that, even though MEDUSA could
 estimate the same diversification splits on two or more trees, the 
 estimated diversification rates could vary widely (Figure 4). For example,
 in our Nymphalidae trees, we found that the split for *Magneuptychia* and 
-*Caeruleuptychia* had a variation from ``r = 0.2755``, higher than the background
-diversification rate, to almost zero. This means that observed patterns 
-and conclusions can be completely contradictory depending on tree choice.
+*Caeruleuptychia* had a variation from ``r = 0.2755``, higher than the 
+background diversification rate, to almost zero. This means that observed
+patterns and conclusions can be completely contradictory depending on tree
+choice.
 
 In this study, the effect of phylogenetic uncertainty on the inferred 
 diversification splits by MEDUSA is amplified because some Nymphalidae taxa 
@@ -449,7 +454,7 @@ In order to recover most diversification splits, it is necessary to
 obtain a set of trees from a BEAST run with almost no phylogenetic 
 uncertainty, i.e. very narrow confidence intervals and almost no conflicting 
 topologies so that most of the nodes are recovered with high posterior
-probability.
+probability (Figures 5--6).
 
 If there is strong phylogenetic signal for increases or decreases in
 diversification rates for a node, it is expected that these splits would be
@@ -464,10 +469,9 @@ while estimating splits for other lineages in only a fraction of the
 posterior distribution of trees.
 
 The clade Ithomiini and the non-basal danaids are well supported by high
-posterior probability values in @wahlberg2009  [supplementary information,
-        fig. XX3S]. Therefore our MEDUSA analyses recovered an increase in 
-diversification rate in more than 95% of the posterior distribution of trees 
-(Figure 3).
+posterior probability values in @wahlberg2009. Therefore our MEDUSA analyses
+recovered an increase in diversification rate in more than 95% of the posterior
+distribution of trees (Figure 3).
 
 ### Hostplant use and diversification in Nymphalidae
 #### Ithomiini
@@ -476,45 +480,54 @@ diversification of Ithomiini butterflies [@brown1987]. Ithomiini butterflies
 are exclusively Neotropical and most species feed on Solanaceae hostplants during
 larval stage [supp. mat. 04; @willmott2006]. Optimizations of the
 evolution of hostplant use on phylogenies evidence a probable shift from
-Apocynaceae
-to Solanaceae [@brower2006; @willmott2006]. @fordyce2010
+Apocynaceae to Solanaceae in the ancestor of the tribe [@brower2006; @willmott2006].
+@fordyce2010
 found that the Gamma statistics, a LTT plot of an Ithomiini phylogeny and the fit
 of the density-dependent model of diversification are consistent with a burst of
-diversification in Ithomiini following the shift from Apocynaeae to Solanaceae.
+diversification in Ithomiini following the shift from Apocynaceae to Solanaceae.
 
-In this study, we investigated whether the strong signal for an increase in 
+We investigated whether the strong signal for an increase in 
 diversification rate for Ithomiini (found by MEDUSA) can be explained due to the
 use of Solanaceae plants as hosts during larval stage. For this, we used a Bayesian
-approach [BiSSE; @fitzjohn2009] to test whether the trait “feeding on 
-Solanaceae” had any effect on the diversification of the group. 
+approach [BiSSE; @fitzjohn2009] to test whether the trait "feeding on 
+Solanaceae" had any effect on the diversification of the group. 
 
 Our BiSSE analysis, extended to take into account missing taxa, shows a significantly
 higher net diversification rate for Ithomiini taxa, which can be attributed to the
-trait “feeding on Solanaceae hostplants” (Figure 5). This is in agreement with the
+trait "feeding on Solanaceae hostplants" (Figure 7). This is in agreement with the
 findings of @fordyce2010 using other statistical methods. Due to the fact that
-Ithomiini are virtually the only nymphalids using Solanaceae as hostplants (except 
-for *Hypanartia*, *Vanessa* and *Acraea*; supp. mat.04), it is possible that the
-trait responsible for a higher diversification of Ithomiini might not be the hostplant
-character. As noted by @maddison2007, the responsible trait might be a 
+Ithomiini are virtually the only nymphalids using Solanaceae as hostplants, it is
+possible that the trait responsible for a higher diversification of Ithomiini might
+not be the hostplant character. 
+As noted by @maddison2007, the responsible trait might be a 
 codistributed character such as a trait related to the ability to digest secondary
 metabolites.
 
 Solanaceae plants contain chemical compounds and it has been suggested that the high
-diversity of Ithomiini is consistent with the “escape-and-radiate scenario” due to
+diversity of Ithomiini is consistent with the "escape-and-radiate scenario" due to
 a shift onto Solanaceae [@fordyce2010] and radiation scenarios among chemically
 different lineages of Solanaceae plants [@brown1987; @willmott2006].
 According to this theory, the shift from Apocynaceae to Solanaceae allowed Ithomiini
 to invade newly available resources due to a possible key innovation that allowed
 them cope with secondary metabolites of the new hosts. Additional studies are needed
-to identify the actual enzymes that Ithomiini species might be using for detoxification
-of ingested food. A detoxification mechanism has been found in Pieridae larvae feeding
-on Brassicales hosts  [@wheat2007].
+to identify the actual enzymes that Ithomiini species might be using for
+detoxification of ingested food. A detoxification mechanism has been found in 
+Pieridae larvae feeding on Brassicales hosts [@wheat2007].
+
+However the diversification shift inferred by MEDUSA ocurred after the probable
+shift from Apocynaceae to Solanaceae, as the Solanaceae feeders in the subtribes
+Melinaeina and Mechanitina are not included in the diversification shift (shift number
+6 in see Figure 2). This apparent clonficting results from MEDUSA and BiSSE can be
+due to the low richness of the subtribes Melinaeina and Mechanitina compared to the
+other subtribes included in the shift (52 versus 272 species). It appears that MEDUSA
+is more conservative and is not including Melinaeina and Mechanitina in the shift
+due to low species numbers.
 
 The diffuse cospeciation hypothesis predicts almost identical ages of insects and 
-their hostplants, while the “resource abundance-dependent diversity” and the
-“escape-and-radiate” hypotheses state that insects diversify after their hostplants
+their hostplants, while the "resource abundance-dependent diversity" and the
+"escape-and-radiate" hypotheses state that insects diversify after their hostplants
 [@ehrlich1964; @janz2011; @nyman2012]. @wheat2007 found 
-strong evidence for a model of speciation congruent with Ehrlich and Raven’s
+strong evidence for a model of speciation congruent with Ehrlich and Raven's
 hypothesis in Pieridae butterflies due to, in addition to the identification of a
 key innovation, a burst of diversification in glucosinolate-feeding taxa shortly
 afterwards (with a lag of ~10 MY). According to a recent dated phylogeny of the 

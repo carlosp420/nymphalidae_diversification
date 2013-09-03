@@ -154,8 +154,12 @@ ancillary/figS01.pdf: code/test_effect_of_sampling_tips.R data/strict_cutoff_24.
 ancillary/figS02.pdf: code/test_effect_of_sampling_tips.R data/strict_cutoff_24.csv ancillary/supp_mat_03_richness.csv ancillary/supp_mat_01_genus.nex code/summarize.turboMEDUSA.R
 	R --no-save < code/test_effect_of_sampling_tips.R
 
+fig02: ancillary/fig02.svg
+
 ancillary/fig02.svg: code/summarize.turboMEDUSA.R code/make_figure_02_medusa.R ancillary/supp_mat_10_MEDUSA_Nymphalidae_raw_data.csv
 	Rscript code/make_figure_02_medusa.R ancillary/fig02.svg
+
+fig03: ancillary/fig03.svg 
 
 ancillary/fig03.svg: code/plot_N_clade_sizes.R ancillary/supp_mat_12_multiMEDUSA_summary.csv
 	R --no-save < code/plot_N_clade_sizes.R

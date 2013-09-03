@@ -22,7 +22,7 @@ b <- b[1:4,1] + 1.5;
 b[2] <- b[2] + 0.2
 b[3] <- b[3] + 0.2
 b[4] <- b[4] + 0.2
-text(b, ypos, c("root", "224: Charaxes", "49: Tirumala, Danaus, Amauris, Parantica, Ideopsis, Euploea, Idea", "15: Oleriina, Ithomiina, Napeogenina, Dircennina, Godyrina"),
+text(b, ypos, c("root", "224: Charaxes", "49: Tirumala, Danaus, Amauris, Parantica, Ideopsis, Euploea, Idea", "15: Oleriina, Ithomiina, Napeogenina, Dircennina, Godyridina"),
      srt=90, cex=1.5, family="Verdana", font=2, adj=0)
 abline(h="0.950")
 
@@ -32,7 +32,7 @@ abline(h="0.950")
 # clades: 49 15
 #sig <- which(n > 950)
 
-#legend.txt <- c("224:\tCharaxes","49:\tTirumala, Danaus, Amauris, Parantica, Ideopsis, Euploea, Idea","15:\tOleriina, Ithomiina, Napeogenina, Dircennina, Godyrina")
+#legend.txt <- c("224:\tCharaxes","49:\tTirumala, Danaus, Amauris, Parantica, Ideopsis, Euploea, Idea","15:\tOleriina, Ithomiina, Napeogenina, Dircennina, Godyridina")
 
 #legend("right", legend.txt, pch=19,        
  #      title="Diversification events estimated in more 95% of trees:", cex=1.5)
