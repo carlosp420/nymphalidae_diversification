@@ -60,12 +60,12 @@ acquired adaptive characters in plants act as defense against herbivores. This
 would allow the plant lineage to escape the herbivorous pressure and diversify.
 Eventually, the butterflies would also acquire a character to overcome this 
 barrier and radiate onto the available plant resource. An alternative hypothesis
-of herbivore diversification is the “oscillation hypothesis” [@janz2011] or 
+of herbivore diversification is the "oscillation hypothesis" [@janz2011] or 
 "diffuse cospeciation" [@nyman2012] in which range expansions of plants
 and insects facilitate allopatric speciation and cross-colonization of insects
 onto related plants. This hypothesis predicts near-simultaneous diversification
-of plants and insects that feed on them [@nyman2012]. The “resource 
-abundance-dependent diversity dynamics” hypothesis states that plant groups that
+of plants and insects that feed on them [@nyman2012]. The "resource 
+abundance-dependent diversity dynamics" hypothesis states that plant groups that
 are common and widely distributed will host a higher diversity of herbivores by
 facilitating their speciation over wider geographic distributions. According to
 this hypothesis, there should be a time lag between the diversification of 
@@ -85,30 +85,29 @@ decelerated diversification of some Nymphalidae clades [@elias2009;
 been suggested that climate change in the Oligocene and the subsequent 
 diversification of grasses has led to diversification of the subfamily Satyrinae
 [@pena2008] due to the abundance of grasses over extensive geographic
-areas (“resource abundance-dependent diversity dynamics” hypothesis). 
+areas ("resource abundance-dependent diversity dynamics" hypothesis). 
 @fordyce2010 found increased diversification rates in some Nymphalidae lineages
 after a major hostplant shift, which appears to be in agreement with @ehrlich1964
-“escape-and-radiate” model of diversification. 
+"escape-and-radiate" model of diversification. 
  	 	
 Although it has been suggested that part of the great diversity of Nymphalidae
 butterflies is a result of hostplant-insect dynamics, it is necessary to use 
 modern techniques to investigate whether the diversification patterns of 
 Nymphalidae are in agreement with the theoretical predictions. It is necessary
 to test whether the overall diversification pattern of Nymphalidae is congruent
-with events of sudden diversification bursts due to hostplant shift 
-["radiate-and-escape" hypothesis, e.g. @fordyce2010], climatic events and shifts
-to closely related hostplants ["diffuse cospeciation hypothesis" e.g. 
-@mcleish2007; @voje2009] or resource-abundance dynamics hypothesis
-[e.g. @pena2008]. If patterns of diversification bursts are 
-identified, it is necessary to test whether this is caused by a shift onto 
-chemically different hostplant groups, climatic change, geography, ecological 
-opportunity, or other factors.
+with events of sudden diversification bursts due to hostplant shift, climatic 
+events or shifts to closely related hostplants.
 
 In this study, we used a time calibrated genus-level phylogenetic hypothesis 
 for Nymphalidae butterflies [taken from @wahlberg2009] to investigate 
 patterns of diversification. We applied MEDUSA [modelling evolutionary diversity
 using stepwise AIC, @alfaro2009; @harmon2011], a recently developed
 statistical method, to study the diversification pattern of Nymphalidae butterflies.
+MEDUSA fits likelihood models of diversification into a time calibrated tree and
+tests whether allowing increases or decreases in speciation and extinction rates
+within the tree produces better fit of the models. MEDUSA is able to take into 
+account species diversity for during model fitting and it is normally applied to
+the maximum clade credibility phylogenetic tree.
 Particularly, we wanted to study the effects of phylogenetic uncertainty and 
 modified the current MEDUSA method to take this into account (Multi-MEDUSA). 
 We also tested whether hostplant association dynamics can explain the 
@@ -645,9 +644,13 @@ Our Multi-MEDUSA approach to perform analyses on the posterior distribution of t
 found strong support for an increase in diversification rate in the tribe Ithomiini
 and the genus *Charaxes*, and for a decrease in diversification rate in the subtribe
 Danaina. Due to phylogenetic uncertainty, we did not obtain strong support for other
-diversification splits in Nymphalidae. Our BiSSE analysis found that the trait 
-"feeding on Solanaceae", or a codistributed character, is responsible for the higher
-diversification rate of Ithomiini, but the trait "feeding on Apocynaceae" is not 
+diversification splits in Nymphalidae. 
+Our BiSSE analysis corroborated other studies in that the trait "feeding on Solanaceae",
+or a codistributed character, was important in the diversification of Ithomiini 
+butterflies. However, by applying MEDUSA we found that a critical character in the 
+radiation of the group might have appeared after the shift from Apocynaceae to 
+Solanaceae.
+We also found that the trait "feeding on Apocynaceae" is not 
 responsible for the slowdown of diversification in Danaina. Ithomiini and Solanaceae 
 diversified near simultaneously, which is in agreement with the diffuse co-speciation
 hypothesis [@janz2011; @nyman2012]. 
