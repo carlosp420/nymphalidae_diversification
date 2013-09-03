@@ -146,7 +146,7 @@ MS.pdf: header.latex MS.md refs.bib mystyle.csl
 #
 # make figures including ancillary material
 #
-figures: ancillary/fig02.svg ancillary/fig03.svg ancillary/fig04.svg fig05 fig06 fig07 ancillary/figS01.pdf ancillary/figS04.svg  ancillary/supp_mat_13_list_of_clades_and_tips_MultiMEDUSA.csv data/clade_288.csv
+figures: ancillary/fig02.svg ancillary/fig03.svg ancillary/fig04.svg fig05 fig06 fig07 ancillary/figS01.pdf ancillary/figS04.svg figS05 ancillary/supp_mat_13_list_of_clades_and_tips_MultiMEDUSA.csv data/clade_288.csv
 
 ancillary/figS01.pdf: code/test_effect_of_sampling_tips.R data/strict_cutoff_24.csv ancillary/supp_mat_03_richness.csv ancillary/supp_mat_01_genus.nex code/summarize.turboMEDUSA.R
 	R --no-save < code/test_effect_of_sampling_tips.R
@@ -216,11 +216,11 @@ data/clade_288.csv: ancillary/supp_mat_11_multiMEDUSA_raw_data.csv code/get_max_
 # ===================
 # Others
 #
-plot_combined_bisse: figS06
+plot_combined_bisse: figS05
 	
-figS06: ancillary/figS06.svg
+figS05: ancillary/figS05.svg
 
-ancillary/figS06.svg: ancillary/supp_mat_19_combined_bisse.csv code/bisse_combined.R
+ancillary/figS05.svg: ancillary/supp_mat_19_combined_bisse.csv code/bisse_combined.R
 	R --no-save < code/bisse_combined.R
 
 ancillary/supp_mat_19_combined_bisse.csv: data/combined_bisse.csv	
