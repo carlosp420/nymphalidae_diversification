@@ -44,3 +44,10 @@ profiles.plot(c(samples[3], samples[4], diversification0, diversification1),
 legend("topright", legend=legend, fill=col.fill, border=col, bty="n")
 dev.off()
 
+## Now we can examine the 95% credible intervals of the posterior samples for each parameter.
+## If the intervals do not overlap, then we have posterior Bayesian support for a difference in rates
+x <- sapply(samples[,3:8],quantile,c(0.025,0.975))
+
+pdf("ancillary/figS06.pdf")
+boxplot(x);
+dev.off()
