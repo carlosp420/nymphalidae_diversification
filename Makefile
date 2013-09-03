@@ -216,4 +216,14 @@ data/clade_288.csv: ancillary/supp_mat_11_multiMEDUSA_raw_data.csv code/get_max_
 # ===================
 # Others
 #
+plot_combined_bisse: figS06
 	
+figS06: ancillary/figS06.svg
+
+ancillary/figS06.svg: ancillary/supp_mat_19_combined_bisse.csv code/bisse_combined.R
+	R --no-save < code/bisse_combined.R
+
+ancillary/supp_mat_19_combined_bisse.csv: data/combined_bisse.csv	
+	head -n 1 data/combined_bisse.csv > tmp
+	grep -v 'i' data/combined_bisse.csv >> tmp
+	mv tmp ancillary/supp_mat_19_combined_bisse.csv

@@ -676,8 +676,17 @@ feeding on Solanaceae plants.
 
 Figure S4. BiSSE analysis of diversification of nymphalids due to feeding on
 Solanaceae hostplants assuming *Vanessa* and *Hypanartia* as non-Solanaceae
-feeders. The same pattern is recovered, speciation and diversification rates are
-significantly higher for Solanaceae feeders ($lambda$1, r1).
+feeders. The same pattern is recovered, speciation and diversification rates
+are significantly higher for Solanaceae feeders ($lambda$1, r1).
+
+Figure S5. Diversification rates of nymphalids feeding on Solanaceae plants
+as estimated by combining post-burnin runs of BiSSE on the 1000 trees from 
+the posterior distribution.
+
+Figure S6. Boxplot of speciation and extinction values for the 95% credibility
+intervals of values estimated by BiSSE analysis of diversification due to 
+feeding on Solanaceae plants on the combined post-burnin runs on 1000 trees
+from the posterior distribution.
 
 Figure S7. BiSSE analysis of diversification of nymphalids due to feeding on
 Apocynaceae hostplants. Speciation and diversification rates are similar.
