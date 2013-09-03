@@ -305,9 +305,9 @@ Some of the 13 changes in diversification correspond to rate
 increases in very species-rich genera: *Ypthima* (``r = 0.264``), *Charaxes* 
 (``r = 0.251``), *Callicore* + *Diaethria* (``r = 0.220``), *Pedaliodes* 
 (``r = 0.196``) and *Taenaris* (``r = 0.238``). We found rate increases for other
-clades as well such as: Lethina + Mycalesina (``r = 0.130``), Oleriina + Ithomiina
-+ Napeogenina + Dircennina + Godyridina (``r = 0.181``), Euptychiina + Pronophilina
-+ Maniolina + Satyrina (``r = 0.114``), Phyciodina in part (``r = 0.227``) and 
+clades as well such as: Lethina + Mycalesina (``r = 0.130``), Oleriina + Ithomiina +
+Napeogenina + Dircennina + Godyridina (``r = 0.181``), Euptychiina + Pronophilina +
+Maniolina + Satyrina (``r = 0.114``), Phyciodina in part (``r = 0.227``) and 
 Satyrina (``r = 0.220``).
 We also found decreases in diversification rates for Limenitidinae + Heliconiinae
 (``r = 0.0539``), part of Danaini (``r = 0.0555``) and *Caeruleuptychia* + 
