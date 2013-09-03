@@ -511,14 +511,14 @@ According to this theory, the shift from Apocynaceae to Solanaceae allowed Ithom
 to invade newly available resources due to a possible key innovation that allowed
 them cope with secondary metabolites of the new hosts. Additional studies are needed
 to identify the actual enzymes that Ithomiini species might be using for
-detoxification of ingested food. A detoxification mechanism has been found in 
-Pieridae larvae feeding on Brassicales hosts [@wheat2007].
+detoxification of ingested food as they have been found in other butterfly groups 
+[for example Pieridae larvae feeding on Brassicales hosts; @wheat2007].
 
 The increase in diversification inferred by MEDUSA ocurred after the probable
 shift from Apocynaceae to Solanaceae, as the Solanaceae feeders in the subtribes
 Melinaeina and Mechanitina are not included in the diversification shift (shift number
-6 in Figure 2). The apparent clonficting results from MEDUSA and BiSSE can be
-due to the low richness of the subtribes Melinaeina and Mechanitina compared to the
+6 in Figure 2). The apparent conflicting results from MEDUSA and BiSSE can be explained
+by the low species-richness of the subtribes Melinaeina and Mechanitina compared to the
 other subtribes included in the shift (52 versus 272 species). It can be that MEDUSA
 is more conservative than BiSSE and is not including Melinaeina and Mechanitina
 in the shift due to low species numbers.
