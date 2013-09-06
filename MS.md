@@ -132,7 +132,7 @@ sample of 1000 trees using Burntrees v.0.1.9 <http://www.abc.se/~nylander/>
 (supp. mat. 02) in order to correct for phylogenetic uncertainty when 
 performing the diversification analyses.
 
-We compiled species richness data for Nymphalidae genera from several sources
+Species richness data for Nymphalidae genera were compiled from several sources
 including the specialist-curated lists on <http://tolweb.org>, @lamas2004 and
 curated lists of Global Butterfly Names project 
 (<http://www.ucl.ac.uk/taxome/gbn/>).
@@ -168,7 +168,7 @@ the BEAST run after burnin from @wahlberg2009.
 
 
 ### Detecting diversification shifts on phylogenetic trees
-We analyzed patterns of diversification in Nymphalidae by using Turbo-MEDUSA 
+Patterns of diversification in Nymphalidae were analyzed by using Turbo-MEDUSA 
 version 0.1 [@harmon2011] on the maximum clade credibility tree from 
 @wahlberg2009. Turbo-MEDUSA, and the original algorithm MEDUSA, fit 
 alternative birth-death likelihood models to a phylogenetic tree in order to 
@@ -204,7 +204,7 @@ phylogenies if species were sampled non-randomly and rates are estimated assumin
 model for strict higher level phylogenies by applying a cutoff limit and collapsing the subclades 
 younger than the cutoff into existing older clades.
 We defined a strict higher level phylogeny by applying a cutoff limit at 24 MYA (Fig. S1).
-The number of species for each clade were recalculated and assigned to remaining clades. Speciation
+The number of species for each clade was recalculated and assigned to remaining clades. Speciation
 and extinction rates were estimated for the resulting tree following the methods in @stadler2013.
 
 
@@ -215,23 +215,23 @@ Multi-MEDUSA approaches.
 We created a thousand sets of 1000 trees with increasinly better support for the 
 topology by replacing each of the trees in the posterior distribution with our 
 MCC tree.
-We measured the degree of topology uncertainty for each 
-set as the ratio of nodes with high posterior probability (> 0.95) on
+The degree of topology uncertainty for each 
+set was measured as the ratio of nodes with high posterior probability (> 0.95) on
 the MCC tree of each set of thousand trees.
-We run Multi-MEDUSA on all the sets of trees, and counted the number of consistently
+Multi-MEDUSA was then run on all the sets of trees, and we counted the number of consistently
 recovered diversification splits inferred across more than 95% of the trees.
 
-To test for an effect of confidence interval widths of node ages, we
-created a thousand sets of 1000 trees with narrower confidence intervals
+To test for an effect of age confidence interval widths of node ages, we
+created a thousand sets of 1000 trees with narrowing confidence intervals
 on the estimated ages for all the nodes.
-We achieved this by running a BEAST analysis and forcing a fixed topology
-(our MCC tree) so different branch lengths were allowed. We randomly selected
+This was achieved by running a BEAST analysis with a fixed topology
+(our MCC tree), but allowing varying branch lengths. We randomly selected
 1000 trees from the posterior distribution of trees after burning (supp. mat. 07)
 and replaced each of the trees with the MCC tree (supp. mat. 08) to create a thousand
 sets of 1000 trees.
-We plotted the relationship between width of confidence intervals
+The relationship between width of age confidence intervals
 and the number diversification splits inferred across more than 95% of the
-posterior distribution of trees.
+posterior distribution of trees was plotted.
 
 
 
@@ -239,7 +239,7 @@ posterior distribution of trees.
 ### Estimation of trait-dependent speciation rates
 As the MEDUSA and Multi-MEDUSA approaches estimated an increase in 
 diversification in the clade Ithomiini, we tested whether this pattern 
-can be explained by hostplant use and performed analyses with the method
+can be explained by hostplant use and performed analyses with the
 "binary state speciation and extinction" 
 [BiSSE; @maddison2007] Bayesian approach as implemented in the
 R package ``diversitree`` [@fitzjohn2012]. MuSSE [@fitzjohn2012] is designed to
@@ -262,11 +262,10 @@ in ``diversitree``.
 We also used constrained analyses forcing no effect of hostplant use on
 diversification and likelihood ratio tests to find out whether the hypothesis 
 of effect on diversification has a significantly better likelihood than the 
-null hypothesis (no effect). Due to computational constraints, we could not 
-run BiSSE on the 1000 trees from the posterior distribution. However, we were 
-able to run it on a sample of 250 trees.
+null hypothesis (no effect). The analyses were run across a sample of 250 trees from the 
+posterior distribution.
 The records of *Vanessa* and *Hypanartia* feeding on Solanaceae 
-[@scott1986; @dyer2002] might be erroneous and the might not be feeding on this
+[@scott1986; @dyer2002] might be erroneous [reference!] and the might not be feeding on this
 plant family. We tested whether coding these two genera as not feeding on 
 Solanaceae affected our results.
 
@@ -289,7 +288,7 @@ The MEDUSA analysis on the MCC tree in combination with richness data estimated
 Table 1; supp. mat. 10). The estimated corrected threshold of AICc scores for 
 selecting the optimal model was estimated as 7.8 units. In all MEDUSA analyses, 
 the maximum number of inferred diversification splits in all trees was 21. Thus
-a ``model.limit`` of 25 splits was adequate enough. The background 
+a ``model.limit`` of 25 splits was adequate. The background 
 diversification rate for Nymphalidae was estimated as ``r = 0.081`` lineages per 
 Million of years and the AICc score for the best fit model was ``5158.6`` 
 (Table 1).
@@ -328,7 +327,7 @@ Dircennina + Godyridina, and (iii) slowed diversification in part of Danaini
 (Figure 3).
 
 We obtained mean and standard deviation statistics for the diversification 
-values found on the shifts on the 1000 trees (supp. mat. 11). We found that 
+values found on the shifts on the 1000 trees (supp. mat. 11), and found that 
 some of the changes in diversification rate values had great variation across
 the posterior distribution of trees. A boxplot of the diversification rate 
 values estimated for the clades that appear in the MCC tree shows that some shifts
@@ -361,7 +360,7 @@ had 99.75% of the nodes with posterior probability > 0.95, however it was
 possible to recover only 12 diversification shifts (out of a total of 14)
 across more than 95% of the trees (supp. mat. 14--15).
 
-The figure 6 shows that the width of confidence intervals on the estimated
+Figure 6 shows that also the width of confidence intervals on the estimated
 ages of diversification is correlated with the number of 
 diversification splits that are consistently recovered across the posterior
 distribution of trees. Very narrow confidence intervals are needed in
@@ -491,7 +490,8 @@ use of Solanaceae plants as hosts during larval stage. For this, we used a Bayes
 approach [BiSSE; @fitzjohn2009] to test whether the trait "feeding on 
 Solanaceae" had any effect on the diversification of the group. 
 
-Our BiSSE analysis, extended to take into account missing taxa, shows a significantly
+Our BiSSE analysis, extended to take into account missing taxa and phylogenetic 
+uncertainty, shows a significantly
 higher net diversification rate for Ithomiini taxa, which can be attributed to the
 trait "feeding on Solanaceae hostplants" (Figure 7). This is in agreement with the
 findings of @fordyce2010 using other statistical methods. Due to the fact that
@@ -634,7 +634,7 @@ these splits can be recovered either as increases or decreases in diversificatio
 rate depending on the tree from the posterior distribution that was used for analysis.
 This means that contradictory conclusions would be made if only the maximum
 clade credibility tree was used for analysis. MEDUSA appears to be sensitive to the
-number of nodes with high posterior probability and width of confidence intervals.
+number of nodes with high posterior probability and width of age confidence intervals.
 For our data, it would be necessary to obtain a posterior distribution of trees
 with no conflicting topology, and very similar estimated ages for nodes in order to
 consistently recover most of the diversification splits on the posterior
@@ -661,7 +661,7 @@ phylogenetic uncertainty, Niklas Wahlberg for commenting on the manuscript and g
 us the posterior distribution of trees, Luke Harmon for commenting on the manuscript
 and anonymous reviewers for their comments, which greatly improved the manuscript, 
 Jessica Slove Davidson and Niklas Janz for access to their hostplant data, to Folmer
-Bokma for in using the strict high level phylogeny method. The study
+Bokma for help with using the strict high level phylogeny method. The study
 was supported by a Kone Foundation grant (awarded to Niklas Wahlberg), Finland
 (C. Peña) and the Research Council of Norway (grant no. 204308 to M. Espeland).
 We acknowledge CSC--IT Center for Science Ltd. (Finland) for the allocation of 
