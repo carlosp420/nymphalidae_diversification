@@ -1,6 +1,8 @@
 \documentclass[$if(fontsize)$$fontsize$,$endif$$if(lang)$$lang$,$endif$]{$documentclass$}
 \usepackage{setspace}
-\onehalfspacing
+\usepackage[]{lineno}
+\def\linenumberfont{\normalfont\small\sffamily}
+\doublespacing
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
@@ -128,6 +130,8 @@ $endif$
 $for(header-includes)$
 $header-includes$
 $endfor$
+
+\linenumbers
 
 $if(title)$
 \title{$title$}

@@ -1,3 +1,4 @@
+Table 2. Likelihodd ratio test for increase of diversification rates for Solanaceae feeders versus no-effect model,,,,,
 ,Df,lnLik,AIC,ChiSq,p
-full,6,+AC0-1613.3,3238.5,,
-equal.lambda,5,+AC0-1619.4,3248.9,12.3,0.00045
+full,6,-1613.3,3238.5,,
+equal.lambda,5,-1619.4,3248.9,12.3,0.00045

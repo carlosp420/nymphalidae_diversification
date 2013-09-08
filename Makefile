@@ -139,9 +139,13 @@ count_number_splits2: output/fixed_topology/set_9.nex_raw_data.csv
 pdf: MS.pdf
 
 MS.pdf: header.latex MS.md refs.bib mystyle.csl 
-	pandoc --latex-engine=xelatex -s -S --template header.latex -f markdown -V geometry:margin=1in  MS.md --bibliography=refs.bib  --csl=mystyle.csl  -o MS.pdf
+	pandoc --latex-engine=xelatex -s -S --template header.latex -f markdown -V geometry:a4paper -V geometry:margin=1in  MS.md --bibliography=refs.bib  --csl=jeb.csl  -o MS.pdf
 	
+# Make LATEX file for submittion
+latex: MS.tex
 
+MS.tex: header.latex MS.md refs.bib mystyle.csl 
+	pandoc --latex-engine=xelatex -s -S --template header.latex -f markdown -V geometry:a4paper -V geometry:margin=1in  MS.md --bibliography=refs.bib  --csl=jeb.csl  -o MS.tex
 
 #
 # make figures including ancillary material
