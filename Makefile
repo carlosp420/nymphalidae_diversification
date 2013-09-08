@@ -147,6 +147,13 @@ latex: MS.tex
 MS.tex: header.latex MS.md refs.bib mystyle.csl 
 	pandoc --latex-engine=xelatex -s -S --template header.latex -f markdown -V geometry:a4paper -V geometry:margin=1in  MS.md --bibliography=refs.bib  --csl=jeb.csl  -o MS.tex
 
+
+# Make ODT file for word count including references
+docx: MS.docx
+
+MS.docx: header.latex MS.md refs.bib mystyle.csl 
+	pandoc --latex-engine=xelatex -s -S --template header.latex -f markdown -V geometry:a4paper -V geometry:margin=1in  MS.md --bibliography=refs.bib  --csl=jeb.csl -t docx -o MS.docx
+
 #
 # make figures including ancillary material
 #
