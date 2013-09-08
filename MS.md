@@ -10,7 +10,7 @@
 
 **Corresponding author:** [mycalesis@gmail.com](mailto:mycalesis@gmail.com) Telephone: +358 417063065 Fax: +358 2 333 6680 
 
-**Comments:** 8236 words, 9 figures, 2 tables and 19 supplementary material files. 
+**Comments:** 5814 words, 7 figures, 2 tables and 19 supplementary material files. 
 
 **Both authors contributed equally to this work.**
 
@@ -687,9 +687,6 @@ Figure 7. BiSSE analysis of diversification of nymphalids due to feeding on
 Solanaceae hostplants. Speciation and diversification rates are significantly
 higher in Solanaceae feeders ($lambda$1, r1).
 
-Figure 8. Boxplot of speciation (lambda), extinction (mu) and transition (q) parameter values of the BiSSE analysis on diversification due to feeding on Solanaceae hostplants.
-
-Figure 9. BiSSE analysis of diversification of nymphalids due to feeding on Apocynaceae hostplants. There is no effect of this trait either on speciation or diversification rates.
 
 Table 1. Significant diversification rate shifts found in the Turbo-MEDUSA analysis of the Nymphalid maximum clade credibility tree. Split.Node = node number, r = net diversification rate, epsilon = relative extinction rate, LnLik.part = log likelihood value 
 
