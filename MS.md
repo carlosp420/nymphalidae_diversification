@@ -265,7 +265,8 @@ of effect on diversification has a significantly better likelihood than the
 null hypothesis (no effect). The analyses were run across a sample of 250 trees from the 
 posterior distribution.
 The records of *Vanessa* and *Hypanartia* feeding on Solanaceae 
-[@scott1986; @dyer2002] might be erroneous [reference!] and the might not be feeding on this
+[@scott1986; @dyer2002] might be incorrect as it is unlikely that these
+species can be feeding on this
 plant family. We tested whether coding these two genera as not feeding on 
 Solanaceae affected our results.
 
