@@ -1,4 +1,4 @@
-﻿# Title: Diversity dynamics in Nymphalidae butterflies: Effect of phylogenetic uncertainty on diversification rate shift estimates 
+﻿**Title: Diversity dynamics in Nymphalidae butterflies: Effect of phylogenetic uncertainty on diversification rate shift estimates**
 
 ### Authors: Carlos Peña^1,\*^ and Marianne Espeland^2,\*^
 
@@ -10,15 +10,13 @@
 
 **Corresponding author:** [mycalesis@gmail.com](mailto:mycalesis@gmail.com) Telephone: +358 417063065 Fax: +358 2 333 6680 
 
-**Comments:** 5814 words, 7 figures, 2 tables and 19 supplementary material files. 
+**Comments:** 5814 words, 7 figures, 2 tables and 25 supplementary material files. 
 
 **Both authors contributed equally to this work.**
 
-**Data Archival Location:** [http://dx.doi.org/10.6084/m9.figshare.639208](http://dx.doi.org/10.6084/m9.figshare.639208)
+**Additional Supplementary materials:** [http://dx.doi.org/10.6084/m9.figshare.639208](http://dx.doi.org/10.6084/m9.figshare.639208)
 
-**Pre-peer review:** This manuscript has been peer-reviewed by two anonymous referees using Peerage of Science. The peer-review process can be accessed via [https://www.peerageofscience.org/?link=71445](https://www.peerageofscience.org/?link=71445) using the following credentials:
-
-
+**Pre-peer review:** This manuscript has been peer-reviewed by two anonymous referees using Peerage of Science. The peer-review process can be accessed via [https://www.peerageofscience.org/?link=108491](https://www.peerageofscience.org/?link=108491) using the following credentials: **Username:** 522d928bf3f1d@Journal_Evolutionary_Biology  **Password:** 7iepgwlw
 
 
 
