@@ -266,10 +266,6 @@ Million of years and the AICc score for the best fit model was ``5158.6``
 MEDUSA also estimated the speciation and extinction rates under the basic
 constant birth--death model (AICc ``= 5449.3``, $\lambda$ = ``0.3405``,
 $\mu$ ``= 0.2664``).
-These values are lower than the estimated rates for the constant birth--date
-model estimated on a strict higher level phylogeny of Nymphalidae as defined 
-by @stadler2013 and fall outside the 95% confidence interval (Fig. S2;
-$\lambda$ = [0.35--0.56]; $\mu$ = [0.27--0.51]).
 
 Some of the 13 changes in diversification correspond to rate 
 increases in very species-rich genera: *Ypthima* (``r = 0.264``), *Charaxes* 
@@ -628,8 +624,7 @@ We are thankful to Mark Cornwall for help with the script to extend MEDUSA to in
 phylogenetic uncertainty, Niklas Wahlberg for commenting on the manuscript and giving
 us the posterior distribution of trees, Luke Harmon for commenting on the manuscript
 and anonymous reviewers for their comments, which greatly improved the manuscript, 
-Jessica Slove Davidson and Niklas Janz for access to their hostplant data, to Folmer
-Bokma for help with using the strict high level phylogeny method. The study
+Jessica Slove Davidson and Niklas Janz for access to their hostplant data. The study
 was supported by a Kone Foundation grant (awarded to Niklas Wahlberg), Finland
 (C. Peña) and the Research Council of Norway (grant no. 204308 to M. Espeland).
 We acknowledge CSC--IT Center for Science Ltd. (Finland) for the allocation of 
