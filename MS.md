@@ -255,7 +255,7 @@ Solanaceae affected our results.
 
 ### Detecting diversification shifts on the maximum clade credibility tree
 The MEDUSA analysis on the MCC tree in combination with richness data estimated
-13 changes in the tempo of diversification in Nymphalidae history (Fig. 2; 
+13 changes in the tempo of diversification in Nymphalidae history (Fig. 1; 
 Table 1; supp. mat. 10). The estimated corrected threshold of AICc scores for 
 selecting the optimal model was estimated as 7.8 units. In all MEDUSA analyses, 
 the maximum number of inferred diversification splits in all trees was 21. Thus
@@ -633,9 +633,7 @@ computational resources.
 
 ## Figure legends
 
-Figure 1. Lineage through time plot for the maximum clade credibility tree (black) and 1000 random trees from the posterior distribution (coloured lines) of the nymphalid phylogeny. Since this is a genus level phylogeny, the observed slowdown of diversification in the last 20 MYA is an artifact and should be disregarded. 
-
-Figure 2. Results of the MEDUSA analysis run on the maximum clade credibility tree. Rate shifts were estimated for the following nodes (besides the background rate): 2) Limenitidinae + Heliconiinae, 3) *Ypthima*, 4) *Charaxes*, 5) Mycalesina + Lethina, 6) Ithomiini in part, 7) Satyrini in part, 8) Phyciodina in part, 9) Danaini in part, 10) *Caeruleuptychia* + *Magneuptychia*, 11) Satyrina, 12) *Callicore* + *Diaethria*, 13) *Pedaliodes*, 14) *Taenaris*.
+Figure 1. Results of the MEDUSA analysis run on the maximum clade credibility tree. Rate shifts were estimated for the following nodes (besides the background rate): 2) Limenitidinae + Heliconiinae, 3) *Ypthima*, 4) *Charaxes*, 5) Mycalesina + Lethina, 6) Ithomiini in part, 7) Satyrini in part, 8) Phyciodina in part, 9) Danaini in part, 10) *Caeruleuptychia* + *Magneuptychia*, 11) Satyrina, 12) *Callicore* + *Diaethria*, 13) *Pedaliodes*, 14) *Taenaris*.
 
 Figure 3. Results of the Multi-MEDUSA analysis on 1000 random trees from the posterior distribution of the Nymphalidae phylogeny. Bars show the number of trees where MEDUSA found significant increases or decreases in diversification rates for tips or clades in Nymphalidae. 
 
@@ -653,7 +651,9 @@ Solanaceae hostplants. Speciation and diversification rates are significantly
 higher in Solanaceae feeders ($lambda$1, r1).
 
 
-Table 1. Significant diversification rate shifts found in the Turbo-MEDUSA analysis of the Nymphalid maximum clade credibility tree. Split.Node = node number, r = net diversification rate, epsilon = relative extinction rate, LnLik.part = log likelihood value 
+Table 1. Significant diversification rate shifts found in the MEDUSA analysis
+of the Nymphalid maximum clade credibility tree. Split.Node = node number, r =
+net diversification rate, LnLik.part = log likelihood value.
 
 Table 2. Likelihood ratio test between the model of increased diversification of nymphalids feeding on Solanaceae against a model forcing equal speciation rates (no effect on diversification).
 
