@@ -157,13 +157,6 @@ the 1000 random trees from @wahlberg2009 as well as on the maximum
 clade credibility tree.
 
 
- 
-### LTT plots
-We obtained semilogarithmic lineages-through-time (LTT) plots after removing 
-outgroups and including the maximum clade credibility tree and 95% credibility interval
-obtained by random sampling of 1000 trees from the posterior distribution of 
-the BEAST run after burnin from @wahlberg2009.
-
 
 ### Detecting diversification shifts on phylogenetic trees
 Patterns of diversification in Nymphalidae were analyzed by using Turbo-MEDUSA 
@@ -193,17 +186,6 @@ as the limit for a significantly better fit to
 select among increasingly complex alternative models. 
 We let MEDUSA estimate up to 25 diversification rate shifts in our trees as
 the maximum number of shifts found in all trees was only 21.
-
-We also tested for a possible effect of non-random sampling of genera on the estimated 
-speciation and extinction rates of our MCC tree.
-It has been found that the estimation of diversification rates can be biased in incomplete
-phylogenies if species were sampled non-randomly and rates are estimated assuming random sampling. 
-@stadler2013 presented a method to estimate birth and death rates in the constant birth--death
-model for strict higher level phylogenies by applying a cutoff limit and collapsing the subclades 
-younger than the cutoff into existing older clades.
-We defined a strict higher level phylogeny by applying a cutoff limit at 24 MYA (Fig. S1).
-The number of species for each clade was recalculated and assigned to remaining clades. Speciation
-and extinction rates were estimated for the resulting tree following the methods in @stadler2013.
 
 
 ### Effect of the quality of posterior distribution of trees on MEDUSA and Multi-MEDUSA
@@ -270,16 +252,6 @@ Solanaceae affected our results.
 
 ## Results
 
-### LTT plot
-LTT plots of the 1000 randomly chosen trees, along with the maximum clade
-credibility
-tree, from the posterior distribution of trees from @wahlberg2009 are
-shown in Fig. 1. This figure shows that the accumulation of lineages in 
-Nymphalidae is congruent with a pattern of increase in diversification rate 
-starting at around 50 MYA. However, it should be noted that we used a genus 
-level phylogeny with very incomplete sampling at the species level. Thus, the 
-slowdown of diversification that is apparent during the last 20 MYA is an 
-artifact and should be interpreted very carefully.
 
 ### Detecting diversification shifts on the maximum clade credibility tree
 The MEDUSA analysis on the MCC tree in combination with richness data estimated
