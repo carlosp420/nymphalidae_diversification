@@ -159,9 +159,9 @@ clade credibility tree.
 
 
 ### Detecting diversification shifts on phylogenetic trees
-Patterns of diversification in Nymphalidae were analyzed by using Turbo-MEDUSA 
-version 0.1 [@harmon2011] on the maximum clade credibility tree from 
-@wahlberg2009. Turbo-MEDUSA, and the original algorithm MEDUSA, fit 
+Patterns of diversification in Nymphalidae were analyzed by using MEDUSA 
+version 093-4-33 [@harmon2011] on the maximum clade credibility tree from 
+@wahlberg2009. MEDUSA fits 
 alternative birth-death likelihood models to a phylogenetic tree in order to 
 estimate changes in net diversification rates along branches. MEDUSA estimates 
 likelihood and AIC scores for the simplest birth-death model, with two parameters
@@ -170,11 +170,11 @@ are then compared with incrementally more complex models until the addition of
 parameters do not improve the AIC scores beyond a cutoff value. MEDUSA finds the
 likelihood of the models after taking into account branch lengths and number of
 species per lineage [@alfaro2009]. To our knowledge, studies using MEDUSA
-and Turbo-MEDUSA have so far only run the method on a single tree, usually the
+have so far only run the method on a single tree, usually the
 maximum clade credibility tree, which makes the assumption that this tree is correct.
 We wanted to study the effects of phylogenetic uncertainty on estimation of 
-diversification rate shifts and therefore used custom-made scripts to run 
-Turbo-MEDUSA across 1000 random genus-level trees from the posterior distribution
+diversification rate shifts and therefore run 
+MEDUSA across 1000 random genus-level trees from the posterior distribution
 (Multi-MEDUSA, supp. mat. 06) and summarize the estimated changes in 
 diversification rates for nodes across all trees. Patterns of change in 
 diversification rates are significant if they are found at the same node in at
