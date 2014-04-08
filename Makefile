@@ -36,10 +36,10 @@ output/fixed_topology/set_1000.nex_mct.nex: output/fixed_topology/set_1000.nex
 ####################################################################
 # Run MEDUSA on our MCT tree
 #
-medusa_run: output/medusa_on_mct.txt output/medusa_on_mct.pdf
+medusa_run: output/medusa_on_mct.pdf
 
-output/medusa_on_mct.txt output/medusa_on_mct.pdf: code/run_medusa_on_mct.R data/supp_mat_01_genus.nex data/supp_mat_03_richness.csv
-	Rscript code/run_medusa_on_mct.R data/supp_mat_01_genus.nex output/medusa_on_mct.txt output/medusa_on_mct.pdf
+output/medusa_on_mct.pdf: code/run_medusa_093-4-33on_mct.R data/supp_mat_01_genus.nex data/supp_mat_03_richness.csv
+	Rscript code/run_medusa_093-4-33on_mct.R
 
 
 
