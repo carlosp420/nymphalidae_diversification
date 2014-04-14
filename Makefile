@@ -138,16 +138,11 @@ count_number_splits2: output/fixed_topology/set_9.nex_raw_data.csv
 #
 pdf: MS.pdf
 
-MS.pdf: header.latex MS.md refs.bib jeb.csl ancillary/fig01.png ancillary/fig02.svg ancillary/fig03.svg ancillary/fig04.svg ancillary/fig05.svg ancillary/fig06.svg ancillary/fig07.svg
-	pandoc --latex-engine=xelatex -s -S --template header.latex -f markdown -V geometry:a4paper -V geometry:margin=1in  MS.md --bibliography=refs.bib  --csl=jeb.csl  -o MS.pdf
-	convert ancillary/fig01.png ancillary/fig01.pdf
-	inkscape ancillary/fig02.svg -A ancillary/fig02.pdf
-	inkscape ancillary/fig03.svg -A ancillary/fig03.pdf
-	inkscape ancillary/fig04.svg -A ancillary/fig04.pdf
-	inkscape ancillary/fig05.svg -A ancillary/fig05.pdf
-	inkscape ancillary/fig06.svg -A ancillary/fig06.pdf
-	inkscape ancillary/fig07.svg -A ancillary/fig07.pdf
-	pdftk MS.pdf ancillary/fig01.pdf ancillary/fig02.pdf ancillary/fig03.pdf ancillary/fig04.pdf ancillary/fig05.pdf ancillary/fig06.pdf ancillary/fig07.pdf ancillary/Table_1.pdf ancillary/Table_2.pdf cat output tmp.pdf
+MS.pdf: header.latex MS.md refs.bib jeb.csl ancillary/fig01.pdf 
+	pandoc --latex-engine=xelatex -s -S --template header.latex -f markdown -V geometry:a4paper -V geometry:margin=1in  MS.md --bibliography=refs.bib  --csl=jeb.csl -o MS.pdf
+	#convert ancillary/fig01.png ancillary/fig01.pdf
+	#inkscape ancillary/fig04.svg -A ancillary/fig04.pdf
+	pdftk MS.pdf ancillary/fig01.pdf cat output tmp.pdf
 	mv tmp.pdf MS.pdf
 	
 # Make LATEX file for submittion
