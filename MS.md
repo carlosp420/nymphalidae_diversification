@@ -255,29 +255,30 @@ Solanaceae affected our results.
 
 ### Detecting diversification shifts on the maximum clade credibility tree
 The MEDUSA analysis on the MCC tree in combination with richness data estimated
-13 changes in the tempo of diversification in Nymphalidae history (Fig. 1; 
-Table 1; supp. mat. 10). The estimated corrected threshold of AICc scores for 
+18 changes in the tempo of diversification in Nymphalidae history (Fig. 1; 
+Table 1). The estimated corrected threshold of AICc scores for 
 selecting the optimal model was estimated as 7.8 units. In all MEDUSA analyses, 
-the maximum number of inferred diversification splits in all trees was 21. Thus
+the maximum number of inferred diversification splits in all trees was
+XXXXXXXXXXXXXXXXXXXXX. Thus
 a ``model.limit`` of 25 splits was adequate. The background 
-diversification rate for Nymphalidae was estimated as ``r = 0.081`` lineages per 
-Million of years and the AICc score for the best fit model was ``5158.6`` 
+diversification rate for Nymphalidae was estimated as ``r = 0.092`` lineages per 
+Million of years and the AICc score for the best fit model was ``5090.5`` 
 (Table 1).
-MEDUSA also estimated the speciation and extinction rates under the basic
-constant birth--death model (AICc ``= 5449.3``, $\lambda$ = ``0.3405``,
-$\mu$ ``= 0.2664``).
+MEDUSA also estimated that the basic constant birth--death model was not a
+better explanation for our data (AICc ``= 5449.3``).
 
-Some of the 13 changes in diversification correspond to rate 
-increases in very species-rich genera: *Ypthima* (``r = 0.264``), *Charaxes* 
-(``r = 0.251``), *Callicore* + *Diaethria* (``r = 0.220``), *Pedaliodes* 
-(``r = 0.196``) and *Taenaris* (``r = 0.238``). We found rate increases for other
-clades as well such as: Lethina + Mycalesina (``r = 0.130``), Oleriina + Ithomiina +
-Napeogenina + Dircennina + Godyridina (``r = 0.181``), Euptychiina + Pronophilina +
-Maniolina + Satyrina (``r = 0.114``), Phyciodina in part (``r = 0.227``) and 
-Satyrina (``r = 0.220``).
+Some of the 18 changes in diversification correspond to rate 
+increases in very species-rich genera: *Ypthima* (``r = 0.311``), *Charaxes* 
+(``r = 0.291``), *Callicore* + *Diaethria* (``r = 0.220``), *Pedaliodes* 
+(``r = 0.196``) and *Taenaris* (``r = 0.234``). We found rate increases for other
+clades as well such as: Lethina + Mycalesina (``r = 0.191``), Oleriina + Ithomiina +
+Napeogenina + Dircennina + Godyridina (``r = 0.187``), Satyrini (``r = 0.116``),
+Phyciodina in part (``r = 0.241``) and Satyrina (``r = 0.221``), *Coenonympha*
+(``r = 0.209``), *Caeruleuptychia* + *Magneuptychia* (``r = 0.312``) and
+*Taenaris* (``r = 0.312``).
 We also found decreases in diversification rates for Limenitidinae + Heliconiinae
-(``r = 0.0539``), part of Danaini (``r = 0.0555``) and *Caeruleuptychia* + 
-*Magneuptychia* (``r = 0.0685``) (Table 1).
+(``r = 0.0541``), part of Danaini (``r = 0.0423``), Pseudergolinae (``r =
+0.024``) and Coenonymphina (``r = 0.065``) (Table 1).
 
 ### Phylogenetic uncertainty in the Multi-MEDUSA approach
 We found that the analyses by MEDUSA on the 1000 trees did not estimate the same
