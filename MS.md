@@ -651,7 +651,6 @@ Figure 7. BiSSE analysis of diversification of nymphalids due to feeding on
 Solanaceae hostplants. Speciation and diversification rates are significantly
 higher in Solanaceae feeders ($lambda$1, r1).
 
-
 Table 1. Significant diversification rate shifts found in the MEDUSA analysis
 of the Nymphalid maximum clade credibility tree. Split.Node = node number, r =
 net diversification rate, LnLik.part = log likelihood value.
@@ -659,8 +658,13 @@ net diversification rate, LnLik.part = log likelihood value.
 Table 2. Likelihood ratio test between the model of increased diversification of nymphalids feeding on Solanaceae against a model forcing equal speciation rates (no effect on diversification).
 
 
-Figure S1. MCC tree defined as strict higher level phylogeny but collapsing all
-clades younger than the cutoff value at 24 MYA.
+# Supp. mat.
+**``supp_mat_01_run_medusa_on_mct.R``**: Run MEDUSA on MCT tree from
+@wahlberg2009.
+
+**``supp_mat_02_genus.nex``**: MCT Nymphalidae tree from @wahlberg2009.
+
+**``supp_mat_03_richness.nex``**: Species richness for lineages in Nymphalidae.
 
 Figure S2. Boxplot of the 95% confidence intervals for estimated speciation and
 extinction rates on an enforced strict higher level phylogeny of our MCC tree by
