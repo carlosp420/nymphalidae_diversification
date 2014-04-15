@@ -651,7 +651,7 @@ Figure 7. BiSSE analysis of diversification of nymphalids due to feeding on
 Solanaceae hostplants. Speciation and diversification rates are significantly
 higher in Solanaceae feeders ($lambda$1, r1).
 
-Table 1. Significant diversification rate shifts found in the MEDUSA analysis
+**Table 1.** Significant diversification rate shifts found in the MEDUSA analysis
 of the Nymphalid maximum clade credibility tree. Split.Node = node number, r =
 net diversification rate, LnLik.part = log likelihood value.
 
