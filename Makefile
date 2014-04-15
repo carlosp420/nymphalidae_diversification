@@ -1,3 +1,30 @@
+# 
+# make manuscript in PDF
+#
+pdf: MS.pdf
+
+MS.pdf: header.latex MS.md refs.bib jeb.csl ancillary/fig01.pdf 
+	pandoc --latex-engine=xelatex -s -S --template header.latex -f markdown -V geometry:a4paper -V geometry:margin=1in  MS.md --bibliography=refs.bib  --csl=jeb.csl -o MS.pdf
+	#convert ancillary/fig01.png ancillary/fig01.pdf
+	#inkscape ancillary/fig04.svg -A ancillary/fig04.pdf
+	pdftk MS.pdf ancillary/fig01.pdf cat output tmp.pdf
+	mv tmp.pdf MS.pdf
+	
+# Make LATEX file for submittion
+latex: MS.tex
+
+MS.tex: header.latex MS.md refs.bib jeb.csl 
+	pandoc --latex-engine=xelatex -s -S --template header.latex -f markdown -V geometry:a4paper -V geometry:margin=1in  MS.md --bibliography=refs.bib  --csl=jeb.csl  -o MS.tex
+
+# Make ODT file for word count including references
+docx: MS.docx
+
+MS.docx: header.latex MS.md refs.bib mystyle.csl 
+	pandoc --latex-engine=xelatex -s -S --template header.latex -f markdown -V geometry:a4paper -V geometry:margin=1in  MS.md --bibliography=refs.bib  --csl=jeb.csl -t docx -o MS.docx
+
+
+
+
 TREEANNOTATOR = /home/carlosp420/Desktop/phylo_software/BEASTv1.7.5/bin/treeannotator
 
 ####################################################################
@@ -132,31 +159,6 @@ count_number_splits2: output/fixed_topology/set_9.nex_raw_data.csv
 	cat output/number_of_splits.txt | sort -n | tail -n 1
 	rm output/number_of_splits.txt
 
-
-# 
-# make manuscript in PDF
-#
-pdf: MS.pdf
-
-MS.pdf: header.latex MS.md refs.bib jeb.csl ancillary/fig01.pdf 
-	pandoc --latex-engine=xelatex -s -S --template header.latex -f markdown -V geometry:a4paper -V geometry:margin=1in  MS.md --bibliography=refs.bib  --csl=jeb.csl -o MS.pdf
-	#convert ancillary/fig01.png ancillary/fig01.pdf
-	#inkscape ancillary/fig04.svg -A ancillary/fig04.pdf
-	pdftk MS.pdf ancillary/fig01.pdf cat output tmp.pdf
-	mv tmp.pdf MS.pdf
-	
-# Make LATEX file for submittion
-latex: MS.tex
-
-MS.tex: header.latex MS.md refs.bib jeb.csl 
-	pandoc --latex-engine=xelatex -s -S --template header.latex -f markdown -V geometry:a4paper -V geometry:margin=1in  MS.md --bibliography=refs.bib  --csl=jeb.csl  -o MS.tex
-
-
-# Make ODT file for word count including references
-docx: MS.docx
-
-MS.docx: header.latex MS.md refs.bib mystyle.csl 
-	pandoc --latex-engine=xelatex -s -S --template header.latex -f markdown -V geometry:a4paper -V geometry:margin=1in  MS.md --bibliography=refs.bib  --csl=jeb.csl -t docx -o MS.docx
 
 #
 # make figures including ancillary material
