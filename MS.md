@@ -279,18 +279,17 @@ We also found decreases in diversification rates for Limenitidinae + Heliconiina
 0.024``) and Coenonymphina (``r = 0.065``) (Table 1).
 
 ### Phylogenetic uncertainty in the Multi-MEDUSA approach
-We found that the analyses by MEDUSA on the 1000 trees did not estimate the same
-diversification shifts as in the MCC tree (the background diversification and all 
-shifts found by MEDUSA on the 1000 
-trees are provided in supp. mat. 11). In order to obtain the diversification 
-shifts that were estimated in most of the 1000 trees, we plotted the 
-diversification shifts versus number of trees containing that 
-particular diversification shift (Fig. 3, supp. mat. 12--13) as estimated by 
-MEDUSA. There were three diversification shifts found in more
-than 95% of the trees: (i) diversification rate increase in the genus *Charaxes*;
-(ii) rate increase in Ithomiini subtribes Oleriina + Ithomiina + Napeogenina +
-Dircennina + Godyridina, and (iii) slowed diversification in part of Danaini 
-(Fig. 3).
+We found that the analyses by MEDUSA on the 1000 trees did not estimate the
+same diversification shifts as in the MCC tree (the background diversification
+and all shifts found by MEDUSA on the 1000 trees are provided in supp. mat. 11).
+In order to obtain the diversification shifts that were estimated in most of
+the 1000 trees, we plotted the diversification shifts versus number of trees
+containing that particular diversification shift (Fig. 3, supp. mat. 12--13) as
+estimated by MEDUSA.
+There were three diversification shifts found in more than 95% of the trees:
+(i) diversification rate increase in the genus *Charaxes*; (ii) rate increase
+in Ithomiini subtribes Oleriina + Ithomiina + Napeogenina + Dircennina +
+Godyridina, and (iii) slowed diversification in part of Danaini (Fig. 3).
 
 We obtained mean and standard deviation statistics for the diversification 
 values found on the shifts on the 1000 trees (supp. mat. 11), and found that 
