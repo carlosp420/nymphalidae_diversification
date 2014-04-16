@@ -12,8 +12,6 @@
 
 **Comments:** 5814 words, 7 figures, 2 tables and 25 supplementary material files. 
 
-**Both authors contributed equally to this work.**
-
 **Additional Supplementary materials:** [http://dx.doi.org/10.6084/m9.figshare.639208](http://dx.doi.org/10.6084/m9.figshare.639208)
 
 **Pre-peer review:** This manuscript has been peer-reviewed by two anonymous referees using Peerage of Science. The peer-review process can be accessed via [https://www.peerageofscience.org/?link=108491](https://www.peerageofscience.org/?link=108491) using the following credentials: **Username:** 522d928bf3f1d@Journal_Evolutionary_Biology  **Password:** 7iepgwlw
@@ -665,6 +663,12 @@ Table 2. Likelihood ratio test between the model of increased diversification of
 **``supp_mat_02_genus.nex``**: MCT Nymphalidae tree from @wahlberg2009.
 
 **``supp_mat_03_richness.nex``**: Species richness for lineages in Nymphalidae.
+
+**``supp_mat_04_run_multimedusa.R``**: Run MultiMEDUSA on 1000
+random trees from @wahlberg2009.
+
+**``supp_mat_05_1000_random_trees_no_outgroups.nex``**: 1000 random trees from
+@wahlberg2009.
 
 Figure S2. Boxplot of the 95% confidence intervals for estimated speciation and
 extinction rates on an enforced strict higher level phylogeny of our MCC tree by
