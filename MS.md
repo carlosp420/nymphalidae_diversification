@@ -148,36 +148,37 @@ butterfly genera.
 
 
 ### Analyses of Diversification
-We used the statistical software R version 2.15.1 [@r2013] in 
-combination with the APE [@paradis2004], GEIGER [@harmon2008] and
+We used the statistical software R version 2.15.1 [@r2013] in combination with
+the APE [@paradis2004], GEIGER [@harmon2008], MEDUSA [@alfaro2009] and
 ``diversitree`` [@fitzjohn2012] packages along with our own scripts to perform
 the analyses (included as supplementary materials). All analyses were run on
-the 1000 random trees from @wahlberg2009 as well as on the maximum 
-clade credibility tree.
+the 1000 random trees from @wahlberg2009 as well as on the maximum clade
+credibility tree.
 
 
 
 ### Detecting diversification shifts on phylogenetic trees
-Patterns of diversification in Nymphalidae were analyzed by using MEDUSA 
-version 093-4-33 [@harmon2011] on the maximum clade credibility tree from 
-@wahlberg2009. MEDUSA fits 
-alternative birth-death likelihood models to a phylogenetic tree in order to 
-estimate changes in net diversification rates along branches. MEDUSA estimates 
-likelihood and AIC scores for the simplest birth-death model, with two parameters
-(``b``: speciation and ``d``: extinction). The AIC scores of the two-parameter model 
-are then compared with incrementally more complex models until the addition of
-parameters do not improve the AIC scores beyond a cutoff value. MEDUSA finds the
-likelihood of the models after taking into account branch lengths and number of
-species per lineage [@alfaro2009]. To our knowledge, studies using MEDUSA
-have so far only run the method on a single tree, usually the
-maximum clade credibility tree, which makes the assumption that this tree is correct.
-We wanted to study the effects of phylogenetic uncertainty on estimation of 
-diversification rate shifts and therefore run 
-MEDUSA across 1000 random genus-level trees from the posterior distribution
-(Multi-MEDUSA, supp. mat. 06) and summarize the estimated changes in 
-diversification rates for nodes across all trees. Patterns of change in 
-diversification rates are significant if they are found at the same node in at
-least 95% of the trees. We also expected to find similar values of net diversification
+Patterns of diversification in Nymphalidae were analyzed by using MEDUSA
+version 093-4-33 [@alfaro2009] on the maximum clade credibility tree from
+@wahlberg2009. 
+MEDUSA fits alternative birth-death likelihood models to a phylogenetic tree in
+order to estimate changes in net diversification rates along branches. MEDUSA
+estimates likelihood and AIC scores for the simplest birth-death model, with two
+parameters (``b``: speciation and ``d``: extinction). The AIC scores of the
+two-parameter model are then compared with incrementally more complex models
+until the addition of parameters do not improve the AIC scores beyond a cutoff
+value.
+MEDUSA finds the likelihood of the models after taking into account branch
+lengths and number of species per lineage [@alfaro2009]. To our knowledge,
+studies using MEDUSA have so far only run the method on a single tree, usually
+the maximum clade credibility tree, which makes the assumption that this tree is
+correct. We wanted to study the effects of phylogenetic uncertainty on estimation
+of diversification rate shifts and therefore run MEDUSA across 1000 random
+genus-level trees from the posterior distribution (Multi-MEDUSA, supp. mat. 06)
+and summarize the estimated changes in diversification rates for nodes across
+all trees. Patterns of change in diversification rates are significant if they
+are found at the same node in at least 95% of the trees.
+We also expected to find similar values of net diversification
 (``r = b - d``) and relative extinction rate ($\varepsilon$ ``= d/b``) values 
 across the 1000 trees for the nodes where changes in diversification tempo 
 occurs. We used the AICc threshold of 7.8 units, as estimated by MEDUSA,
