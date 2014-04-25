@@ -138,12 +138,12 @@ available phylogenetic studies [@matos2013; @brower2010; @kodandaramaiah2010;
 @penz1999; @silva2008; @pena2011; @pena2010], taxonomical classification and
 morphological resemblance when no phylogenies were available (supp. mat. 03).
 
-Hostplant data for Nymphalidae species were compiled from several sources 
+Hostplant data for Nymphalidae species were compiled from several sources
 including @ackery1988, HOSTS database (<http://bit.ly/YI7nwW>), @dyer2002,
-@beccaloni2008, @janzen2009 and others (supp. mat. 04--05) for a total of 6586 hostplant
-records, including 428 Nymphalidae genera and 143 plant families and 1070 plant
-genera. It was not possible to find any hostplant data for 35 butterfly genera
-(supp. mat. 04).
+@beccaloni2008, @janzen2009 and others (supp. mat. 06--07) for a total of 6586
+hostplant records, including 428 Nymphalidae genera and 143 plant families and
+1070 plant genera. It was not possible to find any hostplant data for 35
+butterfly genera.
 
 
 
@@ -683,6 +683,12 @@ random trees from @wahlberg2009.
 
 **``supp_mat_05_1000_random_trees_no_outgroups.nex``**: 1000 random trees from
 @wahlberg2009.
+
+**``supp_mat_06_host_plant_data.csv``**: Hostplants of Nymphalidae butterflies
+recorded from the literature.
+
+**``supp_mat_07_host_plant_data_references.csv``**: References for hostplants
+data.
 
 Figure S2. Boxplot of the 95% confidence intervals for estimated speciation and
 extinction rates on an enforced strict higher level phylogeny of our MCC tree by
