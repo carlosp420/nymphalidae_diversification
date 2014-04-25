@@ -169,12 +169,12 @@ two-parameter model are then compared with incrementally more complex models
 until the addition of parameters do not improve the AIC scores beyond a cutoff
 value.
 MEDUSA finds the likelihood of the models after taking into account branch
-lengths and number of species per lineage [@alfaro2009]. To our knowledge,
-studies using MEDUSA have so far only run the method on a single tree, usually
+lengths and number of species per lineage [@alfaro2009].
+Most studies using MEDUSA only run the method on a single tree, usually
 the maximum clade credibility tree, which makes the assumption that this tree is
 correct. We wanted to study the effects of phylogenetic uncertainty on estimation
 of diversification rate shifts and therefore run MEDUSA across 1000 random
-genus-level trees from the posterior distribution (Multi-MEDUSA, supp. mat. 06)
+genus-level trees from the posterior distribution (Multi-MEDUSA, supp. mat. 05)
 and summarize the estimated changes in diversification rates for nodes across
 all trees. Patterns of change in diversification rates are significant if they
 are found at the same node in at least 95% of the trees.
@@ -182,10 +182,10 @@ We also expected to find similar values of net diversification
 (``r = b - d``) and relative extinction rate ($\varepsilon$ ``= d/b``) values 
 across the 1000 trees for the nodes where changes in diversification tempo 
 occurs. We used the AICc threshold of 7.8 units, as estimated by MEDUSA,
-as the limit for a significantly better fit to
-select among increasingly complex alternative models. 
-We let MEDUSA estimate up to 25 diversification rate shifts in our trees as
-the maximum number of shifts found in all trees was only 21.
+as the limit for a significantly better fit to select among increasingly
+complex alternative models.
+We let MEDUSA estimate up to 26 diversification rate shifts in our trees as
+this was the maximum number of shifts found in all trees.
 
 
 ### Effect of the quality of posterior distribution of trees on MEDUSA and Multi-MEDUSA
@@ -193,7 +193,7 @@ We tested the effect of topology uncertainty and width of confidence intervals
 of ages on the number of diversification splits inferred by the MEDUSA and
 Multi-MEDUSA approaches.
 We created a thousand sets of 1000 trees with increasinly better support for the 
-topology by replacing each of the trees in the posterior distribution with our 
+topology by replacing each of the trees in the posterior distribution with our
 MCC tree.
 The degree of topology uncertainty for each 
 set was measured as the ratio of nodes with high posterior probability (> 0.95) on
@@ -689,6 +689,9 @@ random trees from @wahlberg2009.
 recorded from the literature.
 
 **``supp_mat_07_host_plant_data_references.csv``**: References for hostplants
+data.
+
+**``supp_mat_08_host_plant_data_references.csv``**: References for hostplants
 data.
 
 Figure S2. Boxplot of the 95% confidence intervals for estimated speciation and
