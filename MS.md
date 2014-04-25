@@ -117,25 +117,26 @@ lineages employing the method BiSSE as implemented in the R package
 ## Methods
 
 ### Data
-For analyses, we used the phylogenetic trees from the study of @wahlberg2009 
-that were generated using DNA sequence data from 10 gene regions for 398 of
-the 540 valid genera in Nymphalidae. We employed @wahlberg2009 maximum clade
-credibility tree (MCC tree) (supp. mat. 01) as well as a random sample of 1000 
-trees from
-their BEAST run after burnin. Their original BEAST run was for 40 million 
-generations. We used a burnin of 25 million generations and took a random
-sample of 1000 trees using Burntrees v.0.1.9 <http://www.abc.se/~nylander/>
-(supp. mat. 02) in order to correct for phylogenetic uncertainty when 
-performing the diversification analyses.
+For analyses, we used the phylogenetic trees from the study of @wahlberg2009 that
+were generated using DNA sequence data from 10 gene regions for 398 of the 540
+valid genera in Nymphalidae. We employed @wahlberg2009 maximum clade credibility
+tree (MCC tree) (Fig. 1) as well as a random sample of 1000 trees from
+their BEAST run after burnin. Their original BEAST run was for 40 million
+generations. We used a burnin of 25 million generations and took a random sample
+of 1000 trees using Burntrees v.0.1.9 <http://www.abc.se/~nylander/> (supp. mat.
+5) in order to correct for phylogenetic uncertainty when performing the
+diversification analyses.
 
 Species richness data for Nymphalidae genera were compiled from several sources
 including the specialist-curated lists on <http://tolweb.org>, @lamas2004 and
-curated lists of Global Butterfly Names project 
+curated lists of Global Butterfly Names project
 (<http://www.ucl.ac.uk/taxome/gbn/>).
 We assigned the species numbers of genera not included in the phylogeny to the
-closest related genus that was included in @wahlberg2009 study according to available
-phylogenetic studies [@matos2013; @brower2010; @kodandaramaiah2010; @kodandaramaiah2010a; @ortiz2013; @desilva2010; @freitas2004; @pena2006; @penz1999; @silva2008; @pena2011; @pena2010], taxonomical classification and morphological resemblance
-when no phylogenies were available (supp. mat. 03).
+closest related genus that was included in @wahlberg2009 study according to
+available phylogenetic studies [@matos2013; @brower2010; @kodandaramaiah2010;
+@kodandaramaiah2010a; @ortiz2013; @desilva2010; @freitas2004; @pena2006;
+@penz1999; @silva2008; @pena2011; @pena2010], taxonomical classification and
+morphological resemblance when no phylogenies were available (supp. mat. 03).
 
 Hostplant data for Nymphalidae species were compiled from several sources 
 including @ackery1988, HOSTS database (<http://bit.ly/YI7nwW>), @dyer2002,
@@ -631,11 +632,23 @@ computational resources.
 
 ## Figure legends
 
-Figure 1. Results of the MEDUSA analysis run on the maximum clade credibility tree. Rate shifts were estimated for the following nodes (besides the background rate): 2) Limenitidinae + Heliconiinae, 3) *Ypthima*, 4) *Charaxes*, 5) Mycalesina + Lethina, 6) Ithomiini in part, 7) Satyrini in part, 8) Phyciodina in part, 9) Danaini in part, 10) *Caeruleuptychia* + *Magneuptychia*, 11) Satyrina, 12) *Callicore* + *Diaethria*, 13) *Pedaliodes*, 14) *Taenaris*.
+Figure 1. Results of the MEDUSA analysis run on the maximum clade credibility
+tree. Rate shifts were estimated for the following nodes (besides the background
+rate): 2) Limenitidinae + Heliconiinae, 3) *Ypthima*, 4) *Charaxes*, 5)
+Mycalesina + Lethina, 6) Ithomiini in part, 7) Satyrini in part, 8)
+Phyciodina in part, 9) Danaini in part, 10) *Caeruleuptychia* +
+*Magneuptychia*, 11) Satyrina, 12) *Callicore* + *Diaethria*, 13)
+*Pedaliodes*, 14) *Taenaris*.
 
-Figure 3. Results of the Multi-MEDUSA analysis on 1000 random trees from the posterior distribution of the Nymphalidae phylogeny. Bars show the number of trees where MEDUSA found significant increases or decreases in diversification rates for tips or clades in Nymphalidae. 
+Figure 2. Results of the MultiMEDUSA analysis on 1000 random trees from the
+posterior distribution of the Nymphalidae phylogeny. Bars show the number of trees
+where MEDUSA found significant increases or decreases in diversification rates for
+tips or clades in Nymphalidae.
 
-Figure 4. Boxplot of the range of diversification values for tips or clades estimated by MEDUSA on the 1000 random trees from the posterior distribution of the Nymphalidae phylogeny. The tips or clades shown are those present on the maximum clade credibility tree.
+Figure 4. Boxplot of the range of diversification values for tips or clades
+estimated by MEDUSA on the 1000 random trees from the posterior distribution of
+the Nymphalidae phylogeny. The tips or clades shown are those present on the
+maximum clade credibility tree.
 
 Figure 5. Correlation between percentage on nodes with posterior probability
 ``> 0.95`` and number of diversification splits consistently recovered in 
@@ -652,14 +665,16 @@ higher in Solanaceae feeders ($lambda$1, r1).
 of the Nymphalid maximum clade credibility tree. Split.Node = node number, r =
 net diversification rate, LnLik.part = log likelihood value.
 
-Table 2. Likelihood ratio test between the model of increased diversification of nymphalids feeding on Solanaceae against a model forcing equal speciation rates (no effect on diversification).
+Table 2. Likelihood ratio test between the model of increased diversification of
+nymphalids feeding on Solanaceae against a model forcing equal speciation rates
+(no effect on diversification).
 
 
 # Supp. mat.
-**``supp_mat_01_run_medusa_on_mct.R``**: Run MEDUSA on MCT tree from
+**``supp_mat_01_run_medusa_on_mct.R``**: Run MEDUSA on MCC tree from
 @wahlberg2009.
 
-**``supp_mat_02_genus.nex``**: MCT Nymphalidae tree from @wahlberg2009.
+**``supp_mat_02_genus.nex``**: MCC Nymphalidae tree from @wahlberg2009.
 
 **``supp_mat_03_richness.nex``**: Species richness for lineages in Nymphalidae.
 
