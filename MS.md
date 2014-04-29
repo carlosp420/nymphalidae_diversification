@@ -281,6 +281,9 @@ We also found decreases in diversification rates for Limenitidinae + Heliconiina
 0.024``) and Coenonymphina (``r = 0.065``) (Table 1).
 
 ### Phylogenetic uncertainty in the Multi-MEDUSA approach
+We tested whether the results from a MEDUSA analysis on the MCC tree are 
+congruent with those found by running MEDUSA on a random sample of 1000 trees
+fom the posterior distribution.
 We found that the analyses by MEDUSA on the 1000 trees did not estimate the
 same diversification shifts as in the MCC tree (the background diversification
 and all shifts found by MEDUSA on the 1000 trees are provided in supp. mat. 11).
