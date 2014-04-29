@@ -160,7 +160,7 @@ credibility tree.
 ### Detecting diversification shifts on phylogenetic trees
 Patterns of diversification in Nymphalidae were analyzed by using MEDUSA
 version 093-4-33 [@alfaro2009] on the maximum clade credibility tree from
-@wahlberg2009. 
+@wahlberg2009.
 MEDUSA fits alternative birth-death likelihood models to a phylogenetic tree in
 order to estimate changes in net diversification rates along branches. MEDUSA
 estimates likelihood and AIC scores for the simplest birth-death model, with two
@@ -179,8 +179,8 @@ and summarize the estimated changes in diversification rates for nodes across
 all trees. Patterns of change in diversification rates are significant if they
 are found at the same node in at least 95% of the trees.
 We also expected to find similar values of net diversification
-(``r = b - d``) and relative extinction rate ($\varepsilon$ ``= d/b``) values 
-across the 1000 trees for the nodes where changes in diversification tempo 
+(``r = b - d``) and relative extinction rate ($\varepsilon$ ``= d/b``) values
+across the 1000 trees for the nodes where changes in diversification tempo
 occurs. We used the AICc threshold of 7.8 units, as estimated by MEDUSA,
 as the limit for a significantly better fit to select among increasingly
 complex alternative models.
@@ -633,13 +633,15 @@ computational resources.
 
 ## Figure legends
 
-Figure 1. Results of the MEDUSA analysis run on the maximum clade credibility
-tree. Rate shifts were estimated for the following nodes (besides the background
+``Figure 1.`` Results of the MEDUSA analysis run on the maximum clade
+credibility tree.
+Rate shifts were estimated for the following nodes (besides the background
 rate): 2) Limenitidinae + Heliconiinae, 3) *Ypthima*, 4) *Charaxes*, 5)
-Mycalesina + Lethina, 6) Ithomiini in part, 7) Satyrini in part, 8)
-Phyciodina in part, 9) Danaini in part, 10) *Caeruleuptychia* +
-*Magneuptychia*, 11) Satyrina, 12) *Callicore* + *Diaethria*, 13)
-*Pedaliodes*, 14) *Taenaris*.
+Ithomiini in part, 6) Satyrini, 7) Coenonymphina 8) Phyciodina in part,
+9) Danaini in part, 10) *Coenonympha*, 11) *Caeruleuptychia* +
+*Magneuptychia*, 12) *Callicore* + *Diaethria*, 13) Satyrina, 14)
+Mycalesina + Lethina, 15) *Pedaliodes*, 17) *Taenaris*, 18)
+Pseudergolinae.
 
 Figure 2. Results of the MultiMEDUSA analysis on 1000 random trees from the
 posterior distribution of the Nymphalidae phylogeny. Bars show the number of trees
