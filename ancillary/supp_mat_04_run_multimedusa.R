@@ -1,17 +1,12 @@
 library("MEDUSA")
 library("multicore")
 
-mct <- read.nexus("ancillary/supp_mat_02_genus.nex")
+mct <- read.nexus("ancillary/supp_mat_06_mcc_tree_from_random_sample_of_1000.tree")
 phy <- read.nexus("ancillary/supp_mat_05_1000_random_trees_no_outgroups.nex");
-
-# we have to remove the tips
-tips <- c("Achlyodes", "Graphium", "Parnassius", "Baronia", "Troides", "Papilio1", "Papilio2", "Pieris", "Aporia", "Styx", "Hamearis", "Euselasia", "Nymphidium", "Emesis", "Crocozona", "Riodina", "Amarynthis", "Baliochila", "Poritia", "Miletus", "Liphyra", "Lycaena", "Celastrina", "Thecla", "Lucia", "Curetis", "Eurema", "Colias", "Leptidea", "Pseudopontia", "Libyt")
-mct <- drop.tip(mct, tip=tips)
-
 
 richness <- read.csv("ancillary/supp_mat_03_richness.csv")
 
-res <- MEDUSA(phy, richness, stop="threshold", model="mixed", modelLimit=25, mc=TRUE)
+res <- MEDUSA(phy, richness, stop="threshold", model="mixed", modelLimit=27, mc=TRUE)
 
 
 pdf(file="output/medusa_on_mct.pdf", width=9, height=19)
