@@ -258,9 +258,9 @@ The MEDUSA analysis on the MCC tree in combination with richness data estimated
 18 changes in the tempo of diversification in Nymphalidae history (Fig. 1; 
 Table 1). The estimated corrected threshold of AICc scores for 
 selecting the optimal model was estimated as 7.8 units. In all MEDUSA analyses, 
-the maximum number of inferred diversification splits in all trees was
-XXXXXXXXXXXXXXXXXXXXX. Thus
-a ``model.limit`` of 25 splits was adequate. The background 
+the maximum number of inferred diversification splits in all trees was 26.
+Thus
+a ``model.limit`` of 27 splits was adequate. The background 
 diversification rate for Nymphalidae was estimated as ``r = 0.092`` lineages per 
 Million of years and the AICc score for the best fit model was ``5090.5`` 
 (Table 1).
@@ -664,8 +664,9 @@ Figure 7. BiSSE analysis of diversification of nymphalids due to feeding on
 Solanaceae hostplants. Speciation and diversification rates are significantly
 higher in Solanaceae feeders ($lambda$1, r1).
 
-**Table 1.** Significant diversification rate shifts found in the MEDUSA analysis
-of the Nymphalid maximum clade credibility tree. Split.Node = node number, r =
+``Table 1.`` Significant diversification rate shifts found in the MEDUSA analysis
+of the Nymphalid maximum clade credibility tree. Split.Node = node number, 
+Model = preferred diversification model by MEDUSA, r =
 net diversification rate, LnLik.part = log likelihood value.
 
 Table 2. Likelihood ratio test between the model of increased diversification of
