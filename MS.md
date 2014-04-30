@@ -281,9 +281,11 @@ We also found decreases in diversification rates for Limenitidinae + Heliconiina
 0.024``) and Coenonymphina (``r = 0.065``) (Table 1).
 
 ### Phylogenetic uncertainty in the Multi-MEDUSA approach
-We tested whether the results from a MEDUSA analysis on the MCC tree are 
+We tested whether the results from a MEDUSA analysis on a MCC tree 
+(supp. mat. 09) are
 congruent with those found by running MEDUSA on a random sample of 1000 trees
-fom the posterior distribution.
+fom the posterior distribution (supp. mat. 05).
+
 We found that the analyses by MEDUSA on the 1000 trees did not estimate the
 same diversification shifts as in the MCC tree (the background diversification
 and all shifts found by MEDUSA on the 1000 trees are provided as an R object
@@ -679,24 +681,30 @@ nymphalids feeding on Solanaceae against a model forcing equal speciation rates
 
 
 # Supp. mat.
-**``supp_mat_01_run_medusa_on_mct.R``**: Run MEDUSA on MCC tree from
-@wahlberg2009.
+**``supp_mat_01_genus.nex``**: MCC Nymphalidae tree from @wahlberg2009.
 
-**``supp_mat_02_genus.nex``**: MCC Nymphalidae tree from @wahlberg2009.
+**``supp_mat_02_run_medusa_on_mct.R``**: Run MEDUSA on MCC tree from
+@wahlberg2009.
 
 **``supp_mat_03_richness.nex``**: Species richness for lineages in Nymphalidae.
 
-**``supp_mat_04_run_multimedusa.R``**: Run MultiMEDUSA on 1000
-random trees from @wahlberg2009.
+**``supp_mat_04_MEDUSA_results.txt``**: Results of running MEDUSA on the MCC
+tree.
 
 **``supp_mat_05_1000_random_trees_no_outgroups.nex``**: 1000 random trees from
 @wahlberg2009.
 
-**``supp_mat_06_mcc_tree_from_random_sample_of_1000.tree``**: MCC tree from 
-the 1000 random trees selected from the posterior distribution.
+**``supp_mat_06_run_multimedusa.R``**: Run MultiMEDUSA on 1000
+random trees from @wahlberg2009.
 
 **``supp_mat_07_multimedusa_on_1000_trees.txt``**: Raw results from the 
 MultiMEDUSA run on the random sample of trees from the posterior distribution.
+
+**``supp_mat_08_multimedusa_result01.pdf``**: Summary of MulitMEDUSA analysis
+on the 1000 trees from the posterior distribution.
+
+**``supp_mat_09_mcc_tree_from_random_sample_of_1000.tree``**: MCC tree from 
+the 1000 random trees selected from the posterior distribution.
 
 **``supp_mat_0x_host_plant_data.csv``**: Hostplants of Nymphalidae butterflies
 recorded from the literature.

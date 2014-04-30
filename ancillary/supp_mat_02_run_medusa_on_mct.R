@@ -2,7 +2,7 @@
 
 library("MEDUSA")
 library("multicore")
-phy <- read.nexus("ancillary/supp_mat_02_genus.nex");
+phy <- read.nexus("ancillary/supp_mat_01_genus.nex");
 phy <- ladderize(phy)
 
 # we have to remove the tips
@@ -20,5 +20,5 @@ summ <- medusaSummary(res, cex=0.3)
 dev.off()
 
 
-save(res, file="output/medusa_on_mct.txt", ascii=TRUE)
+save(res, file="ancillary/supp_mat_04_MEDUSA_results.txt", ascii=TRUE)
 
