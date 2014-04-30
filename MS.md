@@ -286,7 +286,8 @@ congruent with those found by running MEDUSA on a random sample of 1000 trees
 fom the posterior distribution.
 We found that the analyses by MEDUSA on the 1000 trees did not estimate the
 same diversification shifts as in the MCC tree (the background diversification
-and all shifts found by MEDUSA on the 1000 trees are provided in supp. mat. 11).
+and all shifts found by MEDUSA on the 1000 trees are provided as an R object
+in supp. mat. 07).
 In order to obtain the diversification shifts that were estimated in most of
 the 1000 trees, we plotted the diversification shifts versus number of trees
 containing that particular diversification shift (Fig. 3, supp. mat. 12--13) as
@@ -691,7 +692,13 @@ random trees from @wahlberg2009.
 **``supp_mat_05_1000_random_trees_no_outgroups.nex``**: 1000 random trees from
 @wahlberg2009.
 
-**``supp_mat_06_host_plant_data.csv``**: Hostplants of Nymphalidae butterflies
+**``supp_mat_06_mcc_tree_from_random_sample_of_1000.tree``**: MCC tree from 
+the 1000 random trees selected from the posterior distribution.
+
+**``supp_mat_07_multimedusa_on_1000_trees.txt``**: Raw results from the 
+MultiMEDUSA run on the random sample of trees from the posterior distribution.
+
+**``supp_mat_0x_host_plant_data.csv``**: Hostplants of Nymphalidae butterflies
 recorded from the literature.
 
 **``supp_mat_07_host_plant_data_references.csv``**: References for hostplants
