@@ -2,7 +2,7 @@ library("MEDUSA")
 library("multicore")
 
 mct <- read.nexus("ancillary/supp_mat_06_mcc_tree_from_random_sample_of_1000.tree")
-phy <- read.nexus("ancillary/supp_mat_05_1000_random_trees_no_outgroups.nex");
+phy <- read.nexus("ancillary/supp_mat_05_1000_random_trees_no_outgroups.nex")
 
 richness <- read.csv("ancillary/supp_mat_03_richness.csv")
 
@@ -14,5 +14,4 @@ summ <- multiMedusaSummary(res, conTree=mct, cex=0.3)
 dev.off()
 
 
-save(res, file="output/multimedusa_on_1000_trees.txt", ascii=TRUE)
-
+save(res, file="ancillary/supp_mat_07_multimedusa_on_1000_trees.txt", ascii=TRUE)
