@@ -713,6 +713,17 @@ the 1000 random trees selected from the posterior distribution.
 **``supp_mat_10_run_medusa_on_mct_from_1000_trees.R``**: Run MEDUSA on MCC tree
 from the 1000 random trees selected from the posterior distribution.
 
+**``supp_mat_11_results_of_MEDUSA_run_on_mcc_from_1000_trees.txt``**: Summary
+results from a MEDUSA run on the MCC tree from the 1000 random trees selected
+from the posterior distribution.
+
+**``supp_mat_12_MEDUSA_mcc_tree_from_random_sample_of_1000_trees.pdf``**:
+Figure for MEDUSA run on MCC tree from random 1000 trees.
+
+**``supp_mat_13_results_of_Multi-MEDUSA_run_on_1000_trees.txt``**: Summary
+results from a Multi-MEDUSA run on the 1000 random trees selected from the
+posterior distribution.
+
 **``supp_mat_0x_host_plant_data.csv``**: Hostplants of Nymphalidae butterflies
 recorded from the literature.
 
