@@ -172,11 +172,14 @@ MEDUSA finds the likelihood of the models after taking into account branch
 lengths and number of species per lineage [@alfaro2009].
 Most studies using MEDUSA only run the method on a single tree, usually
 the maximum clade credibility tree, which makes the assumption that this tree is
-correct. We wanted to study the effects of phylogenetic uncertainty on estimation
-of diversification rate shifts and therefore run MEDUSA across 1000 random
-genus-level trees from the posterior distribution (Multi-MEDUSA, supp. mat. 05)
+correct. 
+We wanted to study the effects of phylogenetic uncertainty on estimation
+of diversification rate shifts and therefore selected 1000 random genus-level
+trees from the posterior distribution (Multi-MEDUSA, supp. mat. 05).
+We calculated a new MCC tree from the selection of trees, run Multi-MEDUSA
 and summarize the estimated changes in diversification rates for nodes across
-all trees. Patterns of change in diversification rates are significant if they
+all trees.
+Patterns of change in diversification rates are significant if they
 are found at the same node in at least 95% of the trees.
 We also expected to find similar values of net diversification
 (``r = b - d``) and relative extinction rate ($\varepsilon$ ``= d/b``) values
