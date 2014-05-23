@@ -176,9 +176,9 @@ correct.
 We wanted to study the effects of phylogenetic uncertainty on estimation
 of diversification rate shifts and therefore selected 1000 random genus-level
 trees from the posterior distribution (Multi-MEDUSA, supp. mat. 05).
-We calculated a new MCC tree from the selection of trees, run Multi-MEDUSA
-and summarize the estimated changes in diversification rates for nodes across
-all trees.
+We calculated a new MCC tree from the selection of trees, run MEDUSA and 
+Multi-MEDUSA on the selection of 1000 trees and summarize the estimated changes
+in diversification rates for nodes across all trees.
 Patterns of change in diversification rates are significant if they
 are found at the same node in at least 95% of the trees.
 We also expected to find similar values of net diversification
@@ -284,10 +284,11 @@ We also found decreases in diversification rates for Limenitidinae + Heliconiina
 0.024``) and Coenonymphina (``r = 0.065``) (Table 1).
 
 ### Phylogenetic uncertainty in the Multi-MEDUSA approach
-We tested whether the results from a MEDUSA analysis on a MCC tree 
-(supp. mat. 09) are
-congruent with those found by running MEDUSA on a random sample of 1000 trees
-fom the posterior distribution (supp. mat. 05).
+We tested whether the results from running Multi-MEDUSA on a random sample of
+1000 trees (supp. mat. 05) from the posterior distribution are congruent with a
+MEDUSA analysis on the MCC tree derived from this sample (supp. mat. 09).
+
+
 
 We found that the analyses by MEDUSA on the 1000 trees did not estimate the
 same diversification shifts as in the MCC tree (the background diversification
@@ -708,6 +709,9 @@ on the 1000 trees from the posterior distribution.
 
 **``supp_mat_09_mcc_tree_from_random_sample_of_1000.tree``**: MCC tree from 
 the 1000 random trees selected from the posterior distribution.
+
+**``supp_mat_10_run_medusa_on_mct_from_1000_trees.R``**: Run MEDUSA on MCC tree
+from the 1000 random trees selected from the posterior distribution.
 
 **``supp_mat_0x_host_plant_data.csv``**: Hostplants of Nymphalidae butterflies
 recorded from the literature.
