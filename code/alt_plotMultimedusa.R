@@ -73,8 +73,18 @@ plotMultiMedusa_alt <- function (summary, treeRearrange = "down", annotateShift 
     plotcolor <- rgb(red = 255, green = 0, blue = 0, alpha = 150, 
                      maxColorValue = 255)
     for (i in 1:length(shift.summary[, "shift.node"])) {
-      nodelabels(text=shift.summary[, "shift.node"][i],node = shift.summary[, "shift.node"][i], 
-                 pch = 21, cex = 0.3, frame="none", adj=c(1,0.5), bg = plotcolor)
+        this_node = paste0("node:", shift.summary[, "shift.node"][i])
+        this_rate = paste0("rate:", shift.summary[, "sum.prop"][i])
+
+      nodelabels(
+            text=paste(this_node, this_rate, sep=", "),
+            node = shift.summary[, "shift.node"][i], 
+            pch = 21,
+            cex = 0.3, 
+            frame="none", 
+            adj=c(1),
+            bg = plotcolor
+       )
     }
     legend(x = shift.leg.pos, c("1.00", "0.75", "0.50", "0.25"), 
            pch = 21, pt.bg = plotcolor, pt.cex = (shiftScale * 
