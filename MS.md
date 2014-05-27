@@ -724,6 +724,14 @@ Figure for MEDUSA run on MCC tree from random 1000 trees.
 results from a Multi-MEDUSA run on the 1000 random trees selected from the
 posterior distribution.
 
+**``supp_mat_14_multimedusa_result_prob_nodes.pdf``**: Probability of nodes
+with estimated rates from a Multi-MEDUSA run on the 1000 random trees selected
+from the posterior distribution.
+
+**``supp_mat_15_multimedusa_results_rates_nodes.pdf``**: Boxplot of estimated
+rates for the Multi-MEDUSA run on the 1000 random trees selected from the
+posterior distribution.
+
 **``supp_mat_0x_host_plant_data.csv``**: Hostplants of Nymphalidae butterflies
 recorded from the literature.
 
