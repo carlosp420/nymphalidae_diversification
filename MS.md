@@ -288,12 +288,19 @@ We tested whether the results from running Multi-MEDUSA on a random sample of
 1000 trees (supp. mat. 05) from the posterior distribution are congruent with a
 MEDUSA analysis on the MCC tree derived from this sample (supp. mat. 09).
 
+We found that the analysis by MultiMEDUSA on the 1000 trees estimate 
+lower median diversification rates for the divesification shifts found by
+MEDUSA on the MCC tree (Table 3). Although the diversification pattern found by
+MEDUSA and MultiMEDUSA was the same, the latter consistently estimated 
+lower rates. Thus the shifts recovered with low diversification rate on the MCC
+were recovered as with negative diversification rate by MultiMEDUSA.
+The background diversification and all shifts found by MEDUSA on the 1000 trees
+are provided as an R object in supp. mat. 07).
 
 
-We found that the analyses by MEDUSA on the 1000 trees did not estimate the
-same diversification shifts as in the MCC tree (the background diversification
-and all shifts found by MEDUSA on the 1000 trees are provided as an R object
-in supp. mat. 07).
+
+
+
 In order to obtain the diversification shifts that were estimated in most of
 the 1000 trees, we plotted the diversification shifts versus number of trees
 containing that particular diversification shift (Fig. 3, supp. mat. 12--13) as

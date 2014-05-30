@@ -19,3 +19,16 @@ plotMultiMedusa_alt(summ)
 dev.off()
 
 save(res, file="ancillary/supp_mat_07_multimedusa_on_1000_trees.txt", ascii=TRUE)
+
+
+# plot the summary statistics usig a boxplot
+library("ggplot2")
+data <- as.data.frame(data)
+x <- 1:45*2 - 1
+limits <- aes(ymax=max.shift, ymin=min.shift)
+p <- ggplot(data, aes(x=x, y=median.shift))
+p + geom_errorbar(aes(ymax=max.shift, ymin=min.shift), position=dodge, width=2) +
+  geom_point(aes(x=x, y=mean.shift),size=3,shape=21) +
+  scale_x_continuous(breaks=x, labels=as.vector(shift.node)) +
+  ggtitle("Divesification rates estimated for nodes from a MultiMEDUSA analysis on 1000 trees") +
+  xlab("Node number") + ylab("Diversification rate")
