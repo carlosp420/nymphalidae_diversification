@@ -297,6 +297,19 @@ were recovered as with negative diversification rate by MultiMEDUSA.
 The background diversification and all shifts found by MEDUSA on the 1000 trees
 are provided as an R object in supp. mat. 07).
 
+We also found different rates for diversification shifts even for the nodes
+that appear in most of the sample of 1000 trees (Table 3) as many of the nodes
+also found in the MCC tree had a probability of being recovered higher than 0.90.
+
+The MultiMEDUSA approach also provided some summary statistics on the
+diversification rates estimated for each node. We plotted the upper, lower and
+median values of the estimated diversification shifts and found great variation
+for some nodes (supp. mat. 13, 14, 15). For example the estimated rates for the
+diversification shitfs in the nodes *Caeruleuptychia* + *Magneuptychia* was
+between 0.12 and 0.52 (mean value 0.22). The rates for *Taenaris* were between
+0.14 and 0.44 (mean value 0.25). Similar degrees of variation were found in the
+nodes for *Ypthima*, *Charaxes* and *Coenonympha* (supp. mat. 15).
+
 
 
 
