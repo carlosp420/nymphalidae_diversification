@@ -1,6 +1,11 @@
 # 
 # make manuscript in PDF
 #
+proof: MS_proof.pdf
+
+MS_proof.pdf: header.latex MS.md refs.bib jeb.csl 
+	pandoc --latex-engine=xelatex -s -S --template proof_header.latex -f markdown -V geometry:a4paper -V geometry:margin=1in  MS.md --bibliography=refs.bib  --csl=jeb.csl -o MS_proof.pdf
+
 pdf: MS.pdf
 
 MS.pdf: header.latex MS.md refs.bib jeb.csl ancillary/fig01.pdf 
