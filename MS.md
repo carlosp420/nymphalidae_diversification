@@ -284,85 +284,76 @@ We also found decreases in diversification rates for Limenitidinae + Heliconiina
 0.024``) and Coenonymphina (``r = 0.065``) (Table 1).
 
 ### Phylogenetic uncertainty in the Multi-MEDUSA approach
-We tested whether the results from running Multi-MEDUSA on a random sample of
-1000 trees (supp. mat. 05) from the posterior distribution are congruent with a
-MEDUSA analysis on the MCC tree derived from this sample (supp. mat. 09).
+We tested MEDUSA to find out whether taking into account the phylogenetic
+signal from a random sample of 1000 trees from the posterior distribution can
+return similar estimates of diversification to the values obtained from the
+MCC tree.
+We run Multi-MEDUSA on a random sample of 1000 trees (supp. mat. 05) from the
+posterior distribution and compared the results with a MEDUSA analysis on the
+MCC tree derived from this sample (supp. mat. 09).
 
-We found that the analysis by MultiMEDUSA on the 1000 trees estimate 
-lower median diversification rates for the divesification shifts found by
-MEDUSA on the MCC tree (Table 3). Although the diversification pattern found by
+We found that the analysis by MultiMEDUSA on the 1000 trees estimated
+lower median diversification rates for the diversification shifts found by
+MEDUSA on the MCC tree from @wahlberg2009 (Table 3). 
+Although the diversification pattern found by
 MEDUSA and MultiMEDUSA was the same, the latter consistently estimated 
 lower rates. Thus the shifts recovered with low diversification rate on the MCC
-were recovered as with negative diversification rate by MultiMEDUSA.
+were recovered with negative diversification rate by MultiMEDUSA.
 The background diversification and all shifts found by MEDUSA on the 1000 trees
 are provided as an R object in supp. mat. 07).
+
+We also compared the results from MultiMEDUSA (derived from the sample of 1000
+trees) with the splits found by MEDUSA on the MCC tree derived from this
+random sample.
+In the summary statistics, MultiMEDUSA reports the frequency of the diversification
+shifts found in the trees (parameter ``sum.prop``). Thus, if a node is found in
+only half of the 1000 trees, but the phylogenetic signal was strong enough to
+be picked up by MEDUSA and a node shift was found most of the time, then the
+``sum.prop`` should be close to 1. For example the node 625 consists of the
+clade ``Charaxes`` + ``Polyura`` and it is found in only 256 trees, however
+MultiMEDUSA was consistenly able to find a diversification shift for that node
+and the ``sum.prop`` value is 0.996. We assume values close to 1 as indication
+that MEDUSA recovered a diversification node with high degree of success.
 
 We also found different rates for diversification shifts even for the nodes
 that appear in most of the sample of 1000 trees (Table 3) as many of the nodes
 also found in the MCC tree had a probability of being recovered higher than 0.90.
 
-The MultiMEDUSA approach also provided some summary statistics on the
-diversification rates estimated for each node. We plotted the upper, lower and
-median values of the estimated diversification shifts and found great variation
-for some nodes (supp. mat. 13, 14, 15). For example the estimated rates for the
+There were four diversification shifts found with more than 90% of probability
+in the trees from the random sample where the node appears (Table 3):
+    (i) diversification rate increase in the genus *Ypthima*;
+    (ii) diversification rate increase in the genus *Charaxes*;
+     (iii) rate increase in Ithomiini subtribes Oleriina + Ithomiina +
+     Napeogenina + Dircennina + Godyridina; and 
+     (iv) rate increase in *Callicore* + *Diaethria*.
+
+For example the estimated rates for the
 diversification shitfs in the nodes *Caeruleuptychia* + *Magneuptychia* was
 between 0.12 and 0.52 (mean value 0.22). The rates for *Taenaris* were between
 0.14 and 0.44 (mean value 0.25). Similar degrees of variation were found in the
 nodes for *Ypthima*, *Charaxes* and *Coenonympha* (supp. mat. 15).
 
-
-
-
-
-In order to obtain the diversification shifts that were estimated in most of
-the 1000 trees, we plotted the diversification shifts versus number of trees
-containing that particular diversification shift (Fig. 3, supp. mat. 12--13) as
-estimated by MEDUSA.
-There were three diversification shifts found in more than 95% of the trees:
-(i) diversification rate increase in the genus *Charaxes*; (ii) rate increase
-in Ithomiini subtribes Oleriina + Ithomiina + Napeogenina + Dircennina +
-Godyridina, and (iii) slowed diversification in part of Danaini (Fig. 3).
-
-We obtained mean and standard deviation statistics for the diversification 
-values found on the shifts on the 1000 trees (supp. mat. 11), and found that 
+MultiMEDUSA provided mean and standard deviation statistics for the diversification 
+values found on the shifts on the 1000 trees (supp. mat. 13--15), and found that 
 some of the changes in diversification rate values had great variation across
 the posterior distribution of trees. A boxplot of the diversification rate 
 values estimated for the clades that appear in the MCC tree shows that some shifts
 are estimated as increased or slowed diversification pace depending on the tree
 used for analysis (Fig. 4). This variation is especially wide for the clade
 formed by the genera *Magneuptychia* and *Caeruleuptychia* because MEDUSA 
-estimated diversification values from three times the background
-diversification rate (``r = 0.2755``) to almost zero (``r = 2.04e-07``). The 
-diversification rates estimates for the root (background diversification rate)
-and the clades (*Tirumala* + *Danaus* + *Amauris* + *Parantica* + *Ideopsis* +
-*Euploea* + *Idea*) and (Oleriina + Ithomiina + Napeogenina + Dircennina +
-Godyridina) are relatively consistent across the 1000 trees (Fig. 4). It is
+estimated diversification values from six times the background
+diversification rate (``r = 0.5234``) to almost zero (``r = 1.22e-01``). The 
+diversification rates estimates for the 
+clades (Oleriina + Ithomiina + Napeogenina + Dircennina +
+Godyridina), Limenitidinae + Heliconiinae and Pseudergolinae are relatively
+consistent across the 1000 trees (Fig. 4).
+
+It is
 also evident that not all the diversification shifts estimated on the MCC tree
 are consistently recovered in most of the 1000 trees. Some of the splits in the
 MCC tree are recovered in very few trees, for example the split for the clade
 (Euptychiina + Pronophilina + Satyrina + Maniolina) is present in only in 18%
-of the trees (see supp. mat. 12--13). 
-
-### MEDUSA performance due to phylogenetic uncertainty
-We found that most of the diversification splits were consistently recovered
-across more than 95% of the trees from the posterior distribution when
-there was a high ratio of nodes with high posterior probability 
-(Fig. 5; supp. mat. 14--15).
-For our data, it would be necessary to obtain a set of trees
-from the Bayesian run with almost 99% of the nodes with posterior 
-probability higher than 0.95 (almost no phylogenetic uncertainty) in order
-to obtain most of the diversification splits from the MCC tree on the posterior
-distribution of trees. For example the MCC tree of the set of trees number 949 
-had 99.75% of the nodes with posterior probability > 0.95, however it was
-possible to recover only 12 diversification shifts (out of a total of 14)
-across more than 95% of the trees (supp. mat. 14--15).
-
-Fig. 6 shows that also the width of confidence intervals on the estimated
-ages of diversification is correlated with the number of 
-diversification splits that are consistently recovered across the posterior
-distribution of trees. Very narrow confidence intervals are needed in
-order to recover all 14 diversification splits across more than 95% of 
-trees from the posterior distribution (supp. mat. 16).
+of the trees (Table 3, see supp. mat. XX *draw a figure*).
 
 
 ### Estimation of trait-dependent speciation rates
@@ -418,11 +409,13 @@ on a random sample of trees from the posterior distribution of a
 Bayesian run. We found that some diversification splits, estimated
 on the Nymphalidae maximum clade credibility tree, were found in a very small
 percentage of the 1000 randomly sampled trees from the posterior
-distribution (Fig. 3). We also found that, even though MEDUSA could
+distribution (Fig. x, Table 3). We also found that, even though MEDUSA could
 estimate the same diversification splits on two or more trees, the 
-estimated diversification rates could vary widely (Fig. 4). For example,
+estimated diversification rates could vary widely (supp. mat. 15 -> convert to
+        figure 4).
+For example,
 in our Nymphalidae trees, we found that the split for *Magneuptychia* and 
-*Caeruleuptychia* had a variation from ``r = 0.2755``, higher than the 
+*Caeruleuptychia* had a variation from ``r = 0.5234``, higher than the 
 background diversification rate, to almost zero. This means that observed
 patterns and conclusions can be completely contradictory depending on tree
 choice.
@@ -436,20 +429,8 @@ and posterior probability values for the nodes. For example, posterior
 probability values for clades in Satyrini are very low [``0.5 to 0.6``;
 @wahlberg2009]. As a result, MEDUSA inferred a diversification
 rate increase for part of Satyrini in the maximum clade credibility tree, but this
-was recovered only in 17% of the trees from the posterior distribution.
-
-We run Multi-MEDUSA on sets of thousand trees that gradually decrease in
-phylogenetic uncertainty (degree of conflicting topology and width of
-confidence intervals). 
-It appears that the number of nodes with high posterior probability 
-and width of confidence intervals for the estimated ages of diversification
-on the MCC tree greatly affect the number of diversification splits from the MCC
-tree that are consistently found on most trees from the posterior distribution.
-In order to recover most diversification splits, it is necessary to 
-obtain a set of trees from a BEAST run with almost no phylogenetic 
-uncertainty, i.e. very narrow confidence intervals and almost no conflicting 
-topologies so that most of the nodes are recovered with high posterior
-probability (Fig. 5--6).
+was recovered only in 13% of probabilities in the MultiMEDUSA analysis on the
+random sample of trees.
 
 If there is strong phylogenetic signal for increases or decreases in
 diversification rates for a node, it is expected that these splits would be
@@ -458,8 +439,9 @@ weak phylogenetic signal for some nodes can cause some clades to be
 absent in some trees and MEDUSA will be unable to estimate any
 diversification shift (due to a non-existent node). This is the 
 reason why MEDUSA estimated diversification rate splits in more than
-95% of the posterior distribution of trees for only three splits: 
-the genus *Charaxes*, part of Danaini and part of Ithomiini (Fig. 3),
+95% of the posterior distribution of trees for only four splits: 
+the genus *Ypthima*, the genus *Charaxes*, part of Danaini and part of
+Ithomiini and the clade *Callicore* + *Diaethria* (Fig. 3), 
 while estimating splits for other lineages in only a fraction of the
 posterior distribution of trees.
 
@@ -600,7 +582,8 @@ The diverse tribe Satyrini radiated simultaneously with the radiation of their m
 hostplant, grasses, during the climatic cooling in the Oligocene
 [@pena2008]. Thus, it is somewhat surprising that part of Satyrini
 (the subtribes Euptychiina, Satyrina and Pronophilina) were found to have
-accelerated diversification in only 17% of the trees from the posterior distribution.
+accelerated diversification in only 13% of probabilities in the trees from the
+posterior distribution.
 Although this can be attributed to low phylogenetic signal [posterior probability
 value = 0.6 for this clade in @wahlberg2009], the clade Satyrini is
 very robust [posterior probability value = 1.0 for this clade in @wahlberg2009]
@@ -618,36 +601,38 @@ of Satyrinae occurred in a stepwise manner, with pulses or bursts of
 diversification for certain lineages but unlikely for the tribe Satyrini 
 as a whole.
 
-We found that even though MEDUSA estimated several diversification shifts in the 
-maximum clade credibility tree of Nymphalidae, only a few of these splits were found in 
-more than 95% of the trees from the posterior distribution. In the literature, it
-is common practice that conclusions are based on the splits estimated on the maximum
-clade credibility tree. However, by using a Multi-MEDUSA approach, we found that some of
-this splits might be greatly affected by phylogenetic uncertainty. Moreover, some of
-these splits can be recovered either as increases or decreases in diversification
-rate depending on the tree from the posterior distribution that was used for analysis.
-This means that contradictory conclusions would be made if only the maximum
-clade credibility tree was used for analysis. MEDUSA appears to be sensitive to the
-number of nodes with high posterior probability and width of age confidence intervals.
-For our data, it would be necessary to obtain a posterior distribution of trees
-with no conflicting topology, and very similar estimated ages for nodes in order to
-consistently recover most of the diversification splits on the posterior
-distribution of trees that were inferred by MEDUSA on the MCC tree.
+We found that even though MEDUSA estimated several diversification shifts in
+the maximum clade credibility tree of Nymphalidae, only a few of these splits
+were found in more than 95% of the trees from the posterior distribution. In
+the literature, it is common practice that conclusions are based on the splits
+estimated on the maximum clade credibility tree. However, by using a
+Multi-MEDUSA approach, we found that some of this splits might be greatly
+affected by phylogenetic uncertainty. Moreover, some of these splits can be
+recovered either as increases or decreases in diversification rate depending on
+the tree from the posterior distribution that was used for analysis. This means
+that contradictory conclusions would be made if only the maximum clade
+credibility tree was used for analysis. MEDUSA appears to be sensitive to the
+number of nodes with high posterior probability and width of age confidence
+intervals. For our data, it would be necessary to obtain a posterior
+distribution of trees with no conflicting topology, and very similar estimated
+ages for nodes in order to consistently recover most of the diversification
+splits on the posterior distribution of trees that were inferred by MEDUSA on
+the MCC tree.
 
-Our Multi-MEDUSA approach to perform analyses on the posterior distribution of trees
-found strong support for an increase in diversification rate in the tribe Ithomiini
-and the genus *Charaxes*, and for a decrease in diversification rate in the subtribe
-Danaina. Due to phylogenetic uncertainty, we did not obtain strong support for other
-diversification splits in Nymphalidae. 
-Our BiSSE analysis corroborated other studies in that the trait "feeding on Solanaceae",
-or a codistributed character, was important in the diversification of Ithomiini 
-butterflies. However, by applying MEDUSA we found that a critical character in the 
-radiation of the group might have appeared after the shift from Apocynaceae to 
-Solanaceae.
-We also found that the trait "feeding on Apocynaceae" is not 
-responsible for the slowdown of diversification in Danaina. Ithomiini and Solanaceae 
-diversified near simultaneously, which is in agreement with the diffuse co-speciation
-hypothesis [@janz2011; @nyman2012]. 
+Our Multi-MEDUSA approach to perform analyses on the posterior distribution of
+trees found strong support for an increase in diversification rate in the tribe
+Ithomiini and the genus *Charaxes*, and for a decrease in diversification rate
+in the subtribe Danaina. Due to phylogenetic uncertainty, we did not obtain
+strong support for other diversification splits in Nymphalidae. Our BiSSE
+analysis corroborated other studies in that the trait "feeding on Solanaceae",
+or a codistributed character, was important in the diversification of
+Ithomiini butterflies. However, by applying MEDUSA we found that a
+critical character in the radiation of the group might have appeared
+after the shift from Apocynaceae to Solanaceae.
+We also found that the trait "feeding on Apocynaceae" is not responsible for
+the slowdown of diversification in Danaina. Ithomiini and Solanaceae
+diversified near simultaneously, which is in agreement with the diffuse
+co-speciation hypothesis [@janz2011; @nyman2012].
 
 ## Acknowledgments
 We are thankful to Mark Cornwall for help with the script to extend MEDUSA to include
