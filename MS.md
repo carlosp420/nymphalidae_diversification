@@ -253,7 +253,7 @@ lower median diversification rates for the diversification shifts found by
 MEDUSA on the MCC tree from @wahlberg2009 (Table 3). 
 Although the diversification pattern found by
 MEDUSA and MultiMEDUSA was the same, the latter consistently estimated 
-lower rates. Thus the shifts recovered with low diversification rate on the MCC
+lower rates. Thus, the shifts recovered with low diversification rate on the MCC
 were recovered with negative diversification rate by MultiMEDUSA.
 The background diversification and all shifts found by MEDUSA on the 1000 trees
 are provided as an R object in supp. mat. 07).
@@ -266,28 +266,21 @@ shifts found in the trees (parameter ``sum.prop``). Thus, if a node is found in
 only half of the 1000 trees, but the phylogenetic signal was strong enough to
 be picked up by MEDUSA and a node shift was found most of the time, then the
 ``sum.prop`` should be close to 1. For example the node 625 consists of the
-clade ``Charaxes`` + ``Polyura`` and it is found in only 256 trees, however
+clade ``Charaxes`` + ``Polyura`` and it was found in only 256 trees, however
 MultiMEDUSA was consistenly able to find a diversification shift for that node
-and the ``sum.prop`` value is 0.996. We assume values close to 1 as indication
-that MEDUSA recovered a diversification node with high degree of success.
+and the ``sum.prop`` value is 0.996.
 
-We also found different rates for diversification shifts even for the nodes
+We found different rates for diversification shifts even for the nodes
 that appear in most of the sample of 1000 trees (Table 3) as many of the nodes
 also found in the MCC tree had a probability of being recovered higher than 0.90.
 
 There were four diversification shifts found with more than 90% of probability
-in the trees from the random sample where the node appears (Table 3):
+in the trees from the random sample (Table 3):
     (i) diversification rate increase in the genus *Ypthima*;
     (ii) diversification rate increase in the genus *Charaxes*;
      (iii) rate increase in Ithomiini subtribes Oleriina + Ithomiina +
      Napeogenina + Dircennina + Godyridina; and 
      (iv) rate increase in *Callicore* + *Diaethria*.
-
-For example the estimated rates for the
-diversification shitfs in the nodes *Caeruleuptychia* + *Magneuptychia* was
-between 0.12 and 0.52 (mean value 0.22). The rates for *Taenaris* were between
-0.14 and 0.44 (mean value 0.25). Similar degrees of variation were found in the
-nodes for *Ypthima*, *Charaxes* and *Coenonympha* (supp. mat. 15).
 
 MultiMEDUSA provided mean and standard deviation statistics for the diversification 
 values found on the shifts on the 1000 trees (supp. mat. 13--15), and found that 
@@ -298,7 +291,11 @@ are estimated as increased or slowed diversification pace depending on the tree
 used for analysis (Fig. 4). This variation is especially wide for the clade
 formed by the genera *Magneuptychia* and *Caeruleuptychia* because MEDUSA 
 estimated diversification values from six times the background
-diversification rate (``r = 0.5234``) to almost zero (``r = 1.22e-01``). The 
+diversification rate (``r = 0.5234``) to almost zero (``r = 1.22e-01``).
+The rates for *Taenaris* were between
+0.14 and 0.44 (mean value 0.25). Similar degrees of variation were found in the
+nodes for *Ypthima*, *Charaxes* and *Coenonympha* (supp. mat. 15; Graph boxplots)
+The 
 diversification rates estimates for the 
 clades (Oleriina + Ithomiina + Napeogenina + Dircennina +
 Godyridina), Limenitidinae + Heliconiinae and Pseudergolinae are relatively
@@ -541,8 +538,8 @@ hostplant, grasses, during the climatic cooling in the Oligocene
 accelerated diversification in only 13% of probabilities in the trees from the
 posterior distribution.
 Although this can be attributed to low phylogenetic signal [posterior probability
-value = 0.6 for this clade in @wahlberg2009], the clade Satyrini is
-very robust [posterior probability value = 1.0 for this clade in @wahlberg2009]
+value = ``0.6`` for this clade in @wahlberg2009], the clade Satyrini is
+very robust [posterior probability value = ``1.0`` for this clade in @wahlberg2009]
 and MEDUSA failed to identify any significant accelerated diversification rate
 for Satyrini. It appears that the radiation of Satyrini as a whole was not
 remarkably fast and therefore not picked up by MEDUSA.
@@ -559,7 +556,7 @@ as a whole.
 
 We found that even though MEDUSA estimated several diversification shifts in
 the maximum clade credibility tree of Nymphalidae, only a few of these splits
-were found in more than 95% of the trees from the posterior distribution. In
+were found in more than 90% of the trees from the posterior distribution. In
 the literature, it is common practice that conclusions are based on the splits
 estimated on the maximum clade credibility tree. However, by using a
 MultiMEDUSA approach, we found that some of this splits might be greatly
