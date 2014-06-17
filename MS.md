@@ -160,45 +160,18 @@ We wanted to study the effects of phylogenetic uncertainty on estimation
 of diversification rate shifts and therefore selected 1000 random genus-level
 trees from the posterior distribution (MultiMEDUSA, supp. mat. 05).
 We calculated a new MCC tree from the selection of trees, run MEDUSA and 
-MultiMEDUSA on the selection of 1000 trees and summarize the estimated changes
+MultiMEDUSA on the selection of 1000 trees and summarized the estimated changes
 in diversification rates for nodes across all trees.
 Patterns of change in diversification rates are significant if they
-are found at the same node in at least 95% of the trees.
+are found at the same node in at least 90% of the trees.
 We also expected to find similar values of net diversification
 (``r = b - d``) and relative extinction rate ($\varepsilon$ ``= d/b``) values
 across the 1000 trees for the nodes where changes in diversification tempo
 occurs. We used the AICc threshold of 7.8 units, as estimated by MEDUSA,
 as the limit for a significantly better fit to select among increasingly
 complex alternative models.
-We let MEDUSA estimate up to 26 diversification rate shifts in our trees as
+We let MEDUSA estimate up to 27 diversification rate shifts in our trees as
 this was the maximum number of shifts found in all trees.
-
-
-### Effect of the quality of posterior distribution of trees on MEDUSA and MultiMEDUSA
-We tested the effect of topology uncertainty and width of confidence intervals
-of ages on the number of diversification splits inferred by the MEDUSA and
-MultiMEDUSA approaches.
-We created a thousand sets of 1000 trees with increasinly better support for the 
-topology by replacing each of the trees in the posterior distribution with our
-MCC tree.
-The degree of topology uncertainty for each 
-set was measured as the ratio of nodes with high posterior probability (> 0.95) on
-the MCC tree of each set of thousand trees.
-MultiMEDUSA was then run on all the sets of trees, and we counted the number of consistently
-recovered diversification splits inferred across more than 95% of the trees.
-
-To test for an effect of age confidence interval widths of node ages, we
-created a thousand sets of 1000 trees with narrowing confidence intervals
-on the estimated ages for all the nodes.
-This was achieved by running a BEAST analysis with a fixed topology
-(our MCC tree), but allowing varying branch lengths. We randomly selected
-1000 trees from the posterior distribution of trees after burning (supp. mat. 07)
-and replaced each of the trees with the MCC tree (supp. mat. 08) to create a thousand
-sets of 1000 trees.
-The relationship between width of age confidence intervals
-and the number diversification splits inferred across more than 95% of the
-posterior distribution of trees was plotted.
-
 
 
 
