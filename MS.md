@@ -6,15 +6,13 @@
 
 *1 Laboratory of Genetics, Department of Biology, University of Turku, Turku, Finland. Email: [mycalesis@gmail.com](mailto:mycalesis@gmail.com)*
 
-*2 Museum of Comparative Zoology and Department of Organismic and Evolutionary Biology, Harvard University, Cambridge, USA. Email: [marianne.espeland@gmail.com](mailto:marianne.espeland@gmail.com)*
+*2 Museum of Comparative Zoology and Department of Organismic and Evolutionary Biology, Harvard University, Cambridge, USA. Email: [marianne.espeland@gmail.com](mailto:marianne.espeland@gmail.com)*, McGuire Center?
 
 **Corresponding author:** [mycalesis@gmail.com](mailto:mycalesis@gmail.com) Telephone: +358 417063065 Fax: +358 2 333 6680 
 
 **Comments:** 5814 words, 7 figures, 2 tables and 25 supplementary material files. 
 
 **Additional Supplementary materials:** [http://dx.doi.org/10.6084/m9.figshare.639208](http://dx.doi.org/10.6084/m9.figshare.639208)
-
-**Pre-peer review:** This manuscript has been peer-reviewed by two anonymous referees using Peerage of Science. The peer-review process can be accessed via [https://www.peerageofscience.org/?link=108491](https://www.peerageofscience.org/?link=108491) using the following credentials: **Username:** 522d928bf3f1d@Journal_Evolutionary_Biology  **Password:** 7iepgwlw
 
 
 
@@ -29,7 +27,7 @@ random sample of trees from the posterior distribution of a Bayesian run. We
 found that phylogenetic uncertainty greatly affects diversification rate 
 estimates. Different trees produced diversification rates ranging from high 
 values to almost zero for the same clade, and both significant rate increase 
-and decrease in some clades. Only three out of 13 significant shifts found on
+and decrease in some clades. Only four out of 18 significant shifts found on
 the maximum clade credibility tree were consistent across most of the sampled trees.
 Among these, we found accelerated diversification for Ithomiini butterflies. 
 We used the binary speciation and extinction model (BiSSE) and found that a 
@@ -50,22 +48,8 @@ Hostplant shifts have been invoked to be responsible for a great part of the
 biodiversity of herbivorous insects [@mitter1988]. The study of the 
 evolution of hostplant use has spawned several theories explaining the evolutionary
 interactions between plants and insects [reviewed by @nyman2012]. The 
-"escape-and-radiate" hypothesis [@ehrlich1964] states that plants and
-herbivore butterflies are involved in an evolutionary arms race in which newly 
-acquired adaptive characters in plants act as defense against herbivores. This
-would allow the plant lineage to escape the herbivorous pressure and diversify.
-Eventually, the butterflies would also acquire a character to overcome this 
-barrier and radiate onto the available plant resource. An alternative hypothesis
-of herbivore diversification is the "oscillation hypothesis" [@janz2011; @nylin2013] or 
-"diffuse cospeciation" [@nyman2012] in which range expansions of plants
-and insects facilitate allopatric speciation and cross-colonization of insects
-onto related plants. This hypothesis predicts near-simultaneous diversification
-of plants and insects that feed on them [@nyman2012]. The "resource 
-abundance-dependent diversity dynamics" hypothesis states that plant groups that
-are common and widely distributed will host a higher diversity of herbivores by
-facilitating their speciation over wider geographic distributions. According to
-this hypothesis, there should be a time lag between the diversification of 
-hostplants and insects that feed on them [@nyman2012]. 
+"escape-and-radiate" hypothesis [@ehrlich1964], the "oscillation hypothesis"
+[@janz2011; @nylin2013] or "diffuse cospeciation" [@nyman2012]. 
 
 The butterfly family Nymphalidae has been an important taxon for developing 
 some of the mentioned hypotheses. Nymphalidae contains around 6000 species 
@@ -96,7 +80,7 @@ events or shifts to closely related hostplants [@nylin2013; @ferrer2013].
 
 In this study, we used a time calibrated genus-level phylogenetic hypothesis 
 for Nymphalidae butterflies [taken from @wahlberg2009] to investigate 
-patterns of diversification. We applied MEDUSA [modelling evolutionary diversity
+patterns of diversification. We applied MEDUSA [modelling evolutionary diversification
 using stepwise AIC, @alfaro2009; @harmon2011], a recently developed
 statistical method, to study the diversification pattern of Nymphalidae butterflies.
 MEDUSA fits likelihood models of diversification into a time calibrated tree and
@@ -105,7 +89,7 @@ within the tree produces better fit of the models. MEDUSA is able to take into
 account species diversity for during model fitting and it is normally applied to
 the maximum clade credibility phylogenetic tree.
 Particularly, we wanted to study the effects of phylogenetic uncertainty and 
-modified the current MEDUSA method to take this into account (Multi-MEDUSA). 
+modified the current MEDUSA method to take this into account (MultiMEDUSA). 
 We also tested whether hostplant association dynamics can explain the 
 diversification patterns of component Nymphalidae lineages by testing whether 
 character states of hostplant use affected the diversification pattern of those
@@ -148,13 +132,12 @@ butterfly genera.
 
 
 ### Analyses of Diversification
-We used the statistical software R version 2.15.1 [@r2013] in combination with
+We used the statistical software R version 3.0.1 [@r2013] in combination with
 the APE [@paradis2004], GEIGER [@harmon2008], MEDUSA [@alfaro2009] and
 ``diversitree`` [@fitzjohn2012] packages along with our own scripts to perform
 the analyses (included as supplementary materials). All analyses were run on
-the 1000 random trees from @wahlberg2009 as well as on the maximum clade
-credibility tree.
-
+the 1000 random trees from @wahlberg2009, on the maximum clade credibility tree
+derived from these and the MCC tree from @wahlberg2009.
 
 
 ### Detecting diversification shifts on phylogenetic trees
@@ -175,9 +158,9 @@ the maximum clade credibility tree, which makes the assumption that this tree is
 correct. 
 We wanted to study the effects of phylogenetic uncertainty on estimation
 of diversification rate shifts and therefore selected 1000 random genus-level
-trees from the posterior distribution (Multi-MEDUSA, supp. mat. 05).
+trees from the posterior distribution (MultiMEDUSA, supp. mat. 05).
 We calculated a new MCC tree from the selection of trees, run MEDUSA and 
-Multi-MEDUSA on the selection of 1000 trees and summarize the estimated changes
+MultiMEDUSA on the selection of 1000 trees and summarize the estimated changes
 in diversification rates for nodes across all trees.
 Patterns of change in diversification rates are significant if they
 are found at the same node in at least 95% of the trees.
@@ -191,17 +174,17 @@ We let MEDUSA estimate up to 26 diversification rate shifts in our trees as
 this was the maximum number of shifts found in all trees.
 
 
-### Effect of the quality of posterior distribution of trees on MEDUSA and Multi-MEDUSA
+### Effect of the quality of posterior distribution of trees on MEDUSA and MultiMEDUSA
 We tested the effect of topology uncertainty and width of confidence intervals
 of ages on the number of diversification splits inferred by the MEDUSA and
-Multi-MEDUSA approaches.
+MultiMEDUSA approaches.
 We created a thousand sets of 1000 trees with increasinly better support for the 
 topology by replacing each of the trees in the posterior distribution with our
 MCC tree.
 The degree of topology uncertainty for each 
 set was measured as the ratio of nodes with high posterior probability (> 0.95) on
 the MCC tree of each set of thousand trees.
-Multi-MEDUSA was then run on all the sets of trees, and we counted the number of consistently
+MultiMEDUSA was then run on all the sets of trees, and we counted the number of consistently
 recovered diversification splits inferred across more than 95% of the trees.
 
 To test for an effect of age confidence interval widths of node ages, we
@@ -220,7 +203,7 @@ posterior distribution of trees was plotted.
 
 
 ### Estimation of trait-dependent speciation rates
-As the MEDUSA and Multi-MEDUSA approaches estimated an increase in 
+As the MEDUSA and MultiMEDUSA approaches estimated an increase in 
 diversification in the clade Ithomiini, we tested whether this pattern 
 can be explained by hostplant use and performed analyses with the
 "binary state speciation and extinction" 
@@ -283,12 +266,12 @@ We also found decreases in diversification rates for Limenitidinae + Heliconiina
 (``r = 0.0541``), part of Danaini (``r = 0.0423``), Pseudergolinae (``r =
 0.024``) and Coenonymphina (``r = 0.065``) (Table 1).
 
-### Phylogenetic uncertainty in the Multi-MEDUSA approach
+### Phylogenetic uncertainty in the MultiMEDUSA approach
 We tested MEDUSA to find out whether taking into account the phylogenetic
 signal from a random sample of 1000 trees from the posterior distribution can
 return similar estimates of diversification to the values obtained from the
 MCC tree.
-We run Multi-MEDUSA on a random sample of 1000 trees (supp. mat. 05) from the
+We run MultiMEDUSA on a random sample of 1000 trees (supp. mat. 05) from the
 posterior distribution and compared the results with a MEDUSA analysis on the
 MCC tree derived from this sample (supp. mat. 09).
 
@@ -548,7 +531,7 @@ cospeciation" of Ithomiini and hostplants.
 
 
 #### Danaini
-Our Multi-MEDUSA approach gave a significant slowdown in diversification rate in 
+Our MultiMEDUSA approach gave a significant slowdown in diversification rate in 
 the subtribe Danaina of the Danini. Both Danaina and the sister clade Euploeina 
 feed mainly on Apocynaceae and thus a hostplant shift should not be responsible 
 for the observed slowdown of diversification in the Danaina. As expected, our BiSSE
@@ -606,7 +589,7 @@ the maximum clade credibility tree of Nymphalidae, only a few of these splits
 were found in more than 95% of the trees from the posterior distribution. In
 the literature, it is common practice that conclusions are based on the splits
 estimated on the maximum clade credibility tree. However, by using a
-Multi-MEDUSA approach, we found that some of this splits might be greatly
+MultiMEDUSA approach, we found that some of this splits might be greatly
 affected by phylogenetic uncertainty. Moreover, some of these splits can be
 recovered either as increases or decreases in diversification rate depending on
 the tree from the posterior distribution that was used for analysis. This means
@@ -619,7 +602,7 @@ ages for nodes in order to consistently recover most of the diversification
 splits on the posterior distribution of trees that were inferred by MEDUSA on
 the MCC tree.
 
-Our Multi-MEDUSA approach to perform analyses on the posterior distribution of
+Our MultiMEDUSA approach to perform analyses on the posterior distribution of
 trees found strong support for an increase in diversification rate in the tribe
 Ithomiini and the genus *Charaxes*, and for a decrease in diversification rate
 in the subtribe Danaina. Due to phylogenetic uncertainty, we did not obtain
@@ -670,10 +653,10 @@ maximum clade credibility tree.
 
 Figure 5. Correlation between percentage on nodes with posterior probability
 ``> 0.95`` and number of diversification splits consistently recovered in 
-Multi-MEDUSA analyses.
+MultiMEDUSA analyses.
 
 Figure 6. Correlation between width of confidence intervals for nodes and number
-of diversification splits consistently recovered in Multi-MEDUSA analyses.
+of diversification splits consistently recovered in MultiMEDUSA analyses.
 
 Figure 7. BiSSE analysis of diversification of nymphalids due to feeding on
 Solanaceae hostplants. Speciation and diversification rates are significantly
@@ -726,15 +709,15 @@ from the posterior distribution.
 Figure for MEDUSA run on MCC tree from random 1000 trees.
 
 **``supp_mat_13_results_of_Multi-MEDUSA_run_on_1000_trees.txt``**: Summary
-results from a Multi-MEDUSA run on the 1000 random trees selected from the
+results from a MultiMEDUSA run on the 1000 random trees selected from the
 posterior distribution.
 
 **``supp_mat_14_multimedusa_result_prob_nodes.pdf``**: Probability of nodes
-with estimated rates from a Multi-MEDUSA run on the 1000 random trees selected
+with estimated rates from a MultiMEDUSA run on the 1000 random trees selected
 from the posterior distribution.
 
 **``supp_mat_15_multimedusa_results_rates_nodes.pdf``**: Boxplot of estimated
-rates for the Multi-MEDUSA run on the 1000 random trees selected from the
+rates for the MultiMEDUSA run on the 1000 random trees selected from the
 posterior distribution.
 
 **``supp_mat_0x_host_plant_data.csv``**: Hostplants of Nymphalidae butterflies
