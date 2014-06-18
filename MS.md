@@ -58,7 +58,7 @@ butterflies. The family most likely originated around 94 MYA in the mid
 Cretaceous. Diversification of the group began in the Late Cretaceous and most
 major radiations (current subfamilies) appeared shortly after the 
 Cretaceous-Paleogene (K-Pg) boundary [@heikkila2012]. Several studies 
-have used calibrated phylogenies and diversification models to reconstruct the
+have used time-calibrated phylogenies and diversification models to reconstruct the
 evolutionary history of the group to identify patterns of accelerated or 
 decelerated diversification of some Nymphalidae clades [@elias2009; 
 @fordyce2010; @wahlberg2009; @heikkila2012]. For example, it has
@@ -78,18 +78,19 @@ to test whether the overall diversification pattern of Nymphalidae is congruent
 with events of sudden diversification bursts due to hostplant shift, climatic 
 events or shifts to closely related hostplants [@nylin2013; @ferrer2013].
 
-In this study, we used a time calibrated genus-level phylogenetic hypothesis 
+In this study, we used a time-calibrated genus-level phylogenetic hypothesis 
 for Nymphalidae butterflies [taken from @wahlberg2009] to investigate 
 patterns of diversification. We applied MEDUSA [modelling evolutionary diversification
 using stepwise AIC, @alfaro2009; @harmon2011], a recently developed
 statistical method, to study the diversification pattern of Nymphalidae butterflies.
-MEDUSA fits likelihood models of diversification into a time calibrated tree and
+MEDUSA fits likelihood models of diversification into a time-calibrated tree and
 tests whether allowing increases or decreases in speciation and extinction rates
 within the tree produces better fit of the models. MEDUSA is able to take into 
-account species diversity for during model fitting and it is normally applied to
+account unsampled extant species diversity during model fitting and it is normally
+applied to
 the maximum clade credibility phylogenetic tree.
 Particularly, we wanted to study the effects of phylogenetic uncertainty and 
-modified the current MEDUSA method to take this into account (MultiMEDUSA). 
+by using the extended MEDUSA method called MultiMEDUSA [version 093.4.3 @alfaro2009]. 
 We also tested whether hostplant association dynamics can explain the 
 diversification patterns of component Nymphalidae lineages by testing whether 
 character states of hostplant use affected the diversification pattern of those
@@ -133,7 +134,7 @@ butterfly genera.
 
 ### Analyses of Diversification
 We used the statistical software R version 3.0.1 [@r2013] in combination with
-the APE [@paradis2004], GEIGER [@harmon2008], MEDUSA [@alfaro2009] and
+the APE [@popescu2012], GEIGER [@harmon2008], MEDUSA [@alfaro2009] and
 ``diversitree`` [@fitzjohn2012] packages along with our own scripts to perform
 the analyses (included as supplementary materials). All analyses were run on
 the 1000 random trees from @wahlberg2009, on the maximum clade credibility tree
@@ -142,12 +143,14 @@ derived from these and the MCC tree from @wahlberg2009.
 
 ### Detecting diversification shifts on phylogenetic trees
 Patterns of diversification in Nymphalidae were analyzed by using MEDUSA
-version 093-4-33 [@alfaro2009] on the maximum clade credibility tree from
+version 093.4.33 [@alfaro2009] on the maximum clade credibility tree from
 @wahlberg2009.
 MEDUSA fits alternative birth-death likelihood models to a phylogenetic tree in
 order to estimate changes in net diversification rates along branches. MEDUSA
 estimates likelihood and AIC scores for the simplest birth-death model, with two
-parameters (``b``: speciation and ``d``: extinction). The AIC scores of the
+parameters, the rates ``r``: net diversification ``=`` speciation (``b``) ``-``
+extinction (``d``) and $\varepsilon$: relative extinction ``= d/b``.
+The AIC scores of the
 two-parameter model are then compared with incrementally more complex models
 until the addition of parameters do not improve the AIC scores beyond a cutoff
 value.
@@ -170,15 +173,16 @@ across the 1000 trees for the nodes where changes in diversification tempo
 occurs. We used the AICc threshold of 7.8 units, as estimated by MEDUSA,
 as the limit for a significantly better fit to select among increasingly
 complex alternative models.
-We let MEDUSA estimate up to 27 net diversification rate shifts in our trees as
-this was the maximum number of shifts found in all trees.
-
+We did not set a higher limit in the number of net diversification rate shifts
+that could be estimated by MEDUSA as we used the corrected AICc threshold recomended
+by the software.
 
 
 ### Estimation of trait-dependent speciation rates
 As the MEDUSA and MultiMEDUSA approaches estimated an increase in 
-diversification in the clade Ithomiini, we tested whether this pattern 
-can be explained by hostplant use and performed analyses with the
+net diversification in the clade Ithomiini, we tested whether this pattern 
+can be explained by increase in birth-rate due to hostplant use and performed
+analyses with the
 "binary state speciation and extinction" 
 [BiSSE; @maddison2007] Bayesian approach as implemented in the
 R package ``diversitree`` [@fitzjohn2012]. MuSSE [@fitzjohn2012] is designed to
@@ -215,11 +219,11 @@ Solanaceae affected our results.
 ### Detecting diversification shifts on the maximum clade credibility tree
 The MEDUSA analysis on the MCC tree in combination with richness data estimated
 18 changes in the tempo of diversification in Nymphalidae history (Fig. 1; 
-Table 1). The estimated corrected threshold of AICc scores for 
-selecting the optimal model was estimated as 7.8 units. In all MEDUSA analyses, 
+Table 1). The corrected AICc acceptance threshold for adding subsequent piecewise
+birth-death processes to the overall model was set to 7.8 units, as prescribed by
+MEDUSA. In all MEDUSA analyses, 
 the maximum number of inferred diversification splits in all trees was 26.
-Thus
-a ``model.limit`` of 27 splits was adequate. The background 
+The background 
 net diversification rate for Nymphalidae was estimated as ``r = 0.092`` lineages per 
 Million of years and the AICc score for the best fit model was ``5090.5`` 
 (Table 1).
