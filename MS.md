@@ -606,13 +606,13 @@ computational resources.
 ## Figure legends
 
 ``Figure 1.`` Results of the MEDUSA analysis run on the maximum clade
-credibility tree.
+credibility tree from @wahlberg2009.
 Rate shifts were estimated for the following nodes (besides the background
 rate): 2) Limenitidinae + Heliconiinae, 3) *Ypthima*, 4) *Charaxes*, 5)
 Ithomiini in part, 6) Satyrini, 7) Coenonymphina 8) Phyciodina in part,
 9) Danaini in part, 10) *Coenonympha*, 11) *Caeruleuptychia* +
 *Magneuptychia*, 12) *Callicore* + *Diaethria*, 13) Satyrina, 14)
-Mycalesina + Lethina, 15) *Pedaliodes*, 17) *Taenaris*, 18)
+Mycalesinaa, 15) *Pedaliodes*, 16) *Dryas* + *Dryadula*, 17) *Taenaris*, 18)
 Pseudergolinae.
 
 Figure 2. Results of the MultiMEDUSA analysis on 1000 random trees from the
@@ -636,6 +636,7 @@ Figure 7. BiSSE analysis of diversification of nymphalids due to feeding on
 Solanaceae hostplants. Speciation and net diversification rates are significantly
 higher in Solanaceae feeders ($lambda$1, r1).
 
+## Tables
 ``Table 1.`` Significant net diversification rate shifts found in the MEDUSA analysis
 of the Nymphalid maximum clade credibility tree. Split.Node = node number, 
 Model = preferred diversification model by MEDUSA, r =
