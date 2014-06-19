@@ -292,18 +292,19 @@ some of the changes in net diversification rate values had great variation acros
 the posterior distribution of trees. A boxplot of the net diversification rate 
 values estimated for the clades that appear in the MCC tree shows that some shifts
 are estimated as increased or slowed diversification pace depending on the tree
-used for analysis (Fig. 4). This variation is especially wide for the clade
+used for analysis (Fig. 2). This variation is especially wide for the clade
 formed by the genera *Magneuptychia* and *Caeruleuptychia* because MEDUSA 
 estimated diversification values from six times the background
 net diversification rate (``r = 0.5234``) to almost zero (``r = 1.22e-01``).
 The rates for *Taenaris* were between
 0.14 and 0.44 (mean value 0.25). Similar degrees of variation were found in the
-nodes for *Ypthima*, *Charaxes* and *Coenonympha* (supp. mat. 15; Graph boxplots)
+nodes for *Ypthima*, *Charaxes* and *Coenonympha* (supp. mat. 15; 
+        Fig. 2).
 The net
 diversification rates estimates for the 
 clades (Oleriina + Ithomiina + Napeogenina + Dircennina +
 Godyridina), Limenitidinae + Heliconiinae and Pseudergolinae are relatively
-consistent across the 1000 trees (Fig. 4).
+consistent across the 1000 trees (Fig. 2).
 
 It is
 also evident that not all the diversification shifts estimated on the MCC tree
@@ -452,7 +453,7 @@ detoxification of ingested food as they have been found in other butterfly group
 The increase in diversification inferred by MEDUSA ocurred after the probable
 shift from Apocynaceae to Solanaceae, as the Solanaceae feeders in the subtribes
 Melinaeina and Mechanitina are not included in the diversification shift (shift number
-6 in Fig. 2). The apparent conflicting results from MEDUSA and BiSSE can be explained
+5 in Fig. 1). The apparent conflicting results from MEDUSA and BiSSE can be explained
 by the low species-richness of the subtribes Melinaeina and Mechanitina compared to the
 other subtribes included in the shift (52 versus 272 species). It can be that MEDUSA
 is more conservative than BiSSE and is not including Melinaeina and Mechanitina
@@ -615,15 +616,16 @@ Ithomiini in part, 6) Satyrini, 7) Coenonymphina 8) Phyciodina in part,
 Mycalesinaa, 15) *Pedaliodes*, 16) *Dryas* + *Dryadula*, 17) *Taenaris*, 18)
 Pseudergolinae.
 
-Figure 2. Results of the MultiMEDUSA analysis on 1000 random trees from the
+Figure 2. Boxplot of the range of diversification values for tips or clades
+estimated by MEDUSA on the 1000 random trees from the posterior distribution of
+the Nymphalidae phylogeny. The tips or clades shown are those present on the
+maximum clade credibility tree from @wahlberg2009.
+
+Figure x. Results of the MultiMEDUSA analysis on 1000 random trees from the
 posterior distribution of the Nymphalidae phylogeny. Bars show the number of trees
 where MEDUSA found significant increases or decreases in net diversification rates for
 tips or clades in Nymphalidae.
 
-Figure 4. Boxplot of the range of diversification values for tips or clades
-estimated by MEDUSA on the 1000 random trees from the posterior distribution of
-the Nymphalidae phylogeny. The tips or clades shown are those present on the
-maximum clade credibility tree.
 
 Figure 5. Correlation between percentage on nodes with posterior probability
 ``> 0.95`` and number of diversification splits consistently recovered in 
