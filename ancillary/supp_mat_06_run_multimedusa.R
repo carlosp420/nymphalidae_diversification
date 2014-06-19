@@ -55,9 +55,9 @@ data <- data[-13,]
 data <- data[-11,]
 
 lower_wisker <- data$min.shift
-first_quartile <- qnorm(0.05, mean=data$mean.shift, sd=data$sd.shift)
+first_quartile <- qnorm(0.196, mean=data$mean.shift, sd=data$sd.shift)
 median <- data$median.shift
-third_quartile <- qnorm(0.95, mean=data$mean.shift, sd=data$sd.shift)
+third_quartile <- qnorm(0.804, mean=data$mean.shift, sd=data$sd.shift)
 upper_wisker <- data$max.shift
 
 sum_stats <- list(stats=matrix(c(lower_wisker, first_quartile, median, third_quartile, upper_wisker),
@@ -66,7 +66,7 @@ sum_stats <- list(stats=matrix(c(lower_wisker, first_quartile, median, third_qua
 par(mar = c(9, 4, 3, 2),  + 2)
 mp <- bxp(sum_stats,  
     outline=T, pars=list(outcex=0.8, outcol=rgb(0,0,1,1/4)), 
-    ylab="diversification rate", xlab="", 
+    ylab="net diversification rate", xlab="", 
     main="Boxplot of diversification values for each node with significant bursts \n as found by MEDUSA, only clades/tips present in MCC tree",
     axes=F, cex.lab=1, cex.axis=1.5, cex.main=1.1)
 
