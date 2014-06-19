@@ -63,7 +63,7 @@ upper_wisker <- data$max.shift
 sum_stats <- list(stats=matrix(c(lower_wisker, first_quartile, median, third_quartile, upper_wisker),
                                byrow=TRUE, nrow=5, ncol=18), n = 1:18)
 
-par(mar = c(9, 4, 3, 2),  + 2)
+par(mar = c(10, 4, 3, 2),  + 2)
 mp <- bxp(sum_stats,  
     outline=T, pars=list(outcex=0.8, outcol=rgb(0,0,1,1/4)), 
     ylab="net diversification rate", xlab="", 
@@ -73,7 +73,7 @@ mp <- bxp(sum_stats,
 end_point = 0.5 + 18 - 1
 axis(2, at=seq(-0.1,0.5,0.1), las=1)
 axis(1, at=mp, labels=FALSE, tick=TRUE)
-text(mp, -0.16, srt=60, adj=1, xpd=TRUE, labels=names, cex=0.65)
+text(mp, -0.16, srt=60, adj=1, xpd=TRUE, labels=names, cex=0.8)
 
 
 
