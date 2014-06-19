@@ -24,18 +24,59 @@ save(res, file="ancillary/supp_mat_07_multimedusa_on_1000_trees.txt", ascii=TRUE
 # plot the summary statistics usig a boxplot
 # save as supp. mat. 15
 library("ggplot2")
-names <- c("Charaxes", "Ypthima", "Ithomiini", "Callicore + Diaethria", "Danaini", "Limenitidinae + Heliconiinae", "Caeruleuptychia + Magneuptychia", "Pedaliodes", "Taenaris", "Dryas + Dryadula", "551", "Coenonympha", "702", "740", "498", "616", "507", "Anaeomorpha + Hypna", "Mycalesina", "Pseudergolinae", "460", "545", "Phyciodina", "744", "535", "Satyrina", "Coenonymphina", "628", "629", "630", "627", "659", "Satyrini", "420", "651", "483", "443", "467", "478", "412", "457", "538", "639", "479", "458")
-
+load("ancillary/supp_mat_07_multimedusa_on_1000_trees.txt")
+summ <- multiMedusaSummary(res, conTree=mct, cex=0.3)
+data <- summ$shift.summary
 data <- as.data.frame(data)
-x <- 1:45*2 - 1
-limits <- aes(ymax=max.shift, ymin=min.shift)
-p <- ggplot(data, aes(x=x, y=median.shift))
-p + geom_errorbar(aes(ymax=max.shift, ymin=min.shift), position=dodge, width=2) +
-  geom_point(aes(x=x, y=mean.shift),size=3,shape=21) +
-  scale_x_continuous(breaks=x, labels=names) +
-  ggtitle("Divesification rates estimated for nodes from a MultiMEDUSA analysis on 1000 trees") +
-  xlab("Node number") + ylab("Diversification rate") +
-  theme(axis.text.x = element_text(angle=45, hjust=1, size=10))
+
+names <- c("Charaxes", "Ypthima", "Ithomiini", "Callicore + Diaethria", 
+           "Danaini", "Limenitidinae + Heliconiinae", "Caeruleuptychia + Magneuptychia", 
+           "Pedaliodes", "Taenaris", "Dryas + Dryadula", "Coenonympha", 
+           "Anaeomorpha + Hypna", "Mycalesina", "Pseudergolinae", 
+           "Phyciodina", "Satyrina", "Coenonymphina", 
+           "Satyrini")
+
+# delete rows that are not too important
+data <- data[c(1:33), 1:7]
+data <- data[-32,]
+data <- data[-31,]
+data <- data[-30,]
+data <- data[-29,]
+data <- data[-28,]
+data <- data[-25,]
+data <- data[-24,]
+data <- data[-22,]
+data <- data[-21,]
+data <- data[-17,]
+data <- data[-16,]
+data <- data[-15,]
+data <- data[-14,]
+data <- data[-13,]
+data <- data[-11,]
+
+lower_wisker <- data$min.shift
+first_quartile <- qnorm(0.05, mean=data$mean.shift, sd=data$sd.shift)
+median <- data$median.shift
+third_quartile <- qnorm(0.95, mean=data$mean.shift, sd=data$sd.shift)
+upper_wisker <- data$max.shift
+
+sum_stats <- list(stats=matrix(c(lower_wisker, first_quartile, median, third_quartile, upper_wisker),
+                               byrow=TRUE, nrow=5, ncol=18), n = 1:18)
+
+par(mar = c(9, 4, 3, 2),  + 2)
+mp <- bxp(sum_stats,  
+    outline=T, pars=list(outcex=0.8, outcol=rgb(0,0,1,1/4)), 
+    ylab="diversification rate", xlab="", 
+    main="Boxplot of diversification values for each node with significant bursts \n as found by MEDUSA, only clades/tips present in MCC tree",
+    axes=F, cex.lab=1, cex.axis=1.5, cex.main=1.1)
+
+end_point = 0.5 + 18 - 1
+axis(2, at=seq(-0.1,0.5,0.1), las=1)
+axis(1, at=mp, labels=FALSE, tick=TRUE)
+text(mp, -0.16, srt=60, adj=1, xpd=TRUE, labels=names, cex=0.65)
+
+
+
 
 
 # find how many times a node is present in the 1000 trees
