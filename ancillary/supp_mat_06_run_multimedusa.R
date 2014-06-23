@@ -21,7 +21,7 @@ dev.off()
 save(res, file="ancillary/supp_mat_07_multimedusa_on_1000_trees.txt", ascii=TRUE)
 
 
-# plot the summary statistics usig a boxplot
+# plot the summary statistics usig a boxplot Fig. 02
 # save as supp. mat. 15
 library("ggplot2")
 load("ancillary/supp_mat_07_multimedusa_on_1000_trees.txt")
@@ -76,6 +76,25 @@ axis(1, at=mp, labels=FALSE, tick=TRUE)
 text(mp, -0.16, srt=60, adj=1, xpd=TRUE, labels=names, cex=0.8)
 
 
+# plot figure 3
+library(RSvgDevice)
+devSVG(file="ancillary/fig03.svg", width=10)
+
+n <- as.numeric(data$sum.prop)
+par(mar=c(6,6,4,4) + 0.1)   
+
+ypos <- c(0.02)
+b <- barplot(n, border=NA, ylim=c(0,1), width=4,
+             main="Probability of finding nodes as diversification events by MultiMEDUSA\nin a random sample of the posterior distribution of trees",
+             cex.main=1.6,
+             ylab="Probability of node as diversification event", axisname=FALSE,
+             xlim=c(0,85), xlab="Nodes of MCC phylogenetic tree", axes=F, cex.lab=1.6, mgp=c(4,1,1))
+axis(2, cex.axis=1.6, las=1)
+b <- seq(3,88,4.8)
+text(b, ypos, names,
+     srt=90, cex=1.4, family="Verdana", font=2, adj=0)
+abline(h="0.90")
+dev.off()
 
 
 

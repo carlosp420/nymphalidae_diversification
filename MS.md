@@ -310,8 +310,9 @@ It is
 also evident that not all the diversification shifts estimated on the MCC tree
 are consistently recovered in most of the 1000 trees. Some of the splits in the
 MCC tree are recovered in very few trees, for example the split for the clade
+Satyrini
 (Euptychiina + Pronophilina + Satyrina + Maniolina) is present in only in 18%
-of the trees (Table 3, see supp. mat. XX *draw a figure*).
+of the trees (Table 3, Fig. 3).
 
 
 ### Estimation of trait-dependent speciation rates
@@ -365,12 +366,12 @@ shifts and different rates of diversification for certain lineages
 when phylogenetic uncertainty was taken into account by using MEDUSA
 on a random sample of trees from the posterior distribution of a
 Bayesian run. We found that some diversification splits, estimated
-on the Nymphalidae maximum clade credibility tree, were found in a very small
-percentage of the 1000 randomly sampled trees from the posterior
-distribution (Fig. x, Table 3). We also found that, even though MEDUSA could
+on the Nymphalidae maximum clade credibility tree, were found with a very low
+probability in random sample of 1000 trees from the posterior
+distribution (Fig. 3, Table 3). We also found that, even though MEDUSA could
 estimate the same diversification splits on two or more trees, the 
-estimated net diversification rates could vary widely (supp. mat. 15 -> convert to
-        figure 4).
+estimated net diversification rates could vary widely 
+(Fig. 2).
 For example,
 in our Nymphalidae trees, we found that the split for *Magneuptychia* and 
 *Caeruleuptychia* had a variation from ``r = 0.5234``, higher than the 
@@ -396,16 +397,16 @@ inferred by MEDUSA in most of the posterior distribution of trees. However,
 weak phylogenetic signal for some nodes can cause some clades to be
 absent in some trees and MEDUSA will be unable to estimate any
 diversification shift (due to a non-existent node). This is the 
-reason why MEDUSA estimated net diversification rate splits in more than
-95% of the posterior distribution of trees for only four splits: 
-the genus *Ypthima*, the genus *Charaxes*, part of Danaini and part of
+reason why MEDUSA estimated net diversification rate splits with  more than
+90% of probabilities in the sample of trees for only four splits: 
+the genus *Charaxes*, the genus *Ypthima*, part of
 Ithomiini and the clade *Callicore* + *Diaethria* (Fig. 3), 
-while estimating splits for other lineages in only a fraction of the
-posterior distribution of trees.
+while estimating splits for other lineages with much lower probability.
 
 The clade Ithomiini and the non-basal danaids are well supported by high
 posterior probability values in @wahlberg2009. Therefore our MEDUSA analyses
-recovered an increase in net diversification rate in more than 95% of the posterior
+recovered an increase in net diversification rate 
+with probability higher than 90% in the posterior
 distribution of trees (Fig. 3).
 
 ### Hostplant use and diversification in Nymphalidae
@@ -616,16 +617,16 @@ Ithomiini in part, 6) Satyrini, 7) Coenonymphina 8) Phyciodina in part,
 Mycalesinaa, 15) *Pedaliodes*, 16) *Dryas* + *Dryadula*, 17) *Taenaris*, 18)
 Pseudergolinae.
 
-Figure 2. Boxplot of the range of diversification values for tips or clades
+``Figure 2.`` Boxplot of the range of diversification values for tips or clades
 estimated by MEDUSA on the 1000 random trees from the posterior distribution of
 the Nymphalidae phylogeny. The tips or clades shown are those present on the
 maximum clade credibility tree from @wahlberg2009.
 
-Figure x. Results of the MultiMEDUSA analysis on 1000 random trees from the
-posterior distribution of the Nymphalidae phylogeny. Bars show the number of trees
-where MEDUSA found significant increases or decreases in net diversification rates for
-tips or clades in Nymphalidae.
-
+``Figure 3.`` Results of the MultiMEDUSA analysis on 1000 randomly sampled 
+trees from the
+posterior distribution of the Nymphalidae phylogeny. Bars show the probability
+for nodes of being recovered as significant increases or decreases in net 
+diversification rates by MultiMEDUSA.
 
 Figure 5. Correlation between percentage on nodes with posterior probability
 ``> 0.95`` and number of diversification splits consistently recovered in 
