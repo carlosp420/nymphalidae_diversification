@@ -322,7 +322,7 @@ than 95% of the trees.
 Our BiSSE analysis found a positive effect of the 
 character state "feeding on Solanaceae" on the net net diversification rate on part
 of Ithomiini (Oleriina + Ithomiina + Napeogenina + Dircennina + Godyridina) 
-(Fig. 7). The Markov Chain Monte Carlo algorithm was run for 10000
+(Fig. 4). The Markov Chain Monte Carlo algorithm was run for 10000
 generations discarding the first 7500 as burnin. 
 The estimated mean net diversification rate for taxa that do not feed on 
 Solanaceae was ``r = 0.11`` while the net diversification rate for the Solanaceae
@@ -367,7 +367,7 @@ when phylogenetic uncertainty was taken into account by using MEDUSA
 on a random sample of trees from the posterior distribution of a
 Bayesian run. We found that some diversification splits, estimated
 on the Nymphalidae maximum clade credibility tree, were found with a very low
-probability in random sample of 1000 trees from the posterior
+probability in a random sample of 1000 trees from the posterior
 distribution (Fig. 3, Table 3). We also found that, even though MEDUSA could
 estimate the same diversification splits on two or more trees, the 
 estimated net diversification rates could vary widely 
@@ -431,7 +431,7 @@ Solanaceae" had any effect on the diversification of the group.
 Our BiSSE analysis, extended to take into account missing taxa and phylogenetic 
 uncertainty, shows a significantly
 higher net diversification rate for Ithomiini taxa, which can be attributed to the
-trait "feeding on Solanaceae hostplants" (Fig. 7). This is in agreement with the
+trait "feeding on Solanaceae hostplants" (Fig. 4). This is in agreement with the
 findings of @fordyce2010 using other statistical methods. Due to the fact that
 Ithomiini are virtually the only nymphalids using Solanaceae as hostplants, it is
 possible that the trait responsible for a higher diversification of Ithomiini might
@@ -628,16 +628,10 @@ posterior distribution of the Nymphalidae phylogeny. Bars show the probability
 for nodes of being recovered as significant increases or decreases in net 
 diversification rates by MultiMEDUSA.
 
-Figure 5. Correlation between percentage on nodes with posterior probability
-``> 0.95`` and number of diversification splits consistently recovered in 
-MultiMEDUSA analyses.
-
-Figure 6. Correlation between width of confidence intervals for nodes and number
-of diversification splits consistently recovered in MultiMEDUSA analyses.
-
-Figure 7. BiSSE analysis of diversification of nymphalids due to feeding on
+``Figure 4.`` BiSSE analysis of diversification of nymphalids due to feeding on
 Solanaceae hostplants. Speciation and net diversification rates are significantly
 higher in Solanaceae feeders ($lambda$1, r1).
+
 
 ## Tables
 ``Table 1.`` Significant net diversification rate shifts found in the MEDUSA analysis
