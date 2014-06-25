@@ -66,6 +66,20 @@ get_descendant_tips <- function(phy, node) {
     tips
 }
 
+# for a given tree, get its descendant tip names for a given node
+get_descendant_tips <- function(phy, node) {
+    tips <- c()
+    desc <- getDescendants(phy, node)
+    for( j in which(desc < 399) ) {
+        tips <- c(tips, desc[j])
+    }
+    names <- c()
+    for( i in tips ) {
+        names <- c(names, phy$tip.label[i])
+    }
+    sort(names)
+}
+
 # for each node with splits in our MCT get their descendant tips
 # and keep them in variable tips_for_split_nodes
 tips_for_split_nodes <- list()
