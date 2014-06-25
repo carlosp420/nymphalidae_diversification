@@ -254,7 +254,7 @@ MCC tree derived from this sample (supp. mat. 09).
 
 We found that the analysis by MultiMEDUSA on the 1000 trees estimated
 lower median net diversification rates for the diversification shifts found by
-MEDUSA on the MCC tree from @wahlberg2009 (Table 3). 
+MEDUSA on the MCC tree from @wahlberg2009 (Table 2). 
 Although the diversification pattern found by
 MEDUSA and MultiMEDUSA was the same, the latter consistently estimated 
 lower rates. Thus, the shifts recovered with low net diversification rate on the MCC
@@ -275,11 +275,11 @@ MultiMEDUSA was consistenly able to find a diversification shift for that node
 and the ``sum.prop`` value is 0.996.
 
 We found different rates for diversification shifts even for the nodes
-that appear in most of the sample of 1000 trees (Table 3) as many of the nodes
+that appear in most of the sample of 1000 trees (Table 2) as many of the nodes
 also found in the MCC tree had a probability of being recovered higher than 0.90.
 
 There were four diversification shifts found with more than 90% of probability
-in the trees from the random sample (Table 3):
+in the trees from the random sample (Table 2):
     (i) net diversification rate increase in the genus *Ypthima*;
     (ii) net diversification rate increase in the genus *Charaxes*;
      (iii) rate increase in Ithomiini subtribes Oleriina + Ithomiina +
@@ -311,8 +311,8 @@ also evident that not all the diversification shifts estimated on the MCC tree
 are consistently recovered in most of the 1000 trees. Some of the splits in the
 MCC tree are recovered in very few trees, for example the split for the clade
 Satyrini
-(Euptychiina + Pronophilina + Satyrina + Maniolina) is present in only in 18%
-of the trees (Table 3, Fig. 3).
+(Euptychiina + Pronophilina + Satyrina + Maniolina) is recovered with 
+a probability of 18% (Fig. 3).
 
 
 ### Estimation of trait-dependent speciation rates
@@ -338,7 +338,7 @@ whether the model of different speciation rates is a significantly better
 explanation for the data. A likelihood ratio test found that the model for
 increased net diversification rate for nymphalids feeding on Solanaceae is a
 significantly better explanation than this character state having no effect
-on diversification (``p < 0.001``) (Table 2; character states available in
+on diversification (``p < 0.001``) (Table 3; character states available in
 supp. mat. 09, code in supp. mat. 17, and mcmc run in supp. mat. 18). We
 combined the post-burnin mcmc generations from running BiSSE on 250 trees from
 the posterior distribution and found the same pattern as the BiSSE analysis on
@@ -368,7 +368,7 @@ on a random sample of trees from the posterior distribution of a
 Bayesian run. We found that some diversification splits, estimated
 on the Nymphalidae maximum clade credibility tree, were found with a very low
 probability in a random sample of 1000 trees from the posterior
-distribution (Fig. 3, Table 3). We also found that, even though MEDUSA could
+distribution (Fig. 3, Table 2). We also found that, even though MEDUSA could
 estimate the same diversification splits on two or more trees, the 
 estimated net diversification rates could vary widely 
 (Fig. 2).
@@ -639,7 +639,11 @@ of the Nymphalid maximum clade credibility tree. Split.Node = node number,
 Model = preferred diversification model by MEDUSA, r =
 net diversification rate, LnLik.part = log likelihood value.
 
-Table 2. Likelihood ratio test between the model of increased diversification of
+``Table 2.`` Differences in rates estimated by MEDUSA on the MCC tree from
+Wahlberg and the MultiMEDUSA approach on 1000 random trees from the posterior
+distribution.
+
+``Table 3.`` Likelihood ratio test between the model of increased diversification of
 nymphalids feeding on Solanaceae against a model forcing equal speciation rates
 (no effect on diversification).
 
