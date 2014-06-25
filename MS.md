@@ -298,8 +298,7 @@ estimated diversification values from six times the background
 net diversification rate (``r = 0.5234``) to almost zero (``r = 1.22e-01``).
 The rates for *Taenaris* were between
 0.14 and 0.44 (mean value 0.25). Similar degrees of variation were found in the
-nodes for *Ypthima*, *Charaxes* and *Coenonympha* (supp. mat. 15; 
-        Fig. 2).
+nodes for *Ypthima*, *Charaxes* and *Coenonympha* (Fig. 2).
 The net
 diversification rates estimates for the 
 clades (Oleriina + Ithomiina + Napeogenina + Dircennina +
@@ -326,11 +325,11 @@ of Ithomiini (Oleriina + Ithomiina + Napeogenina + Dircennina + Godyridina)
 generations discarding the first 7500 as burnin. 
 The estimated mean net diversification rate for taxa that do not feed on 
 Solanaceae was ``r = 0.11`` while the net diversification rate for the Solanaceae
-feeders was ``r = 0.16`` (see Fig. S3 for a boxplot of speciation and
+feeders was ``r = 0.16`` (see Fig. S1 for a boxplot of speciation and
 extinction values for the 95% credibility intervals).
 The same analysis considering *Vanessa* and *Hypanartia* as non-Solanaceae
 feeders due to dubious records produced the same pattern and net diversification
-rates (Fig. S4). Therefore, the rest of the analyses were performed assuming
+rates (Fig. S2). Therefore, the rest of the analyses were performed assuming
 these two genera as Solanaceae feeders.
 We constrained the BiSSE likelihood model to force equal rates of speciation
 for both character states in order to test
@@ -343,11 +342,11 @@ supp. mat. 17, code in supp. mat. 18, and mcmc run in supp. mat. 19). We
 combined the post-burnin mcmc generations from running BiSSE on 250 trees from
 the posterior distribution and found the same pattern as the BiSSE analysis on
 the maximum clade credibility tree (combined mcmc run in supp. mat. 20;
-profiles plot of speciation rates in Fig. S5; boxplot of 95% credibility
-intervals in Fig. S6).
+profiles plot of speciation rates in Fig. S3; boxplot of 95% credibility
+intervals in Fig. S4).
 A BiSSE analysis to test whether the trait "feeding on Apocynaceae" had any
 effect on increased net diversification rates found similar speciation rates for
-lineages feeding on Apocynaceae and other plants (Fig. S7). It has been shown
+lineages feeding on Apocynaceae and other plants (Fig. S5). It has been shown
 that BiSSE performs poorly under certain conditions [@davis2013]. 
 However, our data has adequate number of taxa under analysis (more than 300
 tips), adequate speciation bias (between 1.5x and 2.0x), character state bias 
@@ -707,30 +706,25 @@ for hosplant use.
 
 **``supp_mat_20_combined_bisse.csv``**: Raw results for the combined BiSSE analysis.
 
-Figure S2. Boxplot of the 95% confidence intervals for estimated speciation and
-extinction rates on an enforced strict higher level phylogeny of our MCC tree by
-collapsing all clades younger than the cutoff value at 24 MYA (see figure S1).
-Estimated rates using the method in @stadler2013.
+``Figure S1.`` Boxplot of speciation (lambda) and extinction (mu) values for
+the 95% credibility intervals of values estimated by BiSSE analysis of
+diversification due to feeding on Solanaceae plants.
 
-Figure S3. Boxplot of speciation and extinction values for the 95% credibility
-intervals of values estimated by BiSSE analysis of diversification due to 
-feeding on Solanaceae plants.
-
-Figure S4. BiSSE analysis of diversification of nymphalids due to feeding on
+``Figure S2.`` BiSSE analysis of diversification of nymphalids due to feeding on
 Solanaceae hostplants assuming *Vanessa* and *Hypanartia* as non-Solanaceae
 feeders. The same pattern is recovered, speciation and net diversification rates
 are significantly higher for Solanaceae feeders ($lambda$1, r1).
 
-Figure S5. Net diversification rates of nymphalids feeding on Solanaceae plants
+``Figure S3.`` Net diversification rates of nymphalids feeding on Solanaceae plants
 as estimated by combining post-burnin runs of BiSSE on the 1000 trees from 
 the posterior distribution.
 
-Figure S6. Boxplot of speciation and extinction values for the 95% credibility
+``Figure S4.`` Boxplot of speciation and extinction values for the 95% credibility
 intervals of values estimated by BiSSE analysis of diversification due to 
 feeding on Solanaceae plants on the combined post-burnin runs on 1000 trees
 from the posterior distribution.
 
-Figure S7. BiSSE analysis of diversification of nymphalids due to feeding on
+``Figure S5.`` BiSSE analysis of diversification of nymphalids due to feeding on
 Apocynaceae hostplants. Speciation and net diversification rates are similar.
 
 
