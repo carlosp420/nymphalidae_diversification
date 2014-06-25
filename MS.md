@@ -121,11 +121,11 @@ closest related genus that was included in @wahlberg2009 study according to
 available phylogenetic studies [@matos2013; @brower2010; @kodandaramaiah2010;
 @kodandaramaiah2010a; @ortiz2013; @desilva2010; @freitas2004; @pena2006;
 @penz1999; @silva2008; @pena2011; @pena2010], taxonomical classification and
-morphological resemblance when no phylogenies were available (supp. mat. 03).
+morphological resemblance when no phylogenies were available (supp. mat. 3).
 
 Hostplant data for Nymphalidae species were compiled from several sources
 including @ackery1988, HOSTS database (<http://bit.ly/YI7nwW>), @dyer2002,
-@beccaloni2008, @janzen2009 and others (supp. mat. 06--07) for a total of 6586
+@beccaloni2008, @janzen2009 and others (supp. mat. 15--16) for a total of 6586
 hostplant records, including 428 Nymphalidae genera and 143 plant families and
 1070 plant genera. It was not possible to find any hostplant data for 35
 butterfly genera.
@@ -136,7 +136,7 @@ butterfly genera.
 We used the statistical software R version 3.0.1 [@r2013] in combination with
 the APE [@popescu2012], GEIGER [@harmon2008], MEDUSA [@alfaro2009] and
 ``diversitree`` [@fitzjohn2012] packages along with our own scripts to perform
-the analyses (included as supplementary materials). All analyses were run on
+the analyses (included as supplementary materials 2, 6, 10). All analyses were run on
 the 1000 random trees from @wahlberg2009, on the maximum clade credibility tree
 derived from these and the MCC tree from @wahlberg2009.
 
@@ -161,7 +161,7 @@ the maximum clade credibility tree, which makes the assumption that this tree is
 correct. 
 We wanted to study the effects of phylogenetic uncertainty on estimation
 of net diversification rate shifts and therefore selected 1000 random genus-level
-trees from the posterior distribution (MultiMEDUSA, supp. mat. 05).
+trees from the posterior distribution (MultiMEDUSA, supp. mat. 5).
 We calculated a new MCC tree from the selection of trees, run MEDUSA and 
 MultiMEDUSA on the selection of 1000 trees and summarized the estimated changes
 in net diversification rates for nodes across all trees.
@@ -193,7 +193,7 @@ analysis is better suited. BiSSE was designed to test whether a binary character
 state has had any effect on increased net diversification rate for a clade 
 [@maddison2007]. We used our compiled data of hostplant use to produce a
 binary dataset for the character "feeding on the plant family Solanaceae" with
-two states (absence = 0; presence = 1) (supp. mat. 09), which is the main
+two states (absence = 0; presence = 1) (supp. mat. 17), which is the main
 hostplants of the diverse Ithomiini butterflies and closest relatives
 [@willmott2006]. Other hostplant shifts were not tested for effect on 
 net diversification rates due to the low support for diversification shifts
@@ -248,9 +248,9 @@ We tested MEDUSA to find out whether taking into account the phylogenetic
 signal from a random sample of 1000 trees from the posterior distribution can
 return similar estimates of diversification to the values obtained from the
 MCC tree.
-We run MultiMEDUSA on a random sample of 1000 trees (supp. mat. 05) from the
+We run MultiMEDUSA on a random sample of 1000 trees (supp. mat. 5) from the
 posterior distribution and compared the results with a MEDUSA analysis on the
-MCC tree derived from this sample (supp. mat. 09).
+MCC tree derived from this sample (supp. mat. 9).
 
 We found that the analysis by MultiMEDUSA on the 1000 trees estimated
 lower median net diversification rates for the diversification shifts found by
@@ -260,7 +260,7 @@ MEDUSA and MultiMEDUSA was the same, the latter consistently estimated
 lower rates. Thus, the shifts recovered with low net diversification rate on the MCC
 were recovered with negative net diversification rate by MultiMEDUSA.
 The background diversification and all shifts found by MEDUSA on the 1000 trees
-are provided as an R object in supp. mat. 07).
+are provided as an R object in supp. mat. 7).
 
 We also compared the results from MultiMEDUSA (derived from the sample of 1000
 trees) with the splits found by MEDUSA on the MCC tree derived from this
@@ -287,7 +287,7 @@ in the trees from the random sample (Table 2):
      (iv) rate increase in *Callicore* + *Diaethria*.
 
 MultiMEDUSA provided mean and standard deviation statistics for the diversification 
-values found on the shifts on the 1000 trees (supp. mat. 13--15), and found that 
+values found on the shifts on the 1000 trees (supp. mat. 13--14), and found that 
 some of the changes in net diversification rate values had great variation across
 the posterior distribution of trees. A boxplot of the net diversification rate 
 values estimated for the clades that appear in the MCC tree shows that some shifts
@@ -339,10 +339,10 @@ explanation for the data. A likelihood ratio test found that the model for
 increased net diversification rate for nymphalids feeding on Solanaceae is a
 significantly better explanation than this character state having no effect
 on diversification (``p < 0.001``) (Table 3; character states available in
-supp. mat. 09, code in supp. mat. 17, and mcmc run in supp. mat. 18). We
+supp. mat. 17, code in supp. mat. 18, and mcmc run in supp. mat. 19). We
 combined the post-burnin mcmc generations from running BiSSE on 250 trees from
 the posterior distribution and found the same pattern as the BiSSE analysis on
-the maximum clade credibility tree (combined mcmc run in supp. mat. 19;
+the maximum clade credibility tree (combined mcmc run in supp. mat. 20;
 profiles plot of speciation rates in Fig. S5; boxplot of 95% credibility
 intervals in Fig. S6).
 A BiSSE analysis to test whether the trait "feeding on Apocynaceae" had any
@@ -414,7 +414,7 @@ distribution of trees (Fig. 3).
 Keith Brown suggested that feeding on Solanaceae was an important event in the
 diversification of Ithomiini butterflies [@brown1987]. Ithomiini butterflies
 are exclusively Neotropical and most species feed on Solanaceae hostplants during
-larval stage [supp. mat. 04; @willmott2006]. Optimizations of the
+larval stage [supp. mat. 17; @willmott2006]. Optimizations of the
 evolution of hostplant use on phylogenies evidence a probable shift from
 Apocynaceae to Solanaceae in the ancestor of the tribe [@brower2006; @willmott2006].
 @fordyce2010
@@ -692,18 +692,20 @@ posterior distribution.
 with estimated rates from a MultiMEDUSA run on the 1000 random trees selected
 from the posterior distribution.
 
-**``supp_mat_15_multimedusa_results_rates_nodes.pdf``**: Boxplot of estimated
-rates for the MultiMEDUSA run on the 1000 random trees selected from the
-posterior distribution.
-
-**``supp_mat_0x_host_plant_data.csv``**: Hostplants of Nymphalidae butterflies
+**``supp_mat_15_host_plant_data.csv``**: Hostplants of Nymphalidae butterflies
 recorded from the literature.
 
-**``supp_mat_07_host_plant_data_references.csv``**: References for hostplants
+**``supp_mat_16_host_plant_data_references.csv``**: References for hostplants
 data.
 
-**``supp_mat_08_host_plant_data_references.csv``**: References for hostplants
-data.
+**``supp_mat_17_hostplant_states.csv``**: Data matrix with character states
+for hosplant use.
+
+**``supp_mat_18_bisse_source.R``**: R code for running the BiSSE analysis.
+
+**``supp_mat_19_bisse_mcmc_run.csv``**: Raw results for the BiSSE analysis.
+
+**``supp_mat_20_combined_bisse.csv``**: Raw results for the combined BiSSE analysis.
 
 Figure S2. Boxplot of the 95% confidence intervals for estimated speciation and
 extinction rates on an enforced strict higher level phylogeny of our MCC tree by
