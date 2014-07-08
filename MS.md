@@ -6,7 +6,10 @@
 
 *1 Laboratory of Genetics, Department of Biology, University of Turku, Turku, Finland. Email: [mycalesis@gmail.com](mailto:mycalesis@gmail.com)*
 
-*2 Museum of Comparative Zoology and Department of Organismic and Evolutionary Biology, Harvard University, Cambridge, USA. Email: [marianne.espeland@gmail.com](mailto:marianne.espeland@gmail.com)*, McGuire Center?
+*2 Museum of Comparative Zoology and Department of Organismic and Evolutionary
+Biology, Harvard University, Cambridge, USA. Email:
+[marianne.espeland@gmail.com](mailto:marianne.espeland@gmail.com). Current
+address: McGuire Center for Lepidoptera and Biodiversity, Florida Museum of Natural History, University of Florida, Gainesville, FL, US*.
 
 **Corresponding author:** [mycalesis@gmail.com](mailto:mycalesis@gmail.com) Telephone: +358 417063065 Fax: +358 2 333 6680 
 
@@ -17,7 +20,7 @@
 
 
 ## Abstract
-The speciose butterfly family Nymphalidae has been used to study 
+The species rich butterfly family Nymphalidae has been used to study 
 evolutionary interactions between plants and insects. Theories of 
 insect-hostplant dynamics predict accelerated diversification due to key innovations.
 We investigated whether phylogenetic uncertainty affects a commonly used method
@@ -162,20 +165,17 @@ correct.
 We wanted to study the effects of phylogenetic uncertainty on estimation
 of net diversification rate shifts and therefore selected 1000 random genus-level
 trees from the posterior distribution (MultiMEDUSA, supp. mat. 5).
-We calculated a new MCC tree from the selection of trees, run MEDUSA and 
+We calculated a new MCC tree from the selection of trees, ran MEDUSA and 
 MultiMEDUSA on the selection of 1000 trees and summarized the estimated changes
 in net diversification rates for nodes across all trees.
-Patterns of change in net diversification rates are significant if they
-are found at the same node in at least 90% of the trees.
+Patterns of change in net diversification rates are considered significant if
+they are found at the same node in at least 90% of the trees.
 We also expected to find similar values of net diversification
 (``r = b - d``) and relative extinction rate ($\varepsilon$ ``= d/b``) values
 across the 1000 trees for the nodes where changes in diversification tempo
 occurs. We used the AICc threshold of 7.8 units, as estimated by MEDUSA,
 as the limit for a significantly better fit to select among increasingly
 complex alternative models.
-We did not set a higher limit in the number of net diversification rate shifts
-that could be estimated by MEDUSA as we used the corrected AICc threshold recomended
-by the software.
 
 
 ### Estimation of trait-dependent speciation rates
@@ -203,10 +203,10 @@ Chain Monte Carlo algorithm on the maximum clade credibility tree, taking into
 account missing taxa by using the parameter "sampling factor" (``sampling.f``)
 in ``diversitree``.
 We also used constrained analyses forcing no effect of hostplant use on
-diversification and likelihood ratio tests to find out whether the hypothesis 
-of effect on diversification has a significantly better likelihood than the 
-null hypothesis (no effect). The analyses were run across a sample of 250 trees from the 
-posterior distribution.
+diversification and used likelihood ratio tests to find out whether the
+hypothesis of effect on diversification has a significantly better likelihood
+than the null hypothesis (no effect). The analyses were run across a sample of
+250 trees from the posterior distribution.
 The records of *Vanessa* and *Hypanartia* feeding on Solanaceae 
 [@scott1986; @dyer2002] might be incorrect as it is unlikely that these
 species can be feeding on this
@@ -492,7 +492,7 @@ about 59 (49-68) MYA and diversification started (crown group age) around 37 (29
 MYA. @wahlberg2009 give the corresponding ages for Ithomiini as 45 
 (39-53) and 37 (32-43) MYA, respectively. Thus, current evidence shows that
 Solanaceae and Ithomiini might have diversified around the same time, during 
-the Late Eocene and Oligocene, and this is congruent with the diffuse 
+the Late Eocene and Oligocene, and this would be congruent with the diffuse 
 cospeciation hypothesis.
 
 The uplift of the Andes was a major tectonic event that underwent higher activity
