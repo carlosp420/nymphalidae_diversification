@@ -9,7 +9,7 @@ MS_proof.pdf: header.latex MS.md refs.bib jeb.csl
 pdf: MS.pdf
 
 MS.pdf: header.latex MS.md refs.bib jeb.csl ancillary/fig01.pdf 
-	pandoc --latex-engine=xelatex -s -S --template header.latex -f markdown -V geometry:a4paper -V geometry:margin=1in  MS.md --bibliography=refs.bib  --csl=jeb.csl -o MS.pdf
+	pandoc --latex-engine=xelatex -s -S --template header.latex -f markdown -V geometry:a4paper -V geometry:margin=1in  MS.md --bibliography=refs.bib  --csl=plos.csl -o MS.pdf
 	#convert ancillary/fig01.png ancillary/fig01.pdf
 	#inkscape ancillary/fig04.svg -A ancillary/fig04.pdf
 	pdftk MS.pdf ancillary/fig01.pdf ancillary/fig02.pdf ancillary/fig03.pdf  ancillary/fig04.pdf ancillary/Table_1.pdf ancillary/Table_2.pdf ancillary/Table_3.pdf cat output tmp.pdf
@@ -19,7 +19,7 @@ MS.pdf: header.latex MS.md refs.bib jeb.csl ancillary/fig01.pdf
 latex: MS.tex
 
 MS.tex: header.latex MS.md refs.bib jeb.csl 
-	pandoc --latex-engine=xelatex -s -S --template header.latex -f markdown -V geometry:a4paper -V geometry:margin=1in  MS.md --bibliography=refs.bib  --csl=jeb.csl  -o MS.tex
+	pandoc --latex-engine=xelatex -s -S --template header.latex -f markdown -V geometry:a4paper -V geometry:margin=1in  MS.md --bibliography=refs.bib  --csl=plos.csl  -o MS.tex
 
 # Make ODT file for word count including references
 docx: MS.docx
