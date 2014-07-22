@@ -2,7 +2,7 @@ Dear Editor,
 
 We send our manuscript "Diversity dynamics in Nymphalidae butterflies: Effect
 of phylogenetic uncertainty on diversification rate shift estimates" for your
-consideration.
+consideration. This is a research article.
 
 Part of the findings of this manuscript are the following:
 
@@ -27,6 +27,10 @@ explore the high diversification rate found in the clade Ithomiini and provide
 evidence that the evolutionary interactions with their hostplants are
 responsible for the high diversification rate, and that this process is
 congruent with the diffuse cospeciation hypothesis.
+
+This paper is part of our research interests in the evolutionary history of
+butterflies and related groups.
+
 
 Sincerely yours,
 
