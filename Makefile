@@ -16,10 +16,10 @@ MS.pdf: header.latex MS.md refs.bib jeb.csl ancillary/fig01.pdf
 	mv tmp.pdf MS.pdf
 	
 # Make LATEX file for submittion
-latex: MS.tex
+latex: MS2.tex
 
-MS.tex: header.latex MS.md refs.bib jeb.csl 
-	pandoc --latex-engine=xelatex -s -S --template header.latex -f markdown -V geometry:a4paper -V geometry:margin=1in  MS.md --bibliography=refs.bib  --csl=plos.csl  -o MS.tex
+MS2.tex: header.latex MS.md refs.bib plos.csl 
+	pandoc --latex-engine=xelatex -s -S --template header.latex -f markdown -V geometry:a4paper -V geometry:margin=1in  MS.md --bibliography=refs.bib  --csl=plos.csl  -o MS2.tex
 
 # Make ODT file for word count including references
 docx: MS.docx
