@@ -36,3 +36,8 @@ Sincerely yours,
 
 
 Carlos Peña & Marianne Espeland
+
+## support
+The study was supported by a Kone Foundation grant (awarded to Niklas
+        Wahlberg), Finland (C. Peña) and the Research Council of Norway
+(grant no. 204308 to M. Espeland).
