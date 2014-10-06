@@ -1,12 +1,29 @@
 # 
 # make manuscript in PDF
 #
-proof: MS_proof.pdf
+# REVISION PLOS ONE 2014-10-05
+#
+OPTS= --latex-engine=xelatex -s -S --template header.latex -f markdown -V geometry:a4paper -V geometry:margin=1in --bibliography=refs.bib --csl=plos.csl 
 
-MS_proof.pdf: header.latex MS.md refs.bib jeb.csl 
-	pandoc --latex-engine=xelatex -s -S --template proof_header.latex -f markdown -V geometry:a4paper -V geometry:margin=1in  MS.md --bibliography=refs.bib  --csl=jeb.csl -o MS_proof.pdf
+all: MS_orig.pdf MS_revised.pdf MS_diff.pdf
 
-pdf: MS.pdf
+MS_orig.pdf: MS.md
+	pandoc $< -o $@ $(OPTS)
+
+MS_revised.pdf: MS_revised.md
+	pandoc $< -o $@ $(OPTS)
+
+
+response: response_to_reviewers.pdf
+
+response_to_reviewers.pdf: response_to_reviewers.md
+	pandoc $< -V geometry:a4paper -V geometry:margin=1in -o $@ 
+
+
+
+
+
+
 
 MS.pdf: header.latex MS.md refs.bib jeb.csl ancillary/fig01.pdf 
 	pandoc --latex-engine=xelatex -s -S --template header.latex -f markdown -V geometry:a4paper -V geometry:margin=1in  MS.md --bibliography=refs.bib  --csl=plos.csl -o MS.pdf
