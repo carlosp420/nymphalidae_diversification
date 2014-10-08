@@ -186,7 +186,9 @@ net diversification in the clade Ithomiini, we tested whether this pattern
 can be explained by an increase in the birth-rate due to hostplant use and
 performed analyses using the "binary state speciation and extinction" 
 [BiSSE; @maddison2007] Bayesian approach as implemented in the
-R package ``diversitree`` [@fitzjohn2012]. MuSSE [@fitzjohn2012] is designed to
+R package ``diversitree`` [@fitzjohn2012]. 
+The Multiple State Speciation and Extinction approach (MuSSE) [@fitzjohn2012]
+is designed to
 examine the joint effects of two or more traits on speciation. Because most of
 Nymphalidae butterflies are restricted to use one plant family as hostplant, 
 the character states can be coded as presence/absence, for which the BiSSE 

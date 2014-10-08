@@ -30,3 +30,11 @@ Middle of paragraph (and throughout the manuscript): revise the tree sampling to
 
 > We have corrected some sentences in the manuscript to specify that we are
 referring to the same set of 1000 trees.
+
+**4. Reviewer's Comment:**
+
+Define what 'MuSSE' refers to (Multiple State Speciation and Extinction?).
+
+**4. Response:**
+
+> We have included the definition of MuSSE in the manuscript.
