@@ -38,3 +38,19 @@ Define what 'MuSSE' refers to (Multiple State Speciation and Extinction?).
 **4. Response:**
 
 > We have included the definition of MuSSE in the manuscript.
+
+
+**5. Reviewer's Comment:**
+
+A reference for the statement “most of Nymphalidae butterflies are restricted to use one plant family as hostplant” is warranted.
+
+**5. Response:**
+
+> We have included the numbers of single-family feeders based on calculations
+of our own data on hostplant use across Nymphalidae genera. The text has been
+modified accordingly:
+
+> "Because most of Nymphalidae butterflies are restricted to use one plant
+family as hostplant (232 genera use only one plant family versus 176 that use
+        more than one; based on our data in supp. mat. 15), the ..."
+

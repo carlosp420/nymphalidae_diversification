@@ -189,8 +189,11 @@ performed analyses using the "binary state speciation and extinction"
 R package ``diversitree`` [@fitzjohn2012]. 
 The Multiple State Speciation and Extinction approach (MuSSE) [@fitzjohn2012]
 is designed to
-examine the joint effects of two or more traits on speciation. Because most of
-Nymphalidae butterflies are restricted to use one plant family as hostplant, 
+examine the joint effects of two or more traits on speciation.
+Because most of
+Nymphalidae butterflies are restricted to use one plant family as hostplant
+(232 genera use only one plant family versus 176 that use more than one;
+based on our data in supp. mat. 15), 
 the character states can be coded as presence/absence, for which the BiSSE 
 analysis is better suited. BiSSE was designed to test whether a binary character
 state has had any effect on increased net diversification rate for a clade 
