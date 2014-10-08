@@ -17,5 +17,16 @@ considered model organisms in evolutionary biology [7–9]."
 
 The authors should mention that the ideal approach would accommodate uncertainty by sampling from a distribution of trees which reflected the variation in confidence in various parts of the tree (such as a Bayesian posterior distribution or a bootstrap sample). See Holder,M. and Lewis,P.O. (2003) Phylogeny estimation: traditional and Bayesian approaches. Nat. Rev. Genet., 4, 275–284
 
+**2. Response:**
+
 > We have specified that the sample of trees was taken from the Bayesian run in
 Wahlberg et al., 2009.
+
+**3. Reviewer's Comment:**
+
+Middle of paragraph (and throughout the manuscript): revise the tree sampling to “...therefore randomly sampled 1000 trees from the posterior distribution”; in the remainder of the manuscript, refer to these as the “1000 sampled trees”, not “1000 random trees”, which can take on a very different meaning.
+
+**3. Response:**
+
+> We have corrected some sentences in the manuscript to specify that we are
+referring to the same set of 1000 trees.

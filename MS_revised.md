@@ -183,9 +183,8 @@ complex alternative models.
 ### Estimation of trait-dependent speciation rates
 As the MEDUSA and MultiMEDUSA approaches estimated an increase in 
 net diversification in the clade Ithomiini, we tested whether this pattern 
-can be explained by increase in birth-rate due to hostplant use and performed
-analyses with the
-"binary state speciation and extinction" 
+can be explained by an increase in the birth-rate due to hostplant use and
+performed analyses using the "binary state speciation and extinction" 
 [BiSSE; @maddison2007] Bayesian approach as implemented in the
 R package ``diversitree`` [@fitzjohn2012]. MuSSE [@fitzjohn2012] is designed to
 examine the joint effects of two or more traits on speciation. Because most of
@@ -195,9 +194,10 @@ analysis is better suited. BiSSE was designed to test whether a binary character
 state has had any effect on increased net diversification rate for a clade 
 [@maddison2007]. We used our compiled data of hostplant use to produce a
 binary dataset for the character "feeding on the plant family Solanaceae" with
-two states (absence = 0; presence = 1) (supp. mat. 17), which is the main
-hostplants of the diverse Ithomiini butterflies and closest relatives
-[@willmott2006]. Other hostplant shifts were not tested for effect on 
+two states (absence = 0; presence = 1) (supp. mat. 17).
+The family Solanaceae include the hostplants of the diverse Ithomiini butterflies
+and closest relatives [@willmott2006].
+Other hostplant shifts were not tested for effect on 
 net diversification rates due to the low support for diversification shifts
 found in the MEDUSA analyses.
 We analyzed the data using BiSSE employing the Markov 
@@ -208,7 +208,7 @@ We also used constrained analyses forcing no effect of hostplant use on
 diversification and used likelihood ratio tests to find out whether the
 hypothesis of effect on diversification has a significantly better likelihood
 than the null hypothesis (no effect). The analyses were run across a sample of
-250 trees from the posterior distribution.
+250 trees from the selected 1000 random trees from the posterior distribution.
 The records of *Vanessa* and *Hypanartia* feeding on Solanaceae 
 [@scott1986; @dyer2002] might be incorrect as it is unlikely that these
 species can be feeding on this
@@ -247,10 +247,10 @@ We also found decreases in net diversification rates for Limenitidinae + Helicon
 
 ### Phylogenetic uncertainty in the MultiMEDUSA approach
 We tested MEDUSA to find out whether taking into account the phylogenetic
-signal from a random sample of 1000 trees from the posterior distribution can
+signal from the random sample of 1000 trees from the posterior distribution can
 return similar estimates of diversification to the values obtained from the
 MCC tree.
-We run MultiMEDUSA on a random sample of 1000 trees (supp. mat. 5) from the
+We run MultiMEDUSA on the random sample of 1000 trees (supp. mat. 5) from the
 posterior distribution and compared the results with a MEDUSA analysis on the
 MCC tree derived from this sample (supp. mat. 9).
 
@@ -317,7 +317,7 @@ a probability of 18% (Fig. 3).
 
 
 ### Estimation of trait-dependent speciation rates
-The MEDUSA analyses taking into account phylogenetic uncertainty estimated
+The MEDUSA analyses, taking into account phylogenetic uncertainty, estimated
 a net diversification rate increase in part of the clade Ithomiini across more
 than 95% of the trees.
 Our BiSSE analysis found a positive effect of the 
@@ -342,7 +342,7 @@ significantly better explanation than this character state having no effect
 on diversification (``p < 0.001``) (Table 3; character states available in
 supp. mat. 17, code in supp. mat. 18, and mcmc run in supp. mat. 19). We
 combined the post-burnin mcmc generations from running BiSSE on 250 trees from
-the posterior distribution and found the same pattern as the BiSSE analysis on
+the random sample of 1000 trees and found the same pattern as the BiSSE analysis on
 the maximum clade credibility tree (combined mcmc run in supp. mat. 20;
 profiles plot of speciation rates in Fig. S3; boxplot of 95% credibility
 intervals in Fig. S4).
@@ -358,7 +358,7 @@ hostplants. Thus, BiSSE is expected to produce robust results [@davis2013].
 ## Discussion
 ### Effects of phylogenetic uncertainty on the performance of MEDUSA 
 The MEDUSA method has been used to infer changes in net diversification rates 
-along a phylogenetic tree. Since its publication [@alfaro2009] the
+in a phylogenetic tree. Since its publication [@alfaro2009] the
 results of using MEDUSA on a single tree, the maximum clade credibility tree,
 have been used for generation of hypotheses and discussion [e.g. 
 @litman2011; @heikkila2012; @ryberg2012].
@@ -367,8 +367,8 @@ shifts and different rates of diversification for certain lineages
 when phylogenetic uncertainty was taken into account by using MEDUSA
 on a random sample of trees from the posterior distribution of a
 Bayesian run. We found that some diversification splits, estimated
-on the Nymphalidae maximum clade credibility tree, were found with a very low
-probability in a random sample of 1000 trees from the posterior
+on the Nymphalidae maximum clade credibility tree, were found with very low
+probability in the random sample of 1000 trees from the posterior
 distribution (Fig. 3, Table 2). We also found that, even though MEDUSA could
 estimate the same diversification splits on two or more trees, the 
 estimated net diversification rates could vary widely 
@@ -490,9 +490,10 @@ hypothesis in Pieridae butterflies due to, in addition to the identification of 
 key innovation, a burst of diversification in glucosinolate-feeding taxa shortly
 afterwards (with a lag of ~10 MY). According to a recent dated phylogeny of the 
 Angiosperms [@bell2010], the family Solanaceae split from its sister group
-about 59 (49-68) MYA and diversification started (crown group age) around 37 (29-47) 
+about 59 (49--68) MYA and diversification started (crown group age) around 37
+(29--47) 
 MYA. @wahlberg2009 give the corresponding ages for Ithomiini as 45 
-(39-53) and 37 (32-43) MYA, respectively. Thus, current evidence shows that
+(39--53) and 37 (32--43) MYA, respectively. Thus, current evidence shows that
 Solanaceae and Ithomiini might have diversified around the same time, during 
 the Late Eocene and Oligocene, and this would be congruent with the diffuse 
 cospeciation hypothesis.
@@ -508,7 +509,7 @@ cospeciation" of Ithomiini and hostplants.
 
 
 #### Danaini
-Our MultiMEDUSA approach gave a significant slowdown in net diversification rate in 
+Our MultiMEDUSA approach showed a significant slowdown in net diversification rate in 
 the subtribe Danaina of the Danini. Both Danaina and the sister clade Euploeina 
 feed mainly on Apocynaceae and thus a hostplant shift should not be responsible 
 for the observed slowdown of diversification in the Danaina. As expected, our BiSSE
