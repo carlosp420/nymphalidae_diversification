@@ -16,8 +16,13 @@ MS_revised.pdf: MS_revised.md
 
 response: response_to_reviewers.pdf
 
-response_to_reviewers.pdf: response_to_reviewers.md
-	pandoc $< -V geometry:a4paper -V geometry:margin=1in -o $@ 
+response_to_reviewers.pdf: response_to_reviewers.tex
+	sed -i 's/\\date{}/\\usepackage{color}\n\\date{}/g' $<
+	sed -i 's/begin{quote}/begin{quote}\n\\color{blue}/g' $<
+	pdflatex $<
+
+response_to_reviewers.tex: response_to_reviewers.md
+	pandoc $< -s -V geometry:a4paper -V geometry:margin=1in -o $@ 
 
 
 
