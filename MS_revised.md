@@ -165,7 +165,8 @@ the maximum clade credibility tree, which makes the assumption that this tree is
 correct. 
 We wanted to study the effects of phylogenetic uncertainty on estimation
 of net diversification rate shifts and therefore selected 1000 random genus-level
-trees from the posterior distribution (MultiMEDUSA, supp. mat. 5).
+trees from the posterior distribution of the Bayesian run from Wahlberg et al.,
+      2009 [@wahlberg2009] (MultiMEDUSA, supp. mat. 5).
 We calculated a new MCC tree from the selection of trees, ran MEDUSA and 
 MultiMEDUSA on the selection of 1000 trees and summarized the estimated changes
 in net diversification rates for nodes across all trees.

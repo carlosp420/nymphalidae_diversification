@@ -1,0 +1,86 @@
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+    \usepackage{xltxtra,xunicode}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+  \newcommand{\euro}{€}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1in,a4paper]{geometry}
+\ifxetex
+  \usepackage[setpagesize=false, % page size defined by xetex
+              unicode=false, % unicode breaks when used with xetex
+              xetex]{hyperref}
+\else
+  \usepackage[unicode=true]{hyperref}
+\fi
+\hypersetup{breaklinks=true,
+            bookmarks=true,
+            pdfauthor={},
+            pdftitle={},
+            colorlinks=true,
+            citecolor=blue,
+            urlcolor=blue,
+            linkcolor=magenta,
+            pdfborder={0 0 0}}
+\urlstyle{same}  % don't use monospace font for urls
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\setcounter{secnumdepth}{0}
+
+\usepackage{color}
+\date{}
+
+\begin{document}
+
+\section{Response to reviewers}\label{response-to-reviewers}
+
+\subsection{Reviewer 1}\label{reviewer-1}
+
+\textbf{1. Reviewer's Comment:}
+
+Introduction 1. Second paragraph, second sentence: The fact that the
+Nymphalids are the ``largest family'' of butterflies conveys an
+exaggerated importance of their diversity based on idiosyncrasy of
+Linnean taxonomy (the sister group to Nymphalidae, the clade that
+includes riodinids and lycaenids, has over 6500 species). Consider
+revising the sentence, omitting superlatives (``biggest'', ``largest'',
+``most'', etc.).
+
+\textbf{1. Response:}
+
+\begin{quote}
+\color{blue}
+We have rewritten the sentence to: ``Nymphalidae contains around 6000
+species {[}6{]}, and several members are considered model organisms in
+evolutionary biology {[}7--9{]}.''
+\end{quote}
+
+\textbf{2. Reviewer's Comment:}
+
+The authors should mention that the ideal approach would accommodate
+uncertainty by sampling from a distribution of trees which reflected the
+variation in confidence in various parts of the tree (such as a Bayesian
+posterior distribution or a bootstrap sample). See Holder,M. and
+Lewis,P.O. (2003) Phylogeny estimation: traditional and Bayesian
+approaches. Nat. Rev.~Genet., 4, 275--284
+
+\end{document}
