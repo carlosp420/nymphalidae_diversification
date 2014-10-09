@@ -257,7 +257,7 @@ We tested MEDUSA to find out whether taking into account the phylogenetic
 signal from the random sample of 1000 trees from the posterior distribution can
 return similar estimates of diversification to the values obtained from the
 MCC tree.
-We run MultiMEDUSA on the random sample of 1000 trees (supp. mat. 5) from the
+We ran MultiMEDUSA on the random sample of 1000 trees (supp. mat. 5) from the
 posterior distribution and compared the results with a MEDUSA analysis on the
 MCC tree derived from this sample (supp. mat. 9).
 
@@ -266,10 +266,11 @@ lower median net diversification rates for the diversification shifts found by
 MEDUSA on the MCC tree from @wahlberg2009 (Table 2). 
 Although the diversification pattern found by
 MEDUSA and MultiMEDUSA was the same, the latter consistently estimated 
-lower rates. Thus, the shifts recovered with low net diversification rate on the MCC
+lower rates. 
+Furthermore, the shifts recovered with low net diversification rate on the MCC
 were recovered with negative net diversification rate by MultiMEDUSA.
 The background diversification and all shifts found by MEDUSA on the 1000 trees
-are provided as an R object in supp. mat. 7).
+are provided as an R object in supp. mat. 7.
 
 We also compared the results from MultiMEDUSA (derived from the sample of 1000
 trees) with the splits found by MEDUSA on the MCC tree derived from this
