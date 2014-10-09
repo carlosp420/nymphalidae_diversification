@@ -219,6 +219,8 @@ The records of *Vanessa* and *Hypanartia* feeding on Solanaceae
 species can be feeding on this
 plant family. We tested whether coding these two genera as not feeding on 
 Solanaceae affected our results.
+We expected that coding these two genera as either absence or presence would not
+have a significant effect on our results.
 
 ## Results
 

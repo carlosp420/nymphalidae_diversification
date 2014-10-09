@@ -54,3 +54,12 @@ modified accordingly:
 family as hostplant (232 genera use only one plant family versus 176 that use
         more than one; based on our data in supp. mat. 15), the ..."
 
+**6. Reviewer's Comment:**
+
+At the end of this paragraph, the authors indicated they tested the effect of character coding on their analyses. A more explicit description of the test would be useful, along with predictions of how results would be effected (i.e. how would a large effect vs. no effect of coding Hypanartia and Vanessa as Solanaceae feeders manifest in the results?).
+
+**6. Response:**
+
+> We included the following sentence to clarify the issue: **"We expected that
+coding these two genera as either absence or presence would not have a
+significant effect on our results."**
