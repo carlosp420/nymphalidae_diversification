@@ -87,3 +87,11 @@ or omit the sentence.
 samples of 1000 trees (frequency more than 90%; Table 2), the MultiMEDUSA
 approach recovered different rates of diversification than
 those found using when the MCC tree alone."**.
+
+**12. Reviewer's Comment:**
+
+Fifth paragraph, first sentence (and potentially elsewhere): Consider using a consistent means of presenting probability values. In this sentence, the authors refer to “90% of probability in the trees”, but in the preceding paragraph, the authors present probabilities as a decimal (“probability of being recovered higher than 0.90”). Granted, these two probabilities refer to different events, but perhaps it would be best to refer to them in a consistent manner, such as “0.90 posterior probability”.
+
+**12. Response:**
+
+> We have corrected this and normalized the probability values to decimals in the manuscript.

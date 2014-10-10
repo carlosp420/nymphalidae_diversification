@@ -289,7 +289,7 @@ samples of 1000 trees (frequency more than 90%; Table 2), the MultiMEDUSA
 approach recovered different rates of diversification than
 those found using when the MCC tree alone.
 
-There were four diversification shifts found with more than 90% of probability
+There were four diversification shifts found with more than 0.90 of probability
 in the trees from the random sample (Table 2):
     (i) net diversification rate increase in the genus *Ypthima*;
     (ii) net diversification rate increase in the genus *Charaxes*;
@@ -322,13 +322,13 @@ are consistently recovered in most of the 1000 trees. Some of the splits in the
 MCC tree are recovered in very few trees, for example the split for the clade
 Satyrini
 (Euptychiina + Pronophilina + Satyrina + Maniolina) is recovered with 
-a probability of 18% (Fig. 3).
+a probability of 0.18 (Fig. 3).
 
 
 ### Estimation of trait-dependent speciation rates
 The MEDUSA analyses, taking into account phylogenetic uncertainty, estimated
 a net diversification rate increase in part of the clade Ithomiini across more
-than 95% of the trees.
+than 0.95 of the trees.
 Our BiSSE analysis found a positive effect of the 
 character state "feeding on Solanaceae" on the net net diversification rate on part
 of Ithomiini (Oleriina + Ithomiina + Napeogenina + Dircennina + Godyridina) 
@@ -398,7 +398,7 @@ and posterior probability values for the nodes. For example, posterior
 probability values for clades in Satyrini are very low [``0.5 to 0.6``;
 @wahlberg2009]. As a result, MEDUSA inferred a net diversification
 rate increase for part of Satyrini in the maximum clade credibility tree, but this
-was recovered only in 13% of probabilities in the MultiMEDUSA analysis on the
+was recovered only with a probability of 0.13 in the MultiMEDUSA analysis on the
 random sample of trees.
 
 If there is strong phylogenetic signal for increases or decreases in
@@ -407,8 +407,8 @@ inferred by MEDUSA in most of the posterior distribution of trees. However,
 weak phylogenetic signal for some nodes can cause some clades to be
 absent in some trees and MEDUSA will be unable to estimate any
 diversification shift (due to a non-existent node). This is the 
-reason why MEDUSA estimated net diversification rate splits with  more than
-90% of probabilities in the sample of trees for only four splits: 
+reason why MEDUSA estimated net diversification rate splits with a probability
+of more than 0.90 in the sample of trees for only four splits: 
 the genus *Charaxes*, the genus *Ypthima*, part of
 Ithomiini and the clade *Callicore* + *Diaethria* (Fig. 3), 
 while estimating splits for other lineages with much lower probability.
@@ -416,7 +416,7 @@ while estimating splits for other lineages with much lower probability.
 The clade Ithomiini and the non-basal danaids are well supported by high
 posterior probability values in @wahlberg2009. Therefore our MEDUSA analyses
 recovered an increase in net diversification rate 
-with probability higher than 90% in the posterior
+with probability higher than 0.90 in the posterior
 distribution of trees (Fig. 3).
 
 ### Hostplant use and diversification in Nymphalidae
@@ -552,7 +552,7 @@ The diverse tribe Satyrini radiated simultaneously with the radiation of their m
 hostplant, grasses, during the climatic cooling in the Oligocene
 [@pena2008]. Thus, it is somewhat surprising that part of Satyrini
 (the subtribes Euptychiina, Satyrina and Pronophilina) were found to have
-accelerated diversification in only 13% of probabilities in the trees from the
+accelerated diversification with a probability of only 0.13 in the trees from the
 posterior distribution.
 Although this can be attributed to low phylogenetic signal [posterior probability
 value = ``0.6`` for this clade in @wahlberg2009], the clade Satyrini is
