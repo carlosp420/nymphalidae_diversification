@@ -6,14 +6,14 @@ add.alpha <- function(col, alpha=.5) {
     rgb(tmp[1,], tmp[2,], tmp[3,], alpha=alpha)
 }
 
-phy <- read.nexus("ancillary/supp_mat_01_genus.nex");
+phy <- read.nexus("ancillary/Supporting_Information_S1.nex");
 tips <- c("Achlyodes", "Graphium", "Parnassius", "Baronia", "Troides", "Papilio1", "Papilio2", "Pieris", "Aporia", "Styx", "Hamearis", "Euselasia", "Nymphidium", "Emesis", "Crocozona", "Riodina", "Amarynthis", "Baliochila", "Poritia", "Miletus", "Liphyra", "Lycaena", "Celastrina", "Thecla", "Lucia", "Curetis", "Eurema", "Colias", "Leptidea", "Pseudopontia", "Libyt");
 phy  <- drop.tip(phy, tips)
 new.phy <- multi2di(phy);
 phy <- new.phy;
 
 # Process data on using **Solanaceae** as hostplant
-data <- read.csv("ancillary/supp_mat_09_states.csv", sep=",", header=T, row.names=1);
+data <- read.csv("ancillary/Supporting_Information_S17.csv", sep=",", header=T, row.names=1);
 data <- data[order(order(phy$tip.label)),]
 
 # Column 2 is the data for **Solanaceae**
@@ -29,7 +29,7 @@ phy$tip.state<-data.v
 ##################
 # get sampling values. Propotion of extant species in our tree that have state 0 and state 1
 # in relation with the total 
-richness <- read.csv("ancillary/supp_mat_03_richness.csv")
+richness <- read.csv("ancillary/Supporting_Information_S3.csv")
 richness <- richness[order(order(phy$tip.label)),]
 
 richness_cero <- c();
@@ -78,10 +78,10 @@ w <- diff(sapply(tmp[2:7], quantile, c(0.05, 0.95)));
 
 # this runs the markov chain
 samples <- mcmc(lik, fit$par, nsteps=10000, w=w, lower=0, 
-                prior=prior, save.every=1000, save.file="bisse_mcmc_run.csv");
+                prior=prior, save.every=1000, save.file="ancillary/Supporting_Information_S19.csv");
 
 # read markov chain from saved data file
-#samples <- read.csv("bisse_mcmc_run.csv")
+#samples <- read.csv("ancillary/Supporting_Information_S19.csv")
 
 # do burnin
 samples <- subset(samples, i > 7500)
@@ -127,7 +127,7 @@ dev.off()
 
 ####
 # do a likelihood ratio test of forcing equal speciation rates lambda0 = lambda1
-samples <- read.csv("ancillary/supp_mat_18_bisse_mcmc_run.csv")
+samples <- read.csv("ancillary/Supporting_Information_S19.csv")
 samples2 <- subset(samples, i > 7500);
 x <- sapply(samples2[,2:7],quantile,c(0.025,0.975))
 
@@ -150,8 +150,8 @@ table2$AIC <- round(table2$AIC, digits=1)
 table2$ChiSq <- round(table2$ChiSq, digits=1)
 table2[5] <- round(table2[5])
 
-write.table(table2, file="ancillary/Table_2.csv", sep=",")
-# Df   lnLik    AIC  ChiSq Pr(>|Chi|)    
+write.table(table2, file="ancillary/likelihood_ratio_test.csv", sep=",")
+#               Df  lnLik    AIC  ChiSq   Pr(>|Chi|)    
 # full          6 -1613.3 3238.5                      
 # equal.lambda  5 -1619.4 3248.9 12.303  0.0004522 ***
 # ---
