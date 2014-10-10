@@ -111,3 +111,11 @@ Mid-way through paragraph, discussion of likelihood ratio test: The source of th
 
 > We have include the statistics suggested by the reviewer: 
 "**$\chi^2 = 12.3; 1 df; p < 0.001$**".
+
+**15. Reviewer's Comment:**
+
+The closing three sentences (about BiSSE performance) should be moved to the methods section.
+
+**15. Response:**
+
+> We made the suggested corrections.

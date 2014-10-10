@@ -223,6 +223,12 @@ plant family. We tested whether coding these two genera as not feeding on
 Solanaceae affected our results.
 We expected that coding these two genera as either absence or presence would not
 have a significant effect on our results.
+It has been shown
+that BiSSE performs poorly under certain conditions [@davis2013]. 
+However, our data has adequate number of taxa under analysis (more than 300
+tips), adequate speciation bias (between 1.5x and 2.0x), character state bias 
+(around 8x) and extinction bias (around 4x) for the analysis of Solanaceae
+hostplants. Thus, BiSSE is expected to produce robust results [@davis2013].
 
 ## Results
 
@@ -359,12 +365,7 @@ profiles plot of speciation rates in Fig. S3; boxplot of 95% credibility
 intervals in Fig. S4).
 A BiSSE analysis to test whether the trait "feeding on Apocynaceae" had any
 effect on increased net diversification rates found similar speciation rates for
-lineages feeding on Apocynaceae and other plants (Fig. S5). It has been shown
-that BiSSE performs poorly under certain conditions [@davis2013]. 
-However, our data has adequate number of taxa under analysis (more than 300
-tips), adequate speciation bias (between 1.5x and 2.0x), character state bias 
-(around 8x) and extinction bias (around 4x) for the analysis of Solanaceae
-hostplants. Thus, BiSSE is expected to produce robust results [@davis2013].
+lineages feeding on Apocynaceae and other plants (Fig. S5). 
 
 ## Discussion
 ### Effects of phylogenetic uncertainty on the performance of MEDUSA 
