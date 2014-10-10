@@ -279,8 +279,8 @@ In the summary statistics, MultiMEDUSA reports the frequency of the diversificat
 shifts found in the trees (parameter ``sum.prop``). Thus, if a node is found in
 only half of the 1000 trees, but the phylogenetic signal was strong enough to
 be picked up by MEDUSA and a node shift was found most of the time, then the
-``sum.prop`` should be close to 1. For example the node 625 consists of the
-clade ``Charaxes`` + ``Polyura`` and it was found in only 256 trees, however
+``sum.prop`` should be close to 1. For example, the
+``Charaxes`` + ``Polyura`` clade was found in only 256 trees, however
 MultiMEDUSA was consistenly able to find a diversification shift for that node
 and the ``sum.prop`` value is 0.996.
 

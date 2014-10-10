@@ -64,12 +64,12 @@ At the end of this paragraph, the authors indicated they tested the effect of ch
 coding these two genera as either absence or presence would not have a
 significant effect on our results."**
 
-**7, 8, 9. Reviewer's Comment:**
+**7, 8, 9, 10. Reviewer's Comment:**
 
 7. First paragraph, second sentence: change the tense of “run” to “ran”.
 8. Second paragraph, third sentence: replace “Thus” with “Furthermore”.
 9. There appears to be an orphaned right-parenthesis at the end of the second paragraph.
 
-**7, 8, 9. Response:**
+**7, 8, 9, 10. Response:**
 
 > We made the suggested corrections.
