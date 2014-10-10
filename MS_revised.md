@@ -349,7 +349,8 @@ whether the model of different speciation rates is a significantly better
 explanation for the data. A likelihood ratio test found that the model for
 increased net diversification rate for nymphalids feeding on Solanaceae is a
 significantly better explanation than this character state having no effect
-on diversification (``p < 0.001``) (Table 3; character states available in
+on diversification ($\chi^2 = 12.3; 1 df; p < 0.001$)
+(Table 3; character states available in
 supp. mat. 17, code in supp. mat. 18, and mcmc run in supp. mat. 19). We
 combined the post-burnin mcmc generations from running BiSSE on 250 trees from
 the random sample of 1000 trees and found the same pattern as the BiSSE analysis on

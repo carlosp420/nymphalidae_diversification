@@ -102,3 +102,12 @@ The third sentence (length of analysis and burnin details) should be moved to th
 **13. Response:**
 
 > We made the suggested corrections.
+
+**14. Reviewer's Comment:**
+
+Mid-way through paragraph, discussion of likelihood ratio test: The source of this P-value needs to be described (chi-squared approximation with 1 degree of freedom?), here or in the methods section (see p. 617 in Pagel 1999 Syst. Biol. 48:612-622).
+
+**14. Response:**
+
+> We have include the statistics suggested by the reviewer: 
+"**$\chi^2 = 12.3; 1 df; p < 0.001$**".
