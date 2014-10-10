@@ -95,3 +95,10 @@ Fifth paragraph, first sentence (and potentially elsewhere): Consider using a co
 **12. Response:**
 
 > We have corrected this and normalized the probability values to decimals in the manuscript.
+
+**13. Reviewer's Comment:**
+The third sentence (length of analysis and burnin details) should be moved to the methods section.
+
+**13. Response:**
+
+> We made the suggested corrections.

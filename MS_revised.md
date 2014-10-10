@@ -187,6 +187,8 @@ can be explained by an increase in the birth-rate due to hostplant use and
 performed analyses using the "binary state speciation and extinction" 
 [BiSSE; @maddison2007] Bayesian approach as implemented in the
 R package ``diversitree`` [@fitzjohn2012]. 
+The Markov Chain Monte Carlo algorithm was run for 10000
+generations discarding the first 7500 as burnin. 
 The Multiple State Speciation and Extinction approach (MuSSE) [@fitzjohn2012]
 is designed to
 examine the joint effects of two or more traits on speciation.
@@ -332,8 +334,7 @@ than 0.95 of the trees.
 Our BiSSE analysis found a positive effect of the 
 character state "feeding on Solanaceae" on the net net diversification rate on part
 of Ithomiini (Oleriina + Ithomiina + Napeogenina + Dircennina + Godyridina) 
-(Fig. 4). The Markov Chain Monte Carlo algorithm was run for 10000
-generations discarding the first 7500 as burnin. 
+(Fig. 4). 
 The estimated mean net diversification rate for taxa that do not feed on 
 Solanaceae was ``r = 0.11`` while the net diversification rate for the Solanaceae
 feeders was ``r = 0.16`` (see Fig. S1 for a boxplot of speciation and
