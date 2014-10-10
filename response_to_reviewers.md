@@ -69,7 +69,21 @@ significant effect on our results."**
 7. First paragraph, second sentence: change the tense of “run” to “ran”.
 8. Second paragraph, third sentence: replace “Thus” with “Furthermore”.
 9. There appears to be an orphaned right-parenthesis at the end of the second paragraph.
+10. Third paragraph, last sentence: The node number is not really relevant, so beginning of the sentence could be revised to “For example, the Charaxes + Polyura clade was found in only 256 trees...”
 
 **7, 8, 9, 10. Response:**
 
 > We made the suggested corrections.
+
+**11. Reviewer's Comment:**
+
+Fourth paragraph: The point of the paragraph is not clear. What rates are being
+compared? MEDUSA vs. MultiMEDUSA? Consider revising to make the point clearer
+or omit the sentence.
+
+**11. Response:**
+
+> We have rewritten the sentence and now is more clear: **"For the diversification shifts found in both the MCC tree and most of the
+samples of 1000 trees (frequency more than 90%; Table 2), the MultiMEDUSA
+approach recovered different rates of diversification than
+those found using when the MCC tree alone."**.

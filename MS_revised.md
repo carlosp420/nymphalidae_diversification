@@ -281,12 +281,13 @@ only half of the 1000 trees, but the phylogenetic signal was strong enough to
 be picked up by MEDUSA and a node shift was found most of the time, then the
 ``sum.prop`` should be close to 1. For example, the
 ``Charaxes`` + ``Polyura`` clade was found in only 256 trees, however
-MultiMEDUSA was consistenly able to find a diversification shift for that node
+MultiMEDUSA was consistently able to find a diversification shift for that node
 and the ``sum.prop`` value is 0.996.
 
-We found different rates for diversification shifts even for the nodes
-that appear in most of the sample of 1000 trees (Table 2) as many of the nodes
-also found in the MCC tree had a probability of being recovered higher than 0.90.
+For the diversification shifts found in both the MCC tree and most of the
+samples of 1000 trees (frequency more than 90%; Table 2), the MultiMEDUSA
+approach recovered different rates of diversification than
+those found using when the MCC tree alone.
 
 There were four diversification shifts found with more than 90% of probability
 in the trees from the random sample (Table 2):
