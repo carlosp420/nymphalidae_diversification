@@ -336,7 +336,7 @@ a probability of 0.18 (Fig. 3).
 ### Estimation of trait-dependent speciation rates
 The MEDUSA analyses, taking into account phylogenetic uncertainty, estimated
 a net diversification rate increase in part of the clade Ithomiini across more
-than 0.95 of the trees.
+than 95% of the trees.
 Our BiSSE analysis found a positive effect of the 
 character state "feeding on Solanaceae" on the net net diversification rate on part
 of Ithomiini (Oleriina + Ithomiina + Napeogenina + Dircennina + Godyridina) 
@@ -401,7 +401,7 @@ and posterior probability values for the nodes. For example, posterior
 probability values for clades in Satyrini are very low [``0.5 to 0.6``;
 @wahlberg2009]. As a result, MEDUSA inferred a net diversification
 rate increase for part of Satyrini in the maximum clade credibility tree, but this
-was recovered only with a probability of 0.13 in the MultiMEDUSA analysis on the
+was recovered in the MultiMEDUSA analysis in only in 13% of the
 random sample of trees.
 
 If there is strong phylogenetic signal for increases or decreases in
@@ -411,7 +411,7 @@ weak phylogenetic signal for some nodes can cause some clades to be
 absent in some trees and MEDUSA will be unable to estimate any
 diversification shift (due to a non-existent node). This is the 
 reason why MEDUSA estimated net diversification rate splits with a probability
-of more than 0.90 in the sample of trees for only four splits: 
+higher than 0.90 in the sample of trees for only four splits: 
 the genus *Charaxes*, the genus *Ypthima*, part of
 Ithomiini and the clade *Callicore* + *Diaethria* (Fig. 3), 
 while estimating splits for other lineages with much lower probability.
@@ -555,7 +555,7 @@ The diverse tribe Satyrini radiated simultaneously with the radiation of their m
 hostplant, grasses, during the climatic cooling in the Oligocene
 [@pena2008]. Thus, it is somewhat surprising that part of Satyrini
 (the subtribes Euptychiina, Satyrina and Pronophilina) were found to have
-accelerated diversification with a probability of only 0.13 in the trees from the
+accelerated diversification in only 13% of the trees from the
 posterior distribution.
 Although this can be attributed to low phylogenetic signal [posterior probability
 value = ``0.6`` for this clade in @wahlberg2009], the clade Satyrini is
