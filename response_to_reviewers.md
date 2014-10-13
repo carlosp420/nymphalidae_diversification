@@ -215,3 +215,12 @@ Figure 2: Omit the legend in the figure (“Boxplot of diversification...”) an
 
 > We removed the legend from the figure file and rewrote the legend in the MS
 as suggested by the reviewer.
+
+**26. Reviewer's Comment:**
+
+Figure 3: Omit the legend in the figure (“Probability of finding nodes...”) and revise the legend to read: “Results of MultiMEDUSA analysis showing the probability of specific nodes being characterized by significant shifts in diversification rate.”
+
+**26. Response:**
+
+> We removed the legend from the figure file and rewrote the legend in the MS
+as suggested by the reviewer.
