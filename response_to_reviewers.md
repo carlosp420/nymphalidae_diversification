@@ -154,3 +154,11 @@ Eighth paragraph: This paragraph discussing biogeography does not fit and could 
 **18. Response:**
 
 > We have followed the reviewer's suggestion and removed this paragraph.
+
+**19. Reviewer's Comment:**
+
+First paragraph, first sentence: replace “gave” with “showed”.
+
+**19. Response:**
+
+> We corrected the text following the reviewer's suggestion.
