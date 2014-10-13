@@ -2,7 +2,7 @@
 
 library("MEDUSA")
 library("multicore")
-phy <- read.nexus("ancillary/supp_mat_01_genus.nex");
+phy <- read.nexus("ancillary/Supporting_Information_S1.nex");
 phy <- ladderize(phy)
 
 # we have to remove the tips
@@ -10,7 +10,7 @@ tips <- c("Achlyodes", "Graphium", "Parnassius", "Baronia", "Troides", "Papilio1
 phy <- drop.tip(phy, tip=tips)
 
 
-richness <- read.csv("ancillary/supp_mat_03_richness.csv")
+richness <- read.csv("ancillary/Supporting_Information_S3.csv")
 
 res <- MEDUSA(phy, richness, stop="threshold", model="mixed", modelLimit=25, mc=TRUE)
 
@@ -20,5 +20,5 @@ summ <- medusaSummary(res, cex=0.3)
 dev.off()
 
 
-save(res, file="ancillary/supp_mat_04_MEDUSA_results.txt", ascii=TRUE)
+# save(res, file="ancillary/supp_mat_04_MEDUSA_results.txt", ascii=TRUE)
 
