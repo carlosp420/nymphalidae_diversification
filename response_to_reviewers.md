@@ -170,3 +170,11 @@ This section is predominantly speculative. Consider a more rigorous discussion (
 **20. Response:**
 
 > We have followed the reviewer's suggestion and removed this paragraph.
+
+**21. Reviewer's Comment:**
+
+First paragraph, second sentence: revise “13% of probabilities of the trees from the posterior distribution” to “13% of the trees from the posterior distribution”.
+
+**21. Response:**
+
+> We corrected the text following the reviewer's suggestion.
