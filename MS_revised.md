@@ -374,15 +374,16 @@ in a phylogenetic tree. Since its publication [@alfaro2009] the
 results of using MEDUSA on a single tree, the maximum clade credibility tree,
 have been used for generation of hypotheses and discussion [e.g. 
 @litman2011; @heikkila2012; @ryberg2012].
-However, we found that MEDUSA estimated different diversification
-shifts and different rates of diversification for certain lineages
+However, 
+different diversification
+shifts and different rates of diversification are found for certain lineages
 when phylogenetic uncertainty was taken into account by using MEDUSA
 on a random sample of trees from the posterior distribution of a
 Bayesian run. We found that some diversification splits, estimated
 on the Nymphalidae maximum clade credibility tree, were found with very low
 probability in the random sample of 1000 trees from the posterior
-distribution (Fig. 3, Table 2). We also found that, even though MEDUSA could
-estimate the same diversification splits on two or more trees, the 
+distribution (Fig. 3, Table 2). We also found that, even though the analyses
+estimated the same diversification splits on two or more trees, the 
 estimated net diversification rates could vary widely 
 (Fig. 2).
 For example,

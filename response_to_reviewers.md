@@ -119,3 +119,22 @@ The closing three sentences (about BiSSE performance) should be moved to the met
 **15. Response:**
 
 > We made the suggested corrections.
+
+**16. Reviewer's Comment:**
+
+First paragraph: The authors' assessment of analyzing diversification shifts using a single tree, without accommodating our level of certainty in relationships, is justified; however, MEDUSA itself, that is, the approach using stepwise AIC to identify shifts in diversification rate, should not be the target of criticism. After all, MultiMEDUSA is doing the same thing, but on a sample of trees. Revise this paragraph with a more appropriate target for the criticism (i.e. analyses performed on single trees).
+
+**16. Response:**
+
+> We have reworded the paragraph to avoid blaming the method:
+
+> "The MEDUSA method has been used to infer changes in net diversification rates in a phylogenetic
+tree. Since its publication [16] the results of using MEDUSA on a single tree, the maximum clade
+credibility tree, have been used for generation of hypotheses and discussion [10,42,43]. However, different
+diversification shifts and different rates of diversification are found for certain lineages when phylogenetic
+uncertainty was taken into account by using MEDUSA on a random sample of trees from the posterior
+distribution of a Bayesian run. We found that some diversification splits, estimated on the Nymphalidae
+maximum clade credibility tree, were found with very low probability in the random sample of 1000 trees
+from the posterior distribution (Fig. 3, Table 2). We also found that, even though the analyses estimated
+the same diversification splits on two or more trees, the estimated net diversification rates could vary
+widely (Fig. 2)."
