@@ -178,3 +178,11 @@ First paragraph, second sentence: revise “13% of probabilities of the trees fr
 **21. Response:**
 
 > We corrected the text following the reviewer's suggestion.
+
+**22. Reviewer's Comment:**
+
+Second paragraph: this paragraph is, for the most part, unnecessary. The last sentence of the paragraph should be revised and appended to the end of the preceding (first) paragraph: “...not picked up by MEDUSA. This would be expected if the diversification of Satyrinae occurred in a stepwise manner, with pulses or bursts of diversification for certain lineages but unlikely for the tribe Satyrini as a whole”.
+
+**22. Response:**
+
+> We corrected the text following the reviewer's suggestion.

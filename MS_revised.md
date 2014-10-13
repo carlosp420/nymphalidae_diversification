@@ -544,13 +544,7 @@ very robust [posterior probability value = ``1.0`` for this clade in @wahlberg20
 and MEDUSA failed to identify any significant accelerated net diversification rate
 for Satyrini. It appears that the radiation of Satyrini as a whole was not
 remarkably fast and therefore not picked up by MEDUSA.
-
-The origin of the tribe Satyrini is not completely clear (originated either in the
-Neotropical or Eastern Palaearctic, Oriental and/or Indo-Australian regions
-[@pena2011] and their radiation involved colonizing almost all
-continents starting from their place of origin. For butterflies, a 
-prerequisite for colonizing new areas is that suitable hostplants are 
-already present. Therefore, it should be expected that the diversification
+This should be expected if the diversification
 of Satyrinae occurred in a stepwise manner, with pulses or bursts of
 diversification for certain lineages but unlikely for the tribe Satyrini 
 as a whole.
