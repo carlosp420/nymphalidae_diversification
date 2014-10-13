@@ -206,3 +206,12 @@ Figure 1: The legend needs to indicate what the node labels (the circled integer
 **"Circles on nodes indicate the diversification shift number as found by MEDUSA.
 Numbers next to circles indicat the posterior probability values for
 such nodes."**
+
+**25. Reviewer's Comment:**
+
+Figure 2: Omit the legend in the figure (“Boxplot of diversification...”) and revise the legend to read: “Diversification rates for taxa estimated by MEDUSA on the sample of 1000 trees.”
+
+**25. Response:**
+
+> We removed the legend from the figure file and rewrote the legend in the MS
+as suggested by the reviewer.

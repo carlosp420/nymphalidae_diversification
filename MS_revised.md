@@ -610,10 +610,8 @@ Circles on nodes indicate the diversification shift number as found by MEDUSA.
 Numbers next to circles indicat the posterior probability values for
 such nodes.
 
-``Figure 2.`` Boxplot of the range of diversification values for tips or clades
-estimated by MEDUSA on the 1000 random trees from the posterior distribution of
-the Nymphalidae phylogeny. The tips or clades shown are those present on the
-maximum clade credibility tree from @wahlberg2009.
+``Figure 2.`` Diversification rates for taxa 
+estimated by MEDUSA on the samples of 1000 random trees.
 
 ``Figure 3.`` Results of the MultiMEDUSA analysis on 1000 randomly sampled 
 trees from the
