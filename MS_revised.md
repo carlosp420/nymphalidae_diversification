@@ -549,6 +549,7 @@ of Satyrinae occurred in a stepwise manner, with pulses or bursts of
 diversification for certain lineages but unlikely for the tribe Satyrini 
 as a whole.
 
+## Conclusions
 We found that even though MEDUSA estimated several diversification shifts in
 the maximum clade credibility tree of Nymphalidae, only a few of these splits
 were found in more than 90% of the trees from the posterior distribution. In

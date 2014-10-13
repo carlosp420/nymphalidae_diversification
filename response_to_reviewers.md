@@ -186,3 +186,12 @@ Second paragraph: this paragraph is, for the most part, unnecessary. The last se
 **22. Response:**
 
 > We corrected the text following the reviewer's suggestion.
+
+**23. Reviewer's Comment:**
+
+Final two paragraphs: There needs to be a section break, to indicate a change in the discussion topic. “Conclusions” would be appropriate to indicate to readers that these paragraphs represent a summary of the major points of the work. The final paragraph is a good summary of the work, and it would be a disservice to have readers miss it because it appears under the 'Satyrini' section.
+
+**23. Response:**
+
+> As suggested by the reviewer, he have created a **Conclusions** section for
+the last two paragraphs of the text.
