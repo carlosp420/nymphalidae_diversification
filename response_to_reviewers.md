@@ -224,3 +224,12 @@ Figure 3: Omit the legend in the figure (“Probability of finding nodes...”) 
 
 > We removed the legend from the figure file and rewrote the legend in the MS
 as suggested by the reviewer.
+
+**27. Reviewer's Comment:**
+
+Figure 4: Describe what lambda (λ) and r represent in the figure.
+
+**27. Response:**
+
+> We included the following clarification in the legend: **"(speciation rate =
+$\lambda1$, net diversification rate = $r1$)."**

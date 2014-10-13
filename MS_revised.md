@@ -620,7 +620,8 @@ diversification rate.
 
 ``Figure 4.`` BiSSE analysis of diversification of nymphalids due to feeding on
 Solanaceae hostplants. Speciation and net diversification rates are significantly
-higher in Solanaceae feeders ($lambda$1, r1).
+higher in Solanaceae feeders (speciation rate = $\lambda1$, net diversification
+rate = $r1$).
 
 
 ## Tables
