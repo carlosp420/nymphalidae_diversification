@@ -613,11 +613,10 @@ such nodes.
 ``Figure 2.`` Diversification rates for taxa 
 estimated by MEDUSA on the samples of 1000 random trees.
 
-``Figure 3.`` Results of the MultiMEDUSA analysis on 1000 randomly sampled 
-trees from the
-posterior distribution of the Nymphalidae phylogeny. Bars show the probability
-for nodes of being recovered as significant increases or decreases in net 
-diversification rates by MultiMEDUSA.
+``Figure 3.`` 
+Results of MultiMEDUSA analysis showing the 
+probability of specific nodes being characterized by significant shifts in
+diversification rate.
 
 ``Figure 4.`` BiSSE analysis of diversification of nymphalids due to feeding on
 Solanaceae hostplants. Speciation and net diversification rates are significantly
