@@ -195,3 +195,14 @@ Final two paragraphs: There needs to be a section break, to indicate a change in
 
 > As suggested by the reviewer, he have created a **Conclusions** section for
 the last two paragraphs of the text.
+
+**24. Reviewer's Comment:**
+
+Figure 1: The legend needs to indicate what the node labels (the circled integers) and the decimal values in the tree indicate.
+
+**24. Response:**
+
+> We have appended the following text to the legend of figure 1.
+**"Circles on nodes indicate the diversification shift number as found by MEDUSA.
+Numbers next to circles indicat the posterior probability values for
+such nodes."**

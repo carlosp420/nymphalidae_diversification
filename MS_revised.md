@@ -604,8 +604,11 @@ rate): 2) Limenitidinae + Heliconiinae, 3) *Ypthima*, 4) *Charaxes*, 5)
 Ithomiini in part, 6) Satyrini, 7) Coenonymphina 8) Phyciodina in part,
 9) Danaini in part, 10) *Coenonympha*, 11) *Caeruleuptychia* +
 *Magneuptychia*, 12) *Callicore* + *Diaethria*, 13) Satyrina, 14)
-Mycalesinaa, 15) *Pedaliodes*, 16) *Dryas* + *Dryadula*, 17) *Taenaris*, 18)
+Mycalesina, 15) *Pedaliodes*, 16) *Dryas* + *Dryadula*, 17) *Taenaris*, 18)
 Pseudergolinae.
+Circles on nodes indicate the diversification shift number as found by MEDUSA.
+Numbers next to circles indicat the posterior probability values for
+such nodes.
 
 ``Figure 2.`` Boxplot of the range of diversification values for tips or clades
 estimated by MEDUSA on the 1000 random trees from the posterior distribution of
