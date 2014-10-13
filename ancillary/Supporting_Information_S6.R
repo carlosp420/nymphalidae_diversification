@@ -1,10 +1,10 @@
 library("MEDUSA")
 library("multicore")
 
-mct <- read.nexus("ancillary/supp_mat_09_mcc_tree_from_random_sample_of_1000.tree")
-phy <- read.nexus("ancillary/supp_mat_05_1000_random_trees_no_outgroups.nex")
+mct <- read.nexus("ancillary/Supporting_Information_S9.tree")
+phy <- read.nexus("ancillary/Supporting_Information_S5_1000_random_trees_no_outgroups.nex")
 
-richness <- read.csv("ancillary/supp_mat_03_richness.csv")
+richness <- read.csv("ancillary/Supporting_Information_S3.csv")
 
 res <- MEDUSA(phy, richness, stop="threshold", model="mixed", modelLimit=27, mc=TRUE)
 
@@ -102,8 +102,8 @@ dev.off()
 library("phytools")
 
 # for a given tree, get its descendant tip names for a given node
-mct <- read.nexus("ancillary/supp_mat_09_mcc_tree_from_random_sample_of_1000.tree")
-phy <- read.nexus("ancillary/supp_mat_05_1000_random_trees_no_outgroups.nex")
+mct <- read.nexus("ancillary/Supporting_Information_S9.tree")
+phy <- read.nexus("ancillary/Supporting_Information_S5_1000_random_trees_no_outgroups.nex")
 
 get_descendant_tips <- function(phy, node) {
   tips <- c()
