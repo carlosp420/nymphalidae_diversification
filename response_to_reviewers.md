@@ -162,3 +162,11 @@ First paragraph, first sentence: replace “gave” with “showed”.
 **19. Response:**
 
 > We corrected the text following the reviewer's suggestion.
+
+**20. Reviewer's Comment:**
+
+This section is predominantly speculative. Consider a more rigorous discussion (if appropriate) or omit.
+
+**20. Response:**
+
+> We have followed the reviewer's suggestion and removed this paragraph.

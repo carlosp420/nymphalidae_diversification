@@ -530,18 +530,6 @@ due to gene flow, as old and vagile species seem to be genetically homogeneous
 while younger widespread species show higher genetic differentiation in their
 populations  [@wahlberg2011].
 
-#### *Charaxes*
-The genus *Charaxes* contain 193 species distributed in the Old World with highest
-diversity in the Afrotropical region. These butterflies are also very strong fliers,
-but contrary to Danaina, which are specialized Apocynaceae feeders,
-*Charaxes* are known to feed on at least 28 plant families in 18 orders 
-[@ackery1988] and some species appear to be polyphagous [@muller2010].
-@aduse2009 showed that most of the diversification of the
-genus occurred from the late Oligocene to the Miocene when there were 
-drastic global climatic fluctuations, indicating that the diversity mainly
-is driven by climate change. @muller2010 found that climatic 
-changes during the Pliocene, Pleistocene as well as dispersal and vicariance
-might have been responsible for the high diversification of the genus. 
 
 #### Satyrini
 The diverse tribe Satyrini radiated simultaneously with the radiation of their main 
