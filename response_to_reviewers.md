@@ -138,3 +138,11 @@ maximum clade credibility tree, were found with very low probability in the rand
 from the posterior distribution (Fig. 3, Table 2). We also found that, even though the analyses estimated
 the same diversification splits on two or more trees, the estimated net diversification rates could vary
 widely (Fig. 2)."
+
+**17. Reviewer's Comment:**
+
+Seventh paragraph, second to last sentence: Two ages for Ithomiini are given – are they the origin and diversification ages? If so, revise the sentence to include this information (rather than requiring readers to refer to the preceding sentence): “Reference 10 gives the ages of origin and diversification for Ithomiini at 45 (39-53) and 37 (32-43) MYA, respectively”.
+
+**17. Response:**
+
+> We have followed the reviewer's suggestion.

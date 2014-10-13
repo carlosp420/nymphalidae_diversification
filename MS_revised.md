@@ -505,8 +505,9 @@ afterwards (with a lag of ~10 MY). According to a recent dated phylogeny of the
 Angiosperms [@bell2010], the family Solanaceae split from its sister group
 about 59 (49--68) MYA and diversification started (crown group age) around 37
 (29--47) 
-MYA. @wahlberg2009 give the corresponding ages for Ithomiini as 45 
-(39--53) and 37 (32--43) MYA, respectively. Thus, current evidence shows that
+MYA. @wahlberg2009 give the ages for origin and diversification for Ithomiini
+at 45 (39--53) and 37 (32--43) MYA, respectively.
+Thus, current evidence shows that
 Solanaceae and Ithomiini might have diversified around the same time, during 
 the Late Eocene and Oligocene, and this would be congruent with the diffuse 
 cospeciation hypothesis.
