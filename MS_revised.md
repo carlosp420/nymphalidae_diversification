@@ -512,15 +512,6 @@ Solanaceae and Ithomiini might have diversified around the same time, during
 the Late Eocene and Oligocene, and this would be congruent with the diffuse 
 cospeciation hypothesis.
 
-The uplift of the Andes was a major tectonic event that underwent higher activity
-during the Oligocene [@somoza1998]. This caused climatic changes in the region
-that affected the flora and fauna of the time, which coincides with the
-diversification of modern montane plant and animal taxa [@hoorn2010] including
-Ithomiini butterflies and Solanaceae hostplants. Moreover, all Solanaceae clades
-currently present in New World originated in South America [@olmstead2013] as well
-as Ithomiini butterflies [@wahlberg2009]. This suggests a process of "diffuse
-cospeciation" of Ithomiini and hostplants.
-
 
 #### Danaini
 Our MultiMEDUSA approach showed a significant slowdown in net diversification rate in 

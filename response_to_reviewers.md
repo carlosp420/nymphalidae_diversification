@@ -146,3 +146,11 @@ Seventh paragraph, second to last sentence: Two ages for Ithomiini are given –
 **17. Response:**
 
 > We have followed the reviewer's suggestion.
+
+**18. Reviewer's Comment:**
+
+Eighth paragraph: This paragraph discussing biogeography does not fit and could be omitted without detriment to the manuscript.
+
+**18. Response:**
+
+> We have followed the reviewer's suggestion and removed this paragraph.
