@@ -233,3 +233,12 @@ Figure 4: Describe what lambda (λ) and r represent in the figure.
 
 > We included the following clarification in the legend: **"(speciation rate =
 $\lambda1$, net diversification rate = $r1$)."**
+
+**28, 29. Reviewer's Comment:**
+
+Supporting_Information_S1.nex: remove bolded “Genus.”
+
+**28, 29. Response:**
+
+> We followed the reviewer's suggestions and included better descriptions for
+the supplementary materials.

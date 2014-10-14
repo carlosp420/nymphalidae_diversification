@@ -650,23 +650,23 @@ tree from [@wahlberg2009]. This script removes the outgroup taxa and loads the r
 ``Supporting_Information_S04.txt``: Results of running MEDUSA on the MCC
 tree.
 
-``Supporting_Information_S05_1000_random_trees_no_outgroups.zip``: 1000 random trees from
-@wahlberg2009.
+``Supporting_Information_S05_1000_random_trees_no_outgroups.zip``: 1000 random
+trees from [@wahlberg2009].
 
-``Supporting_Information_S06.R``: Run MultiMEDUSA on 1000
-random trees from @wahlberg2009.
+``Supporting_Information_S06.R``: R script to run a MultiMEDUSA analysis on 1000
+random trees from [@wahlberg2009].
 
 ``Supporting_Information_S07_multimedusa_on_1000_trees.zip``: Raw results from the 
 MultiMEDUSA run on the random sample of trees from the posterior distribution.
 
-``Supporting_Information_S08.pdf``: Summary of MulitMEDUSA analysis
+``Supporting_Information_S08.pdf``: Summary of the MulitMEDUSA analysis
 on the 1000 trees from the posterior distribution.
 
 ``Supporting_Information_S09.tree``: MCC tree from 
 the 1000 random trees selected from the posterior distribution.
 
-``Supporting_Information_S10.R``: Run MEDUSA on MCC tree
-from the 1000 random trees selected from the posterior distribution.
+``Supporting_Information_S10.R``: R script to run a MEDUSA analysis on the 
+MCC tree from the 1000 random trees selected from the posterior distribution.
 
 ``Supporting_Information_S11.txt``: Summary
 results from a MEDUSA run on the MCC tree from the 1000 random trees selected
@@ -692,7 +692,7 @@ data.
 ``Supporting_Information_S17.csv``: Data matrix with character states
 for hosplant use.
 
-``Supporting_Information_S18.R``: R code for running the BiSSE analysis.
+``Supporting_Information_S18.R``: R script for running the BiSSE analysis.
 
 ``Supporting_Information_S19.csv``: Raw results for the BiSSE analysis.
 
