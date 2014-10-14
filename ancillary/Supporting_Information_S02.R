@@ -1,3 +1,6 @@
+# Script to run MEDUSA on the MCC Nymphalidae tree from Wahlberg et al., 2009
+# This script removes the outgroup taxa and loads the richness data for the tree terminals.
+
 # run MEDUSA 0.93-4-33
 
 library("MEDUSA")

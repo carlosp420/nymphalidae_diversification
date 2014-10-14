@@ -642,8 +642,8 @@ nymphalids feeding on Solanaceae against a model forcing equal speciation rates
 # Supp. mat.
 ``Supporting_Information_S01.nex``: MCC Nymphalidae tree from [@wahlberg2009].
 
-``Supporting_Information_S02.R``: Run MEDUSA on MCC tree from
-@wahlberg2009.
+``Supporting_Information_S02.R``: R script to run MEDUSA on the MCC Nymphalidae
+tree from [@wahlberg2009]. This script removes the outgroup taxa and loads the richness data for the tree terminals.
 
 ``Supporting_Information_S03.csv``: Species richness for lineages in Nymphalidae.
 
