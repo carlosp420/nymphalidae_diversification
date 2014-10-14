@@ -6,7 +6,7 @@ add.alpha <- function(col, alpha=.5) {
     rgb(tmp[1,], tmp[2,], tmp[3,], alpha=alpha)
 }
 
-phy <- read.nexus("ancillary/Supporting_Information_S1.nex");
+phy <- read.nexus("ancillary/Supporting_Information_S01.nex");
 tips <- c("Achlyodes", "Graphium", "Parnassius", "Baronia", "Troides", "Papilio1", "Papilio2", "Pieris", "Aporia", "Styx", "Hamearis", "Euselasia", "Nymphidium", "Emesis", "Crocozona", "Riodina", "Amarynthis", "Baliochila", "Poritia", "Miletus", "Liphyra", "Lycaena", "Celastrina", "Thecla", "Lucia", "Curetis", "Eurema", "Colias", "Leptidea", "Pseudopontia", "Libyt");
 phy  <- drop.tip(phy, tips)
 new.phy <- multi2di(phy);
@@ -29,7 +29,7 @@ phy$tip.state<-data.v
 ##################
 # get sampling values. Propotion of extant species in our tree that have state 0 and state 1
 # in relation with the total 
-richness <- read.csv("ancillary/Supporting_Information_S3.csv")
+richness <- read.csv("ancillary/Supporting_Information_S03.csv")
 richness <- richness[order(order(phy$tip.label)),]
 
 richness_cero <- c();

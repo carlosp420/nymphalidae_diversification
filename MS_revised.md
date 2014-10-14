@@ -640,63 +640,63 @@ nymphalids feeding on Solanaceae against a model forcing equal speciation rates
 
 
 # Supp. mat.
-**``supp_mat_01_genus.nex``**: MCC Nymphalidae tree from @wahlberg2009.
+``Supporting_Information_S01.nex``: MCC Nymphalidae tree from [@wahlberg2009].
 
-**``supp_mat_02_run_medusa_on_mct.R``**: Run MEDUSA on MCC tree from
+``Supporting_Information_S02.R``: Run MEDUSA on MCC tree from
 @wahlberg2009.
 
-**``supp_mat_03_richness.nex``**: Species richness for lineages in Nymphalidae.
+``Supporting_Information_S03.csv``: Species richness for lineages in Nymphalidae.
 
-**``supp_mat_04_MEDUSA_results.txt``**: Results of running MEDUSA on the MCC
+``Supporting_Information_S04.txt``: Results of running MEDUSA on the MCC
 tree.
 
-**``supp_mat_05_1000_random_trees_no_outgroups.nex``**: 1000 random trees from
+``Supporting_Information_S05_1000_random_trees_no_outgroups.zip``: 1000 random trees from
 @wahlberg2009.
 
-**``supp_mat_06_run_multimedusa.R``**: Run MultiMEDUSA on 1000
+``Supporting_Information_S06.R``: Run MultiMEDUSA on 1000
 random trees from @wahlberg2009.
 
-**``supp_mat_07_multimedusa_on_1000_trees.txt``**: Raw results from the 
+``Supporting_Information_S07_multimedusa_on_1000_trees.zip``: Raw results from the 
 MultiMEDUSA run on the random sample of trees from the posterior distribution.
 
-**``supp_mat_08_multimedusa_result01.pdf``**: Summary of MulitMEDUSA analysis
+``Supporting_Information_S08.pdf``: Summary of MulitMEDUSA analysis
 on the 1000 trees from the posterior distribution.
 
-**``supp_mat_09_mcc_tree_from_random_sample_of_1000.tree``**: MCC tree from 
+``Supporting_Information_S09.tree``: MCC tree from 
 the 1000 random trees selected from the posterior distribution.
 
-**``supp_mat_10_run_medusa_on_mct_from_1000_trees.R``**: Run MEDUSA on MCC tree
+``Supporting_Information_S10.R``: Run MEDUSA on MCC tree
 from the 1000 random trees selected from the posterior distribution.
 
-**``supp_mat_11_results_of_MEDUSA_run_on_mcc_from_1000_trees.txt``**: Summary
+``Supporting_Information_S11.txt``: Summary
 results from a MEDUSA run on the MCC tree from the 1000 random trees selected
 from the posterior distribution.
 
-**``supp_mat_12_MEDUSA_mcc_tree_from_random_sample_of_1000_trees.pdf``**:
+``Supporting_Information_S12.pdf``:
 Figure for MEDUSA run on MCC tree from random 1000 trees.
 
-**``supp_mat_13_results_of_Multi-MEDUSA_run_on_1000_trees.txt``**: Summary
+``Supporting_Information_S13.txt``: Summary
 results from a MultiMEDUSA run on the 1000 random trees selected from the
 posterior distribution.
 
-**``supp_mat_14_multimedusa_result_prob_nodes.pdf``**: Probability of nodes
+``Supporting_Information_S14.pdf``: Probability of nodes
 with estimated rates from a MultiMEDUSA run on the 1000 random trees selected
 from the posterior distribution.
 
-**``supp_mat_15_host_plant_data.csv``**: Hostplants of Nymphalidae butterflies
+``Supporting_Information_S15.csv``: Hostplants of Nymphalidae butterflies
 recorded from the literature.
 
-**``supp_mat_16_host_plant_data_references.csv``**: References for hostplants
+``Supporting_Information_S16.csv``: References for hostplants
 data.
 
-**``supp_mat_17_hostplant_states.csv``**: Data matrix with character states
+``Supporting_Information_S17.csv``: Data matrix with character states
 for hosplant use.
 
-**``supp_mat_18_bisse_source.R``**: R code for running the BiSSE analysis.
+``Supporting_Information_S18.R``: R code for running the BiSSE analysis.
 
-**``supp_mat_19_bisse_mcmc_run.csv``**: Raw results for the BiSSE analysis.
+``Supporting_Information_S19.csv``: Raw results for the BiSSE analysis.
 
-**``supp_mat_20_combined_bisse.csv``**: Raw results for the combined BiSSE analysis.
+``Supporting_Information_S20.csv``: Raw results for the combined BiSSE analysis.
 
 ``Figure S1.`` Boxplot of speciation (lambda) and extinction (mu) values for
 the 95% credibility intervals of values estimated by BiSSE analysis of

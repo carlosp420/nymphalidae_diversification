@@ -2,12 +2,12 @@
 
 library("MEDUSA")
 library("multicore")
-phy <- read.nexus("ancillary/Supporting_Information_S9.tree");
+phy <- read.nexus("ancillary/Supporting_Information_S09.tree");
 phy <- ladderize(phy)
 
 
 
-richness <- read.csv("ancillary/Supporting_Information_S3.csv")
+richness <- read.csv("ancillary/Supporting_Information_S03.csv")
 
 res <- MEDUSA(phy, richness, stop="threshold", model="mixed", modelLimit=25, mc=TRUE)
 
