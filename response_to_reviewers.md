@@ -1,6 +1,6 @@
 # Response to reviewers
 
-## Reviewer 1
+# Reviewer 1
 
 **1. Reviewer's Comment:**
 
@@ -60,7 +60,8 @@ At the end of this paragraph, the authors indicated they tested the effect of ch
 
 **6. Response:**
 
-> We included the following sentence to clarify the issue: **"We expected that
+> We included the following sentence to clarify the issue:  
+**"We expected that
 coding these two genera as either absence or presence would not have a
 significant effect on our results."**
 
@@ -83,7 +84,8 @@ or omit the sentence.
 
 **11. Response:**
 
-> We have rewritten the sentence and now is more clear: **"For the diversification shifts found in both the MCC tree and most of the
+> We have rewritten the sentence and now is more clear:  
+**"For the diversification shifts found in both the MCC tree and most of the
 samples of 1000 trees (frequency more than 90%; Table 2), the MultiMEDUSA
 approach recovered different rates of diversification than
 those found using when the MCC tree alone."**.
@@ -202,7 +204,7 @@ Figure 1: The legend needs to indicate what the node labels (the circled integer
 
 **24. Response:**
 
-> We have appended the following text to the legend of figure 1.
+> We have appended the following text to the legend of figure 1:  
 **"Circles on nodes indicate the diversification shift number as found by MEDUSA.
 Numbers next to circles indicat the posterior probability values for
 such nodes."**
@@ -227,7 +229,7 @@ as suggested by the reviewer.
 
 **27. Reviewer's Comment:**
 
-Figure 4: Describe what lambda (λ) and r represent in the figure.
+Figure 4: Describe what lambda ($\lambda$) and $r$ represent in the figure.
 
 **27. Response:**
 
@@ -242,3 +244,22 @@ Supporting_Information_S1.nex: remove bolded “Genus.”
 
 > We followed the reviewer's suggestions and included better descriptions for
 the supplementary materials.
+
+
+# Reviewer 2
+
+**1. Reviewer's Comment:**
+
+The authors need to provide more information on what cutoff they used and why.
+
+**1. Response:**
+
+> Our manuscript already includes information about the AIC value used for
+choosing the best model. The following text appears in our original submission
+in the Methods-> Detecting diversification shifts on phylogenetic trees->
+last paragraph:  
+>**"We used the AICc threshold of 7.8 units, as estimated by MEDUSA,
+as the limit for a significantly better fit to select among increasingly
+complex alternative models."**
+
+
