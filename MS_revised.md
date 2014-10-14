@@ -23,10 +23,13 @@ address: McGuire Center for Lepidoptera and Biodiversity, Florida Museum of Natu
 The species rich butterfly family Nymphalidae has been used to study 
 evolutionary interactions between plants and insects. Theories of 
 insect-hostplant dynamics predict accelerated diversification due to key innovations.
-We investigated whether phylogenetic uncertainty affects a commonly used method
-(MEDUSA, modelling evolutionary diversity using stepwise AIC) for estimating 
-shifts in diversification rates in lineages, by extending the method across a 
-random sample of trees from the posterior distribution of a Bayesian run. We 
+In evolutionary biology, analysis of maximum credibility trees in the software
+MEDUSA (modelling evolutionary diversity using stepwise AIC) is a popular
+method for estimation of shifts in diversification rates.
+We investigated whether phylogenetic uncertainty can produce different results
+by extending the method across a 
+random sample of trees from the posterior distribution of a Bayesian run.
+Using the MultiMEDUSA approach, we 
 found that phylogenetic uncertainty greatly affects diversification rate 
 estimates. Different trees produced diversification rates ranging from high 
 values to almost zero for the same clade, and both significant rate increase 

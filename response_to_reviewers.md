@@ -262,4 +262,27 @@ last paragraph:
 as the limit for a significantly better fit to select among increasingly
 complex alternative models."**
 
+**2. Reviewer's Comment:**
+
+I’m not sure discussing the limitations of MEDUSA, or the tendency for MEDUSA
+to give inconsistent results across post burn-in trees, is really valid based
+on one dataset. That is, the unit of replication is the alignment – therefore
+the authors have effectively one data point and zero degrees of freedom to say
+much of anything about the power of MEDUSA across the post burnin sample. I
+think if the authors want to explore the power of MEDUSA, they need many
+different alignments (real or simulated). As it is now, I don’t think they
+really have the data to say anything about MEDUSA in general, and only about
+MEDUSA in the context of the Nymphalid tree. They need to at least point out
+there inability to generalize in the manuscript.
+ 
+**2. Response:**
+
+> As reviewer 1 suggested, our text gave the impression that we were
+criticizing the method MEDUSA. We have rewritten the following sections to
+clarify our criticism **that relying on the inferences made on only one tree
+(the MCC tree) is risky as analyses of equally good hyphoteses (other trees from the
+posterior distribution) cand potentially return different results.
+
+> * abstract
+  *
 
