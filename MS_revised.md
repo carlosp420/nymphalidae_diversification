@@ -38,10 +38,11 @@ the maximum clade credibility tree were consistent across most of the sampled tr
 Among these, we found accelerated diversification for Ithomiini butterflies. 
 We used the binary speciation and extinction model (BiSSE) and found that a 
 hostplant shift to Solanaceae is correlated with increased net diversification 
-rates in Ithomiini, congruent with the diffuse cospeciation hypothesis. Our results
-show that taking phylogenetic uncertainty into account when estimating 
-net diversification rate shifts is of great importance, and relying on the maximum
-clade credibility tree alone can potentially give erroneous results.
+rates in Ithomiini, congruent with the diffuse cospeciation hypothesis.
+Our results show that taking phylogenetic uncertainty into account when
+estimating net diversification rate shifts is of great importance, as very
+different results can be obtained when using the maximum clade credibility tree
+and other trees from the posterior distribution.
 
 **Keywords:** diversification analysis, MEDUSA, BiSSE, speciation rate, 
 insect-hostplant dynamics

@@ -307,4 +307,16 @@ affected by phylogenetic uncertainty.
 and MultiMEDUSA, in order to test whether the results are robust when
 phylogenetic uncertainty is taken into account."
 
+**3. Reviewer's Comment:**
+
+“Our results show that taking phylogenetic uncertainty into account when estimating diversification rate shifts is of great importance, and relying on the maximum credibility tree alone potentially can give erroneous results”. The results are not really in error. The results are the correct results for the model. The real question is whether it is the appropriate model.
+
+**3. Response:**
+
+> We have rewritten that sentence in the abstract as follows:  
+"Our results show that taking phylogenetic uncertainty into account when
+estimating net diversification rate shifts is of great importance, as very
+different results can be obtained when using the maximum clade credibility tree
+and other trees from the posterior distribution."
+
 
