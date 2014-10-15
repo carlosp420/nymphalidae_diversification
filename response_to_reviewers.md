@@ -277,12 +277,34 @@ there inability to generalize in the manuscript.
  
 **2. Response:**
 
-> As reviewer 1 suggested, our text gave the impression that we were
+> * As reviewer 1 suggested, our text gave the impression that we were
 criticizing the method MEDUSA. We have rewritten the following sections to
 clarify our criticism **that relying on the inferences made on only one tree
 (the MCC tree) is risky as analyses of equally good hyphoteses (other trees from the
-posterior distribution) cand potentially return different results.
+posterior distribution) cand potentially return different results**:
 
-> * abstract
-  *
+> * Abstract  
+"In evolutionary biology, analysis of maximum credibility trees in the software
+MEDUSA (modelling evolutionary diversity using stepwise AIC) is a popular
+method for estimation of shifts in diversification rates.
+We investigated whether phylogenetic uncertainty can produce different results
+by extending the method across a 
+random sample of trees from the posterior distribution of a Bayesian run."
+
+> * Results -> Phylogenetic uncertainty in the MultiMEDUSA approach
+We changed the sentence "We tested MEDUSA..." to "We used MEDUSA to find out...".
+
+> * Also, as suggested by the reviewer 1 (point 16 lines above) we improved the
+discussion.
+
+> * We have added the following in the Conclusions to acknowledge that the
+reported behaviour might also occur in analyses of other taxa:  
+> " However, by using a
+MultiMEDUSA approach, we found that for this Nymphalidae dataset some of these
+splits might be greatly
+affected by phylogenetic uncertainty.
+> We recommend that all datasets should be analyzed using both approaches, MEDUSA
+and MultiMEDUSA, in order to test whether the results are robust when
+phylogenetic uncertainty is taken into account."
+
 

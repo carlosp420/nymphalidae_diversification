@@ -247,7 +247,7 @@ The background
 net diversification rate for Nymphalidae was estimated as ``r = 0.092`` lineages per 
 Million of years and the AICc score for the best fit model was ``5090.5`` 
 (Table 1).
-MEDUSA also estimated that the basic constant birth--death model was not a
+MEDUSA also estimated that the basic constant birth-death model was not a
 better explanation for our data (AICc ``= 5449.3``).
 
 Some of the 18 changes in diversification correspond to rate 
@@ -264,7 +264,7 @@ We also found decreases in net diversification rates for Limenitidinae + Helicon
 0.024``) and Coenonymphina (``r = 0.065``) (Table 1).
 
 ### Phylogenetic uncertainty in the MultiMEDUSA approach
-We tested MEDUSA to find out whether taking into account the phylogenetic
+We used MEDUSA to find out whether taking into account the phylogenetic
 signal from the random sample of 1000 trees from the posterior distribution can
 return similar estimates of diversification to the values obtained from the
 MCC tree.
@@ -558,12 +558,18 @@ the maximum clade credibility tree of Nymphalidae, only a few of these splits
 were found in more than 90% of the trees from the posterior distribution. In
 the literature, it is common practice that conclusions are based on the splits
 estimated on the maximum clade credibility tree. However, by using a
-MultiMEDUSA approach, we found that some of this splits might be greatly
+MultiMEDUSA approach, we found that for this Nymphalidae dataset some of these
+splits might be greatly
 affected by phylogenetic uncertainty. Moreover, some of these splits can be
 recovered either as increases or decreases in net diversification rate depending on
 the tree from the posterior distribution that was used for analysis. This means
 that contradictory conclusions would be made if only the maximum clade
-credibility tree was used for analysis. MEDUSA appears to be sensitive to the
+credibility tree was used for analysis.
+We recommend that all datasets should be analyzed using both approaches, MEDUSA
+and MultiMEDUSA, in order to test whether the results are robust when
+phylogenetic uncertainty is taken into account.
+
+MEDUSA appears to be sensitive to the
 number of nodes with high posterior probability and width of age confidence
 intervals. For our data, it would be necessary to obtain a posterior
 distribution of trees with no conflicting topology, and very similar estimated
