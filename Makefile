@@ -5,7 +5,7 @@
 #
 OPTS= --latex-engine=xelatex -s -S --template header.latex -f markdown -V geometry:a4paper -V geometry:margin=1in --bibliography=refs.bib --csl=plos.csl 
 
-all: MS_orig.pdf MS_revised.pdf MS_diff.pdf
+revision: MS_orig.pdf MS_revised.pdf  response
 
 MS_orig.pdf: MS.md
 	pandoc $< -o $@ $(OPTS)
