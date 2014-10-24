@@ -22,7 +22,7 @@ response_to_reviewers.pdf: response_to_reviewers.tex
 	pdflatex $<
 
 response_to_reviewers.tex: response_to_reviewers.md
-	pandoc $< -s -V geometry:a4paper -V geometry:margin=1in -o $@ 
+	pandoc $< -s -V geometry:a4paper -V geometry:margin=1in --bibliography=refs.bib -o $@ 
 
 
 

@@ -319,4 +319,38 @@ estimating net diversification rate shifts is of great importance, as very
 different results can be obtained when using the maximum clade credibility tree
 and other trees from the posterior distribution."
 
+**4. Reviewer's Comment:**
 
+Why are they restricting their analysis to only one method (a method that they point out might not be reliable)? There are alternative methods available, and it might be interesting to see if consistent results are observed (eg., RC, PRC, BAMM). There is very little development on other aspects of plant – herbivore interactions and how they might be predicted to affect diversification rate.
+
+**4. Response:**
+
+[**>>>> Marianne**, can you write whey we are not using the RC and PRC methods? "The
+parametric rate comparison and relative rates test that he suggests both
+require incomplete taxon sampling to be nonrandom, which ours definitely isn't
+so we can easily explain why we didn't use these."**<<<<<<**]
+
+The method that we used, BiSSE, might not be reliable when the number of taxa
+is small, and there are biases in the number of species that have each of the
+character states. However, we stated in the manuscript that according to the
+evaluation of BiSSE by @davis2013, our data should not be affected for such
+biases.
+
+The method BAMM can be used to explore the evolution of phenotypic traits. 
+However the trait characters
+[**must be continuous**](http://bamm-project.org/configuration.html#id5).
+In our case the "feeding on Solanaceae plants" trait is categorical 
+(absence/presence) so it cannot be analyzed with BAMM.
+
+BAMM also measures the diversification rates of
+particular clades. We run an analysis to test whether we obtained congruent
+results. In the Fig. 1, shown below, we can see that BAMM was able to pick up two
+increases in diversification for Ithomiini butterflies, one for the origin of
+the clade and, most importantly, another increase during the recent
+diversification of the group. This is in agreement with our results from using
+BiSSE, that the ithomiines using Solanaceae underwent an increase in
+diversification rates.
+
+![Bamm analysis](response_to_reviewers_fig1.pdf)
+
+# References
