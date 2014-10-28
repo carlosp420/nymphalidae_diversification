@@ -353,4 +353,70 @@ diversification rates.
 
 ![Bamm analysis](response_to_reviewers_fig1.pdf)
 
+**5. Reviewer's Comment:**
+
+The authors should ‘play’ with an AIC cutoff, simply to explore how it might affect there inferences.
+
+**5. Response:**
+
+> As specified lines above and in the manuscript, we used the AIC cutoff value
+7.8 as suggested by MEDUSA (this value is regarded as optimal due to the number
+of taxa in our analyses).
+Changing the cutoff value would allow fewer or additional diversification
+shifts to be picked up by MEDUSA. Hovewer the initial diversification shifts
+will remain the same unless the AIC cutoff used is so hight that no single
+diversification shifts are recovered.
+Thus playing with the AIC cutoff values does not affect most of the
+diversification shifts discussed in our manuscript. 
+We rerun all our MEDUSA and MultiMEDUSA analysis with differente AIC cutoff
+values to see any effect on the results. We used the AIC values 4 and 11.
+
+> The results in Fig.2 (also attached as PDF file) shows our MEDUSA results from
+the manuscript (cutoff 7.8) along with results with AIC cutoff values 4 and 11.
+We see that the first 19 diversification shitfs are the same for cutoff values
+7.8 and 4. However when using AIC cutoff 4 we recovered additional
+diversification shifts as the software kept trying to fit additional models
+until the differente in AIC values was less than 4. As expected MultiMEDUSA
+also found additinal diversification shifts across the random sample of 1000
+trees.
+
+> When we used AIC cutoff 11, we obtained fewer diversification shifts. We
+recovered only 16, which are the same first 16 that we found in our analysis
+with AIC 7.8.
+
+![MEDUSA analyses under three AIC values](multimedusa_7.8_vs_4_vs_11_AIC_cutoff.pdf)
+
+**6. Reviewer's Comment:**
+
+In addition, the authors should be cautious about interpreting AIC in a
+frequentist manner (e.g., “Only three out of 13 significant shifts found on the
+maximum credibility tree were consistent across more than 95% of the
+trees from the posterior”) – that is, AIC is a model selection tool,
+which should act as a guide for selecting the ‘best’ family of
+models. Delta AIC should really not be thought of as alpha = 0.05.
+
+**6. Response:**
+
+> We agree that AIC values should not be treated in a frequentist manner.
+However, we use the term **"significant shifts"**, in the same way as the authors of the
+method MEDUSA [@alfaro2009], to pinpoint to specific nodes that show a higher
+net diversification rate than ancestral or descendant nodes.
+
+> We also used the AIC value in the correct way. We used the cutoff 7.8 for all
+MEDUSA analyses. Then we counted the number of significant shifts infered in
+each tree and tried to pinpoint those that were consistently recovered across
+the sample of 1000 random trees (and are also present in the MCC tree).
+Since no single significant shift was found in all 1000 trees we wanted to show
+those are were most commonly recovered. This is way we considered consistent
+diversification shifts those that were found in most of the trees (in more than
+95% of them).
+
+**7. Reviewer's Comment:**
+
+Why are authors referred to as references, rather than by authors.
+
+As noted by Reference 36, the responsible trait might….
+
+**7. Response:**
+
 # References
