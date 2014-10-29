@@ -5,14 +5,20 @@
 #
 OPTS= --latex-engine=xelatex -s -S --template header.latex -f markdown -V geometry:a4paper -V geometry:margin=1in --bibliography=refs.bib --csl=plos.csl 
 
-revision: MS_orig.pdf MS_revised.pdf  response
+revision: MS_orig.pdf MS_revised.pdf response
 
-MS_orig.pdf: MS.md
+MS_orig.pdf: MS.md header.latex
+	pandoc $< -o $@ $(OPTS)
+	pandoc $< -o MS_orig.tex $(OPTS)
+
+MS_revised.pdf: MS_revised.md header.latex
 	pandoc $< -o $@ $(OPTS)
 
-MS_revised.pdf: MS_revised.md
-	pandoc $< -o $@ $(OPTS)
+diff: diff.pdf
 
+diff.pdf: MS_orig.tex MS_revised.tex
+	latexdiff MS_orig.tex MS_revised.tex > diff.tex
+	pdflatex diff.tex
 
 response: response_to_reviewers.pdf
 
