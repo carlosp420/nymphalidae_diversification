@@ -1,87 +1,77 @@
-\documentclass[]{article}
-\usepackage{setspace}
-\usepackage[]{lineno}
-\def\linenumberfont{\normalfont\small\sffamily}
-\doublespacing
-\usepackage[T1]{fontenc}
-\usepackage{lmodern}
-\usepackage{tabu}
-\usepackage{amssymb,amsmath}
-\usepackage{ifxetex,ifluatex}
-\usepackage[none]{hyphenat}
-\usepackage{fixltx2e} % provides \textsubscript
-% use microtype if available
-\IfFileExists{microtype.sty}{\usepackage{microtype}}{}
-\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
-  \usepackage[utf8]{inputenc}
-\else % if luatex or xelatex
-  \usepackage{fontspec}
-  \ifxetex
-    \usepackage{xltxtra,xunicode}
-  \fi
-  \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
-  \newcommand{\euro}{€}
-\fi
-\usepackage[margin=1in,a4paper]{geometry}
-\ifxetex
-  \usepackage[setpagesize=false, % page size defined by xetex
-              unicode=false, % unicode breaks when used with xetex
-              xetex]{hyperref}
-\else
-  \usepackage[unicode=true]{hyperref}
-\fi
-\hypersetup{breaklinks=true,
-            bookmarks=true,
-            pdfauthor={},
-            pdftitle={},
-            colorlinks=true,
-            urlcolor=blue,
-            linkcolor=magenta,
-            pdfborder={0 0 0}}
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{6pt plus 2pt minus 1pt}
-\setlength{\emergencystretch}{3em}  % prevent overfull lines
-\setcounter{secnumdepth}{0}
+\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{cite}
+\usepackage{hyperref}
 
-\linenumbers
+\usepackage{lineno}
+\usepackage{microtype}
+\DisableLigatures[f]{encoding = *, family = * }
 
-\author{}
+% Text layout
+\topmargin 0.0cm
+\oddsidemargin 0.5cm
+\evensidemargin 0.5cm
+\textwidth 16cm 
+\textheight 21cm
+
+% Bold the 'Figure #' in the caption and separate it with a period
+% Captions will be left justified
+\usepackage[labelfont=bf,labelsep=period,justification=raggedright]{caption}
+
+% Use the PLoS provided BiBTeX style
+\bibliographystyle{plos2009}
+
+% Remove brackets from numbering in List of References
+\makeatletter
+\renewcommand{\@biblabel}[1]{\quad#1.}
+\makeatother
+
+
+% Leave date blank
 \date{}
+
+\pagestyle{myheadings}
+
+%% Include all macros below. Please limit the use of macros.
+
+%% END MACROS SECTION
+
 
 \begin{document}
 
-\textbf{Title: Diversity dynamics in Nymphalidae butterflies: Effect of
-phylogenetic uncertainty on diversification rate shift estimates}
-
-\subsubsection{Authors: Carlos Peña\textsuperscript{1} and Marianne
-Espeland\textsuperscript{2}}\label{authors-carlos-peuxf1a1-and-marianne-espeland2}
-
-\subsubsection{Running title: Diversity dynamics in Nymphalidae
-butterflies}\label{running-title-diversity-dynamics-in-nymphalidae-butterflies}
-
-\emph{\textsuperscript{1} Laboratory of Genetics, Department of Biology,
-University of Turku, Turku, Finland. Email:
-\href{mailto:mycalesis@gmail.com}{\nolinkurl{mycalesis@gmail.com}}}
-
-\emph{\textsuperscript{2} Museum of Comparative Zoology and Department
+\begin{flushleft}
+{\Large
+    \title{Diversity dynamics in Nymphalidae butterflies: Effect of phylogenetic uncertainty on diversification rate shift estimates}
+}
+\maketitle
+Carlos Pe\~na$^{1,\ast}$,
+Marianne Espeland$^{2}$
+\\
+\bf{1} Carlos Pe\~na Laboratory of Genetics, Department of Biology, University of Turku, Turku, Finland. Email: \href{mailto:mycalesis@gmail.com}{\nolinkurl{mycalesis@gmail.com}}
+\\
+\bf{2} Marianne Espeland Museum of Comparative Zoology and Department
 of Organismic and Evolutionary Biology, Harvard University, Cambridge,
 USA. Email:
 \href{mailto:marianne.espeland@gmail.com}{\nolinkurl{marianne.espeland@gmail.com}}.
 Current address: McGuire Center for Lepidoptera and Biodiversity,
 Florida Museum of Natural History, University of Florida, Gainesville,
-FL, US}.
-
-\textbf{Corresponding author:}
+FL, US.
+\\
+$\ast$ \textbf{Corresponding author:}
 \href{mailto:mycalesis@gmail.com}{\nolinkurl{mycalesis@gmail.com}}
 Telephone: +358 417063065 Fax: +358 2 333 6680
 
-\textbf{Comments:} 5814 words, 7 figures, 2 tables and 25 supplementary
-material files.
+\end{flushleft}
 
-\textbf{Additional Supplementary materials:}
-\url{http://dx.doi.org/10.6084/m9.figshare.639208}
 
-\subsection{Abstract}\label{abstract}
+
+
+\subsubsection*{Running title: Diversity dynamics in Nymphalidae
+butterflies}
+
+
+\subsection*{Abstract}
 
 The species rich butterfly family Nymphalidae has been used to study
 evolutionary interactions between plants and insects. Theories of
@@ -111,7 +101,7 @@ and other trees from the posterior distribution.
 \textbf{Keywords:} diversification analysis, MEDUSA, BiSSE, speciation
 rate, insect-hostplant dynamics
 
-\subsection{Introduction}\label{introduction}
+\subsection*{Introduction}
 
 Hostplant shifts have been invoked to be responsible for a great part of
 the biodiversity of herbivorous insects {[}1{]}. The study of the
@@ -167,9 +157,9 @@ hostplant use affected the diversification pattern of those lineages
 employing the method BiSSE as implemented in the R package
 \texttt{diversitree} {[}18{]}.
 
-\subsection{Methods}\label{methods}
+\subsection*{Materialas and Methods}
 
-\subsubsection{Data}\label{data}
+\subsubsection*{Data}
 
 For analyses, we used the phylogenetic trees from the study of Wahlberg
 et al. (2009) {[}13{]} that were generated using DNA sequence data from
@@ -199,8 +189,8 @@ hostplant records, including 428 Nymphalidae genera and 143 plant
 families and 1070 plant genera. It was not possible to find any
 hostplant data for 35 butterfly genera.
 
-\subsubsection{Analyses of
-Diversification}\label{analyses-of-diversification}
+\subsubsection*{Analyses of
+Diversification}
 
 We used the statistical software R version 3.0.1 {[}36{]} in combination
 with the APE {[}37{]}, GEIGER {[}38{]}, MEDUSA {[}16{]} and
@@ -210,8 +200,8 @@ analyses were run on the 1000 random trees from Wahlberg et al. (2009)
 {[}13{]}, on the maximum clade credibility tree derived from these and
 the MCC tree {[}13{]}.
 
-\subsubsection{Detecting diversification shifts on phylogenetic
-trees}\label{detecting-diversification-shifts-on-phylogenetic-trees}
+\subsubsection*{Detecting diversification shifts on phylogenetic
+trees}
 
 Patterns of diversification in Nymphalidae were analyzed by using MEDUSA
 version 093.4.33 {[}16{]} on the maximum clade credibility tree from
@@ -245,8 +235,8 @@ threshold of 7.8 units, as estimated by MEDUSA, as the limit for a
 significantly better fit to select among increasingly complex
 alternative models.
 
-\subsubsection{Estimation of trait-dependent speciation
-rates}\label{estimation-of-trait-dependent-speciation-rates}
+\subsubsection*{Estimation of trait-dependent speciation
+rates}
 
 As the MEDUSA and MultiMEDUSA approaches estimated an increase in net
 diversification in the clade Ithomiini, we tested whether this pattern
@@ -292,11 +282,11 @@ state bias (around 8x) and extinction bias (around 4x) for the analysis
 of Solanaceae hostplants. Thus, BiSSE is expected to produce robust
 results {[}41{]}.
 
-\subsection{Results}\label{results}
+\subsection*{Results}
 
-\subsubsection{Detecting diversification shifts on the maximum clade
+\subsubsection*{Detecting diversification shifts on the maximum clade
 credibility
-tree}\label{detecting-diversification-shifts-on-the-maximum-clade-credibility-tree}
+tree}
 
 The MEDUSA analysis on the MCC tree in combination with richness data
 estimated 18 changes in the tempo of diversification in Nymphalidae
@@ -327,8 +317,8 @@ diversification rates for Limenitidinae + Heliconiinae
 Pseudergolinae (\texttt{r = 0.024}) and Coenonymphina
 (\texttt{r = 0.065}) (Table 1).
 
-\subsubsection{Phylogenetic uncertainty in the MultiMEDUSA
-approach}\label{phylogenetic-uncertainty-in-the-multimedusa-approach}
+\subsubsection*{Phylogenetic uncertainty in the MultiMEDUSA
+approach}
 
 We used MEDUSA to find out whether taking into account the phylogenetic
 signal from the random sample of 1000 trees from the posterior
@@ -398,8 +388,8 @@ of the splits in the MCC tree are recovered in very few trees, for
 example the split for the clade Satyrini (Euptychiina + Pronophilina +
 Satyrina + Maniolina) is recovered with a probability of 0.18 (Fig. 3).
 
-\subsubsection{Estimation of trait-dependent speciation
-rates}\label{estimation-of-trait-dependent-speciation-rates-1}
+\subsubsection*{Estimation of trait-dependent speciation
+rates}
 
 The MEDUSA analyses, taking into account phylogenetic uncertainty,
 estimated a net diversification rate increase in part of the clade
@@ -433,10 +423,10 @@ Apocynaceae'' had any effect on increased net diversification rates
 found similar speciation rates for lineages feeding on Apocynaceae and
 other plants (Fig. S5).
 
-\subsection{Discussion}\label{discussion}
+\subsection*{Discussion}
 
-\subsubsection{Effects of phylogenetic uncertainty on the performance of
-MEDUSA}\label{effects-of-phylogenetic-uncertainty-on-the-performance-of-medusa}
+\subsubsection*{Effects of phylogenetic uncertainty on the performance of
+MEDUSA}
 
 The MEDUSA method has been used to infer changes in net diversification
 rates in a phylogenetic tree. Since its publication {[}16{]} the results
@@ -488,10 +478,10 @@ Therefore our MEDUSA analyses recovered an increase in net
 diversification rate with probability higher than 0.90 in the posterior
 distribution of trees (Fig. 3).
 
-\subsubsection{Hostplant use and diversification in
-Nymphalidae}\label{hostplant-use-and-diversification-in-nymphalidae}
+\subsubsection*{Hostplant use and diversification in
+Nymphalidae}
 
-\paragraph{Ithomiini}\label{ithomiini}
+\paragraph*{Ithomiini}
 
 Keith Brown suggested that feeding on Solanaceae was an important event
 in the diversification of Ithomiini butterflies {[}44{]}. Ithomiini
@@ -584,8 +574,7 @@ and Ithomiini might have diversified around the same time, during the
 Late Eocene and Oligocene, and this would be congruent with the diffuse
 cospeciation hypothesis.
 
-\paragraph{Danaini}\label{danaini}
-
+\paragraph*{Danaini}
 Our MultiMEDUSA approach showed a significant slowdown in net
 diversification rate in the subtribe Danaina of the Danini. Both Danaina
 and the sister clade Euploeina feed mainly on Apocynaceae and thus a
@@ -605,7 +594,7 @@ vagile species seem to be genetically homogeneous while younger
 widespread species show higher genetic differentiation in their
 populations {[}50{]}.
 
-\paragraph{Satyrini}\label{satyrini}
+\paragraph*{Satyrini}
 
 The diverse tribe Satyrini radiated simultaneously with the radiation of
 their main hostplant, grasses, during the climatic cooling in the
@@ -621,8 +610,7 @@ by MEDUSA. This should be expected if the diversification of Satyrinae
 occurred in a stepwise manner, with pulses or bursts of diversification
 for certain lineages but unlikely for the tribe Satyrini as a whole.
 
-\subsection{Conclusions}\label{conclusions}
-
+\subsection*{Conclusions}
 We found that even though MEDUSA estimated several diversification
 shifts in the maximum clade credibility tree of Nymphalidae, only a few
 of these splits were found in more than 90\% of the trees from the
@@ -653,8 +641,8 @@ diversification rate in the tribe Ithomiini and the genus
 \emph{Charaxes}, and for a decrease in net diversification rate in the
 subtribe Danaina. Due to phylogenetic uncertainty, we did not obtain
 strong support for other diversification splits in Nymphalidae. Our
-BiSSE analysis corroborated other studies in that the trait ``feeding on
-Solanaceae'', or a codistributed character, was important in the
+BiSSE analysis corroborated other studies in that the trait 
+``feeding on Solanaceae'', or a codistributed character, was important in the
 diversification of Ithomiini butterflies. However, by applying MEDUSA we
 found that a critical character in the radiation of the group might have
 appeared after the shift from Apocynaceae to Solanaceae. We also found
@@ -663,8 +651,7 @@ slowdown of diversification in Danaina. Ithomiini and Solanaceae
 diversified near simultaneously, which is in agreement with the diffuse
 co-speciation hypothesis {[}2,4{]}.
 
-\subsection{Acknowledgments}\label{acknowledgments}
-
+\subsection*{Acknowledgments}
 We are thankful to Mark Cornwall for help with the script to extend
 MEDUSA to include phylogenetic uncertainty, Niklas Wahlberg for
 commenting on the manuscript and giving us the posterior distribution of
@@ -672,14 +659,14 @@ trees, Luke Harmon for commenting on the manuscript and anonymous
 reviewers for their comments, which greatly improved the manuscript,
 Jessica Slove Davidson and Niklas Janz for access to their hostplant
 data. The study was supported by a Kone Foundation grant (awarded to
-Niklas Wahlberg), Finland (C. Peña) and the Research Council of Norway
+Niklas Wahlberg), Finland (C. Pe\~na) and the Research Council of Norway
 (grant no. 204308 to M. Espeland). We acknowledge CSC--IT Center for
 Science Ltd. (Finland) for the allocation of computational resources.
 
-\subsection{Figure legends}\label{figure-legends}
-
-\texttt{Figure 1.} Results of the MEDUSA analysis run on the maximum
-clade credibility tree from {[}13{]}. Rate shifts were estimated for the
+\section*{Figure legends}
+\begin{description}
+ \item {\bf Figure 1. Results of the MEDUSA analysis run on the maximum
+clade credibility tree from Wahlberg et al. (2009)} Rate shifts were estimated for the
 following nodes (besides the background rate): 2) Limenitidinae +
 Heliconiinae, 3) \emph{Ypthima}, 4) \emph{Charaxes}, 5) Ithomiini in
 part, 6) Satyrini, 7) Coenonymphina 8) Phyciodina in part, 9) Danaini in
@@ -691,32 +678,29 @@ nodes indicate the diversification shift number as found by MEDUSA.
 Numbers next to circles indicat the posterior probability values for
 such nodes.
 
-\texttt{Figure 2.} Diversification rates for taxa estimated by MEDUSA on
-the samples of 1000 random trees.
+\item {\bf Figure 2. Diversification rates for taxa estimated by MEDUSA on
+the samples of 1000 random trees}
 
-\texttt{Figure 3.} Results of MultiMEDUSA analysis showing the
+\item {\bf Figure 3. Results of MultiMEDUSA analysis showing the
 probability of specific nodes being characterized by significant shifts
-in diversification rate.
+in diversification rate}
 
-\texttt{Figure 4.} BiSSE analysis of diversification of nymphalids due
-to feeding on Solanaceae hostplants. Speciation and net diversification
+\item {\bf Figure 4. BiSSE analysis of diversification of nymphalids due
+to feeding on Solanaceae hostplants} Speciation and net diversification
 rates are significantly higher in Solanaceae feeders (speciation rate =
-\(\lambda1\), net diversification rate = \(r1\)).
+$\lambda1$, net diversification rate = $r1$.
+\end{description}
 
 
-
-\texttt{Table 3.} Likelihood ratio test between the model of increased
-diversification of nymphalids feeding on Solanaceae against a model
-forcing equal speciation rates (no effect on diversification).
-
-\section{Supp. mat.}\label{supp.-mat.}
-
-\texttt{Supporting\_Information\_S01.nex}: MCC Nymphalidae tree from
-{[}13{]}.
-
-\texttt{Supporting\_Information\_S02.R}: R script to run MEDUSA on the
+\section*{Supporting Information Legends}
+\begin{description}
+ \item {\bf Supporting\_Information\_S01.nex.} MCC Nymphalidae tree from
+{[}13{]}
+\item {\bf Supporting\_Information\_S02.R} R script to run MEDUSA on the
 MCC Nymphalidae tree from {[}13{]}. This script removes the outgroup
 taxa and loads the richness data for the tree terminals.
+\end{description}
+
 
 \texttt{Supporting\_Information\_S03.csv}: Species richness for lineages
 in Nymphalidae.
@@ -777,7 +761,7 @@ analysis.
 \texttt{Supporting\_Information\_S20.csv}: Raw results for the combined
 BiSSE analysis.
 
-\texttt{Figure S1.} Boxplot of speciation (\(\lambda\)) and extinction
+\texttt{Figure S1.} Boxplot of speciation ($\lambda$) and extinction
 (\(\mu\)) values for the 95\% credibility intervals of values estimated
 by BiSSE analysis of diversification due to feeding on Solanaceae
 plants.
@@ -786,7 +770,7 @@ plants.
 to feeding on Solanaceae hostplants assuming \emph{Vanessa} and
 \emph{Hypanartia} as non-Solanaceae feeders. The same pattern is
 recovered, speciation and net diversification rates are significantly
-higher for Solanaceae feeders (\(\lambda1\), \(r1\)).
+higher for Solanaceae feeders ($\lambda1$), r1).
 
 \texttt{Figure S3.} Net diversification rates of nymphalids feeding on
 Solanaceae plants as estimated by combining post-burnin runs of BiSSE on
@@ -801,9 +785,7 @@ post-burnin runs on 1000 trees from the posterior distribution.
 to feeding on Apocynaceae hostplants. Speciation and net diversification
 rates are similar.
 
-\section*{References}\label{references}
-\addcontentsline{toc}{section}{References}
-
+\section*{References}
 1. Mitter C, Farrell B, Wiegmann B (1988) The phylogenetic study of
 adaptive zones: Has phytophagy promoted insect diversification? Am Nat
 132: 107--128.
@@ -866,7 +848,7 @@ doi:\href{http://dx.doi.org/10.1098/rspb.2010.0211}{10.1098/rspb.2010.0211}.
 Cretaceous/Tertiary boundary. P Roy Soc B 276: 4295--4302.
 doi:\href{http://dx.doi.org/10.1098/rspb.2009.1303}{10.1098/rspb.2009.1303}.
 
-14. Peña C, Wahlberg N (2008) Prehistorical climate change increased
+14. Pe\~na C, Wahlberg N (2008) Prehistorical climate change increased
 diversification of a group of butterflies. Biol Lett 4: 274--278.
 doi:\href{http://dx.doi.org/10.1098/rsbl.2008.0062}{10.1098/rsbl.2008.0062}.
 
@@ -1041,6 +1023,7 @@ formation and persistence of isolated sister taxa. Syst Entomol 36:
 doi:\href{http://dx.doi.org/10.1111/j.1365-3113.2010.00566.x}{10.1111/j.1365-3113.2010.00566.x}.
 
 
+% Table 1
 \section*{Tables}
 \begin{table}[!h]
 \caption{\bf{Significant net diversification rate shifts found in the MEDUSA analysis of the Nymphalid maximum clade credibility tree.}}
@@ -1071,6 +1054,7 @@ Shift N$^\circ$ & Split.Node & Model & r          & LnLik.part & AICc     & Taxa
 \end{table}
 
 
+% Table 2
 \begin{table}[!h]
     \caption{\bf{Differences in rates estimated by MEDUSA on the MCC
 tree from Wahlberg and the MultiMEDUSA approach on 1000 random trees
@@ -1098,21 +1082,19 @@ Split.Node & rate by MEDUSA & Median rate by MultiMEDUSA & probability of being 
 19         & 0.000          & -0.087                     & 0.381                         
 \end{tabular}
 \end{table}
-% 
-% See introductory notes if you wish to include sideways tables.
-%
-% NOTE: Please look over our table guidelines at http://www.plosone.org/static/figureGuidelines#tables to make sure that your tables meet our requirements. Certain types of spacing, cell merging, and other formatting tricks may have unintended results and will be returned for revision.
-%
-%\begin{table}[!ht]
-%\caption{
-%\bf{Table title}}
-%\begin{tabular}{|c|c|c|}
-%table information
-%\end{tabular}
-%\begin{flushleft}Table caption
-%\end{flushleft}
-%\label{tab:label}
-% \end{table}
+
+
+% Table 3
+\begin{table}[!h]
+    \caption{\bf{Likelihood ratio test between the model of increased
+diversification of nymphalids feeding on Solanaceae against a model
+forcing equal speciation rates (no effect on diversification).}}
+\begin{tabular}{lcrrlr}
+Df           & lnLik & AIC     & ChiSq  & \multicolumn{1}{r}{p} &         \\
+full         & 6     & -1613.3 & 3238.5 &                       &         \\
+equal.lambda & 5     & -1619.4 & 3248.9 & 12.3                  & 0.00045
+\end{tabular}
+\end{table}
 
 
 
