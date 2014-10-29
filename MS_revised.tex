@@ -704,9 +704,6 @@ rates are significantly higher in Solanaceae feeders (speciation rate =
 \(\lambda1\), net diversification rate = \(r1\)).
 
 
-\texttt{Table 2.} Differences in rates estimated by MEDUSA on the MCC
-tree from Wahlberg and the MultiMEDUSA approach on 1000 random trees
-from the posterior distribution.
 
 \texttt{Table 3.} Likelihood ratio test between the model of increased
 diversification of nymphalids feeding on Solanaceae against a model
@@ -1045,27 +1042,9 @@ doi:\href{http://dx.doi.org/10.1111/j.1365-3113.2010.00566.x}{10.1111/j.1365-311
 
 
 \section*{Tables}
-% 
-% See introductory notes if you wish to include sideways tables.
-%
-% NOTE: Please look over our table guidelines at http://www.plosone.org/static/figureGuidelines#tables to make sure that your tables meet our requirements. Certain types of spacing, cell merging, and other formatting tricks may have unintended results and will be returned for revision.
-%
-%\begin{table}[!ht]
-%\caption{
-%\bf{Table title}}
-%\begin{tabular}{|c|c|c|}
-%table information
-%\end{tabular}
-%\begin{flushleft}Table caption
-%\end{flushleft}
-%\label{tab:label}
-% \end{table}
-
-
-
 \begin{table}[!h]
 \caption{\bf{Significant net diversification rate shifts found in the MEDUSA analysis of the Nymphalid maximum clade credibility tree.}}
-\begin{tabular}{lllllll}
+\begin{tabular}{lccrrcl}
 Shift N$^\circ$ & Split.Node & Model & r          & LnLik.part & AICc     & Taxa                                                       \\
 1               & 399        & yule  & 0.092459   & -1055.957  &          & Nymphalidae (root)                                         \\
 2               & 691        & bd    & 0.054129   & -406.3703  &          & Limenitidinae + Heliconiinae                               \\
@@ -1090,5 +1069,52 @@ Shift N$^\circ$ & Split.Node & Model & r          & LnLik.part & AICc     & Taxa
 \begin{flushleft}Split.Node=node number, Model=preferred diversification model by MEDUSA, r=net diversification rate, LnLik.part=log likelihood value.
 \end{flushleft}
 \end{table}
+
+
+\begin{table}[!h]
+    \caption{\bf{Differences in rates estimated by MEDUSA on the MCC
+tree from Wahlberg and the MultiMEDUSA approach on 1000 random trees
+from the posterior distribution.}}
+\begin{tabular}{lcrr}
+Split.Node & rate by MEDUSA & Median rate by MultiMEDUSA & probability of being recovered \\
+1          & 0.090          & not found                  & 0.000                          \\
+2          & 0.054          & -0.030                     & 0.864                          \\
+3          & 0.311          & 0.219                      & 0.961                          \\
+4          & 0.290          & 0.212                      & 0.996                          \\
+5          & 0.187          & 0.101                      & 0.927                          \\
+6          & 0.116          & 0.039                      & 0.131                          \\
+7          & 0.064          & -0.052                     & 0.195                          \\
+8          & 0.240          & 0.166                      & 0.319                          \\
+9          & 0.042          & -0.049                     & 0.897                          \\
+10         & 0.209          & 0.149                      & 0.619                          \\
+11         & 0.311          & 0.208                      & 0.831                          \\
+12         & 0.219          & 0.135                      & 0.911                          \\
+13         & 0.220          & 0.117                      & 0.276                          \\
+14         & 0.190          & 0.115                      & 0.379                          \\
+15         & 0.234          & 0.127                      & 0.825                          \\
+16         & 0.000          & -0.005                     & 0.659                          \\
+17         & 0.311          & 0.248                      & 0.785                          \\
+18         & 0.024          & -0.064                     & 0.024                          \\
+19         & 0.000          & -0.087                     & 0.381                         
+\end{tabular}
+\end{table}
+% 
+% See introductory notes if you wish to include sideways tables.
+%
+% NOTE: Please look over our table guidelines at http://www.plosone.org/static/figureGuidelines#tables to make sure that your tables meet our requirements. Certain types of spacing, cell merging, and other formatting tricks may have unintended results and will be returned for revision.
+%
+%\begin{table}[!ht]
+%\caption{
+%\bf{Table title}}
+%\begin{tabular}{|c|c|c|}
+%table information
+%\end{tabular}
+%\begin{flushleft}Table caption
+%\end{flushleft}
+%\label{tab:label}
+% \end{table}
+
+
+
 
 \end{document}
