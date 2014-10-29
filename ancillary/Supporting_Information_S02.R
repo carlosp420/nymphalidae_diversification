@@ -15,7 +15,8 @@ phy <- drop.tip(phy, tip=tips)
 
 richness <- read.csv("ancillary/Supporting_Information_S03.csv")
 
-res <- MEDUSA(phy, richness, stop="threshold", model="mixed", modelLimit=25, mc=TRUE)
+res <- MEDUSA(phy, richness, stop="threshold", model="mixed", modelLimit=25,
+              mc=TRUE, numCores=2, fixThreshold=4)
 
 
 pdf(file="output/medusa_on_mct.pdf", width=9, height=19)
@@ -23,5 +24,5 @@ summ <- medusaSummary(res, cex=0.3)
 dev.off()
 
 
-# save(res, file="ancillary/supp_mat_04_MEDUSA_results.txt", ascii=TRUE)
+save(res, file="ancillary/supp_mat_04_MEDUSA_results.txt", ascii=TRUE)
 
