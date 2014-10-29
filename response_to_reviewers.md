@@ -384,7 +384,7 @@ trees.
 recovered only 16, which are the same first 16 that we found in our analysis
 with AIC 7.8.
 
-![MEDUSA analyses under three AIC values](multimedusa_7.8_vs_4_vs_11_AIC_cutoff.pdf)
+![MEDUSA analyses under three AIC values](multimedusa_7_8_vs_4_vs_11_AIC_cutoff.pdf)
 
 **6. Reviewer's Comment:**
 
@@ -415,8 +415,10 @@ diversification shifts those that were found in most of the trees (in more than
 
 Why are authors referred to as references, rather than by authors.
 
-As noted by Reference 36, the responsible trait might….
+As noted by Reference 36, the responsible trait might...
 
 **7. Response:**
+
+> We have fixed those references as suggested by the reviewer.
 
 # References

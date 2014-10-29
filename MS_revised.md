@@ -74,10 +74,10 @@ been suggested that climate change in the Oligocene and the subsequent
 diversification of grasses has led to diversification of the subfamily Satyrinae
 [@pena2008] due to the abundance of grasses over extensive geographic
 areas ("resource abundance-dependent diversity dynamics" hypothesis). 
-@fordyce2010 found increased net diversification rates in some Nymphalidae lineages
-after a major hostplant shift, which appears to be in agreement with @ehrlich1964
-"escape-and-radiate" model of diversification. 
- 	 	
+Fordyce (2010) [@fordyce2010] found increased net diversification rates in some Nymphalidae lineages
+after a major hostplant shift, which appears to be in agreement with
+the "escape-and-radiate" model of diversification [@ehrlich1964].
+
 Although it has been suggested that part of the great diversity of Nymphalidae
 butterflies is a result of hostplant-insect dynamics, it is necessary to use 
 modern techniques to investigate whether the diversification patterns of 
@@ -110,30 +110,34 @@ lineages employing the method BiSSE as implemented in the R package
 ## Methods
 
 ### Data
-For analyses, we used the phylogenetic trees from the study of @wahlberg2009 that
+For analyses, we used the phylogenetic trees from the study of 
+Wahlberg et al. (2009) [@wahlberg2009] that
 were generated using DNA sequence data from 10 gene regions for 398 of the 540
-valid genera in Nymphalidae. We employed @wahlberg2009 maximum clade credibility
+valid genera in Nymphalidae. We employed the maximum clade credibility
 tree (MCC tree) (Fig. 1) as well as a random sample of 1000 trees from
-their BEAST run after burnin. Their original BEAST run was for 40 million
+their BEAST run after burnin [@wahlberg2009].
+Their original BEAST run was for 40 million
 generations. We used a burnin of 25 million generations and took a random sample
-of 1000 trees using Burntrees v.0.1.9 <http://www.abc.se/~nylander/> (supp. mat.
-5) in order to correct for phylogenetic uncertainty when performing the
-diversification analyses.
+of 1000 trees using Burntrees v.0.1.9 <http://www.abc.se/~nylander/> 
+(supp. mat. 5) in order to correct for phylogenetic uncertainty when performing
+the diversification analyses.
 
 Species richness data for Nymphalidae genera were compiled from several sources
-including the specialist-curated lists on <http://tolweb.org>, @lamas2004 and
+including the specialist-curated lists on <http://tolweb.org>, Lamas (2004)
+[@lamas2004] and
 curated lists of Global Butterfly Names project
 (<http://www.ucl.ac.uk/taxome/gbn/>).
 We assigned the species numbers of genera not included in the phylogeny to the
-closest related genus that was included in @wahlberg2009 study according to
+closest related genus that was included in Wahlberg et al. (2009) 
+[@wahlberg2009] study according to
 available phylogenetic studies [@matos2013; @brower2010; @kodandaramaiah2010;
 @kodandaramaiah2010a; @ortiz2013; @desilva2010; @freitas2004; @pena2006;
 @penz1999; @silva2008; @pena2011; @pena2010], taxonomical classification and
 morphological resemblance when no phylogenies were available (supp. mat. 3).
 
 Hostplant data for Nymphalidae species were compiled from several sources
-including @ackery1988, HOSTS database (<http://bit.ly/YI7nwW>), @dyer2002,
-@beccaloni2008, @janzen2009 and others (supp. mat. 15--16) for a total of 6586
+including [@ackery1988], HOSTS database (<http://bit.ly/YI7nwW>), [@dyer2002;
+@beccaloni2008; @janzen2009] and others (supp. mat. 15--16) for a total of 6586
 hostplant records, including 428 Nymphalidae genera and 143 plant families and
 1070 plant genera. It was not possible to find any hostplant data for 35
 butterfly genera.
@@ -145,14 +149,15 @@ We used the statistical software R version 3.0.1 [@r2013] in combination with
 the APE [@popescu2012], GEIGER [@harmon2008], MEDUSA [@alfaro2009] and
 ``diversitree`` [@fitzjohn2012] packages along with our own scripts to perform
 the analyses (included as supplementary materials 2, 6, 10). All analyses were run on
-the 1000 random trees from @wahlberg2009, on the maximum clade credibility tree
-derived from these and the MCC tree from @wahlberg2009.
+the 1000 random trees from Wahlberg et al. (2009) [@wahlberg2009],
+on the maximum clade credibility tree derived from these and the MCC tree
+[@wahlberg2009].
 
 
 ### Detecting diversification shifts on phylogenetic trees
 Patterns of diversification in Nymphalidae were analyzed by using MEDUSA
 version 093.4.33 [@alfaro2009] on the maximum clade credibility tree from
-@wahlberg2009.
+Wahlberg et al. (2009) [@wahlberg2009].
 MEDUSA fits alternative birth-death likelihood models to a phylogenetic tree in
 order to estimate changes in net diversification rates along branches. MEDUSA
 estimates likelihood and AIC scores for the simplest birth-death model, with two
@@ -275,7 +280,7 @@ MCC tree derived from this sample (supp. mat. 9).
 
 We found that the analysis by MultiMEDUSA on the 1000 trees estimated
 lower median net diversification rates for the diversification shifts found by
-MEDUSA on the MCC tree from @wahlberg2009 (Table 2). 
+MEDUSA on the MCC tree from [@wahlberg2009] (Table 2). 
 Although the diversification pattern found by
 MEDUSA and MultiMEDUSA was the same, the latter consistently estimated 
 lower rates. 
@@ -376,8 +381,8 @@ lineages feeding on Apocynaceae and other plants (Fig. S5).
 The MEDUSA method has been used to infer changes in net diversification rates 
 in a phylogenetic tree. Since its publication [@alfaro2009] the
 results of using MEDUSA on a single tree, the maximum clade credibility tree,
-have been used for generation of hypotheses and discussion [e.g. 
-@litman2011; @heikkila2012; @ryberg2012].
+have been used for generation of hypotheses and discussion 
+[e.g. @litman2011; @heikkila2012; @ryberg2012].
 However, 
 different diversification
 shifts and different rates of diversification are found for certain lineages
@@ -403,8 +408,8 @@ appear to be strongly affected by long-branch attraction artifacts
 [@pena2011]. Thus, the Bayesian runs are expected to recover alternative
 topologies on the posterior distribution of trees, resulting in low support
 and posterior probability values for the nodes. For example, posterior
-probability values for clades in Satyrini are very low [``0.5 to 0.6``;
-@wahlberg2009]. As a result, MEDUSA inferred a net diversification
+probability values for clades in Satyrini are very low 
+[``0.5 to 0.6``; @wahlberg2009]. As a result, MEDUSA inferred a net diversification
 rate increase for part of Satyrini in the maximum clade credibility tree, but this
 was recovered in the MultiMEDUSA analysis in only in 13% of the
 random sample of trees.
@@ -422,7 +427,8 @@ Ithomiini and the clade *Callicore* + *Diaethria* (Fig. 3),
 while estimating splits for other lineages with much lower probability.
 
 The clade Ithomiini and the non-basal danaids are well supported by high
-posterior probability values in @wahlberg2009. Therefore our MEDUSA analyses
+posterior probability values in Wahlberg et al. (2009) [@wahlberg2009].
+Therefore our MEDUSA analyses
 recovered an increase in net diversification rate 
 with probability higher than 0.90 in the posterior
 distribution of trees (Fig. 3).
@@ -435,7 +441,7 @@ are exclusively Neotropical and most species feed on Solanaceae hostplants durin
 larval stage [supp. mat. 17; @willmott2006]. Optimizations of the
 evolution of hostplant use on phylogenies evidence a probable shift from
 Apocynaceae to Solanaceae in the ancestor of the tribe [@brower2006; @willmott2006].
-@fordyce2010
+Fordyce (2010) [@fordyce2010]
 found that the Gamma statistics, a LTT plot of an Ithomiini phylogeny and the fit
 of the density-dependent model of diversification are consistent with a burst of
 diversification in Ithomiini following the shift from Apocynaceae to Solanaceae.
@@ -449,14 +455,15 @@ Solanaceae" had any effect on the diversification of the group.
 Our BiSSE analysis, extended to take into account missing taxa and phylogenetic 
 uncertainty, shows a significantly
 higher net diversification rate for Ithomiini taxa, which can be attributed to the
-trait "feeding on Solanaceae hostplants" (Fig. 4). This is in agreement with the
-findings of @fordyce2010 using other statistical methods. Due to the fact that
+trait "feeding on Solanaceae hostplants" (Fig. 4). This is in agreement with
+previoues findings using other statistical methods [@fordyce2010].
+Due to the fact that
 Ithomiini are virtually the only nymphalids using Solanaceae as hostplants, it is
 possible that the trait responsible for a higher diversification of Ithomiini might
 not be the hostplant character. 
-As noted by @maddison2007, the responsible trait might be a 
-codistributed character such as a trait related to the ability to digest secondary
-metabolites.
+As noted by Maddison et al. (2007) [@maddison2007], the responsible trait 
+might be a codistributed character such as a trait related to the ability to
+digest secondary metabolites.
 
 Solanaceae plants contain chemical compounds and it has been suggested that the high
 diversity of Ithomiini is consistent with the "escape-and-radiate scenario" due to
@@ -501,7 +508,7 @@ Solanaceae toxins.
 The diffuse cospeciation hypothesis predicts almost identical ages of insects and 
 their hostplants, while the "resource abundance-dependent diversity" and the
 "escape-and-radiate" hypotheses state that insects diversify after their hostplants
-[@ehrlich1964; @janz2011; @nyman2012]. @wheat2007 found 
+[@ehrlich1964; @janz2011; @nyman2012]. Wheat et al. (2007) [@wheat2007] found 
 strong evidence for a model of speciation congruent with Ehrlich and Raven's
 hypothesis in Pieridae butterflies due to, in addition to the identification of a
 key innovation, a burst of diversification in glucosinolate-feeding taxa shortly
@@ -509,7 +516,8 @@ afterwards (with a lag of ~10 MY). According to a recent dated phylogeny of the
 Angiosperms [@bell2010], the family Solanaceae split from its sister group
 about 59 (49--68) MYA and diversification started (crown group age) around 37
 (29--47) 
-MYA. @wahlberg2009 give the ages for origin and diversification for Ithomiini
+MYA. Wahlberg et al. (2009) [@wahlberg2009] give the ages for origin and
+diversification for Ithomiini
 at 45 (39--53) and 37 (32--43) MYA, respectively.
 Thus, current evidence shows that
 Solanaceae and Ithomiini might have diversified around the same time, during 
@@ -608,7 +616,7 @@ computational resources.
 ## Figure legends
 
 ``Figure 1.`` Results of the MEDUSA analysis run on the maximum clade
-credibility tree from @wahlberg2009.
+credibility tree from [@wahlberg2009].
 Rate shifts were estimated for the following nodes (besides the background
 rate): 2) Limenitidinae + Heliconiinae, 3) *Ypthima*, 4) *Charaxes*, 5)
 Ithomiini in part, 6) Satyrini, 7) Coenonymphina 8) Phyciodina in part,
@@ -730,5 +738,5 @@ from the posterior distribution.
 Apocynaceae hostplants. Speciation and net diversification rates are similar.
 
 
-## References
+# References
 
