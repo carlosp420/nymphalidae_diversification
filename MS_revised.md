@@ -716,14 +716,14 @@ for hosplant use.
 
 ``Supporting_Information_S20.csv``: Raw results for the combined BiSSE analysis.
 
-``Figure S1.`` Boxplot of speciation (lambda) and extinction (mu) values for
+``Figure S1.`` Boxplot of speciation ($\lambda$) and extinction ($\mu$) values for
 the 95% credibility intervals of values estimated by BiSSE analysis of
 diversification due to feeding on Solanaceae plants.
 
 ``Figure S2.`` BiSSE analysis of diversification of nymphalids due to feeding on
 Solanaceae hostplants assuming *Vanessa* and *Hypanartia* as non-Solanaceae
 feeders. The same pattern is recovered, speciation and net diversification rates
-are significantly higher for Solanaceae feeders ($lambda$1, r1).
+are significantly higher for Solanaceae feeders ($\lambda1$, $r1$).
 
 ``Figure S3.`` Net diversification rates of nymphalids feeding on Solanaceae plants
 as estimated by combining post-burnin runs of BiSSE on the 1000 trees from 
