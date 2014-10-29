@@ -1,12 +1,12 @@
 ﻿**Title: Diversity dynamics in Nymphalidae butterflies: Effect of phylogenetic uncertainty on diversification rate shift estimates**
 
-### Authors: Carlos Peña^1,\*^ and Marianne Espeland^2,\*^
+### Authors: Carlos Peña^1^ and Marianne Espeland^2^
 
 ### Running title:  Diversity dynamics in Nymphalidae butterflies
 
-*1 Laboratory of Genetics, Department of Biology, University of Turku, Turku, Finland. Email: [mycalesis@gmail.com](mailto:mycalesis@gmail.com)*
+*^1^ Laboratory of Genetics, Department of Biology, University of Turku, Turku, Finland. Email: [mycalesis@gmail.com](mailto:mycalesis@gmail.com)*
 
-*2 Museum of Comparative Zoology and Department of Organismic and Evolutionary
+*^2^ Museum of Comparative Zoology and Department of Organismic and Evolutionary
 Biology, Harvard University, Cambridge, USA. Email:
 [marianne.espeland@gmail.com](mailto:marianne.espeland@gmail.com). Current
 address: McGuire Center for Lepidoptera and Biodiversity, Florida Museum of Natural History, University of Florida, Gainesville, FL, US*.
