@@ -1,0 +1,72 @@
+Command line: bamm -c divcontrol.txt
+Git commit id: 
+Random seed: 1414065980
+Start time: Thu Oct 23 15:06:20 2014
+
+Current parameter settings:
+       acceptanceInfoFileName    acceptance_info.txt
+          acceptanceResetFreq    2000
+                     autotune    0
+                     betaInit    0.5
+                betaInitPrior    1.0
+            betaInitRootPrior    -1.0
+      betaIsTimeVariablePrior    1
+                  betaOutfile    beta_rates.txt
+                betaShiftInit    0
+               betaShiftPrior    0.05
+           betaShiftRootPrior    -1.0
+         branchRatesWriteFreq    0
+            chainSwapFileName    chain_swap.txt
+                       deltaT    0.01
+              eventDataInfile    event_data_in.txt
+             eventDataOutfile    event_data.txt
+           eventDataWriteFreq    2000
+fastSimulatePriorExperimental    0
+     fastSimulatePrior_BurnIn    0.05
+fastSimulatePrior_Generations    5000000
+ fastSimulatePrior_SampleFreq    50
+          initialNumberEvents    0
+              initializeModel    1
+                loadEventData    0
+         localGlobalMoveRatio    10.0
+              maxNumberEvents    500
+                  mcmcOutfile    mcmc_out.txt
+                mcmcWriteFreq    2000
+                    modeltype    trait
+               numberOfChains    4
+          numberOfGenerations    50000000
+                      outName    
+         outputAcceptanceInfo    0
+                    overwrite    1
+             poissonRatePrior    1.0
+                    printFreq    2000
+          priorOutputFileName    prior_probs.txt
+ priorSim_IntervalGenerations    5000
+              runInfoFilename    run_info.txt
+                      runMCMC    1
+          sampleFromPriorOnly    0
+                         seed    -1
+          simulatePriorShifts    1
+                   swapPeriod    1000
+                traitPriorMax    0
+                traitPriorMin    0
+                    traitfile    traits.txt
+                     treefile    mcc.tre
+          updateBetaInitScale    1
+         updateBetaShiftScale    1
+     updateEventLocationScale    0.05
+         updateEventRateScale    4.0
+         updateNodeStateScale    1
+              updateRateBeta0    1
+          updateRateBetaShift    1
+       updateRateBetaTimeMode    0
+        updateRateEventNumber    1
+updateRateEventNumberForBranch    0.0
+      updateRateEventPosition    1
+          updateRateEventRate    1
+          updateRateNodeState    25
+useObservedMinMaxAsTraitPriors    1
+   validateEventConfiguration    1
+   writeMeanBranchLengthTrees    0
+End time: Thu Oct 23 16:28:07 2014
+
