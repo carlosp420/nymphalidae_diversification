@@ -141,8 +141,10 @@ sudden diversification bursts due to hostplant shift, climatic events or
 shifts to closely related hostplants \cite{nylin2014,ferrer2013}.
 
 In this study, we used a time-calibrated genus-level phylogenetic
-hypothesis for Nymphalidae butterflies {[}13{]} to investigate patterns
-of diversification. We applied MEDUSA {[}16,17{]}, a recently developed
+hypothesis for Nymphalidae butterflies \cite{wahlberg2009} to
+investigate patterns
+of diversification. We applied MEDUSA \cite{alfaro2009,harmon2011},
+a recently developed
 statistical method, to study the diversification pattern of Nymphalidae
 butterflies. MEDUSA fits likelihood models of diversification into a
 time-calibrated tree and tests whether allowing increases or decreases
@@ -151,23 +153,23 @@ of the models. MEDUSA is able to take into account unsampled extant
 species diversity during model fitting and it is normally applied to the
 maximum clade credibility phylogenetic tree. Particularly, we wanted to
 study the effects of phylogenetic uncertainty and by using the extended
-MEDUSA method called MultiMEDUSA {[}16{]}. We also tested whether
+MEDUSA method called MultiMEDUSA \cite{alfaro2009}. We also tested whether
 hostplant association dynamics can explain the diversification patterns
 of component Nymphalidae lineages by testing whether character states of
 hostplant use affected the diversification pattern of those lineages
 employing the method BiSSE as implemented in the R package
-\texttt{diversitree} {[}18{]}.
+\texttt{diversitree} \cite{fitzjohn2012}.
 
 \section*{Materials and Methods}
 
 \subsection*{Data}
 
 For analyses, we used the phylogenetic trees from the study of Wahlberg
-et al. (2009) {[}13{]} that were generated using DNA sequence data from
+et al. (2009) \cite{wahlberg2009} that were generated using DNA sequence data from
 10 gene regions for 398 of the 540 valid genera in Nymphalidae. We
 employed the maximum clade credibility tree (MCC tree) (Fig. 1) as well
 as a random sample of 1000 trees from their BEAST run after burnin
-{[}13{]}. Their original BEAST run was for 40 million generations. We
+\cite{wahlberg2009}. Their original BEAST run was for 40 million generations. We
 used a burnin of 25 million generations and took a random sample of 1000
 trees using Burntrees v.0.1.9 \url{http://www.abc.se/~nylander/} (supp.
 mat. 5) in order to correct for phylogenetic uncertainty when performing
@@ -175,17 +177,19 @@ the diversification analyses.
 
 Species richness data for Nymphalidae genera were compiled from several
 sources including the specialist-curated lists on
-\url{http://tolweb.org}, Lamas (2004) {[}19{]} and curated lists of
+\url{http://tolweb.org}, Lamas (2004) \cite{lamas2004} and curated lists of
 Global Butterfly Names project (\url{http://www.ucl.ac.uk/taxome/gbn/}).
 We assigned the species numbers of genera not included in the phylogeny
 to the closest related genus that was included in Wahlberg et al. (2009)
-{[}13{]} study according to available phylogenetic studies {[}20--31{]},
+\cite{wahlberg2009} study according to available phylogenetic studies 
+\cite{matos2013,brower2010,kodandaramaiah2010,kodandaramaiah2010a,ortiz2013,desilva2010,freitas2004,pena2006,penz1999,silva2008,pena2011,pena2010},
 taxonomical classification and morphological resemblance when no
 phylogenies were available (supp. mat. 3).
 
 Hostplant data for Nymphalidae species were compiled from several
-sources including {[}32{]}, HOSTS database (\url{http://bit.ly/YI7nwW}),
-{[}33--35{]} and others (supp. mat. 15--16) for a total of 6586
+sources including \cite{ackery1988}, HOSTS database (\url{http://bit.ly/YI7nwW}),
+\cite{dyer2002,beccaloni2008,janzen2009} and others (supp. mat. 15--16)
+for a total of 6586
 hostplant records, including 428 Nymphalidae genera and 143 plant
 families and 1070 plant genera. It was not possible to find any
 hostplant data for 35 butterfly genera.
