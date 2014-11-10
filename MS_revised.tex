@@ -197,20 +197,21 @@ hostplant data for 35 butterfly genera.
 \subsection*{Analyses of
 Diversification}
 
-We used the statistical software R version 3.0.1 {[}36{]} in combination
-with the APE {[}37{]}, GEIGER {[}38{]}, MEDUSA {[}16{]} and
-\texttt{diversitree} {[}18{]} packages along with our own scripts to
+We used the statistical software R version 3.0.1 \cite{r2013} in combination
+with the APE \cite{popescu2012}, GEIGER \cite{harmon2008}, MEDUSA 
+\cite{alfaro2009} and
+\texttt{diversitree} \cite{fitzjohn2012} packages along with our own scripts to
 perform the analyses (included as supplementary materials 2, 6, 10). All
 analyses were run on the 1000 random trees from Wahlberg et al. (2009)
-{[}13{]}, on the maximum clade credibility tree derived from these and
-the MCC tree {[}13{]}.
+\cite{wahlberg2009}, on the maximum clade credibility tree derived from these and
+the MCC tree \cite{wahlberg2009}.
 
 \subsection*{Detecting diversification shifts on phylogenetic
 trees}
 
 Patterns of diversification in Nymphalidae were analyzed by using MEDUSA
-version 093.4.33 {[}16{]} on the maximum clade credibility tree from
-Wahlberg et al. (2009) {[}13{]}. MEDUSA fits alternative birth-death
+version 093.4.33 \cite{alfaro2009} on the maximum clade credibility tree from
+Wahlberg et al. (2009) \cite{wahlberg2009}. MEDUSA fits alternative birth-death
 likelihood models to a phylogenetic tree in order to estimate changes in
 net diversification rates along branches. MEDUSA estimates likelihood
 and AIC scores for the simplest birth-death model, with two parameters,
@@ -220,13 +221,14 @@ relative extinction \texttt{= d/b}. The AIC scores of the two-parameter
 model are then compared with incrementally more complex models until the
 addition of parameters do not improve the AIC scores beyond a cutoff
 value. MEDUSA finds the likelihood of the models after taking into
-account branch lengths and number of species per lineage {[}16{]}. Most
+account branch lengths and number of species per lineage 
+\cite{alfaro2009}. Most
 studies using MEDUSA only run the method on a single tree, usually the
 maximum clade credibility tree, which makes the assumption that this
 tree is correct. We wanted to study the effects of phylogenetic
 uncertainty on estimation of net diversification rate shifts and
 therefore selected 1000 random genus-level trees from the posterior
-distribution of the Bayesian run from Wahlberg et al., 2009 {[}13{]}
+distribution of the Bayesian run from Wahlberg et al., 2009 \cite{wahlberg2009}
 (MultiMEDUSA, supp. mat. 5). We calculated a new MCC tree from the
 selection of trees, ran MEDUSA and MultiMEDUSA on the selection of 1000
 trees and summarized the estimated changes in net diversification rates
@@ -234,7 +236,7 @@ for nodes across all trees. Patterns of change in net diversification
 rates are considered significant if they are found at the same node in
 at least 90\% of the trees. We also expected to find similar values of
 net diversification (\texttt{r = b - d}) and relative extinction rate
-(\(\varepsilon\) \texttt{= d/b}) values across the 1000 trees for the
+($\varepsilon$ \texttt{= d/b}) values across the 1000 trees for the
 nodes where changes in diversification tempo occurs. We used the AICc
 threshold of 7.8 units, as estimated by MEDUSA, as the limit for a
 significantly better fit to select among increasingly complex
@@ -247,10 +249,11 @@ As the MEDUSA and MultiMEDUSA approaches estimated an increase in net
 diversification in the clade Ithomiini, we tested whether this pattern
 can be explained by an increase in the birth-rate due to hostplant use
 and performed analyses using the ``binary state speciation and
-extinction'' {[}39{]} Bayesian approach as implemented in the R package
-\texttt{diversitree} {[}18{]}. The Markov Chain Monte Carlo algorithm
+extinction'' \cite{maddison2007} Bayesian approach as implemented in the R package
+\texttt{diversitree} \cite{fitzjohn2012}. The Markov Chain Monte Carlo algorithm
 was run for 10000 generations discarding the first 7500 as burnin. The
-Multiple State Speciation and Extinction approach (MuSSE) {[}18{]} is
+Multiple State Speciation and Extinction approach (MuSSE) 
+\cite{fitzjohn2012} is
 designed to examine the joint effects of two or more traits on
 speciation. Because most of Nymphalidae butterflies are restricted to
 use one plant family as hostplant (232 genera use only one plant family
@@ -258,11 +261,11 @@ versus 176 that use more than one; based on our data in supp. mat. 15),
 the character states can be coded as presence/absence, for which the
 BiSSE analysis is better suited. BiSSE was designed to test whether a
 binary character state has had any effect on increased net
-diversification rate for a clade {[}39{]}. We used our compiled data of
+diversification rate for a clade \cite{maddison2007}. We used our compiled data of
 hostplant use to produce a binary dataset for the character ``feeding on
 the plant family Solanaceae'' with two states (absence = 0; presence =
 1) (supp. mat. 17). The family Solanaceae include the hostplants of the
-diverse Ithomiini butterflies and closest relatives {[}8{]}. Other
+diverse Ithomiini butterflies and closest relatives \cite{willmott2006}. Other
 hostplant shifts were not tested for effect on net diversification rates
 due to the low support for diversification shifts found in the MEDUSA
 analyses. We analyzed the data using BiSSE employing the Markov Chain
@@ -275,17 +278,19 @@ diversification has a significantly better likelihood than the null
 hypothesis (no effect). The analyses were run across a sample of 250
 trees from the selected 1000 random trees from the posterior
 distribution. The records of \emph{Vanessa} and \emph{Hypanartia}
-feeding on Solanaceae {[}33,40{]} might be incorrect as it is unlikely
+feeding on Solanaceae \cite{beccaloni2008,scott1986} might be incorrect as it
+is unlikely
 that these species can be feeding on this plant family. We tested
 whether coding these two genera as not feeding on Solanaceae affected
 our results. We expected that coding these two genera as either absence
 or presence would not have a significant effect on our results. It has
-been shown that BiSSE performs poorly under certain conditions {[}41{]}.
+been shown that BiSSE performs poorly under certain conditions 
+\cite{davis2013}.
 However, our data has adequate number of taxa under analysis (more than
 300 tips), adequate speciation bias (between 1.5x and 2.0x), character
 state bias (around 8x) and extinction bias (around 4x) for the analysis
 of Solanaceae hostplants. Thus, BiSSE is expected to produce robust
-results {[}41{]}.
+results \cite{davis2013}.
 
 \section*{Results}
 
