@@ -105,7 +105,8 @@ evolution of hostplant use has spawned several theories explaining the
 evolutionary interactions between plants and insects \cite{nyman2012}. The
 ``escape-and-radiate'' hypothesis \cite{ehrlich1964}, the 
 ``oscillation hypothesis''
-\cite{janz2011,nylin2014} or ``diffuse cospeciation'' \cite{nyman2012}.
+\cite{janz2011,nylin2014} or ``diffuse cospeciation'' \cite{nyman2012} and the
+``musical chairs hypothesis'' \cite{hardy2014}.
 
 The butterfly family Nymphalidae has been an important taxon for
 developing some of the mentioned hypotheses. Nymphalidae contains around
@@ -137,15 +138,15 @@ necessary to use modern techniques to investigate whether the
 diversification patterns of Nymphalidae are in agreement with the
 theoretical predictions. It is necessary to test whether the overall
 diversification pattern of Nymphalidae is congruent with events of
-sudden diversification bursts due to hostplant shift, climatic events or
-shifts to closely related hostplants \cite{nylin2014,ferrer2013}.
+sudden diversification bursts due to hostplant shift or climatic events
+\cite{nylin2014,ferrer2013}.
 
 In this study, we used a time-calibrated genus-level phylogenetic
 hypothesis for Nymphalidae butterflies \cite{wahlberg2009} to
 investigate patterns
-of diversification. We applied MEDUSA \cite{alfaro2009,harmon2011},
-a recently developed
-statistical method, to study the diversification pattern of Nymphalidae
+of diversification. We applied the statistical method
+MEDUSA \cite{alfaro2009,harmon2011},
+to study the diversification pattern of Nymphalidae
 butterflies. MEDUSA fits likelihood models of diversification into a
 time-calibrated tree and tests whether allowing increases or decreases
 in speciation and extinction rates within the tree produces better fit
@@ -194,8 +195,7 @@ hostplant records, including 428 Nymphalidae genera and 143 plant
 families and 1070 plant genera. It was not possible to find any
 hostplant data for 35 butterfly genera.
 
-\subsection*{Analyses of
-Diversification}
+\subsection*{Analyses of Diversification}
 
 We used the statistical software R version 3.0.1 \cite{r2013} in combination
 with the APE \cite{popescu2012}, GEIGER \cite{harmon2008}, MEDUSA 
@@ -206,8 +206,15 @@ analyses were run on the 1000 random trees from Wahlberg et al. (2009)
 \cite{wahlberg2009}, on the maximum clade credibility tree derived from these and
 the MCC tree \cite{wahlberg2009}.
 
-\subsection*{Detecting diversification shifts on phylogenetic
-trees}
+We analyzed our MCC tree in the Bayesian software BAMM in order to contrast
+the results
+found by MEDUSA and MultiMEDUSA.
+BAMM (Bayesian analysis of macroevolutionary mixtures)
+\cite{rabosky2014} is a
+software that fits several models of speciation and extinction. The best model
+can be selected by comparison of Bayes Factors.
+
+\subsection*{Detecting diversification shifts on phylogenetic trees}
 
 Patterns of diversification in Nymphalidae were analyzed by using MEDUSA
 version 093.4.33 \cite{alfaro2009} on the maximum clade credibility tree from
@@ -216,7 +223,7 @@ likelihood models to a phylogenetic tree in order to estimate changes in
 net diversification rates along branches. MEDUSA estimates likelihood
 and AIC scores for the simplest birth-death model, with two parameters,
 the rates \texttt{r}: net diversification \texttt{=} speciation
-(\texttt{b}) \texttt{-} extinction (\texttt{d}) and \(\varepsilon\):
+(\texttt{b}) \texttt{-} extinction (\texttt{d}) and ($\varepsilon$:
 relative extinction \texttt{= d/b}. The AIC scores of the two-parameter
 model are then compared with incrementally more complex models until the
 addition of parameters do not improve the AIC scores beyond a cutoff
@@ -298,7 +305,7 @@ results \cite{davis2013}.
 credibility tree}
 
 The MEDUSA analysis on the MCC tree in combination with richness data
-estimated 18 changes in the tempo of diversification in Nymphalidae
+estimated 18 significant changes in the tempo of diversification in Nymphalidae
 history (Fig. 1; Table 1). The corrected AICc acceptance threshold for
 adding subsequent piecewise birth-death processes to the overall model
 was set to 7.8 units, as prescribed by MEDUSA. In all MEDUSA analyses,
@@ -370,18 +377,18 @@ shift for that node and the \texttt{sum.prop} value is 0.996.
 For the diversification shifts found in both the MCC tree and most of
 the samples of 1000 trees (frequency more than 90\%; Table 2), the
 MultiMEDUSA approach recovered different rates of diversification than
-those found using when the MCC tree alone.
+those found when the MCC tree alone.
 
-There were four diversification shifts found with more than 0.90 of
-probability in the trees from the random sample (Table 2): (i) net
-diversification rate increase in the genus \emph{Ypthima}; (ii) net
-diversification rate increase in the genus \emph{Charaxes}; (iii) rate
-increase in Ithomiini subtribes Oleriina + Ithomiina + Napeogenina +
-Dircennina + Godyridina; and (iv) rate increase in \emph{Callicore} +
-\emph{Diaethria}.
+There were four diversification shifts found in the trees from the
+random sample (Table 2): (i) net
+diversification rate increase in the genus \emph{Ypthima} ($r = 0.22$);
+(ii) net diversification rate increase in the genus \emph{Charaxes}
+($r = 0.21$); (iii) rate increase in Ithomiini subtribes Oleriina +
+Ithomiina + Napeogenina + Dircennina + Godyridina ($r = 0.10$);
+and (iv) rate increase in \emph{Callicore} + \emph{Diaethria} ($r = 0.135$).
 
 MultiMEDUSA provided mean and standard deviation statistics for the
-diversification values found on the shifts on the 1000 trees (supp. mat.
+diversification values on the shifts on the 1000 trees (supp. mat.
 13--14), and found that some of the changes in net diversification rate
 values had great variation across the posterior distribution of trees. A
 boxplot of the net diversification rate values estimated for the clades
@@ -651,6 +658,8 @@ only the maximum clade credibility tree was used for analysis. We
 recommend that all datasets should be analyzed using both approaches,
 MEDUSA and MultiMEDUSA, in order to test whether the results are robust
 when phylogenetic uncertainty is taken into account.
+Moreover, we also found that the results from BAMM, without taking into account
+phylogenetic uncertainty, correspond better to those of MultiMEDUSA than MEDUSA.
 
 MEDUSA appears to be sensitive to the number of nodes with high
 posterior probability and width of age confidence intervals. For our
@@ -740,7 +749,7 @@ analysis on 1000 random trees from \cite{wahlberg2009}.
  \item {\bf Supporting Information S07 multimedusa on 1000 trees.zip} Raw results from the MultiMEDUSA run on the random sample of trees from
 the posterior distribution.
 
- \item {\bf Supporting Information S08.pdf} Summary of the MulitMEDUSA
+ \item {\bf Supporting Information S08.pdf} Summary of the MultiMEDUSA
 analysis on the 1000 trees from the posterior distribution.
 
  \item {\bf Supporting Information S09.tree} MCC tree from the 1000
@@ -850,29 +859,30 @@ Shift N$^\circ$ & Split.Node & Model & r          & LnLik.part & AICc     & Taxa
 % Table 2
 \begin{table}[!h]
     \caption{\bf{Differences in rates estimated by MEDUSA on the MCC
-tree from Wahlberg and the MultiMEDUSA approach on 1000 random trees
-from the posterior distribution.}}
+tree from the sample of trees from the posterior distribution and the
+MultiMEDUSA approach. Shift consistently recovered across the
+sample of trees in bold face.}}
 \begin{tabular}{lcrr}
 Split.Node & rate by MEDUSA & Median rate by MultiMEDUSA & probability of being recovered \\
-1          & 0.090          & not found                  & 0.000                          \\
-2          & 0.054          & -0.030                     & 0.864                          \\
-3          & 0.311          & 0.219                      & 0.961                          \\
-4          & 0.290          & 0.212                      & 0.996                          \\
-5          & 0.187          & 0.101                      & 0.927                          \\
-6          & 0.116          & 0.039                      & 0.131                          \\
-7          & 0.064          & -0.052                     & 0.195                          \\
-8          & 0.240          & 0.166                      & 0.319                          \\
+1          & 0.092          & not found                  & 0.000                          \\
+2          & 0.055          & -0.030                     & 0.864                          \\
+\bf{3}     & 0.184          & \bf{0.219}                 & \bf{0.961}                     \\
+\bf{4}     & 0.166          & \bf{0.212}                 & \bf{0.996}                     \\
+\bf{5}     & 0.111          & \bf{0.101}                 & \bf{0.927}                     \\
+6          & 0.119          & 0.039                      & 0.131                          \\
+7          & 0.066          & -0.052                     & 0.195                          \\
+8          & 0.232          & 0.166                      & 0.319                          \\
 9          & 0.042          & -0.049                     & 0.897                          \\
-10         & 0.209          & 0.149                      & 0.619                          \\
+10         & 0.058          & 0.149                      & 0.619                          \\
 11         & 0.311          & 0.208                      & 0.831                          \\
-12         & 0.219          & 0.135                      & 0.911                          \\
-13         & 0.220          & 0.117                      & 0.276                          \\
-14         & 0.190          & 0.115                      & 0.379                          \\
-15         & 0.234          & 0.127                      & 0.825                          \\
-16         & 0.000          & -0.005                     & 0.659                          \\
-17         & 0.311          & 0.248                      & 0.785                          \\
-18         & 0.024          & -0.064                     & 0.024                          \\
-19         & 0.000          & -0.087                     & 0.381                         
+\bf{12}    & 0.219          & \bf{0.135}                 & \bf{0.911}                     \\
+13         & 0.082          & 0.117                      & 0.276                          \\
+14         & 0.099          & 0.115                      & 0.379                          \\
+15         & 0.113          & 0.127                      & 0.825                          \\
+16         & 0.222          & -0.005                     & 0.659                          \\
+17         & 0.243          & 0.248                      & 0.785                          \\
+18         & 0.192          & -0.064                     & 0.024                          \\
+19         & 0.064          & -0.087                     & 0.381                         
 \end{tabular}
 \end{table}
 
