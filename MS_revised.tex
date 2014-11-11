@@ -4,6 +4,8 @@
 \usepackage{cite}
 \usepackage{hyperref}
 \usepackage{microtype}
+\usepackage{lineno}
+\linenumbers
 \DisableLigatures[f]{encoding = *, family = * }
 
 % Text layout
@@ -483,7 +485,7 @@ support and posterior probability values for the nodes. For example,
 posterior probability values for clades in Satyrini are very low
 \cite{wahlberg2009}. As a result, MEDUSA inferred a net diversification rate
 increase for part of Satyrini in the maximum clade credibility tree, but
-this was recovered in the MultiMEDUSA analysis in only in 13\% of the
+this was recovered in the MultiMEDUSA analysis in only 13\% of the
 random sample of trees.
 
 If there is strong phylogenetic signal for increases or decreases in net
@@ -659,8 +661,11 @@ only the maximum clade credibility tree was used for analysis. We
 recommend that all datasets should be analyzed using both approaches,
 MEDUSA and MultiMEDUSA, in order to test whether the results are robust
 when phylogenetic uncertainty is taken into account.
-Moreover, we also found that the results from BAMM, without taking into account
-phylogenetic uncertainty, correspond better to those of MultiMEDUSA than MEDUSA.
+The results from BAMM recovered only two significant shifts in our MCC tree
+as this method is more conservative than the MEDUSA approach. One of these 
+shifts is the Satyrini clade, which was recovered by MEDUSA in a few trees 
+from the posterior distribution. Thus, it might be important to
+take into account phylogenetic uncertainty in BAMM as well.
 
 MEDUSA appears to be sensitive to the number of nodes with high
 posterior probability and width of age confidence intervals. For our
