@@ -325,7 +325,7 @@ in very species-rich genera: \emph{Ypthima} (\texttt{r = 0.311}),
 (\texttt{r = 0.196}) and \emph{Taenaris} (\texttt{r = 0.234}). We found
 rate increases for other clades as well such as: Mycalesina
 (\texttt{r = 0.191}), Oleriina + Ithomiina + Napeogenina + Dircennina +
-Godyridina (\texttt{r = 0.187}), Satyrini (\texttt{r = 0.116}),
+Godyridina (\texttt{r = 0.187}), Satyrinae (\texttt{r = 0.116}),
 Phyciodina in part (\texttt{r = 0.241}) and Satyrina
 (\texttt{r = 0.221}), \emph{Coenonympha} (\texttt{r = 0.209}),
 \emph{Caeruleuptychia} + \emph{Magneuptychia} (\texttt{r = 0.312}) and
@@ -412,8 +412,8 @@ consistent across the 1000 trees (Fig. 2).
 It is also evident that not all the diversification shifts estimated on
 the MCC tree are consistently recovered in most of the 1000 trees. Some
 of the splits in the MCC tree are recovered in very few trees, for
-example the split for the clade Satyrini (Euptychiina + Pronophilina +
-Satyrina + Maniolina) is recovered with a probability of 0.18 (Fig. 3).
+example the split for the clade Satyrinae is recovered with a probability
+of 0.18 (Fig. 3).
 
 \subsection*{Estimation of trait-dependent speciation
 rates}
@@ -482,9 +482,10 @@ taxa appear to be strongly affected by long-branch attraction artifacts
 \cite{pena2011}. Thus, the Bayesian runs are expected to recover alternative
 topologies on the posterior distribution of trees, resulting in low
 support and posterior probability values for the nodes. For example,
-posterior probability values for clades in Satyrini are very low
+posterior probability values for clades in Satyrinae are very low
 \cite{wahlberg2009}. As a result, MEDUSA inferred a net diversification rate
-increase for part of Satyrini in the maximum clade credibility tree, but
+increase for the Satyrinae (which includes Satyrini and its sister clade)
+in the maximum clade credibility tree, but
 this was recovered in the MultiMEDUSA analysis in only 13\% of the
 random sample of trees.
 
@@ -507,9 +508,11 @@ diversification rate with probability higher than 0.90 in the posterior
 distribution of trees (Fig. 3).
 
 The results from BAMM recovered only two significant shifts in our MCC tree
-as this method seems to be much more conservative than the MEDUSA approach. One of these 
-shifts is the Satyrini clade, which was recovered by MEDUSA in a few trees 
-from the posterior distribution. Thus, it might be important to
+as this method seems to be much more conservative than the MEDUSA approach.
+One of these 
+shifts is the Satyrini clade. MEDUSA estimated its parent node as
+significant shift in a few trees from the posterior distribution. 
+Thus, it might be important to
 take into account phylogenetic uncertainty in BAMM as well.
 
 \subsection*{Hostplant use and diversification in
@@ -634,12 +637,13 @@ vagile species seem to be genetically homogeneous while younger
 widespread species show higher genetic differentiation in their
 populations \cite{wahlberg2011}.
 
-\subsubsection*{Satyrini}
+\subsubsection*{Satyrinae}
 
-The diverse tribe Satyrini radiated simultaneously with the radiation of
+Lineages in the diverse family Satyrinae radiated simultaneously with the
+radiation of
 their main hostplant, grasses, during the climatic cooling in the
 Oligocene \cite{pena2008}. Thus, it is somewhat surprising that part of
-Satyrini (the subtribes Euptychiina, Satyrina and Pronophilina) were
+Satyrinae were
 found to have accelerated diversification in only 13\% of the trees from
 the posterior distribution. Although this can be attributed to low
 phylogenetic signal \cite{wahlberg2009}, the clade Satyrini is very robust
@@ -647,7 +651,8 @@ phylogenetic signal \cite{wahlberg2009}, the clade Satyrini is very robust
 and MEDUSA failed to identify any significant accelerated net
 diversification rate for Satyrini. It appears that the radiation of
 Satyrini as a whole was not remarkably fast and therefore not picked up
-by MEDUSA. This should be expected if the diversification of Satyrinae
+by MEDUSA, although it estimated a diversification shift for Satyrini + its
+sister clade. This should be expected if the diversification of Satyrini
 occurred in a stepwise manner, with pulses or bursts of diversification
 for certain lineages but unlikely for the tribe Satyrini as a whole.
 
@@ -710,7 +715,7 @@ Science Ltd. (Finland) for the allocation of computational resources.
 clade credibility tree from Wahlberg et al. (2009)} Rate shifts were estimated for the
 following nodes (besides the background rate): 2) Limenitidinae +
 Heliconiinae, 3) \emph{Ypthima}, 4) \emph{Charaxes}, 5) Ithomiini in
-part, 6) Satyrini, 7) Coenonymphina 8) Phyciodina in part, 9) Danaini in
+part, 6) Satyrinae, 7) Coenonymphina 8) Phyciodina in part, 9) Danaini in
 part, 10) \emph{Coenonympha}, 11) \emph{Caeruleuptychia} +
 \emph{Magneuptychia}, 12) \emph{Callicore} + \emph{Diaethria}, 13)
 Satyrina, 14) Mycalesina, 15) \emph{Pedaliodes}, 16) \emph{Dryas} +
@@ -843,7 +848,7 @@ Shift N$^\circ$ & Split.Node & Model & r          & LnLik.part & AICc     & Taxa
 3               & 299        & yule  & 0.311199   & -6.3058    &          & \emph{Ypthima}                                             \\
 4               & 224        & yule  & 0.290989   & -6.2601    &          & \emph{Charaxes}                                            \\
 5               & 750        & yule  & 0.186913   & -147.4146  &          & Oleriina + Ithomiina + Napeogenina + Dircennina + Godyrina \\
-6               & 405        & yule  & 0.116252   & -555.0276  &          & Satyrini                                                   \\
+6               & 405        & yule  & 0.116252   & -555.0276  &          & Satyrinae                                                   \\
 7               & 495        & yule  & 0.064656   & -124.9143  &          & Coenonymphina                                              \\
 8               & 609        & yule  & 0.240562   & -35.0908   &          & Phyciodina in part                                         \\
 9               & 787        & bd    & 0.042332   & -43.7819   &          & Danaini in part                                            \\
