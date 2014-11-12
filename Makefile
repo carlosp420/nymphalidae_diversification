@@ -18,6 +18,11 @@ diff: diff.pdf
 
 diff.pdf: MS_orig.tex MS_revised.tex
 	latexdiff MS_orig.tex MS_revised.tex > diff.tex
+	latex diff.tex
+	latex diff.tex
+	bibtex diff.aux
+	latex diff.tex
+	latex diff.tex
 	pdflatex diff.tex
 
 response: response_to_reviewers.pdf
