@@ -268,11 +268,15 @@ diverse Ithomiini butterflies and closest relatives \cite{willmott2006}.
 We analyzed the data using BiSSE employing the Markov Chain
 Monte Carlo algorithm on the maximum clade credibility tree, taking into
 account missing taxa by using the parameter ``sampling factor''
-(\texttt{sampling.f}) in \texttt{diversitree}. We also used constrained
-analyses forcing no effect of hostplant use on diversification and used
-likelihood ratio tests to find out whether the hypothesis of effect on
-diversification has a significantly better likelihood than the null
-hypothesis (no effect). The analyses were run across a sample of 250
+(\texttt{sampling.f}) in \texttt{diversitree}. 
+We also used likelihood ratio tests to evaluate the influence of
+Solanaceae-feeding on diversification rates by comparing a constrained versus
+a relaxed model of diversification.
+The constrained model assumes no effect of hostplant use on diversification by
+enforcing equal speciation rates across both character states. In the relaxed
+model, all speciation and extinction parameters are estimated for each
+character state.
+The analyses were run across a sample of 250
 trees from the selected 1000 random trees from the posterior
 distribution. The records of \emph{Vanessa} and \emph{Hypanartia}
 feeding on Solanaceae \cite{beccaloni2008, scott1986} might be incorrect as it is unlikely
