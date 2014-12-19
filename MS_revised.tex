@@ -214,10 +214,16 @@ net diversification rates along branches. MEDUSA estimates likelihood
 and AIC scores for the simplest birth-death model, with two parameters,
 the rates \texttt{r}: net diversification \texttt{=} speciation
 (\texttt{b}) \texttt{-} extinction (\texttt{d}) and (\(\varepsilon\):
-relative extinction \texttt{= d/b}. The AIC scores of the two-parameter
-model are then compared with incrementally more complex models until the
-addition of parameters do not improve the AIC scores beyond a cutoff
-value. MEDUSA finds the likelihood of the models after taking into
+relative extinction \texttt{= d/b}.
+The maximum-likelihood values are recalculated when each branch in the tree
+is selected to contain an additional breakpoint (additional parameters
+\texttt{b} and \texttt{d}) in net diversification rate. 
+The process is repeated by fitting additional breaking points to the tree.
+The fit of  alternative models is compared using AIC
+scores and stop when the improvement of the incrementally more complex models 
+is smaller than a cutoff value which
+depends of the number of terminals.
+MEDUSA finds the likelihood of the models after taking into
 account branch lengths and number of species per lineage \cite{alfaro2009}. Most
 studies using MEDUSA only run the method on a single tree, usually the
 maximum clade credibility tree, which makes the assumption that this
