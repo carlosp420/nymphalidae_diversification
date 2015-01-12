@@ -305,7 +305,7 @@ estimated 18 significant changes in the tempo of diversification in
 Nymphalidae history (Fig. 1; Table 1). The corrected AICc acceptance
 threshold for adding subsequent piecewise birth-death processes to the
 overall model was set to 7.8 units, as prescribed by MEDUSA. In all
-MEDUSA analyses, the maximum number of inferred diversification splits
+MEDUSA analyses, the maximum number of inferred diversification shifts
 in all trees was 26. The background net diversification rate for
 Nymphalidae was estimated as \texttt{r = 0.092} lineages per Million of
 years and the AICc score for the best fit model was \texttt{5090.5}
@@ -353,7 +353,7 @@ MultiMEDUSA. The background diversification and all shifts found by
 MEDUSA on the 1000 trees are provided as an R object in supp. mat. 7.
 
 We also compared the results from MultiMEDUSA (derived from the sample
-of 1000 trees) with the splits found by MEDUSA on the MCC tree derived
+of 1000 trees) with the shifts found by MEDUSA on the MCC tree derived
 from this random sample. In the summary statistics, MultiMEDUSA reports
 the frequency of the diversification shifts found in the trees
 (parameter \texttt{sum.prop}). Thus, if a node is found in only half of
@@ -397,7 +397,7 @@ consistent across the 1000 trees (Fig. 2).
 
 It is also evident that not all the diversification shifts estimated on
 the MCC tree are consistently recovered in most of the 1000 trees. Some
-of the splits in the MCC tree are recovered in very few trees, for
+of the shifts in the MCC tree are recovered in very few trees, for
 example the split for the clade Satyrinae is recovered with a
 probability of 0.18 (Fig. 3).
 
@@ -449,11 +449,11 @@ have been used for generation of hypotheses and discussion
 rates of diversification are found for certain lineages when
 phylogenetic uncertainty was taken into account by using MEDUSA on a
 random sample of trees from the posterior distribution of a Bayesian
-run. We found that some diversification splits, estimated on the
+run. We found that some diversification shifts, estimated on the
 Nymphalidae maximum clade credibility tree, were found with very low
 probability in the random sample of 1000 trees from the posterior
 distribution (Fig. 3, Table 2). We also found that, even though the
-analyses estimated the same diversification splits on two or more trees,
+analyses estimated the same diversification shifts on two or more trees,
 the estimated net diversification rates could vary widely (Fig. 2). For
 example, in our Nymphalidae trees, we found that the split for
 \emph{Magneuptychia} and \emph{Caeruleuptychia} had a variation from
@@ -462,7 +462,7 @@ rate, to almost zero. This means that observed patterns and conclusions
 can be completely contradictory depending on tree choice.
 
 In this study, the effect of phylogenetic uncertainty on the inferred
-diversification splits by MEDUSA is amplified because some Nymphalidae
+diversification shifts by MEDUSA is amplified because some Nymphalidae
 taxa appear to be strongly affected by long-branch attraction artifacts
 \cite{pena2011}. Thus, the Bayesian runs are expected to recover alternative
 topologies on the posterior distribution of trees, resulting in low
@@ -474,16 +474,16 @@ clade) in the maximum clade credibility tree, but this was recovered in
 the MultiMEDUSA analysis in only 13\% of the random sample of trees.
 
 If there is strong phylogenetic signal for increases or decreases in net
-diversification rates for a node, it is expected that these splits would
+diversification rates for a node, it is expected that these shifts would
 be inferred by MEDUSA in most of the posterior distribution of trees.
 However, weak phylogenetic signal for some nodes can cause some clades
 to be absent in some trees and MEDUSA will be unable to estimate any
 diversification shift (due to a non-existent node). This is the reason
-why MEDUSA estimated net diversification rate splits with a probability
-higher than 0.90 in the sample of trees for only four splits: the genus
+why MEDUSA estimated net diversification rate shifts with a probability
+higher than 0.90 in the sample of trees for only four shifts: the genus
 \emph{Charaxes}, the genus \emph{Ypthima}, part of Ithomiini and the
 clade \emph{Callicore} + \emph{Diaethria} (Fig. 3), while estimating
-splits for other lineages with much lower probability.
+shifts for other lineages with much lower probability.
 
 The clade Ithomiini and the non-basal danaids are well supported by high
 posterior probability values in Wahlberg et al. (2009) \cite{wahlberg2009}.
@@ -630,12 +630,12 @@ tribe Satyrini as a whole.
 \section*{Conclusions}
 We found that even though MEDUSA estimated several diversification
 shifts in the maximum clade credibility tree of Nymphalidae, only a few
-of these splits were found in more than 90\% of the trees from the
+of these shifts were found in more than 90\% of the trees from the
 posterior distribution. In the literature, it is common practice that
-conclusions are based on the splits estimated on the maximum clade
+conclusions are based on the shifts estimated on the maximum clade
 credibility tree. However, by using a MultiMEDUSA approach, we found
-that for this Nymphalidae dataset some of these splits might be greatly
-affected by phylogenetic uncertainty. Moreover, some of these splits can
+that for this Nymphalidae dataset some of these shifts might be greatly
+affected by phylogenetic uncertainty. Moreover, some of these shifts can
 be recovered either as increases or decreases in net diversification
 rate depending on the tree from the posterior distribution that was used
 for analysis. This means that contradictory conclusions would be made if
@@ -648,7 +648,7 @@ MEDUSA appears to be sensitive to the number of nodes with high
 posterior probability and width of age confidence intervals. For our
 data, it would be necessary to obtain a posterior distribution of trees
 with no conflicting topology, and very similar estimated ages for nodes
-in order to consistently recover most of the diversification splits on
+in order to consistently recover most of the diversification shifts on
 the posterior distribution of trees that were inferred by MEDUSA on the
 MCC tree.
 
@@ -657,7 +657,7 @@ distribution of trees found strong support for an increase in net
 diversification rate in the tribe Ithomiini and the genus
 \emph{Charaxes}, and for a decrease in net diversification rate in the
 subtribe Danaina. Due to phylogenetic uncertainty, we did not obtain
-strong support for other diversification splits in Nymphalidae. Our
+strong support for other diversification shifts in Nymphalidae. Our
 BiSSE analysis corroborated other studies in that the trait ``feeding on
 Solanaceae'', or a codistributed character, was important in the
 diversification of Ithomiini butterflies. However, by applying MEDUSA we
