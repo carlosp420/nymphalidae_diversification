@@ -1,43 +1,19 @@
 Dear Editor,
 
-We send our manuscript "Diversity dynamics in Nymphalidae butterflies: Effect
-of phylogenetic uncertainty on diversification rate shift estimates" for your
-consideration. This is a research article.
+We are sending the 2nd revised version of our manuscript “Diversity dynamics in
+Nymphalidae butterflies: Effect of phylogenetic uncertainty on diversification
+rate shift estimates” for your consideration.
 
-Part of the findings of this manuscript are the following:
-
-We used as target organisms the butterfly family Nymphalidae.
-
-In this manuscript we found that estimates of diversification produced by
-employing the commonly used method MEDUSA are greatly affected by phylogenetic
-uncertainty.
-
-We found that many of the diversification splits found by running MEDUSA on the
-maximum credibility tree are not found when MEDUSA is run on a random sample of
-trees from the posterior distribution of a Bayesian run. In some cases MEDUSA
-estimated both increases and decreases in diversification for the very same
-clade.
-
-We also explored the evolutionary causes of one of the diversification shifts
-that was consistently recovered in our analyses.
-
-We believe that these findings should be published in PLOS ONE as many
-evolutionary studies are employing MEDUSA for analysis. Additionally, we
-explore the high diversification rate found in the clade Ithomiini and provide
-evidence that the evolutionary interactions with their hostplants are
-responsible for the high diversification rate, and that this process is
-congruent with the diffuse cospeciation hypothesis.
-
-This paper is part of our research interests in the evolutionary history of
-butterflies and related groups.
-
+We have followed the "minor revision" comments by one of the reviewers.
+We are submitting a clean version of our manuscript (as LaTeX source files and
+a PDF file generated from those).
+We are also submitting a PDF file containing our revised manuscript and all
+changes applied during revision appear highlighted.
+All supplementary materials have been uploaded to the public repository Figshare:
+http://dx.doi.org/10.6084/m9.figshare.1116238 and the URL has been included
+in our resubmittion.
 
 Sincerely yours,
 
-
 Carlos Peña & Marianne Espeland
-
-## support
-The study was supported by a Kone Foundation grant (awarded to Niklas
-        Wahlberg), Finland (C. Peña) and the Research Council of Norway
-(grant no. 204308 to M. Espeland).
+2015-01-15
