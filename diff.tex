@@ -1,46 +1,203 @@
-\documentclass[10pt]{article}
+%DIF 1-3c1-92
 %DIF LATEXDIFF DIFFERENCE FILE
-%DIF DEL MS_orig.tex      Thu Jan 15 00:00:41 2015
-%DIF ADD MS_revised.tex   Thu Jan 15 00:48:08 2015
-\usepackage{amsmath}
-\usepackage{amssymb}
+%DIF DEL MS_orig.tex      Thu Jan 15 01:21:52 2015
+%DIF ADD MS_revised.tex   Thu Jan 22 18:43:47 2015
+%DIF < \documentclass[10pt]{article}
+%DIF < \usepackage{amsmath}
+%DIF < \usepackage{amssymb}
+%DIF -------
+% Template for PLoS %DIF > 
+% Version 3.0 December 2014 %DIF > 
+% %DIF > 
+% To compile to pdf, run: %DIF > 
+% latex plos.template %DIF > 
+% bibtex plos.template %DIF > 
+% latex plos.template %DIF > 
+% latex plos.template %DIF > 
+% dvipdf plos.template %DIF > 
+% %DIF > 
+% % % % % % % % % % % % % % % % % % % % % % %DIF > 
+% %DIF > 
+% -- IMPORTANT NOTE %DIF > 
+% %DIF > 
+% This template contains comments intended  %DIF > 
+% to minimize problems and delays during our production  %DIF > 
+% process. Please follow the template instructions %DIF > 
+% whenever possible. %DIF > 
+% %DIF > 
+% % % % % % % % % % % % % % % % % % % % % % %  %DIF > 
+% %DIF > 
+% Once your paper is accepted for publication,  %DIF > 
+% PLEASE REMOVE ALL TRACKED CHANGES in this file and leave only %DIF > 
+% the final text of your manuscript. %DIF > 
+% %DIF > 
+% There are no restrictions on package use within the LaTeX files except that  %DIF > 
+% no packages listed in the template may be deleted. %DIF > 
+% %DIF > 
+% Please do not include colors or graphics in the text. %DIF > 
+% %DIF > 
+% Please do not create a heading level below \subsection. For 3rd level headings, use \paragraph{}. %DIF > 
+% %DIF > 
+% % % % % % % % % % % % % % % % % % % % % % % %DIF > 
+% %DIF > 
+% -- FIGURES AND TABLES %DIF > 
+% %DIF > 
+% Please include tables/figure captions directly after the paragraph where they are first cited in the text. %DIF > 
+% %DIF > 
+% DO NOT INCLUDE GRAPHICS IN YOUR MANUSCRIPT %DIF > 
+% - Figures should be uploaded separately from your manuscript file.  %DIF > 
+% - Figures generated using LaTeX should be extracted and removed from the PDF before submission.  %DIF > 
+% - Figures containing multiple panels/subfigures must be combined into one image file before submission. %DIF > 
+% See http://www.plosone.org/static/figureGuidelines for PLOS figure guidelines. %DIF > 
+% %DIF > 
+% Tables should be cell-based and may not contain: %DIF > 
+% - tabs/spacing/line breaks within cells to alter layout or alignment %DIF > 
+% - vertically-merged cells (no tabular environments within tabular environments, do not use \multirow) %DIF > 
+% - colors, shading, or graphic objects %DIF > 
+% See http://www.plosone.org/static/figureGuidelines#tables for table guidelines. %DIF > 
+% %DIF > 
+% For tables that exceed the width of the text column, use the adjustwidth environment as illustrated in the example table in text below. %DIF > 
+% %DIF > 
+% % % % % % % % % % % % % % % % % % % % % % % % %DIF > 
+% %DIF > 
+% -- EQUATIONS, MATH SYMBOLS, SUBSCRIPTS, AND SUPERSCRIPTS %DIF > 
+% %DIF > 
+% IMPORTANT %DIF > 
+% Below are a few tips to help format your equations and other special characters according to our specifications. For more tips to help reduce the possibility of formatting errors during conversion, please see our LaTeX guidelines at http://www.plosone.org/static/latexGuidelines %DIF > 
+% %DIF > 
+% Please be sure to include all portions of an equation in the math environment. %DIF > 
+% %DIF > 
+% Do not include text that is not math in the math environment. For example, CO2 will be CO\textsubscript{2}. %DIF > 
+% %DIF > 
+% Please add line breaks to long display equations when possible in order to fit size of the column.  %DIF > 
+% %DIF > 
+% For inline equations, please do not include punctuation (commas, etc) within the math environment unless this is part of the equation. %DIF > 
+% %DIF > 
+% % % % % % % % % % % % % % % % % % % % % % % %  %DIF > 
+% %DIF > 
+% Please contact latex@plos.org with any questions. %DIF > 
+% %DIF > 
+% % % % % % % % % % % % % % % % % % % % % % % % %DIF > 
+ %DIF > 
+\documentclass[10pt,letterpaper]{article} %DIF > 
+\usepackage[top=0.85in,left=2.75in,footskip=0.75in]{geometry} %DIF > 
+ %DIF > 
+% Use adjustwidth environment to exceed column width (see example table in text) %DIF > 
+\usepackage{changepage} %DIF > 
+ %DIF > 
+% Use Unicode characters when possible %DIF > 
+\usepackage[utf8]{inputenc} %DIF > 
+ %DIF > 
+% textcomp package and marvosym package for additional characters %DIF > 
+\usepackage{textcomp,marvosym} %DIF > 
+ %DIF > 
+% fixltx2e package for \textsubscript %DIF > 
+\usepackage{fixltx2e} %DIF > 
+ %DIF > 
+% amsmath and amssymb packages, useful for mathematical formulas and symbols %DIF > 
+\usepackage{amsmath,amssymb} %DIF > 
+ %DIF > 
+% cite package, to clean up citations in the main text. Do not remove. %DIF > 
+%DIF -------
 \usepackage{cite}
-\usepackage{hyperref}
+%DIF 5c94-101
+%DIF < \usepackage{hyperref}
+%DIF -------
+ %DIF > 
+% Use nameref to cite supporting information files (see Supporting Information section for more info) %DIF > 
+\usepackage{nameref,hyperref} %DIF > 
+ %DIF > 
+% line numbers %DIF > 
+\usepackage[right]{lineno} %DIF > 
+ %DIF > 
+% ligatures disabled %DIF > 
+%DIF -------
 \usepackage{microtype}
 \DisableLigatures[f]{encoding = *, family = * }
 
+%DIF 9a105-111
+% rotating package for sideways tables %DIF > 
+\usepackage{rotating} %DIF > 
+ %DIF > 
+% Remove comment for double spacing %DIF > 
+%\usepackage{setspace}  %DIF > 
+%\doublespacing %DIF > 
+ %DIF > 
+%DIF -------
 % Text layout
-\topmargin 0.0cm
-\oddsidemargin 0.5cm
-\evensidemargin 0.5cm
-\textwidth 16cm 
-\textheight 21cm
+%DIF 10-14c113-116
+%DIF < \topmargin 0.0cm
+%DIF < \oddsidemargin 0.5cm
+%DIF < \evensidemargin 0.5cm
+%DIF < \textwidth 16cm 
+%DIF < \textheight 21cm
+%DIF -------
+\raggedright %DIF > 
+\setlength{\parindent}{0.5cm} %DIF > 
+\textwidth 5.25in  %DIF > 
+\textheight 8.75in %DIF > 
+%DIF -------
 
-% Bold the 'Figure #' in the caption and separate it with a period
+%DIF 16c118
+%DIF < % Bold the 'Figure #' in the caption and separate it with a period
+%DIF -------
+% Bold the 'Figure #' in the caption and separate it from the title/caption with a period %DIF > 
+%DIF -------
 % Captions will be left justified
-\usepackage[labelfont=bf,labelsep=period,justification=raggedright]{caption}
+%DIF 18c120
+%DIF < \usepackage[labelfont=bf,labelsep=period,justification=raggedright]{caption}
+%DIF -------
+\usepackage[aboveskip=1pt,labelfont=bf,labelsep=period,justification=raggedright,singlelinecheck=off]{caption} %DIF > 
+%DIF -------
 
+%DIF 20a122-123
+% Use the PLoS provided BiBTeX style %DIF > 
+\bibliographystyle{plos2009} %DIF > 
+%DIF -------
 
 % Remove brackets from numbering in List of References
 \makeatletter
 \renewcommand{\@biblabel}[1]{\quad#1.}
 \makeatother
 
-
+%DIF 26d130
+%DIF < 
+%DIF -------
 % Leave date blank
 \date{}
 
+%DIF 30a133-134
+% Header and Footer with logo %DIF > 
+\usepackage{lastpage,fancyhdr,graphicx} %DIF > 
+%DIF -------
 \pagestyle{myheadings}
+%DIF 31a136-143
+\pagestyle{fancy} %DIF > 
+\fancyhf{} %DIF > 
+\lhead{\includegraphics[natwidth=1.3in,natheight=0.4in]{PLOSlogo.png}} %DIF > 
+\rfoot{\thepage/\pageref{LastPage}} %DIF > 
+\renewcommand{\footrule}{\hrule height 2pt \vspace{2mm}} %DIF > 
+\fancyheadoffset[L]{2.25in} %DIF > 
+\fancyfootoffset[L]{2.25in} %DIF > 
+\lfoot{\sf PLOS} %DIF > 
+%DIF -------
 
-%% Include all macros below. Please limit the use of macros.
+%DIF 32c145-148
+%DIF < %% Include all macros below. Please limit the use of macros.
+%DIF -------
+%% Include all macros below %DIF > 
+ %DIF > 
+\newcommand{\lorem}{{\bf LOREM}} %DIF > 
+\newcommand{\ipsum}{{\bf IPSUM}} %DIF > 
+%DIF -------
 
 %% END MACROS SECTION
 %DIF PREAMBLE EXTENSION ADDED BY LATEXDIFF
 %DIF UNDERLINE PREAMBLE %DIF PREAMBLE
 \RequirePackage[normalem]{ulem} %DIF PREAMBLE
 \RequirePackage{color}\definecolor{RED}{rgb}{1,0,0}\definecolor{BLUE}{rgb}{0,0,1} %DIF PREAMBLE
-\providecommand{\DIFaddtex}[1]{{\protect\color{blue}\uwave{#1}}} %DIF PREAMBLE
-\providecommand{\DIFdeltex}[1]{{\protect\color{red}\sout{#1}}}                      %DIF PREAMBLE
+\providecommand{\DIFadd}[1]{{\protect\color{blue}\uwave{#1}}} %DIF PREAMBLE
+\providecommand{\DIFdel}[1]{{\protect\color{red}\sout{#1}}}                      %DIF PREAMBLE
 %DIF SAFE PREAMBLE %DIF PREAMBLE
 \providecommand{\DIFaddbegin}{} %DIF PREAMBLE
 \providecommand{\DIFaddend}{} %DIF PREAMBLE
@@ -54,49 +211,74 @@
 \providecommand{\DIFdelbeginFL}{} %DIF PREAMBLE
 \providecommand{\DIFdelendFL}{} %DIF PREAMBLE
 %DIF END PREAMBLE EXTENSION ADDED BY LATEXDIFF
-%DIF PREAMBLE EXTENSION ADDED BY LATEXDIFF
-%DIF HYPERREF PREAMBLE %DIF PREAMBLE
-\providecommand{\DIFadd}[1]{\texorpdfstring{\DIFaddtex{#1}}{#1}} %DIF PREAMBLE
-\providecommand{\DIFdel}[1]{\texorpdfstring{\DIFdeltex{#1}}{}} %DIF PREAMBLE
-%DIF END PREAMBLE EXTENSION ADDED BY LATEXDIFF
 
 \begin{document}
+\DIFaddbegin \vspace*{0.35in}
 
-\begin{flushleft}
+%DIF >  Title must be 150 characters or less
+\DIFaddend \begin{flushleft}
 {\Large
-    \title{Diversity dynamics in Nymphalidae butterflies: Effect of phylogenetic uncertainty on diversification rate shift estimates}
-}
-\maketitle
-Carlos Pe\~na$^{1,\ast}$,
-Marianne Espeland$^{2}$
+\DIFdelbegin %DIFDELCMD < \title{Diversity dynamics in Nymphalidae butterflies: Effect of phylogenetic uncertainty on diversification rate shift estimates}
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \textbf\newline{Article Title - Diversity dynamics in Nymphalidae butterflies: Effect of phylogenetic uncertainty on diversification rate shift estimates}
+\DIFaddend }
+\DIFdelbegin %DIFDELCMD < \maketitle
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \newline
+%DIF >  Insert Author names, affiliations and corresponding author email.
 \\
-\bf{1} Carlos Pe\~na Laboratory of Genetics, Department of Biology, University of Turku, Turku, Finland. Email: \href{mailto:mycalesis@gmail.com}{\nolinkurl{mycalesis@gmail.com}}
-\\
-\bf{2} Marianne Espeland Museum of Comparative Zoology and Department
-of Organismic and Evolutionary Biology, Harvard University, Cambridge,
-USA. Email:
-\href{mailto:marianne.espeland@gmail.com}{\nolinkurl{marianne.espeland@gmail.com}}.
-Current address: McGuire Center for Lepidoptera and Biodiversity,
+\DIFaddend Carlos Pe\~na\DIFdelbegin \DIFdel{$^{1,\ast}$}\DIFdelend \DIFaddbegin \DIFadd{\textsuperscript{1,*}}\DIFaddend ,
+Marianne Espeland\DIFdelbegin \DIFdel{$^{2}$
+}\DIFdelend \DIFaddbegin \DIFadd{\textsuperscript{2,\textcurrency}
+}\DIFaddend \\
+\bf{1} \DIFdelbegin \DIFdel{Carlos Pe\~na }\DIFdelend Laboratory of Genetics, Department of Biology, University of Turku, Turku, Finland
+\DIFdelbegin \DIFdel{. Email: }%DIFDELCMD < \href{mailto:mycalesis@gmail.com}{\nolinkurl{mycalesis@gmail.com}}
+%DIFDELCMD < %%%
+\DIFdelend \\
+\bf{2} \DIFdelbegin \DIFdel{Marianne Espeland }\DIFdelend Museum of Comparative Zoology and Department of Organismic and Evolutionary Biology, Harvard University, Cambridge, USA
+\DIFdelbegin \DIFdel{. Email:
+}%DIFDELCMD < \href{mailto:marianne.espeland@gmail.com}{\nolinkurl{marianne.espeland@gmail.com}}%%%
+\DIFdel{.
+}\DIFdelend \DIFaddbegin \\
+
+%DIF >  Insert additional author notes using the symbols described below. Insert symbol callouts after author names as necessary.
+%DIF >  
+%DIF >  Remove or comment out the author notes below if they aren't used.
+%DIF > 
+%DIF >  Primary Equal Contribution Note
+
+%DIF >  Current address notes
+\DIFadd{\textcurrency }\DIFaddend Current address: McGuire Center for Lepidoptera and Biodiversity,
 Florida Museum of Natural History, University of Florida, Gainesville,
 FL, US.
-\\
-$\ast$ \textbf{Corresponding author:}
-\href{mailto:mycalesis@gmail.com}{\nolinkurl{mycalesis@gmail.com}}
-Telephone: +358 417063065 Fax: +358 2 333 6680
+\DIFdelbegin %DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdel{$\ast$ }\textbf{\DIFdel{Corresponding author:}}
+%DIFAUXCMD
+%DIFDELCMD < \href{mailto:mycalesis@gmail.com}{\nolinkurl{mycalesis@gmail.com}}
+%DIFDELCMD < %%%
+\DIFdel{Telephone: +358 417063065 Fax: +358 2 333 6680
+}\DIFdelend %DIF >  \textcurrency b Insert current address of second author with an address update
+%DIF >  \textcurrency c Insert current address of third author with an address update
 
-\end{flushleft}
+\DIFdelbegin %DIFDELCMD < \end{flushleft}
+%DIFDELCMD < %%%
+\DIFdelend %DIF >  Deceased author note
 
+\DIFdelbegin \subsubsection*{\DIFdel{Running title: Diversity dynamics in Nymphalidae
+butterflies}}
+%DIFAUXCMD
+\DIFdelend %DIF >  Group/Consortium Author Note
 
+\DIFdelbegin \section*{\DIFdel{Abstract}}
+%DIFAUXCMD
+\DIFdelend \DIFaddbegin \DIFadd{* E-mail: mycalesis@gmail.com
+}\end{flushleft}
+\DIFaddend 
 
-
-\subsubsection*{Running title: Diversity dynamics in Nymphalidae
-butterflies}
-
-
-\section*{Abstract}
-
-
-The species rich butterfly family Nymphalidae has been used to study
+%DIF >  Please keep the abstract below 300 words
+\DIFaddbegin \section*{\DIFadd{Abstract}}
+\DIFaddend The species rich butterfly family Nymphalidae has been used to study
 evolutionary interactions between plants and insects. Theories of
 insect-hostplant dynamics predict accelerated diversification due to key
 innovations. In evolutionary biology, analysis of maximum credibility
@@ -121,12 +303,17 @@ diversification rate shifts is of great importance, as very different
 results can be obtained when using the maximum clade credibility tree
 and other trees from the posterior distribution.
 
-\textbf{Keywords:} diversification analysis, MEDUSA, BiSSE, speciation
+\DIFdelbegin \textbf{\DIFdel{Keywords:}} %DIFAUXCMD
+\DIFdel{diversification analysis, MEDUSA, BiSSE, speciation
 rate, insect-hostplant dynamics
+}\DIFdelend \DIFaddbegin \linenumbers
+\DIFaddend 
 
 \section*{Introduction}
+\DIFdelbegin %DIFDELCMD < 
 
-Hostplant shifts have been invoked to be responsible for a great part of
+%DIFDELCMD < %%%
+\DIFdelend Hostplant shifts have been invoked to be responsible for a great part of
 the biodiversity of herbivorous insects \cite{mitter1988}. The study of the
 evolution of hostplant use has spawned several theories explaining the
 evolutionary interactions between plants and insects \cite{nyman2012}\DIFdelbegin \DIFdel{. The
@@ -184,9 +371,15 @@ hostplant use affected the diversification pattern of those lineages
 employing the \DIFdelbegin \DIFdel{method BiSSE}\DIFdelend \DIFaddbegin \DIFadd{binary speciation and extinction model (BiSSE) }\DIFaddend as
 implemented in the R package \texttt{diversitree} \cite{fitzjohn2012}.
 
-\section*{Materials and Methods}
 
-\subsection*{Data}
+%DIF >  You may title this section "Methods" or "Models". 
+%DIF >  "Models" is not a valid title for PLoS ONE authors. However, PLoS ONE
+%DIF >  authors may use "Analysis" 
+\section*{Materials and Methods}
+\DIFdelbegin %DIFDELCMD < 
+
+%DIFDELCMD < %%%
+\DIFdelend \subsection*{Data}
 
 For analyses, we used the phylogenetic trees from the study of Wahlberg
 et al. (2009) \cite{wahlberg2009} that were generated using DNA sequence data from
@@ -195,11 +388,29 @@ employed the maximum clade credibility tree (MCC tree) (Fig. 1) as well
 as a random sample of 1000 trees from their BEAST run after burnin
 \cite{wahlberg2009}. Their original BEAST run was for 40 million generations. We
 used a burnin of 25 million generations and took a random sample of 1000
-trees using Burntrees v.0.1.9 \url{http://www.abc.se/~nylander/} (supp.
-mat. 5) in order to \DIFdelbegin \DIFdel{correct }\DIFdelend \DIFaddbegin \DIFadd{account }\DIFaddend for phylogenetic uncertainty when performing
+trees using Burntrees v.0.1.9 \url{http://www.abc.se/~nylander/} (\DIFdelbegin \DIFdel{supp.
+mat. 5}\DIFdelend \DIFaddbegin \DIFadd{S6 File}\DIFaddend )
+in order to \DIFdelbegin \DIFdel{correct }\DIFdelend \DIFaddbegin \DIFadd{account }\DIFaddend for phylogenetic uncertainty when performing
 the diversification analyses.
 
-Species richness data for Nymphalidae genera were compiled from several
+\DIFaddbegin \begin{figure}[h]
+\caption{{\bf \DIFaddFL{Results of the MEDUSA analysis run on the maximum
+clade credibility tree from Wahlberg et al. (2009)}}\DIFaddFL{. Rate shifts were estimated for the
+following nodes (besides the background rate): 1) root, 2) Limenitidinae +
+Heliconiinae, 3) }\emph{\DIFaddFL{Ypthima}}\DIFaddFL{, 4) }\emph{\DIFaddFL{Charaxes}}\DIFaddFL{, 5) Ithomiini in
+part, 6) Satyrinae, 7) Coenonymphina 8) Phyciodina in part, 9) Danaini in
+part, 10) }\emph{\DIFaddFL{Coenonympha}}\DIFaddFL{, 11) }\emph{\DIFaddFL{Caeruleuptychia}} \DIFaddFL{+
+}\emph{\DIFaddFL{Magneuptychia}}\DIFaddFL{, 12) }\emph{\DIFaddFL{Callicore}} \DIFaddFL{+ }\emph{\DIFaddFL{Diaethria}}\DIFaddFL{, 13)
+Satyrina, 14) Mycalesina, 15) }\emph{\DIFaddFL{Pedaliodes}}\DIFaddFL{, 16) }\emph{\DIFaddFL{Dryas}} \DIFaddFL{+
+}\emph{\DIFaddFL{Dryadula}}\DIFaddFL{, 17) }\emph{\DIFaddFL{Taenaris}}\DIFaddFL{, 18) Pseudergolinae, 19)
+}\emph{\DIFaddFL{Anaeomorpha}} \DIFaddFL{+ }\emph{\DIFaddFL{Hypna}}\DIFaddFL{. Circles on
+nodes indicate the diversification shift number as found by MEDUSA.
+Numbers next to circles indicate the posterior probability values for
+such nodes.}}
+\label{fig1}
+\end{figure}
+
+\DIFaddend Species richness data for Nymphalidae genera were compiled from several
 sources including the specialist-curated lists 
 \DIFdelbegin \DIFdel{on
 }%DIFDELCMD < \url{http://tolweb.org}%%%
@@ -222,14 +433,17 @@ to the closest related genus that was included in Wahlberg et al. (2009)
 ortiz2013, desilva2010, freitas2004, pena2006, penz1999, silva2008,
 pena2011, pena2010},
 taxonomical classification and morphological resemblance when no
-phylogenies were available (supp. mat. 3).
+phylogenies were available (\DIFdelbegin \DIFdel{supp. mat. 3}\DIFdelend \DIFaddbegin \DIFadd{S7 Dataset}\DIFaddend ).
 
 Hostplant data for Nymphalidae species were compiled from several
 sources including \cite{ackery1988}, HOSTS database (\url{http://bit.ly/YI7nwW}),
-\cite{dyer2002, beccaloni2008, janzen2009} and others (supp. mat. 15--16) for a total of 6586
+\cite{dyer2002, beccaloni2008, janzen2009} and others (\DIFdelbegin \DIFdel{supp. mat. 15--16}\DIFdelend \DIFaddbegin \DIFadd{S8--S9 Datasets}\DIFaddend ) for a
+total of 6586
 hostplant records, including 428 Nymphalidae genera and 143 plant
 families and 1070 plant genera. It was not possible to find any
 hostplant data for 35 butterfly genera.
+
+
 
 \subsection*{Analyses of Diversification}
 
@@ -237,7 +451,7 @@ We used the statistical software R version 3.0.1 \cite{r2013} in combination
 with the APE \cite{popescu2012}, GEIGER \cite{harmon2008}, MEDUSA
 \cite{alfaro2009} and
 \texttt{diversitree} \cite{fitzjohn2012} packages along with our own scripts to
-perform the analyses (included as supplementary materials 2, 6, 10). All
+perform the analyses (included as \DIFdelbegin \DIFdel{supplementary materials 2, 6, 10}\DIFdelend \DIFaddbegin \DIFadd{S10--S12 Supporting Information}\DIFaddend ). All
 analyses were run on the 1000 random trees from Wahlberg et al. (2009)
 \cite{wahlberg2009}, on the maximum clade credibility tree derived from these and
 the MCC tree \cite{wahlberg2009}.
@@ -283,7 +497,7 @@ tree is correct. We wanted to study the effects of phylogenetic
 uncertainty on estimation of net diversification rate shifts and
 therefore selected 1000 random genus-level trees from the posterior
 distribution of the Bayesian run from Wahlberg et al., 2009 \cite{wahlberg2009}
-(MultiMEDUSA, supp. mat. 5). We calculated a new MCC tree from the
+(MultiMEDUSA, \DIFdelbegin \DIFdel{supp. mat. 5}\DIFdelend \DIFaddbegin \DIFadd{S6 File}\DIFaddend ). We calculated a new MCC tree from the
 selection of trees, ran MEDUSA and MultiMEDUSA on the selection of 1000
 trees and summarized the estimated changes in net diversification rates
 for nodes across all trees. Patterns of change in net diversification
@@ -296,8 +510,7 @@ threshold of 7.8 units, as estimated by MEDUSA, as the limit for a
 significantly better fit to select among increasingly complex
 alternative models.
 
-\subsection*{Estimation of trait-dependent speciation
-rates}
+\subsection*{Estimation of trait-dependent speciation rates}
 
 As the MEDUSA and MultiMEDUSA approaches estimated an increase in net
 diversification in the clade Ithomiini, we tested whether this pattern
@@ -320,14 +533,14 @@ is
 designed to examine the joint effects of two or more traits on
 speciation. }\DIFdelend Because most of Nymphalidae butterflies are restricted to
 use one plant family as hostplant (232 genera use only one plant family
-versus 176 that use more than one; based on our data in supp. mat. 15),
+versus 176 that use more than one; based on our data in \DIFdelbegin \DIFdel{supp. mat. 15}\DIFdelend \DIFaddbegin \DIFadd{S8 Dataset}\DIFaddend ),
 the character states can be coded as presence/absence, for which the
 BiSSE analysis is better suited. BiSSE was designed to test whether a
 binary character state has had any effect on increased net
-diversification rate for a clade \cite{maddison2007}. We used our compiled data of
-hostplant use to produce a binary dataset for the character ``feeding on
+diversification rate for a clade \cite{maddison2007}. We used our compiled data
+of hostplant use to produce a binary dataset for the character ``feeding on
 the plant family Solanaceae'' with two states (absence = 0; presence =
-1) (supp. mat. 17). The family Solanaceae include the hostplants of the
+1) (\DIFdelbegin \DIFdel{supp. mat. 17}\DIFdelend \DIFaddbegin \DIFadd{S13 Dataset}\DIFaddend ). The family Solanaceae include the hostplants of the
 diverse Ithomiini butterflies and closest relatives \cite{willmott2006}. 
 \DIFdelbegin \DIFdel{Other
 hostplant shifts were not tested for effect on net diversification rates
@@ -385,7 +598,40 @@ years and the AICc score for the best fit model was \texttt{5090.5}
 model was not a better explanation for our data (AICc
 \texttt{= 5449.3}).
 
-Some of the 18 changes in diversification correspond to rate increases
+%DIF >  Table 1
+\DIFaddbegin \begin{table}[!ht]
+\begin{adjustwidth}{-2.25in}{0in}
+\caption{{\bf \DIFaddFL{Significant net diversification rate shifts found in the MEDUSA analysis of the Nymphalid maximum clade credibility tree.}}}
+\begin{tabular}{|l|c|c|r|r|c|l|}
+\hline
+\DIFaddFL{Shift N$^\circ$ }& \DIFaddFL{Shift.Node }& \DIFaddFL{Model }& \DIFaddFL{r          }& \DIFaddFL{LnLik.part }& \DIFaddFL{AICc     }& \DIFaddFL{Taxa                                                       }\\ \hline
+\DIFaddFL{1               }& \DIFaddFL{399        }& \DIFaddFL{yule  }& \DIFaddFL{0.092459   }& \DIFaddFL{-1055.957  }&          & \DIFaddFL{Nymphalidae (root)                                         }\\ \hline
+\DIFaddFL{2               }& \DIFaddFL{691        }& \DIFaddFL{bd    }& \DIFaddFL{0.054129   }& \DIFaddFL{-406.3703  }&          & \DIFaddFL{Limenitidinae + Heliconiinae                               }\\ \hline
+\DIFaddFL{3               }& \DIFaddFL{299        }& \DIFaddFL{yule  }& \DIFaddFL{0.311199   }& \DIFaddFL{-6.3058    }&          & \emph{\DIFaddFL{Ypthima}}                                             \\ \hline
+\DIFaddFL{4               }& \DIFaddFL{224        }& \DIFaddFL{yule  }& \DIFaddFL{0.290989   }& \DIFaddFL{-6.2601    }&          & \emph{\DIFaddFL{Charaxes}}                                            \\ \hline
+\DIFaddFL{5               }& \DIFaddFL{750        }& \DIFaddFL{yule  }& \DIFaddFL{0.186913   }& \DIFaddFL{-147.4146  }&          & \DIFaddFL{Oleriina + Ithomiina + Napeogenina + Dircennina + Godyrina }\\ \hline
+\DIFaddFL{6               }& \DIFaddFL{405        }& \DIFaddFL{yule  }& \DIFaddFL{0.116252   }& \DIFaddFL{-555.0276  }&          & \DIFaddFL{Satyrinae                                                  }\\ \hline
+\DIFaddFL{7               }& \DIFaddFL{495        }& \DIFaddFL{yule  }& \DIFaddFL{0.064656   }& \DIFaddFL{-124.9143  }&          & \DIFaddFL{Coenonymphina                                              }\\ \hline
+\DIFaddFL{8               }& \DIFaddFL{609        }& \DIFaddFL{yule  }& \DIFaddFL{0.240562   }& \DIFaddFL{-35.0908   }&          & \DIFaddFL{Phyciodina in part                                         }\\ \hline
+\DIFaddFL{9               }& \DIFaddFL{787        }& \DIFaddFL{bd    }& \DIFaddFL{0.042332   }& \DIFaddFL{-43.7819   }&          & \DIFaddFL{Danaini in part                                            }\\ \hline
+\DIFaddFL{10              }& \DIFaddFL{231        }& \DIFaddFL{yule  }& \DIFaddFL{0.209416   }& \DIFaddFL{-4.7955    }&          & \emph{\DIFaddFL{Coenonympha}}                                         \\ \hline
+\DIFaddFL{11              }& \DIFaddFL{478        }& \DIFaddFL{yule  }& \DIFaddFL{0.311684   }& \DIFaddFL{-9.2218    }&          & \emph{\DIFaddFL{Caeruleuptychia}} \DIFaddFL{+ }\emph{\DIFaddFL{Magneuptychia}}              \\ \hline
+\DIFaddFL{12              }& \DIFaddFL{659        }& \DIFaddFL{yule  }& \DIFaddFL{0.219253   }& \DIFaddFL{-11.2686   }&          & \emph{\DIFaddFL{Callicore}} \DIFaddFL{+ }\emph{\DIFaddFL{Diaethria}}                        \\ \hline
+\DIFaddFL{13              }& \DIFaddFL{444        }& \DIFaddFL{yule  }& \DIFaddFL{0.220615   }& \DIFaddFL{-43.7812   }&          & \DIFaddFL{Satyrina                                                   }\\ \hline
+\DIFaddFL{14              }& \DIFaddFL{524        }& \DIFaddFL{yule  }& \DIFaddFL{0.190754   }& \DIFaddFL{-26.0651   }&          & \DIFaddFL{Mycalesina                                                 }\\ \hline
+\DIFaddFL{15              }& \DIFaddFL{355        }& \DIFaddFL{yule  }& \DIFaddFL{0.234041   }& \DIFaddFL{-6.2013    }&          & \emph{\DIFaddFL{Pedaliodes}}                                          \\ \hline
+\DIFaddFL{16              }& \DIFaddFL{714        }& \DIFaddFL{yule  }& \DIFaddFL{0          }& \DIFaddFL{0          }&          & \emph{\DIFaddFL{Dryas}} \DIFaddFL{+ }\emph{\DIFaddFL{Dryadula}}                             \\ \hline
+\DIFaddFL{17              }& \DIFaddFL{377        }& \DIFaddFL{yule  }& \DIFaddFL{0.311671   }& \DIFaddFL{-4.1986    }&          & \emph{\DIFaddFL{Taenaris}}                                            \\ \hline
+\DIFaddFL{18              }& \DIFaddFL{688        }& \DIFaddFL{yule  }& \DIFaddFL{0.024724   }& \DIFaddFL{-17.5256   }&          & \DIFaddFL{Pseudergolinae                                             }\\ \hline
+\DIFaddFL{19              }& \DIFaddFL{583        }& \DIFaddFL{yule  }& \DIFaddFL{0          }& \DIFaddFL{0          }& \DIFaddFL{5090.492 }& \emph{\DIFaddFL{Anaeomorpha}} \DIFaddFL{+ }\emph{\DIFaddFL{Hypna}}                          \\ \hline
+\end{tabular}
+\begin{flushleft}\DIFaddFL{Shift.Node=node number, Model=preferred diversification model by MEDUSA, r=net diversification rate, LnLik.part=log likelihood value.
+}\end{flushleft}
+\label{table1}
+\end{adjustwidth}
+\end{table}
+
+\DIFaddend Some of the 18 changes in diversification correspond to rate increases
 in very species-rich genera: \emph{Ypthima} (\texttt{r = 0.311}),
 \emph{Charaxes} (\texttt{r = 0.291}), \emph{Callicore} +
 \emph{Diaethria} (\texttt{r = 0.220}), \emph{Pedaliodes}
@@ -422,9 +668,9 @@ We used MEDUSA to find out whether taking into account the phylogenetic
 signal from the random sample of 1000 trees from the posterior
 distribution can return similar estimates of diversification to the
 values obtained from the MCC tree. We ran MultiMEDUSA on the random
-sample of 1000 trees (supp. mat. 5) from the posterior distribution and
+sample of 1000 trees (\DIFdelbegin \DIFdel{supp. mat. 5}\DIFdelend \DIFaddbegin \DIFadd{S6 File}\DIFaddend ) from the posterior distribution and
 compared the results with a MEDUSA analysis on the MCC tree derived from
-this sample (supp. mat. 9).
+this sample (\DIFdelbegin \DIFdel{supp. mat. 9}\DIFdelend \DIFaddbegin \DIFadd{S14 Supporting Information}\DIFaddend ).
 
 We found that the analysis by MultiMEDUSA on the 1000 trees estimated
 lower median net diversification rates for the diversification shifts
@@ -434,7 +680,47 @@ MultiMEDUSA was the same, the latter consistently estimated lower rates.
 Furthermore, the shifts recovered with low net diversification rate on
 the MCC were recovered with negative net diversification rate by
 MultiMEDUSA. The background diversification and all shifts found by
-MEDUSA on the 1000 trees are provided as an R object in supp. mat. 7.
+MEDUSA on the 1000 trees are provided as an R object in \DIFdelbegin \DIFdel{supp.
+mat.7.
+}\DIFdelend \DIFaddbegin \DIFadd{S15 File.
+}
+
+%DIF >  Table 2
+\begin{table}[!ht]
+\begin{adjustwidth}{-2.25in}{0in} %DIF >  Comment out/remove adjustwidth environment if table fits in text column.
+\caption{{\bf \DIFaddFL{Differences in rates estimated by MEDUSA on the MCC
+tree from the sample of trees from the posterior distribution and the
+MultiMEDUSA approach. Shift consistently recovered across the
+sample of trees in bold face.}}}
+\begin{tabular}{|l|c|r|r|}
+    \hline
+\DIFaddFL{Shift.Node }& \DIFaddFL{rate by MEDUSA }& \DIFaddFL{Median rate by MultiMEDUSA }& \DIFaddFL{probability of being recovered }\\ \hline
+\DIFaddFL{1          }& \DIFaddFL{0.092          }& \DIFaddFL{not found                  }& \DIFaddFL{0.000                          }\\ \hline
+\DIFaddFL{2          }& \DIFaddFL{0.055          }& \DIFaddFL{-0.030                     }& \DIFaddFL{0.864                          }\\ \hline
+\bf{3}     & \DIFaddFL{0.184          }& \bf{0.219}                 & \bf{0.961}                     \\ \hline
+\bf{4}     & \DIFaddFL{0.166          }& \bf{0.212}                 & \bf{0.996}                     \\ \hline
+\bf{5}     & \DIFaddFL{0.111          }& \bf{0.101}                 & \bf{0.927}                     \\ \hline
+\DIFaddFL{6          }& \DIFaddFL{0.119          }& \DIFaddFL{0.039                      }& \DIFaddFL{0.131                          }\\ \hline
+\DIFaddFL{7          }& \DIFaddFL{0.066          }& \DIFaddFL{-0.052                     }& \DIFaddFL{0.195                          }\\ \hline
+\DIFaddFL{8          }& \DIFaddFL{0.232          }& \DIFaddFL{0.166                      }& \DIFaddFL{0.319                          }\\ \hline
+\DIFaddFL{9          }& \DIFaddFL{0.042          }& \DIFaddFL{-0.049                     }& \DIFaddFL{0.897                          }\\ \hline
+\DIFaddFL{10         }& \DIFaddFL{0.058          }& \DIFaddFL{0.149                      }& \DIFaddFL{0.619                          }\\ \hline
+\DIFaddFL{11         }& \DIFaddFL{0.311          }& \DIFaddFL{0.208                      }& \DIFaddFL{0.831                          }\\ \hline
+\bf{12}    & \DIFaddFL{0.219          }& \bf{0.135}                 & \bf{0.911}                     \\ \hline
+\DIFaddFL{13         }& \DIFaddFL{0.082          }& \DIFaddFL{0.117                      }& \DIFaddFL{0.276                          }\\ \hline
+\DIFaddFL{14         }& \DIFaddFL{0.099          }& \DIFaddFL{0.115                      }& \DIFaddFL{0.379                          }\\ \hline
+\DIFaddFL{15         }& \DIFaddFL{0.113          }& \DIFaddFL{0.127                      }& \DIFaddFL{0.825                          }\\ \hline
+\DIFaddFL{16         }& \DIFaddFL{0.222          }& \DIFaddFL{-0.005                     }& \DIFaddFL{0.659                          }\\ \hline
+\DIFaddFL{17         }& \DIFaddFL{0.243          }& \DIFaddFL{0.248                      }& \DIFaddFL{0.785                          }\\ \hline
+\DIFaddFL{18         }& \DIFaddFL{0.192          }& \DIFaddFL{-0.064                     }& \DIFaddFL{0.024                          }\\ \hline
+\DIFaddFL{19         }& \DIFaddFL{0.064          }& \DIFaddFL{-0.087                     }& \DIFaddFL{0.381                          }\\ \hline
+\end{tabular}
+\begin{flushleft}
+\end{flushleft}
+\label{table2}
+\end{adjustwidth}
+\end{table}
+\DIFaddend 
 
 We also compared the results from MultiMEDUSA (derived from the sample
 of 1000 trees) with the \DIFdelbegin \DIFdel{splits }\DIFdelend \DIFaddbegin \DIFadd{shifts }\DIFaddend found by MEDUSA on the MCC tree derived
@@ -464,8 +750,9 @@ Dircennina + Godyridina (\(r = 0.10\)); and (iv) \DIFdelbegin \DIFdel{rate incre
 }\DIFaddend \emph{Callicore} + \emph{Diaethria} (\(r = 0.135\)).
 
 MultiMEDUSA provided mean and standard deviation statistics for the
-diversification values on the shifts on the 1000 trees (supp. mat.
-13--14), and found that \DIFdelbegin \DIFdel{some of the changes in }\DIFdelend \DIFaddbegin \DIFadd{the estimated }\DIFaddend net diversification rate
+diversification values on the shifts on the 1000 trees 
+(\DIFdelbegin \DIFdel{supp. mat.
+13--14}\DIFdelend \DIFaddbegin \DIFadd{S16--S17 Text and Figure}\DIFaddend ), and found that \DIFdelbegin \DIFdel{some of the changes in }\DIFdelend \DIFaddbegin \DIFadd{the estimated }\DIFaddend net diversification rate
 values had great variation across the posterior distribution of trees. A
 boxplot of the net diversification rate values estimated for the clades
 that appear in the MCC tree shows that some shifts are estimated as
@@ -482,13 +769,26 @@ the nodes for \emph{Ypthima}, \emph{Charaxes} and \emph{Coenonympha}
 Limenitidinae + Heliconiinae and Pseudergolinae are relatively
 consistent across the 1000 trees (Fig. 2).
 
-It is also evident that not all the diversification shifts estimated on
+\DIFaddbegin \begin{figure}[h]
+\caption{{\bf \DIFaddFL{Diversification rates for taxa estimated by MultiMEDUSA on
+the samples of 1000 random trees}}}
+\label{fig2}
+\end{figure}
+
+\DIFaddend It is also evident that not all the diversification shifts estimated on
 the MCC tree are consistently recovered in most of the 1000 trees. Some
 of the \DIFdelbegin \DIFdel{splits }\DIFdelend \DIFaddbegin \DIFadd{shifts }\DIFaddend in the MCC tree are recovered in very few trees, for
 example the \DIFdelbegin \DIFdel{split }\DIFdelend \DIFaddbegin \DIFadd{shift }\DIFaddend for the clade Satyrinae is recovered with a
 probability of 0.18 (Fig. 3).
 
-\subsection*{Estimation of trait-dependent speciation
+\DIFaddbegin \begin{figure}[h]
+\caption{{\bf \DIFaddFL{Results of MultiMEDUSA analysis showing the
+probability of specific nodes being characterized by significant shifts
+in diversification rate}}}
+\label{fig3}
+\end{figure}
+
+\DIFaddend \subsection*{Estimation of trait-dependent speciation
 rates}
 
 The MEDUSA analyses, taking into account phylogenetic uncertainty,
@@ -499,11 +799,11 @@ net net diversification rate on part of Ithomiini (Oleriina + Ithomiina
 + Napeogenina + Dircennina + Godyridina) (Fig. 4). The estimated mean
 net diversification rate for taxa that do not feed on Solanaceae was
 \texttt{r = 0.11} while the net diversification rate for the Solanaceae
-feeders was \texttt{r = 0.16} (see Fig. \DIFdelbegin \DIFdel{S2 }\DIFdelend \DIFaddbegin \DIFadd{S1 }\DIFaddend for a boxplot of speciation
+feeders was \texttt{r = 0.16} (see \DIFdelbegin \DIFdel{Fig. S2 }\DIFdelend \DIFaddbegin \DIFadd{S1 Fig. }\DIFaddend for a boxplot of speciation
 and extinction values for the 95\% credibility intervals). The same
 analysis considering \emph{Vanessa} and \emph{Hypanartia} as
 non-Solanaceae feeders due to dubious records produced the same pattern
-and net diversification rates (Fig. \DIFdelbegin \DIFdel{S3}\DIFdelend \DIFaddbegin \DIFadd{S2}\DIFaddend ). Therefore, the rest of the
+and net diversification rates (\DIFdelbegin \DIFdel{Fig. S3}\DIFdelend \DIFaddbegin \DIFadd{S2 Fig.}\DIFaddend ). Therefore, the rest of the
 analyses were performed assuming these two genera as Solanaceae feeders.
 We constrained the BiSSE likelihood model to force equal rates of
 speciation for both character states in order to test whether the model
@@ -512,18 +812,45 @@ the data. A likelihood ratio test found that the model for increased net
 diversification rate for nymphalids feeding on Solanaceae is a
 significantly better explanation than this character state having no
 effect on diversification (\(\chi^2 = 12.3; 1 df; p < 0.001\)) (Table 3;
-character states available in supp. mat. 17, code in supp. mat. 18, and
-mcmc run in supp. mat. 19). We combined the post-burnin mcmc generations
+character states available in \DIFdelbegin \DIFdel{supp. mat. 17}\DIFdelend \DIFaddbegin \DIFadd{S13 Dataset}\DIFaddend , code in \DIFdelbegin \DIFdel{supp. mat. 18}\DIFdelend \DIFaddbegin \DIFadd{S18 Supporting Information}\DIFaddend ,
+and mcmc run in \DIFdelbegin \DIFdel{supp. mat. 19}\DIFdelend \DIFaddbegin \DIFadd{S19 Supporting Information}\DIFaddend ). We combined the post-burnin mcmc generations
 from running BiSSE on 250 trees from the random sample of 1000 trees and
 found the same pattern as the BiSSE analysis on the maximum clade
-credibility tree (combined mcmc run in supp. mat. 20; profiles plot of
-speciation rates in Fig. \DIFdelbegin \DIFdel{S4}\DIFdelend \DIFaddbegin \DIFadd{S3}\DIFaddend ; boxplot of 95\% credibility intervals in
-Fig. \DIFdelbegin \DIFdel{S5}\DIFdelend \DIFaddbegin \DIFadd{S4}\DIFaddend ). A BiSSE analysis to test whether the trait ``feeding on
+credibility tree (combined mcmc run in \DIFdelbegin \DIFdel{supp. mat. 20}\DIFdelend \DIFaddbegin \DIFadd{S20 Supporting Information}\DIFaddend ; profiles
+plot of speciation rates in \DIFdelbegin \DIFdel{Fig. S4}\DIFdelend \DIFaddbegin \DIFadd{S3 Fig.}\DIFaddend ; boxplot of 95\% credibility intervals in
+\DIFdelbegin \DIFdel{Fig. S5}\DIFdelend \DIFaddbegin \DIFadd{S4 Fig.}\DIFaddend ). A BiSSE analysis to test whether the trait ``feeding on
 Apocynaceae'' had any effect on increased net diversification rates
 found similar speciation rates for lineages feeding on Apocynaceae and
-other plants (Fig. \DIFdelbegin \DIFdel{S6}\DIFdelend \DIFaddbegin \DIFadd{S5}\DIFaddend ).
+other plants (\DIFdelbegin \DIFdel{Fig. S6}\DIFdelend \DIFaddbegin \DIFadd{S5 Fig.}\DIFaddend ).
 
-\section*{Discussion}
+%DIF >  Table 3
+\DIFaddbegin \begin{table}[!ht]
+%DIF >  \begin{adjustwidth}{-2.25in}{0in} % Comment out/remove adjustwidth environment if table fits in text column.
+    \caption{{\bf \DIFaddFL{Likelihood ratio test between the model of increased
+diversification of nymphalids feeding on Solanaceae against a model
+forcing equal speciation rates (no effect on diversification).}}}
+\begin{tabular}{|l|c|r|r|l|r|}
+    \hline
+\DIFaddFL{Df           }& \DIFaddFL{lnLik }& \DIFaddFL{AIC     }& \DIFaddFL{ChiSq  }& \multicolumn{1}{r}{p} &         \\ \hline
+\DIFaddFL{full         }& \DIFaddFL{6     }& \DIFaddFL{-1613.3 }& \DIFaddFL{3238.5 }&                       &         \\ \hline
+\DIFaddFL{equal.lambda }& \DIFaddFL{5     }& \DIFaddFL{-1619.4 }& \DIFaddFL{3248.9 }& \DIFaddFL{12.3                  }& \DIFaddFL{0.00045 }\\ \hline
+\end{tabular}
+\begin{flushleft}
+\end{flushleft}
+\label{table3}
+%DIF >  \end{adjustwidth}
+\end{table}
+
+\begin{figure}[h]
+\caption{{\bf \DIFaddFL{BiSSE analysis of diversification of nymphalids due
+to feeding on Solanaceae hostplants}}\DIFaddFL{.
+Speciation and net diversification
+rates are significantly higher in Solanaceae feeders (speciation rate =
+$\lambda1$, net diversification rate = $r1$}}
+\label{fig4}
+\end{figure}
+
+\DIFaddend \section*{Discussion}
 
 \subsection*{Effects of phylogenetic uncertainty on the performance of
 MEDUSA}
@@ -532,7 +859,8 @@ The MEDUSA method has been used to infer changes in net diversification
 rates in a phylogenetic tree. Since its publication \cite{alfaro2009} the results
 of using MEDUSA on a single tree, the maximum clade credibility tree,
 have been used for generation of hypotheses and discussion
-\cite{heikkila2012, litman2011, ryberg2012}. However, different diversification shifts and different
+\cite{heikkila2012, litman2011, ryberg2012}. However, different diversification
+shifts and different
 rates of diversification are found for certain lineages when
 phylogenetic uncertainty was taken into account by using MEDUSA on a
 random sample of trees from the posterior distribution of a Bayesian
@@ -597,7 +925,10 @@ phylogenetic uncertainty in BAMM as well.
 %DIFDELCMD < %%%
 \DIFdelend \subsection*{Hostplant use and diversification in Nymphalidae}
 
-\subsubsection*{Ithomiini}
+\DIFdelbegin \subsubsection*{\DIFdel{Ithomiini}}
+%DIFAUXCMD
+\DIFdelend \DIFaddbegin \paragraph*{\DIFadd{Ithomiini}}
+\DIFaddend 
 
 Keith Brown suggested that feeding on Solanaceae was an important event
 in the diversification of Ithomiini butterflies \cite{brown1987}. Ithomiini
@@ -694,8 +1025,10 @@ and Ithomiini might have diversified around the same time, during the
 Late Eocene and Oligocene, and this would be congruent with the diffuse
 cospeciation hypothesis.
 
-\subsubsection*{Danaini}
-Our MultiMEDUSA approach showed a significant slowdown in net
+\DIFdelbegin \subsubsection*{\DIFdel{Danaini}}
+%DIFAUXCMD
+\DIFdelend \DIFaddbegin \paragraph*{\DIFadd{Danaini}}
+\DIFaddend Our MultiMEDUSA approach showed a significant slowdown in net
 diversification rate in the subtribe Danaina of the Danini. Both Danaina
 and the sister clade Euploeina feed mainly on Apocynaceae and thus a
 hostplant shift should not be responsible for the observed slowdown of
@@ -717,7 +1050,10 @@ widespread species show higher genetic differentiation in their
 }\DIFdelend \DIFaddbegin \DIFadd{among
 }\DIFaddend populations \cite{wahlberg2011}.
 
-\subsubsection*{Satyrinae}
+\DIFdelbegin \subsubsection*{\DIFdel{Satyrinae}}
+%DIFAUXCMD
+\DIFdelend \DIFaddbegin \paragraph*{\DIFadd{Satyrinae}}
+\DIFaddend 
 
 Lineages in the diverse family Satyrinae radiated simultaneously with
 the radiation of their main hostplant, grasses, during the climatic
@@ -780,223 +1116,647 @@ slowdown of diversification in Danaina. Ithomiini and Solanaceae
 diversified near simultaneously, which is in agreement with the diffuse
 cospeciation hypothesis \cite{nyman2012, janz2011}.
 
-\section*{Acknowledgments}
-We are thankful to Mark Cornwall for help with the script to extend
+\section*{\DIFdelbegin \DIFdel{Acknowledgments}\DIFdelend \DIFaddbegin \DIFadd{Supporting Information Legends}\DIFaddend }
+\DIFdelbegin \DIFdel{We are thankful to Mark Cornwall for help with the script to extend
 MEDUSA to include phylogenetic uncertainty, Niklas Wahlberg for
-commenting on the manuscript and giving us the posterior distribution of
-trees, Luke Harmon for commenting on the manuscript\DIFaddbegin \DIFadd{, Jeffrey C. Oliver }\DIFaddend and anonymous
+commenting on the manuscript and giving us the posterior distribution of trees, Luke Harmon for commenting on the manuscript and anonymous
+reviewers for their comments, which greatly improved the manuscript,
+Jessica Slove Davidson and Niklas Janz for access to their hostplant
+data. The study was supported by a Kone Foundation grant (awarded to
+Niklas Wahlberg), Finland (C. Pe\~na) and the Research Council of Norway
+(grant no. 204308 to M. Espeland). We acknowledge CSC--IT Center for
+Science Ltd. (Finland) for the allocation of computational resources}\DIFdelend \DIFaddbegin \subsection*{\DIFadd{S1 Fig.}}
+\label{S1_Fig.}
+{\bf \DIFadd{Boxplot of speciation (\(\lambda\)) and extinction
+(\(\mu\)) values for the 95}\% \DIFadd{credibility intervals of values estimated
+by BiSSE analysis of diversification due to feeding on Solanaceae
+plants}}\DIFaddend .
+
+\DIFdelbegin \section*{\DIFdel{Figure legends}}
+%DIFAUXCMD
+\DIFdelend \DIFaddbegin \subsection*{\DIFadd{S2 Fig.}}
+\label{S2_Fig.}
+\DIFaddend {\bf \DIFdelbegin \DIFdel{Figure 1. Results of the MEDUSA analysis run on the maximum
+clade credibility tree from Wahlberg et al. (2009)}%DIFDELCMD < } %%%
+\DIFdel{Rate shifts were estimated for the
+following nodes (besides the background rate): 2) Limenitidinae +
+Heliconiinae, 3) }\emph{\DIFdel{Ypthima}}%DIFAUXCMD
+\DIFdel{, 4) }\emph{\DIFdel{Charaxes}}%DIFAUXCMD
+\DIFdel{, 5) Ithomiini in
+part, 6) Satyrinae, 7) Coenonymphina 8) Phyciodina in part, 9) Danaini in
+part, 10) }\emph{\DIFdel{Coenonympha}}%DIFAUXCMD
+\DIFdel{, 11) }\emph{\DIFdel{Caeruleuptychia}} %DIFAUXCMD
+\DIFdel{+
+}\emph{\DIFdel{Magneuptychia}}%DIFAUXCMD
+\DIFdel{, 12) }\emph{\DIFdel{Callicore}} %DIFAUXCMD
+\DIFdel{+ }\emph{\DIFdel{Diaethria}}%DIFAUXCMD
+\DIFdel{, 13)
+Satyrina, 14) Mycalesina, 15) }\emph{\DIFdel{Pedaliodes}}%DIFAUXCMD
+\DIFdel{, 16) }\emph{\DIFdel{Dryas}} %DIFAUXCMD
+\DIFdel{+
+}\emph{\DIFdel{Dryadula}}%DIFAUXCMD
+\DIFdelend \DIFaddbegin \DIFadd{BiSSE analysis of diversification of nymphalids
+due to feeding on Solanaceae hostplants assuming }\emph{\DIFadd{Vanessa}} \DIFadd{and
+}\emph{\DIFadd{Hypanartia}} \DIFadd{as non-Solanaceae feeders. The same pattern is
+recovered, speciation and net diversification rates are significantly
+higher for Solanaceae feeders \(\lambda1\)}\DIFaddend , \DIFdelbegin \DIFdel{17}\DIFdelend \DIFaddbegin \DIFadd{r1}\DIFaddend )\DIFdelbegin \emph{\DIFdel{Taenaris}}%DIFAUXCMD
+\DIFdel{, 18) Pseudergolinae. Circles on
+nodes indicate the diversification shift number as found by MEDUSA.
+Numbers next to circles indicate the posterior probability values for such nodes}\DIFdelend \DIFaddbegin }\DIFaddend .
+
+\DIFaddbegin \subsection*{\DIFadd{S3 Fig.}}
+\label{S3_Fig.}
+\DIFaddend {\bf \DIFdelbegin \DIFdel{Figure 2. Diversification rates for taxa estimated by MEDUSA on
+the samples of }\DIFdelend \DIFaddbegin \DIFadd{Net diversification rates of nymphalids feeding on
+Solanaceae plants as estimated by combining post-burnin runs of BiSSE on
+the }\DIFaddend 1000 \DIFdelbegin \DIFdel{random trees }\DIFdelend \DIFaddbegin \DIFadd{trees from the posterior distribution}\DIFaddend }\DIFaddbegin \DIFadd{.
+}\DIFaddend 
+
+\DIFaddbegin \subsection*{\DIFadd{S4 Fig.}}
+\label{S4_Fig.}
+\DIFaddend {\bf \DIFdelbegin \DIFdel{Figure 3. Results of MultiMEDUSA analysis showing the probability of specific nodes being characterized by significant shifts
+in diversification rate}\DIFdelend \DIFaddbegin \DIFadd{Boxplot of speciation and extinction values for
+the 95}\% \DIFadd{credibility intervals of values estimated by BiSSE analysis of
+diversification due to feeding on Solanaceae plants on the combined
+post-burnin runs on 1000 trees from the posterior distribution.}\DIFaddend }\DIFaddbegin \DIFadd{.
+}\DIFaddend 
+
+\DIFaddbegin \subsection*{\DIFadd{S5 Fig.}}
+\label{S5_Fig.}
+\DIFaddend {\bf \DIFdelbegin \DIFdel{Figure 4. }\DIFdelend BiSSE analysis of diversification of nymphalids
+due to feeding on \DIFdelbegin \DIFdel{Solanaceae }\DIFdelend \DIFaddbegin \DIFadd{Apocynaceae }\DIFaddend hostplants}\DIFaddbegin \DIFadd{. }\DIFaddend Speciation and net
+diversification rates are \DIFdelbegin \DIFdel{significantly higher in Solanaceae feeders (speciation rate =
+$\lambda1$, net diversification rate = $r1$}\DIFdelend \DIFaddbegin \DIFadd{similar}\DIFaddend .
+
+\DIFdelbegin \section*{\DIFdel{Supporting Information Legends}}
+%DIFAUXCMD
+\DIFdelend \DIFaddbegin \subsection*{\DIFadd{S6 File}}
+\label{S6_File}
+\DIFaddend {\DIFdelbegin \textbf{\DIFdel{Supporting Information S01.nex.}}%DIFAUXCMD
+\DIFdelend \DIFaddbegin \bf \DIFadd{1000 random trees from \mbox{%DIFAUXCMD
+\cite{wahlberg2009}
+}%DIFAUXCMD
+}\DIFaddend }\DIFdelbegin \DIFdel{MCC Nymphalidaetree from \mbox{%DIFAUXCMD
+\cite{wahlberg2009}
+}%DIFAUXCMD
+}\DIFdelend \DIFaddbegin \DIFadd{.
+}\DIFaddend 
+
+\DIFaddbegin \subsection*{\DIFadd{S7 Dataset}}
+\label{S7_Dataset}
+\DIFaddend {\DIFdelbegin \textbf{\DIFdel{Supporting Information S02.R}}%DIFAUXCMD
+\DIFdelend \DIFaddbegin \bf \DIFadd{Species richness for lineages in Nymphalidae}}\DIFadd{.
+}
+
+\subsection*{\DIFadd{S8Dataset}}
+\label{S8_Dataset}
+{\bf \DIFadd{Hostplants of Nymphalidae
+butterflies recorded from the literature}\DIFaddend }\DIFaddbegin \DIFadd{.
+}
+
+\subsection*{\DIFadd{S9 Dataset}}
+\label{S9_Dataset}
+{\bf \DIFadd{References for hostplants data}}\DIFadd{.
+}
+
+\subsection*{\DIFadd{S10 Supporting Information}}
+\label{S10_Supporting_Information}
+{\bf \DIFaddend R script to run MEDUSA on the MCC Nymphalidae tree from
+\cite{wahlberg2009}\DIFaddbegin }\DIFaddend . This script removes the outgroup
+taxa and loads the richness data for the tree terminals.
+
+\DIFaddbegin \subsection*{\DIFadd{S11 Supporting Information}}
+\label{S11_Supporting_Information}
+\DIFaddend {\DIFdelbegin \textbf{\DIFdel{Supporting Information S03.csv}}%DIFAUXCMD
+%DIFDELCMD < } %%%
+\DIFdel{Species richness for lineages
+in Nymphalidae.
+}%DIFDELCMD < 
+
+%DIFDELCMD < {%%%
+\textbf{\DIFdel{Supporting Information S04.txt}}%DIFAUXCMD
+%DIFDELCMD < } %%%
+\DIFdel{Results of running MEDUSA on
+the MCC tree.
+}%DIFDELCMD < 
+
+%DIFDELCMD < {%%%
+\textbf{\DIFdel{Supporting Information S05 1000 random trees no outgroups.zip}}%DIFAUXCMD
+%DIFDELCMD < }
+%DIFDELCMD < %%%
+\DIFdel{1000 random trees from \mbox{%DIFAUXCMD
+\cite{wahlberg2009}
+}%DIFAUXCMD
+.
+}%DIFDELCMD < 
+
+%DIFDELCMD < {%%%
+\textbf{\DIFdel{Supporting Information S06.R}}%DIFAUXCMD
+%DIFDELCMD < }%%%
+\DIFdel{~}\DIFdelend \DIFaddbegin \bf \DIFaddend R script to run a MultiMEDUSA analysis on 1000 random trees from
+\cite{wahlberg2009}\DIFdelbegin \DIFdel{.
+}%DIFDELCMD < 
+
+%DIFDELCMD < {%%%
+\textbf{\DIFdel{Supporting Information S07 multimedusa on 1000 trees.zip}}%DIFAUXCMD
+\DIFdelend }\DIFdelbegin \DIFdel{Raw
+results from the MultiMEDUSA run on the random sample of trees from the
+posterior distribution}\DIFdelend .
+
+\DIFaddbegin \subsection*{\DIFadd{S12 Supporting Information}}
+\label{S12_Supporting_Information}
+\DIFaddend {\DIFdelbegin \textbf{\DIFdel{Supporting Information S08.pdf}}%DIFAUXCMD
+%DIFDELCMD < } %%%
+\DIFdel{Summary of the MultiMEDUSA
+}\DIFdelend \DIFaddbegin \bf \DIFadd{R script to run a MEDUSA
+}\DIFaddend analysis on the \DIFdelbegin \DIFdel{1000 trees from the posterior distribution.
+}%DIFDELCMD < 
+
+%DIFDELCMD < {%%%
+\textbf{\DIFdel{Supporting Information S09.tree}}%DIFAUXCMD
+%DIFDELCMD < } %%%
+\DIFdelend MCC tree from the 1000 random trees selected from the
+posterior distribution\DIFaddbegin }\DIFaddend .
+
+\DIFaddbegin \subsection*{\DIFadd{S13 Dataset}}
+\label{S13_Dataset}
+\DIFaddend {\DIFdelbegin \textbf{\DIFdel{Supporting Information S10.R}}%DIFAUXCMD
+\DIFdelend \DIFaddbegin \bf \DIFadd{Data matrix with character states for hosplant use}\DIFaddend }\DIFdelbegin \DIFdel{R script to run a MEDUSA
+analysis on the }\DIFdelend \DIFaddbegin \DIFadd{.
+}
+
+\subsection*{\DIFadd{S14 Supporting Information}}
+\label{S14_Supporting_Information}
+{\bf \DIFaddend MCC tree from the 1000 random
+trees selected from the posterior distribution\DIFaddbegin }\DIFaddend .
+
+\DIFaddbegin \subsection*{\DIFadd{S15 File}}
+\label{S15_File}
+\DIFaddend {\DIFdelbegin \textbf{\DIFdel{Supporting Information S11.txt}}%DIFAUXCMD
+%DIFDELCMD < } %%%
+\DIFdel{Summary results from a MEDUSA
+}\DIFdelend \DIFaddbegin \bf \DIFadd{Raw results from the MultiMEDUSA }\DIFaddend run on the \DIFdelbegin \DIFdel{MCC tree from the 1000 random trees selected }\DIFdelend \DIFaddbegin \DIFadd{random sample of trees }\DIFaddend from 
+the posterior distribution\DIFdelbegin \DIFdel{.
+}%DIFDELCMD < 
+
+%DIFDELCMD < {%%%
+\textbf{\DIFdel{Supporting Information S12.pdf}}%DIFAUXCMD
+\DIFdelend }\DIFdelbegin \DIFdel{Figure for MEDUSA run on MCC
+tree from random 1000 trees}\DIFdelend .
+
+\DIFaddbegin \subsection*{\DIFadd{S16 Text}}
+\label{S16_Text}
+\DIFaddend {\DIFdelbegin \textbf{\DIFdel{Supporting Information S13.txt}}%DIFAUXCMD
+%DIFDELCMD < } %%%
+\DIFdelend \DIFaddbegin \bf \DIFaddend Summary results from a
+MultiMEDUSA run on the 1000 random trees selected from the posterior
+distribution\DIFaddbegin }\DIFaddend .
+
+\DIFaddbegin \subsection*{\DIFadd{S17 Figure}}
+\label{S17_Figure}
+\DIFaddend {\DIFdelbegin \textbf{\DIFdel{Supporting Information S14.pdf}}%DIFAUXCMD
+%DIFDELCMD < } %%%
+\DIFdelend \DIFaddbegin \bf \DIFaddend Probability of nodes with
+estimated rates from a MultiMEDUSA run on the 1000 random trees selected
+from the posterior distribution\DIFdelbegin \DIFdel{.
+}%DIFDELCMD < 
+
+%DIFDELCMD < {%%%
+\textbf{\DIFdel{Supporting Information S15.csv}}%DIFAUXCMD
+%DIFDELCMD < } %%%
+\DIFdel{Hostplants of Nymphalidae
+butterflies recorded from the literature.
+}%DIFDELCMD < 
+
+%DIFDELCMD < {%%%
+\textbf{\DIFdel{Supporting Information S16.csv}}%DIFAUXCMD
+%DIFDELCMD < } %%%
+\DIFdel{References for hostplants
+data.
+}%DIFDELCMD < 
+
+%DIFDELCMD < {%%%
+\textbf{\DIFdel{Supporting Information S17.csv}}%DIFAUXCMD
+\DIFdelend }\DIFdelbegin \DIFdel{Data matrix with character
+states for hosplant use}\DIFdelend .
+
+\DIFaddbegin \subsection*{\DIFadd{S18 Supporting Information}}
+\label{S18_Supporting_Information}
+\DIFaddend {\DIFdelbegin \textbf{\DIFdel{Supporting Information S18.R}}%DIFAUXCMD
+%DIFDELCMD < } %%%
+\DIFdelend \DIFaddbegin \bf \DIFaddend R script for running the BiSSE analysis\DIFaddbegin }\DIFaddend .
+
+\DIFaddbegin \subsection*{\DIFadd{S19 Supporting Information}}
+\label{S19_Supporting_Information}
+\DIFaddend {\DIFdelbegin \textbf{\DIFdel{Supporting Information S19.csv}}%DIFAUXCMD
+%DIFDELCMD < } %%%
+\DIFdelend \DIFaddbegin \bf \DIFaddend Raw results for the BiSSE analysis\DIFaddbegin }\DIFaddend .
+
+\DIFaddbegin \subsection*{\DIFadd{S20 Supporting Information}}
+\label{S20_Supporting_Information}
+\DIFaddend {\DIFdelbegin \textbf{\DIFdel{Supporting Information S20.csv}}%DIFAUXCMD
+%DIFDELCMD < } %%%
+\DIFdelend \DIFaddbegin \bf \DIFaddend Raw results for the combined BiSSE analysis\DIFaddbegin }\DIFaddend .
+
+\DIFaddbegin \subsection*{\DIFadd{S21 Dataset}}
+\label{S21_Dataset}
+\DIFaddend {\DIFdelbegin \textbf{\DIFdel{Figure S1.}}%DIFAUXCMD
+\DIFdelend \DIFaddbegin \bf \DIFadd{MCC Nymphalidae tree from \mbox{%DIFAUXCMD
+\cite{wahlberg2009}
+}%DIFAUXCMD
+}\DIFaddend }
+\DIFdelbegin \DIFdel{Best diversification model as estimated by BAMM.
+Two diversification shifts were recovered (Ithomiini and Satyrini). The
+MEDUSA analysis found a diversification shifts in Satyrinae (the parent
+node of Satyini).
+}\DIFdelend 
+
+\DIFaddbegin \subsection*{\DIFadd{S22 Text}}
+\label{S22_Text}
+\DIFaddend {\DIFdelbegin \textbf{\DIFdel{Figure S2.}}%DIFAUXCMD
+\DIFdelend \DIFaddbegin \bf \DIFadd{Results of running MEDUSA on the MCC tree}\DIFaddend }\DIFdelbegin \DIFdel{Boxplot of speciation (\(\lambda\)) and extinction
+(\(\mu\)) values for the 95}%DIFDELCMD < \% %%%
+\DIFdel{credibility intervals of values estimated
+by BiSSE analysis of diversification due to feeding on Solanaceae
+plants.
+}\DIFdelend \DIFaddbegin \DIFadd{.
+}\DIFaddend 
+
+\DIFaddbegin \subsection*{\DIFadd{S23 Figure}}
+\label{S23_Figure}
+\DIFaddend {\DIFdelbegin \textbf{\DIFdel{Figure S3.}}%DIFAUXCMD
+\DIFdelend \DIFaddbegin \bf \DIFadd{Summary of the MultiMEDUSA
+analysis on the 1000 trees from the posterior distribution}\DIFaddend }\DIFdelbegin \DIFdel{BiSSE analysis of diversification of nymphalids
+due to feeding on Solanaceae hostplants assuming }\emph{\DIFdel{Vanessa}} %DIFAUXCMD
+\DIFdel{and
+}\emph{\DIFdel{Hypanartia}} %DIFAUXCMD
+\DIFdel{as non-Solanaceae feeders. The same pattern is
+recovered, speciation and net diversification rates are significantly
+higher for Solanaceae feeders \(\lambda1\), r1)}\DIFdelend .
+
+\DIFaddbegin \subsection*{\DIFadd{S24 Text}}
+\label{S24_Text}
+\DIFaddend {\DIFdelbegin \textbf{\DIFdel{Figure S4.}}%DIFAUXCMD
+%DIFDELCMD < } %%%
+\DIFdel{Net diversification rates of nymphalids feeding on
+Solanaceae plants as estimated by combining post-burnin runs of BiSSE on the }\DIFdelend \DIFaddbegin \bf \DIFadd{Summary results from a MEDUSA
+run on the MCC tree from the }\DIFaddend 1000 \DIFdelbegin \DIFdel{trees }\DIFdelend \DIFaddbegin \DIFadd{random trees selected }\DIFaddend from the
+posterior distribution\DIFaddbegin }\DIFaddend .
+
+\DIFaddbegin \subsection*{\DIFadd{S25 Figure}}
+\label{S25_Figure}
+\DIFaddend {\DIFdelbegin \textbf{\DIFdel{Figure S5.}}%DIFAUXCMD
+%DIFDELCMD < } %%%
+\DIFdel{Boxplot of speciation and extinction values for the 95}%DIFDELCMD < \% %%%
+\DIFdel{credibility intervals of values estimated by BiSSE analysis of
+diversification due to feeding on Solanaceae plants on the combined
+post-burnin runs on }\DIFdelend \DIFaddbegin \bf \DIFadd{Figure for MEDUSA run on MCC tree from random }\DIFaddend 1000 \DIFdelbegin \DIFdel{trees from }\DIFdelend \DIFaddbegin \DIFadd{trees}}\DIFadd{.
+}
+
+\section*{\DIFadd{Acknowledgments}}
+\DIFadd{We are thankful to Mark Cornwall for help with the script to extend
+MEDUSA to include phylogenetic uncertainty, Niklas Wahlberg for
+commenting on the manuscript and giving us }\DIFaddend the posterior distribution \DIFdelbegin \DIFdel{.
+}%DIFDELCMD < 
+
+%DIFDELCMD < {%%%
+\textbf{\DIFdel{Figure S6.}}%DIFAUXCMD
+%DIFDELCMD < } %%%
+\DIFdel{BiSSE analysis of diversification of
+nymphalids
+due to feeding on Apocynaceae hostplants. Speciation and net
+diversification rates are similar.
+}%DIFDELCMD < 
+
+%DIFDELCMD < %%%
+%DIF <  Table 1
+\section*{\DIFdel{Tables}}
+%DIFAUXCMD
+%DIFDELCMD < \begin{table}[!h]
+%DIFDELCMD < %%%
+%DIFDELCMD < \caption{%
+{%DIFAUXCMD
+%DIFDELCMD < \bf{Significant net diversification rate shifts found in the MEDUSA analysis of the Nymphalid maximum clade credibility tree.}%%%
+}
+%DIFAUXCMD
+%DIFDELCMD < \begin{tabular}{lccrrcl}
+%DIFDELCMD < %%%
+\DIFdel{Shift N$^\circ$ }%DIFDELCMD < & %%%
+\DIFdel{Split.Node }%DIFDELCMD < & %%%
+\DIFdel{Model }%DIFDELCMD < & %%%
+\DIFdel{r          }%DIFDELCMD < & %%%
+\DIFdel{LnLik. part }%DIFDELCMD < & %%%
+\DIFdel{AICc     }%DIFDELCMD < & %%%
+\DIFdel{Taxa                                                       }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdel{1               }%DIFDELCMD < & %%%
+\DIFdel{399        }%DIFDELCMD < & %%%
+\DIFdel{yule  }%DIFDELCMD < & %%%
+\DIFdel{0.092459   }%DIFDELCMD < & %%%
+\DIFdel{-1055.957  }%DIFDELCMD < &          & %%%
+\DIFdel{Nymphalidae (root)}%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdel{2               }%DIFDELCMD < & %%%
+\DIFdel{691        }%DIFDELCMD < & %%%
+\DIFdel{bd    }%DIFDELCMD < & %%%
+\DIFdel{0.054129   }%DIFDELCMD < & %%%
+\DIFdel{-406.3703  }%DIFDELCMD < &          & %%%
+\DIFdel{Limenitidinae + Heliconiinae                               }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdel{3               }%DIFDELCMD < & %%%
+\DIFdel{299        }%DIFDELCMD < & %%%
+\DIFdel{yule  }%DIFDELCMD < & %%%
+\DIFdel{0.311199   }%DIFDELCMD < & %%%
+\DIFdel{-6.3058    }%DIFDELCMD < &          & %%%
+\emph{\DIFdel{Ypthima}}                                             %DIFAUXCMD
+%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdel{4               }%DIFDELCMD < & %%%
+\DIFdel{224        }%DIFDELCMD < & %%%
+\DIFdel{yule  }%DIFDELCMD < & %%%
+\DIFdel{0.290989   }%DIFDELCMD < & %%%
+\DIFdel{-6.2601    }%DIFDELCMD < &          & %%%
+\emph{\DIFdel{Charaxes}}                                            %DIFAUXCMD
+%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdel{5               }%DIFDELCMD < & %%%
+\DIFdel{750        }%DIFDELCMD < & %%%
+\DIFdel{yule  }%DIFDELCMD < & %%%
+\DIFdel{0.186913   }%DIFDELCMD < & %%%
+\DIFdel{-147.4146  }%DIFDELCMD < &          & %%%
+\DIFdel{Oleriina + Ithomiina + Napeogenina + Dircennina + Godyrina }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdel{6               }%DIFDELCMD < & %%%
+\DIFdel{405        }%DIFDELCMD < & %%%
+\DIFdel{yule  }%DIFDELCMD < & %%%
+\DIFdel{0.116252   }%DIFDELCMD < & %%%
+\DIFdel{-555.0276  }%DIFDELCMD < &          & %%%
+\DIFdel{Satyrinae                                                   }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdel{7               }%DIFDELCMD < & %%%
+\DIFdel{495        }%DIFDELCMD < & %%%
+\DIFdel{yule  }%DIFDELCMD < & %%%
+\DIFdel{0.064656   }%DIFDELCMD < & %%%
+\DIFdel{-124.9143  }%DIFDELCMD < &          & %%%
+\DIFdel{Coenonymphina                                              }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdel{8               }%DIFDELCMD < & %%%
+\DIFdel{609        }%DIFDELCMD < & %%%
+\DIFdel{yule  }%DIFDELCMD < & %%%
+\DIFdel{0.240562   }%DIFDELCMD < & %%%
+\DIFdel{-35.0908   }%DIFDELCMD < &          & %%%
+\DIFdel{Phyciodina in part                                         }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdel{9               }%DIFDELCMD < & %%%
+\DIFdel{787        }%DIFDELCMD < & %%%
+\DIFdel{bd    }%DIFDELCMD < & %%%
+\DIFdel{0.042332   }%DIFDELCMD < & %%%
+\DIFdel{-43.7819   }%DIFDELCMD < &          & %%%
+\DIFdel{Danaini in part                                            }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdel{10              }%DIFDELCMD < & %%%
+\DIFdel{231        }%DIFDELCMD < & %%%
+\DIFdel{yule  }%DIFDELCMD < & %%%
+\DIFdel{0.209416   }%DIFDELCMD < & %%%
+\DIFdel{-4.7955    }%DIFDELCMD < &          & %%%
+\emph{\DIFdel{Coenonympha}}                                         %DIFAUXCMD
+%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdel{11              }%DIFDELCMD < & %%%
+\DIFdel{478        }%DIFDELCMD < & %%%
+\DIFdel{yule  }%DIFDELCMD < & %%%
+\DIFdel{0.311684   }%DIFDELCMD < & %%%
+\DIFdel{-9.2218    }%DIFDELCMD < &          & %%%
+\emph{\DIFdel{Caeruleuptychia}} %DIFAUXCMD
+\DIFdel{+ }\emph{\DIFdel{Magneuptychia}}              %DIFAUXCMD
+%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdel{12              }%DIFDELCMD < & %%%
+\DIFdel{659        }%DIFDELCMD < & %%%
+\DIFdel{yule  }%DIFDELCMD < & %%%
+\DIFdel{0.219253   }%DIFDELCMD < & %%%
+\DIFdel{-11.2686   }%DIFDELCMD < &          & %%%
+\emph{\DIFdel{Callicore}} %DIFAUXCMD
+\DIFdel{+ }\emph{\DIFdel{Diaethria}}                        %DIFAUXCMD
+%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdel{13              }%DIFDELCMD < & %%%
+\DIFdel{444        }%DIFDELCMD < & %%%
+\DIFdel{yule  }%DIFDELCMD < & %%%
+\DIFdel{0.220615   }%DIFDELCMD < & %%%
+\DIFdel{-43.7812   }%DIFDELCMD < &          & %%%
+\DIFdel{Satyrina                                                   }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdel{14              }%DIFDELCMD < & %%%
+\DIFdel{524        }%DIFDELCMD < & %%%
+\DIFdel{yule  }%DIFDELCMD < & %%%
+\DIFdel{0.190754   }%DIFDELCMD < & %%%
+\DIFdel{-26.0651   }%DIFDELCMD < &          & %%%
+\DIFdel{Mycalesina                                                 }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdel{15              }%DIFDELCMD < & %%%
+\DIFdel{355        }%DIFDELCMD < & %%%
+\DIFdel{yule  }%DIFDELCMD < & %%%
+\DIFdel{0.234041   }%DIFDELCMD < & %%%
+\DIFdel{-6.2013    }%DIFDELCMD < &          & %%%
+\emph{\DIFdel{Pedaliodes}}                                          %DIFAUXCMD
+%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdel{16              }%DIFDELCMD < & %%%
+\DIFdel{714        }%DIFDELCMD < & %%%
+\DIFdel{yule  }%DIFDELCMD < & %%%
+\DIFdel{0          }%DIFDELCMD < & %%%
+\DIFdel{0          }%DIFDELCMD < &          & %%%
+\emph{\DIFdel{Dryas}} %DIFAUXCMD
+\DIFdel{+ }\emph{\DIFdel{Dryadula}}                             %DIFAUXCMD
+%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdel{17              }%DIFDELCMD < & %%%
+\DIFdel{377        }%DIFDELCMD < & %%%
+\DIFdel{yule  }%DIFDELCMD < & %%%
+\DIFdel{0.311671   }%DIFDELCMD < & %%%
+\DIFdel{-4.1986    }%DIFDELCMD < &          & %%%
+\emph{\DIFdel{Taenaris}}                                            %DIFAUXCMD
+%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdel{18              }%DIFDELCMD < & %%%
+\DIFdel{688        }%DIFDELCMD < & %%%
+\DIFdel{yule  }%DIFDELCMD < & %%%
+\DIFdel{0.024724   }%DIFDELCMD < & %%%
+\DIFdel{-17.5256   }%DIFDELCMD < &          & %%%
+\DIFdel{Pseudergolinae                                             }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdel{19              }%DIFDELCMD < & %%%
+\DIFdel{583        }%DIFDELCMD < & %%%
+\DIFdel{yule  }%DIFDELCMD < & %%%
+\DIFdel{0          }%DIFDELCMD < & %%%
+\DIFdel{0          }%DIFDELCMD < & %%%
+\DIFdel{5090.492 }%DIFDELCMD < & %%%
+\emph{\DIFdel{Anaeomorpha}} %DIFAUXCMD
+\DIFdel{+ }\emph{\DIFdel{Hypna}}                                       
+%DIFAUXCMD
+%DIFDELCMD < \end{tabular}
+%DIFDELCMD < \begin{flushleft}%%%
+\DIFdel{Split.Node=node number, Model=preferred diversification model by MEDUSA, r=net diversification rate, LnLik. part=log likelihood value. }%DIFDELCMD < \end{flushleft}
+%DIFDELCMD < \end{table}
+%DIFDELCMD < 
+
+%DIFDELCMD < %%%
+%DIF <  Table 2
+%DIFDELCMD < \begin{table}[!h]
+%DIFDELCMD <     %%%
+%DIFDELCMD < \caption{%
+{%DIFAUXCMD
+%DIFDELCMD < \bf{Differences in rates estimated by MEDUSA on the MCC
+%DIFDELCMD < tree from the sample of trees from the posterior distribution and the
+%DIFDELCMD < MultiMEDUSA approach. Shift consistently recovered across the
+%DIFDELCMD < sample of trees in bold face.}%%%
+}
+%DIFAUXCMD
+%DIFDELCMD < \begin{tabular}{lcrr}
+%DIFDELCMD < %%%
+\DIFdel{Split. Node }%DIFDELCMD < & %%%
+\DIFdel{rate by MEDUSA }%DIFDELCMD < & %%%
+\DIFdel{Median rate by MultiMEDUSA }%DIFDELCMD < & %%%
+\DIFdel{probability of being recovered }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdel{1          }%DIFDELCMD < & %%%
+\DIFdel{0.092          }%DIFDELCMD < & %%%
+\DIFdel{not found                  }%DIFDELCMD < & %%%
+\DIFdel{0.000                          }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdel{2          }%DIFDELCMD < & %%%
+\DIFdel{0.055          }%DIFDELCMD < & %%%
+\DIFdel{-0.030                     }%DIFDELCMD < & %%%
+\DIFdel{0.864                          }%DIFDELCMD < \\
+%DIFDELCMD < \bf{3}     & %%%
+\DIFdel{0.184          }%DIFDELCMD < & \bf{0.219}                 & \bf{0.961}                     \\
+%DIFDELCMD < \bf{4}     & %%%
+\DIFdel{0.166          }%DIFDELCMD < & \bf{0.212}                 & \bf{0.996}                     \\
+%DIFDELCMD < \bf{5}     & %%%
+\DIFdel{0.111          }%DIFDELCMD < & \bf{0.101}                 & \bf{0.927}                     \\
+%DIFDELCMD < %%%
+\DIFdel{6          }%DIFDELCMD < & %%%
+\DIFdel{0.119          }%DIFDELCMD < & %%%
+\DIFdel{0.039                      }%DIFDELCMD < & %%%
+\DIFdel{0.131                          }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdel{7          }%DIFDELCMD < & %%%
+\DIFdel{0.066          }%DIFDELCMD < & %%%
+\DIFdel{-0.052                     }%DIFDELCMD < & %%%
+\DIFdel{0.195                          }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdel{8          }%DIFDELCMD < & %%%
+\DIFdel{0.232          }%DIFDELCMD < & %%%
+\DIFdel{0.166                      }%DIFDELCMD < & %%%
+\DIFdel{0.319                          }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdel{9          }%DIFDELCMD < & %%%
+\DIFdel{0.042          }%DIFDELCMD < & %%%
+\DIFdel{-0.049                     }%DIFDELCMD < & %%%
+\DIFdel{0.897                          }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdel{10         }%DIFDELCMD < & %%%
+\DIFdel{0.058          }%DIFDELCMD < & %%%
+\DIFdel{0.149                      }%DIFDELCMD < & %%%
+\DIFdel{0.619                          }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdel{11         }%DIFDELCMD < & %%%
+\DIFdel{0.311          }%DIFDELCMD < & %%%
+\DIFdel{0.208                      }%DIFDELCMD < & %%%
+\DIFdel{0.831                          }%DIFDELCMD < \\
+%DIFDELCMD < \bf{12}    & %%%
+\DIFdel{0.219          }%DIFDELCMD < & \bf{0.135}                 & \bf{0.911}                     \\
+%DIFDELCMD < %%%
+\DIFdel{13         }%DIFDELCMD < & %%%
+\DIFdel{0.082          }%DIFDELCMD < & %%%
+\DIFdel{0.117                      }%DIFDELCMD < & %%%
+\DIFdel{0.276                          }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdel{14         }%DIFDELCMD < & %%%
+\DIFdel{0.099          }%DIFDELCMD < & %%%
+\DIFdel{0.115                      }%DIFDELCMD < & %%%
+\DIFdel{0.379                          }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdel{15         }%DIFDELCMD < & %%%
+\DIFdel{0.113          }%DIFDELCMD < & %%%
+\DIFdel{0.127                      }%DIFDELCMD < & %%%
+\DIFdel{0.825                          }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdel{16         }%DIFDELCMD < & %%%
+\DIFdel{0.222          }%DIFDELCMD < & %%%
+\DIFdel{-0.005                     }%DIFDELCMD < & %%%
+\DIFdel{0.659                          }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdel{17         }%DIFDELCMD < & %%%
+\DIFdel{0.243          }%DIFDELCMD < & %%%
+\DIFdel{0.248                      }%DIFDELCMD < & %%%
+\DIFdel{0.785                          }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdel{18         }%DIFDELCMD < & %%%
+\DIFdel{0.192          }%DIFDELCMD < & %%%
+\DIFdel{-0.064                     }%DIFDELCMD < & %%%
+\DIFdel{0.024                          }%DIFDELCMD < \\
+%DIFDELCMD < %%%
+\DIFdel{19         }%DIFDELCMD < & %%%
+\DIFdel{0.064          }%DIFDELCMD < & %%%
+\DIFdel{-0.087                     }%DIFDELCMD < & %%%
+\DIFdel{0.381                         
+}%DIFDELCMD < \end{tabular}
+%DIFDELCMD < \end{table}
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \DIFadd{of
+trees, Luke Harmon for commenting on the manuscript, Jeffrey C. Oliver and anonymous
 reviewers for their comments, which greatly improved the manuscript,
 Jessica Slove Davidson and Niklas Janz for access to their hostplant
 data. The study was supported by a Kone Foundation grant (awarded to
 Niklas Wahlberg), Finland (C. Pe\~na) and the Research Council of Norway
 (grant no. 204308 to M. Espeland). We acknowledge CSC--IT Center for
 Science Ltd. (Finland) for the allocation of computational resources.
+}\DIFaddend 
 
-\section*{Figure legends}
-{\bf Figure 1. Results of the MEDUSA analysis run on the maximum
-clade credibility tree from Wahlberg et al. (2009)} Rate shifts were estimated for the
-following nodes (besides the background rate): \DIFaddbegin \DIFadd{1) root, }\DIFaddend 2) Limenitidinae +
-Heliconiinae, 3) \emph{Ypthima}, 4) \emph{Charaxes}, 5) Ithomiini in
-part, 6) Satyrinae, 7) Coenonymphina 8) Phyciodina in part, 9) Danaini in
-part, 10) \emph{Coenonympha}, 11) \emph{Caeruleuptychia} +
-\emph{Magneuptychia}, 12) \emph{Callicore} + \emph{Diaethria}, 13)
-Satyrina, 14) Mycalesina, 15) \emph{Pedaliodes}, 16) \emph{Dryas} +
-\emph{Dryadula}, 17) \emph{Taenaris}, 18) Pseudergolinae\DIFaddbegin \DIFadd{, 19)
-}\emph{\DIFadd{Anaeomorpha}} \DIFadd{+ }\emph{\DIFadd{Hypna}}\DIFaddend . Circles on
-nodes indicate the diversification shift number as found by MEDUSA.
-Numbers next to circles indicate the posterior probability values for
-such nodes.
-
-{\bf Figure 2. Diversification rates for taxa estimated by \DIFdelbegin \DIFdel{MEDUSA }\DIFdelend \DIFaddbegin \DIFadd{MultiMEDUSA }\DIFaddend on
-the samples of 1000 random trees}
-
-{\bf Figure 3. Results of MultiMEDUSA analysis showing the
-probability of specific nodes being characterized by significant shifts
-in diversification rate}
-
-{\bf Figure 4. BiSSE analysis of diversification of nymphalids due
-to feeding on Solanaceae hostplants} Speciation and net diversification
-rates are significantly higher in Solanaceae feeders (speciation rate =
-$\lambda1$, net diversification rate = $r1$\DIFaddbegin \DIFadd{)}\DIFaddend .
-
-
-\section*{Supporting Information Legends}
-{\textbf{Supporting Information S01.nex.}} MCC Nymphalidae tree from
-\cite{wahlberg2009}
-
-{\textbf{Supporting Information S02.R}} R script to run MEDUSA on the
-MCC Nymphalidae tree from \cite{wahlberg2009}. This script removes the outgroup
-taxa and loads the richness data for the tree terminals.
-
-{\textbf{Supporting Information S03.csv}} Species richness for lineages
-in Nymphalidae.
-
-{\textbf{Supporting Information S04.txt}} Results of running MEDUSA on
-the MCC tree.
-
-{\textbf{Supporting Information S05 1000 random trees no outgroups.zip}}
-1000 random trees from \cite{wahlberg2009}.
-
-{\textbf{Supporting Information S06.R}}~R script to run a MultiMEDUSA
-analysis on 1000 random trees from \cite{wahlberg2009}.
-
-{\textbf{Supporting Information S07 multimedusa on 1000 trees.zip}} Raw
-results from the MultiMEDUSA run on the random sample of trees from the
-posterior distribution.
-
-{\textbf{Supporting Information S08.pdf}} Summary of the MultiMEDUSA
-analysis on the 1000 trees from the posterior distribution.
-
-{\textbf{Supporting Information S09.tree}} MCC tree from the 1000 random
-trees selected from the posterior distribution.
-
-{\textbf{Supporting Information S10.R}} R script to run a MEDUSA
-analysis on the MCC tree from the 1000 random trees selected from the
-posterior distribution.
-
-{\textbf{Supporting Information S11.txt}} Summary results from a MEDUSA
-run on the MCC tree from the 1000 random trees selected from the
-posterior distribution.
-
-{\textbf{Supporting Information S12.pdf}} Figure for MEDUSA run on MCC
-tree from random 1000 trees.
-
-{\textbf{Supporting Information S13.txt}} Summary results from a
-MultiMEDUSA run on the 1000 random trees selected from the posterior
-distribution.
-
-{\textbf{Supporting Information S14.pdf}} Probability of nodes with
-estimated rates from a MultiMEDUSA run on the 1000 random trees selected
-from the posterior distribution.
-
-{\textbf{Supporting Information S15.csv}} Hostplants of Nymphalidae
-butterflies recorded from the literature.
-
-{\textbf{Supporting Information S16.csv}} References for hostplants
-data.
-
-{\textbf{Supporting Information S17.csv}} Data matrix with character
-states for hosplant use.
-
-{\textbf{Supporting Information S18.R}} R script for running the BiSSE
-analysis.
-
-{\textbf{Supporting Information S19.csv}} Raw results for the BiSSE
-analysis.
-
-{\textbf{Supporting Information S20.csv}} Raw results for the combined
-BiSSE analysis.
-
-{\textbf{Figure S1.}} \DIFdelbegin \DIFdel{Best diversification model as estimated by BAMM.
-Two diversification shifts were recovered (Ithomiini and Satyrini). The
-MEDUSA analysis found a diversification shifts in Satyrinae (the parent
-node of Satyini).
-}%DIFDELCMD < 
-
-%DIFDELCMD < {%%%
-\textbf{\DIFdel{Figure S2.}}%DIFAUXCMD
-%DIFDELCMD < } %%%
-\DIFdelend Boxplot of speciation (\(\lambda\)) and extinction
-(\(\mu\)) values for the 95\% credibility intervals of values estimated
-by BiSSE analysis of diversification due to feeding on Solanaceae
-plants.
-
-{\textbf{Figure \DIFdelbegin \DIFdel{S3}\DIFdelend \DIFaddbegin \DIFadd{S2}\DIFaddend .}} BiSSE analysis of diversification of nymphalids
-due to feeding on Solanaceae hostplants assuming \emph{Vanessa} and
-\emph{Hypanartia} as non-Solanaceae feeders. The same pattern is
-recovered, speciation and net diversification rates are significantly
-higher for Solanaceae feeders \(\lambda1\), r1).
-
-{\textbf{Figure \DIFdelbegin \DIFdel{S4}\DIFdelend \DIFaddbegin \DIFadd{S3}\DIFaddend .}} Net diversification rates of nymphalids feeding on
-Solanaceae plants as estimated by combining post-burnin runs of BiSSE on
-the 1000 trees from the posterior distribution.
-
-{\textbf{Figure \DIFdelbegin \DIFdel{S5}\DIFdelend \DIFaddbegin \DIFadd{S4}\DIFaddend .}} Boxplot of speciation and extinction values for
-the 95\% credibility intervals of values estimated by BiSSE analysis of
-diversification due to feeding on Solanaceae plants on the combined
-post-burnin runs on 1000 trees from the posterior distribution.
-
-{\textbf{Figure \DIFdelbegin \DIFdel{S6}\DIFdelend \DIFaddbegin \DIFadd{S5}\DIFaddend .}} BiSSE analysis of diversification of nymphalids
-due to feeding on Apocynaceae hostplants. Speciation and net
-diversification rates are similar.
-
-% Table 1
-\section*{Tables}
-\begin{table}[!h]
-\caption{\bf{Significant net diversification rate shifts found in the MEDUSA analysis of the Nymphalid maximum clade credibility tree.}}
-\begin{tabular}{lccrrcl}
-Shift N$^\circ$ & \DIFdelbeginFL \DIFdelFL{Split}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Shift}\DIFaddendFL .Node & Model & r          & LnLik.part & AICc     & Taxa                                                       \\
-1               & 399        & yule  & 0.092459   & -1055.957  &          & Nymphalidae (root)                                         \\
-2               & 691        & bd    & 0.054129   & -406.3703  &          & Limenitidinae + Heliconiinae                               \\
-3               & 299        & yule  & 0.311199   & -6.3058    &          & \emph{Ypthima}                                             \\
-4               & 224        & yule  & 0.290989   & -6.2601    &          & \emph{Charaxes}                                            \\
-5               & 750        & yule  & 0.186913   & -147.4146  &          & Oleriina + Ithomiina + Napeogenina + Dircennina + Godyrina \\
-6               & 405        & yule  & 0.116252   & -555.0276  &          & Satyrinae                                                   \\
-7               & 495        & yule  & 0.064656   & -124.9143  &          & Coenonymphina                                              \\
-8               & 609        & yule  & 0.240562   & -35.0908   &          & Phyciodina in part                                         \\
-9               & 787        & bd    & 0.042332   & -43.7819   &          & Danaini in part                                            \\
-10              & 231        & yule  & 0.209416   & -4.7955    &          & \emph{Coenonympha}                                         \\
-11              & 478        & yule  & 0.311684   & -9.2218    &          & \emph{Caeruleuptychia} + \emph{Magneuptychia}              \\
-12              & 659        & yule  & 0.219253   & -11.2686   &          & \emph{Callicore} + \emph{Diaethria}                        \\
-13              & 444        & yule  & 0.220615   & -43.7812   &          & Satyrina                                                   \\
-14              & 524        & yule  & 0.190754   & -26.0651   &          & Mycalesina                                                 \\
-15              & 355        & yule  & 0.234041   & -6.2013    &          & \emph{Pedaliodes}                                          \\
-16              & 714        & yule  & 0          & 0          &          & \emph{Dryas} + \emph{Dryadula}                             \\
-17              & 377        & yule  & 0.311671   & -4.1986    &          & \emph{Taenaris}                                            \\
-18              & 688        & yule  & 0.024724   & -17.5256   &          & Pseudergolinae                                             \\
-19              & 583        & yule  & 0          & 0          & 5090.492 & \emph{Anaeomorpha} + \emph{Hypna}                                       
-\end{tabular}
-\begin{flushleft}\DIFdelbeginFL \DIFdelFL{Split}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Shift}\DIFaddendFL .Node=node number, Model=preferred diversification model by MEDUSA, r=net diversification rate, LnLik.part=log likelihood value.
-\end{flushleft}
-\end{table}
+%DIF <  Table 3
+\DIFdelbegin %DIFDELCMD < \begin{table}[!h]
+%DIFDELCMD <     %%%
+%DIFDELCMD < \caption{%
+{%DIFAUXCMD
+%DIFDELCMD < \bf{Likelihood ratio test between the model of increased
+%DIFDELCMD < diversification of nymphalids feeding on Solanaceae against a model
+%DIFDELCMD < forcing equal speciation rates (no effect on diversification).}%%%
+}
+%DIFAUXCMD
+%DIFDELCMD < \begin{tabular}{lcrrlr}
+%DIFDELCMD < %%%
+\DIFdel{Df           }%DIFDELCMD < & %%%
+\DIFdel{lnLik }%DIFDELCMD < & %%%
+\DIFdel{AIC     }%DIFDELCMD < & %%%
+\DIFdel{ChiSq  }%DIFDELCMD < & \multicolumn{1}{r}{p} &         \\
+%DIFDELCMD < %%%
+\DIFdel{full         }%DIFDELCMD < & %%%
+\DIFdel{6     }%DIFDELCMD < & %%%
+\DIFdel{-1613.3 }%DIFDELCMD < & %%%
+\DIFdel{3238.5 }%DIFDELCMD < &                       &         \\
+%DIFDELCMD < %%%
+\DIFdel{equal.
+lambda }%DIFDELCMD < & %%%
+\DIFdel{5     }%DIFDELCMD < & %%%
+\DIFdel{-1619.4 }%DIFDELCMD < & %%%
+\DIFdel{3248.9 }%DIFDELCMD < & %%%
+\DIFdel{12.3                  }%DIFDELCMD < & %%%
+\DIFdel{0.00045
+}%DIFDELCMD < \end{tabular}
+%DIFDELCMD < \end{table}
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \nolinenumbers
+\DIFaddend 
 
 
-% Table 2
-\begin{table}[!h]
-    \caption{\bf{Differences in rates estimated by MEDUSA on the MCC
-tree from the sample of trees from the posterior distribution and the
-MultiMEDUSA approach. Shift consistently recovered across the
-sample of trees in bold face.}}
-\begin{tabular}{lcrr}
-\DIFdelbeginFL \DIFdelFL{Split}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Shift}\DIFaddendFL .Node & rate by MEDUSA & Median rate by MultiMEDUSA & probability of being recovered \\
-1          & 0.092          & not found                  & 0.000                          \\
-2          & 0.055          & -0.030                     & 0.864                          \\
-\bf{3}     & 0.184          & \bf{0.219}                 & \bf{0.961}                     \\
-\bf{4}     & 0.166          & \bf{0.212}                 & \bf{0.996}                     \\
-\bf{5}     & 0.111          & \bf{0.101}                 & \bf{0.927}                     \\
-6          & 0.119          & 0.039                      & 0.131                          \\
-7          & 0.066          & -0.052                     & 0.195                          \\
-8          & 0.232          & 0.166                      & 0.319                          \\
-9          & 0.042          & -0.049                     & 0.897                          \\
-10         & 0.058          & 0.149                      & 0.619                          \\
-11         & 0.311          & 0.208                      & 0.831                          \\
-\bf{12}    & 0.219          & \bf{0.135}                 & \bf{0.911}                     \\
-13         & 0.082          & 0.117                      & 0.276                          \\
-14         & 0.099          & 0.115                      & 0.379                          \\
-15         & 0.113          & 0.127                      & 0.825                          \\
-16         & 0.222          & -0.005                     & 0.659                          \\
-17         & 0.243          & 0.248                      & 0.785                          \\
-18         & 0.192          & -0.064                     & 0.024                          \\
-19         & 0.064          & -0.087                     & 0.381                         
-\end{tabular}
-\end{table}
-
-
-% Table 3
-\begin{table}[!h]
-    \caption{\bf{Likelihood ratio test between the model of increased
-diversification of nymphalids feeding on Solanaceae against a model
-forcing equal speciation rates (no effect on diversification).}}
-\begin{tabular}{lcrrlr}
-Df           & lnLik & AIC     & ChiSq  & \multicolumn{1}{r}{p} &         \\
-full         & 6     & -1613.3 & 3238.5 &                       &         \\
-equal.lambda & 5     & -1619.4 & 3248.9 & 12.3                  & 0.00045
-\end{tabular}
-\end{table}
-
-\pagebreak
-\bibliography{refs}{}
-\bibliographystyle{plos2009}
+\DIFdelbegin %DIFDELCMD < \pagebreak
+%DIFDELCMD < %%%
+\DIFdelend \bibliography{refs}{}
+\DIFdelbegin %DIFDELCMD < \bibliographystyle{plos2009}
+%DIFDELCMD < %%%
+\DIFdelend 
 
 
 \end{document}

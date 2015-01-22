@@ -9,11 +9,12 @@ We are submitting a clean version of our manuscript (as LaTeX source files and
 a PDF file generated from those).
 We are also submitting a PDF file containing our revised manuscript and all
 changes applied during revision appear highlighted.
-All supplementary materials have been uploaded to the public repository Figshare:
-http://dx.doi.org/10.6084/m9.figshare.1116238 and the URL has been included
-in our resubmittion.
+All supplementary materials have been uploaded using the PLOS website.
+
+We have formatted our TeX file to comply with the recent changes to the layout
+requirements by PLOS (updated January 2015).
 
 Sincerely yours,
 
 Carlos Peña & Marianne Espeland
-2015-01-15
+2015-01-22
