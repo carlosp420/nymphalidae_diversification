@@ -1,75 +1,199 @@
-\documentclass[10pt]{article}
-\usepackage{amsmath}
-\usepackage{amssymb}
+% Template for PLoS
+% Version 3.0 December 2014
+%
+% To compile to pdf, run:
+% latex plos.template
+% bibtex plos.template
+% latex plos.template
+% latex plos.template
+% dvipdf plos.template
+%
+% % % % % % % % % % % % % % % % % % % % % %
+%
+% -- IMPORTANT NOTE
+%
+% This template contains comments intended 
+% to minimize problems and delays during our production 
+% process. Please follow the template instructions
+% whenever possible.
+%
+% % % % % % % % % % % % % % % % % % % % % % % 
+%
+% Once your paper is accepted for publication, 
+% PLEASE REMOVE ALL TRACKED CHANGES in this file and leave only
+% the final text of your manuscript.
+%
+% There are no restrictions on package use within the LaTeX files except that 
+% no packages listed in the template may be deleted.
+%
+% Please do not include colors or graphics in the text.
+%
+% Please do not create a heading level below \subsection. For 3rd level headings, use \paragraph{}.
+%
+% % % % % % % % % % % % % % % % % % % % % % %
+%
+% -- FIGURES AND TABLES
+%
+% Please include tables/figure captions directly after the paragraph where they are first cited in the text.
+%
+% DO NOT INCLUDE GRAPHICS IN YOUR MANUSCRIPT
+% - Figures should be uploaded separately from your manuscript file. 
+% - Figures generated using LaTeX should be extracted and removed from the PDF before submission. 
+% - Figures containing multiple panels/subfigures must be combined into one image file before submission.
+% See http://www.plosone.org/static/figureGuidelines for PLOS figure guidelines.
+%
+% Tables should be cell-based and may not contain:
+% - tabs/spacing/line breaks within cells to alter layout or alignment
+% - vertically-merged cells (no tabular environments within tabular environments, do not use \multirow)
+% - colors, shading, or graphic objects
+% See http://www.plosone.org/static/figureGuidelines#tables for table guidelines.
+%
+% For tables that exceed the width of the text column, use the adjustwidth environment as illustrated in the example table in text below.
+%
+% % % % % % % % % % % % % % % % % % % % % % % %
+%
+% -- EQUATIONS, MATH SYMBOLS, SUBSCRIPTS, AND SUPERSCRIPTS
+%
+% IMPORTANT
+% Below are a few tips to help format your equations and other special characters according to our specifications. For more tips to help reduce the possibility of formatting errors during conversion, please see our LaTeX guidelines at http://www.plosone.org/static/latexGuidelines
+%
+% Please be sure to include all portions of an equation in the math environment.
+%
+% Do not include text that is not math in the math environment. For example, CO2 will be CO\textsubscript{2}.
+%
+% Please add line breaks to long display equations when possible in order to fit size of the column. 
+%
+% For inline equations, please do not include punctuation (commas, etc) within the math environment unless this is part of the equation.
+%
+% % % % % % % % % % % % % % % % % % % % % % % % 
+%
+% Please contact latex@plos.org with any questions.
+%
+% % % % % % % % % % % % % % % % % % % % % % % %
+
+\documentclass[10pt,letterpaper]{article}
+\usepackage[top=0.85in,left=2.75in,footskip=0.75in]{geometry}
+
+% Use adjustwidth environment to exceed column width (see example table in text)
+\usepackage{changepage}
+
+% Use Unicode characters when possible
+\usepackage[utf8]{inputenc}
+
+% textcomp package and marvosym package for additional characters
+\usepackage{textcomp,marvosym}
+
+% fixltx2e package for \textsubscript
+\usepackage{fixltx2e}
+
+% amsmath and amssymb packages, useful for mathematical formulas and symbols
+\usepackage{amsmath,amssymb}
+
+% cite package, to clean up citations in the main text. Do not remove.
 \usepackage{cite}
-\usepackage{hyperref}
+
+% Use nameref to cite supporting information files (see Supporting Information section for more info)
+\usepackage{nameref,hyperref}
+
+% line numbers
+\usepackage[right]{lineno}
+
+% ligatures disabled
 \usepackage{microtype}
 \DisableLigatures[f]{encoding = *, family = * }
 
+% rotating package for sideways tables
+\usepackage{rotating}
+
+% Remove comment for double spacing
+%\usepackage{setspace} 
+%\doublespacing
+
 % Text layout
-\topmargin 0.0cm
-\oddsidemargin 0.5cm
-\evensidemargin 0.5cm
-\textwidth 16cm 
-\textheight 21cm
+\raggedright
+\setlength{\parindent}{0.5cm}
+\textwidth 5.25in 
+\textheight 8.75in
 
-% Bold the 'Figure #' in the caption and separate it with a period
+% Bold the 'Figure #' in the caption and separate it from the title/caption with a period
 % Captions will be left justified
-\usepackage[labelfont=bf,labelsep=period,justification=raggedright]{caption}
+\usepackage[aboveskip=1pt,labelfont=bf,labelsep=period,justification=raggedright,singlelinecheck=off]{caption}
 
+% Use the PLoS provided BiBTeX style
+\bibliographystyle{plos2009}
 
 % Remove brackets from numbering in List of References
 \makeatletter
 \renewcommand{\@biblabel}[1]{\quad#1.}
 \makeatother
 
-
 % Leave date blank
 \date{}
 
+% Header and Footer with logo
+\usepackage{lastpage,fancyhdr,graphicx}
 \pagestyle{myheadings}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\includegraphics[natwidth=1.3in,natheight=0.4in]{PLOSlogo.png}}
+\rfoot{\thepage/\pageref{LastPage}}
+\renewcommand{\footrule}{\hrule height 2pt \vspace{2mm}}
+\fancyheadoffset[L]{2.25in}
+\fancyfootoffset[L]{2.25in}
+\lfoot{\sf PLOS}
 
-%% Include all macros below. Please limit the use of macros.
+%% Include all macros below
+
+\newcommand{\lorem}{{\bf LOREM}}
+\newcommand{\ipsum}{{\bf IPSUM}}
 
 %% END MACROS SECTION
 
 
 \begin{document}
+\vspace*{0.35in}
 
+% Title must be 150 characters or less
 \begin{flushleft}
 {\Large
-    \title{Diversity dynamics in Nymphalidae butterflies: Effect of phylogenetic uncertainty on diversification rate shift estimates}
+\textbf\newline{Article Title - Diversity dynamics in Nymphalidae butterflies: Effect of phylogenetic uncertainty on diversification rate shift estimates}
 }
-\maketitle
-Carlos Pe\~na$^{1,\ast}$,
-Marianne Espeland$^{2}$
+\newline
+% Insert Author names, affiliations and corresponding author email.
 \\
-\bf{1} Carlos Pe\~na Laboratory of Genetics, Department of Biology, University of Turku, Turku, Finland. Email: \href{mailto:mycalesis@gmail.com}{\nolinkurl{mycalesis@gmail.com}}
+Carlos Pe\~na\textsuperscript{1,\ast},
+Marianne Espeland\textsuperscript{2,\textcurrency}
 \\
-\bf{2} Marianne Espeland Museum of Comparative Zoology and Department
-of Organismic and Evolutionary Biology, Harvard University, Cambridge,
-USA. Email:
-\href{mailto:marianne.espeland@gmail.com}{\nolinkurl{marianne.espeland@gmail.com}}.
-Current address: McGuire Center for Lepidoptera and Biodiversity,
+\bf{1} Laboratory of Genetics, Department of Biology, University of Turku, Turku, Finland
+\\
+\bf{2} Museum of Comparative Zoology and Department of Organismic and Evolutionary Biology, Harvard University, Cambridge, USA
+\\
+
+% Insert additional author notes using the symbols described below. Insert symbol callouts after author names as necessary.
+% 
+% Remove or comment out the author notes below if they aren't used.
+%
+% Primary Equal Contribution Note
+
+% Current address notes
+\textcurrency Current address: McGuire Center for Lepidoptera and Biodiversity,
 Florida Museum of Natural History, University of Florida, Gainesville,
 FL, US.
-\\
-$\ast$ \textbf{Corresponding author:}
-\href{mailto:mycalesis@gmail.com}{\nolinkurl{mycalesis@gmail.com}}
-Telephone: +358 417063065 Fax: +358 2 333 6680
+% \textcurrency b Insert current address of second author with an address update
+% \textcurrency c Insert current address of third author with an address update
 
+% Deceased author note
+
+% Group/Consortium Author Note
+
+* E-mail: mycalesis@gmail.com
 \end{flushleft}
 
-
-
-
-\subsubsection*{Running title: Diversity dynamics in Nymphalidae
+\subsection*{Running title: Diversity dynamics in Nymphalidae
 butterflies}
 
-
+% Please keep the abstract below 300 words
 \section*{Abstract}
-
-
 The species rich butterfly family Nymphalidae has been used to study
 evolutionary interactions between plants and insects. Theories of
 insect-hostplant dynamics predict accelerated diversification due to key
@@ -98,8 +222,9 @@ and other trees from the posterior distribution.
 \textbf{Keywords:} diversification analysis, MEDUSA, BiSSE, speciation
 rate, insect-hostplant dynamics
 
-\section*{Introduction}
+\linenumbers
 
+\section*{Introduction}
 Hostplant shifts have been invoked to be responsible for a great part of
 the biodiversity of herbivorous insects \cite{mitter1988}. The study of the
 evolution of hostplant use has spawned several theories explaining the
@@ -157,8 +282,11 @@ hostplant use affected the diversification pattern of those lineages
 employing the binary speciation and extinction model (BiSSE) as
 implemented in the R package \texttt{diversitree} \cite{fitzjohn2012}.
 
-\section*{Materials and Methods}
 
+% You may title this section "Methods" or "Models". 
+% "Models" is not a valid title for PLoS ONE authors. However, PLoS ONE
+% authors may use "Analysis" 
+\section*{Materials and Methods}
 \subsection*{Data}
 
 For analyses, we used the phylogenetic trees from the study of Wahlberg
@@ -191,6 +319,12 @@ sources including \cite{ackery1988}, HOSTS database (\url{http://bit.ly/YI7nwW})
 hostplant records, including 428 Nymphalidae genera and 143 plant
 families and 1070 plant genera. It was not possible to find any
 hostplant data for 35 butterfly genera.
+\begin{figure}[h]
+\caption{{\bf Figure Title first bold sentence Nulla mi mi, venenatis sed ipsum varius, volutpat euismod diam.}
+Figure Caption Proin rutrum vel massa non gravida. Quisque tempor sem et dignissim rutrum. A: Lorem ipsum dolor sit amet. B: Consectetur adipiscing elit.}
+\label{fig1}
+\end{figure}
+
 
 \subsection*{Analyses of Diversification}
 
@@ -490,7 +624,7 @@ shifts for other lineages with much lower probability.
 
 \subsection*{Hostplant use and diversification in Nymphalidae}
 
-\subsubsection*{Ithomiini}
+\paragraph*{Ithomiini}
 
 Keith Brown suggested that feeding on Solanaceae was an important event
 in the diversification of Ithomiini butterflies \cite{brown1987}. Ithomiini
@@ -586,7 +720,7 @@ and Ithomiini might have diversified around the same time, during the
 Late Eocene and Oligocene, and this would be congruent with the diffuse
 cospeciation hypothesis.
 
-\subsubsection*{Danaini}
+\paragraph*{Danaini}
 Our MultiMEDUSA approach showed a significant slowdown in net
 diversification rate in the subtribe Danaina of the Danini. Both Danaina
 and the sister clade Euploeina feed mainly on Apocynaceae and thus a
@@ -605,7 +739,7 @@ dispersal has homogenized populations due to gene flow, as
 vagile species seem to be genetically homogeneous among
 populations \cite{wahlberg2011}.
 
-\subsubsection*{Satyrinae}
+\paragraph*{Satyrinae}
 
 Lineages in the diverse family Satyrinae radiated simultaneously with
 the radiation of their main hostplant, grasses, during the climatic
@@ -665,18 +799,6 @@ slowdown of diversification in Danaina. Ithomiini and Solanaceae
 diversified near simultaneously, which is in agreement with the diffuse
 cospeciation hypothesis \cite{nyman2012, janz2011}.
 
-\section*{Acknowledgments}
-We are thankful to Mark Cornwall for help with the script to extend
-MEDUSA to include phylogenetic uncertainty, Niklas Wahlberg for
-commenting on the manuscript and giving us the posterior distribution of
-trees, Luke Harmon for commenting on the manuscript, Jeffrey C. Oliver and anonymous
-reviewers for their comments, which greatly improved the manuscript,
-Jessica Slove Davidson and Niklas Janz for access to their hostplant
-data. The study was supported by a Kone Foundation grant (awarded to
-Niklas Wahlberg), Finland (C. Pe\~na) and the Research Council of Norway
-(grant no. 204308 to M. Espeland). We acknowledge CSC--IT Center for
-Science Ltd. (Finland) for the allocation of computational resources.
-
 \section*{Figure legends}
 {\bf Figure 1. Results of the MEDUSA analysis run on the maximum
 clade credibility tree from Wahlberg et al. (2009)} Rate shifts were estimated for the
@@ -706,71 +828,100 @@ $\lambda1$, net diversification rate = $r1$).
 
 
 \section*{Supporting Information Legends}
-{\textbf{Supporting Information S01.nex.}} MCC Nymphalidae tree from
-\cite{wahlberg2009}
+\subsection*{S1 Dataset}
+\label{S1_Dataset}
+{\bf MCC Nymphalidae tree from \cite{wahlberg2009}}
 
-{\textbf{Supporting Information S02.R}} R script to run MEDUSA on the
-MCC Nymphalidae tree from \cite{wahlberg2009}. This script removes the outgroup
+\subsection*{S2 Supporting Information}
+\label{S2_Supporting_Information}
+{\bf R script to run MEDUSA on the MCC Nymphalidae tree from
+\cite{wahlberg2009}}. This script removes the outgroup
 taxa and loads the richness data for the tree terminals.
 
-{\textbf{Supporting Information S03.csv}} Species richness for lineages
-in Nymphalidae.
+\subsection*{S3 Dataset}
+\label{S3_Dataset}
+{\bf Species richness for lineages in Nymphalidae}.
 
-{\textbf{Supporting Information S04.txt}} Results of running MEDUSA on
-the MCC tree.
+\subsection*{S4 Text}
+\label{S4_Text}
+{\bf Results of running MEDUSA on the MCC tree}.
 
-{\textbf{Supporting Information S05 1000 random trees no outgroups.zip}}
-1000 random trees from \cite{wahlberg2009}.
+\subsection*{S5 File}
+\label{S5_File}
+{\bf 1000 random trees from \cite{wahlberg2009}}.
 
-{\textbf{Supporting Information S06.R}}~R script to run a MultiMEDUSA
-analysis on 1000 random trees from \cite{wahlberg2009}.
+\subsection*{S6 Supporting Information}
+\label{S6_Supporting_Information}
+{\bf R script to run a MultiMEDUSA analysis on 1000 random trees from
+\cite{wahlberg2009}}.
 
-{\textbf{Supporting Information S07 multimedusa on 1000 trees.zip}} Raw
-results from the MultiMEDUSA run on the random sample of trees from the
-posterior distribution.
+\subsection*{S7 File}
+\label{S7_File}
+{\bf Raw results from the MultiMEDUSA run on the random sample of trees from 
+the posterior distribution}.
 
-{\textbf{Supporting Information S08.pdf}} Summary of the MultiMEDUSA
-analysis on the 1000 trees from the posterior distribution.
+\subsection*{S8 Figure}
+\label{S8_Figure}
+{\bf Summary of the MultiMEDUSA
+analysis on the 1000 trees from the posterior distribution}.
 
-{\textbf{Supporting Information S09.tree}} MCC tree from the 1000 random
-trees selected from the posterior distribution.
+\subsection*{S9 Supporting Information}
+\label{S9_Supporting_Information}
+{\bf MCC tree from the 1000 random
+trees selected from the posterior distribution}.
 
-{\textbf{Supporting Information S10.R}} R script to run a MEDUSA
+\subsection*{S10 Supporting Information}
+\label{S10_Supporting_Information}
+{\bf R script to run a MEDUSA
 analysis on the MCC tree from the 1000 random trees selected from the
-posterior distribution.
+posterior distribution}.
 
-{\textbf{Supporting Information S11.txt}} Summary results from a MEDUSA
+\subsection*{S11 Text}
+\label{S11_Text}
+{\bf Summary results from a MEDUSA
 run on the MCC tree from the 1000 random trees selected from the
-posterior distribution.
+posterior distribution}.
 
-{\textbf{Supporting Information S12.pdf}} Figure for MEDUSA run on MCC
-tree from random 1000 trees.
+\subsection*{S12 Figure}
+\label{S12_Figure}
+{\bf Figure for MEDUSA run on MCC tree from random 1000 trees}.
 
-{\textbf{Supporting Information S13.txt}} Summary results from a
+\subsection*{S13 Text}
+\label{S13_Text}
+{\bf Summary results from a
 MultiMEDUSA run on the 1000 random trees selected from the posterior
-distribution.
+distribution}.
 
-{\textbf{Supporting Information S14.pdf}} Probability of nodes with
+\subsection*{S14 Figure}
+\label{S14_Figure}
+{\bf Probability of nodes with
 estimated rates from a MultiMEDUSA run on the 1000 random trees selected
-from the posterior distribution.
+from the posterior distribution}.
 
-{\textbf{Supporting Information S15.csv}} Hostplants of Nymphalidae
-butterflies recorded from the literature.
+\subsection*{S15 Dataset}
+\label{S15_Dataset}
+{\bf Hostplants of Nymphalidae
+butterflies recorded from the literature}.
 
-{\textbf{Supporting Information S16.csv}} References for hostplants
-data.
+\subsection*{S16 Dataset}
+\label{S16_Dataset}
+{\bf References for hostplants data}.
 
-{\textbf{Supporting Information S17.csv}} Data matrix with character
-states for hosplant use.
+\subsection*{S17 Dataset}
+\label{S17_Dataset}
+{\bf Data matrix with character states for hosplant use}.
 
-{\textbf{Supporting Information S18.R}} R script for running the BiSSE
-analysis.
+\subsection*{S18 Supporting Information}
+\label{S18_Supporting_Information}
+{\bf R script for running the BiSSE analysis}.
 
-{\textbf{Supporting Information S19.csv}} Raw results for the BiSSE
-analysis.
+\subsection*{S19 Supporting Information}
+\label{S19_Supporting_Information}
+{\bf Raw results for the BiSSE analysis}.
 
-{\textbf{Supporting Information S20.csv}} Raw results for the combined
-BiSSE analysis.
+\subsection*{S20 Supporting Information}
+\label{S20_Supporting_Information}
+{\bf Raw results for the combined BiSSE analysis}.
 
 {\textbf{Figure S1.}} Boxplot of speciation (\(\lambda\)) and extinction
 (\(\mu\)) values for the 95\% credibility intervals of values estimated
@@ -795,6 +946,20 @@ post-burnin runs on 1000 trees from the posterior distribution.
 {\textbf{Figure S5.}} BiSSE analysis of diversification of nymphalids
 due to feeding on Apocynaceae hostplants. Speciation and net
 diversification rates are similar.
+
+\section*{Acknowledgments}
+We are thankful to Mark Cornwall for help with the script to extend
+MEDUSA to include phylogenetic uncertainty, Niklas Wahlberg for
+commenting on the manuscript and giving us the posterior distribution of
+trees, Luke Harmon for commenting on the manuscript, Jeffrey C. Oliver and anonymous
+reviewers for their comments, which greatly improved the manuscript,
+Jessica Slove Davidson and Niklas Janz for access to their hostplant
+data. The study was supported by a Kone Foundation grant (awarded to
+Niklas Wahlberg), Finland (C. Pe\~na) and the Research Council of Norway
+(grant no. 204308 to M. Espeland). We acknowledge CSC--IT Center for
+Science Ltd. (Finland) for the allocation of computational resources.
+
+\nolinenumbers
 
 % Table 1
 \section*{Tables}
