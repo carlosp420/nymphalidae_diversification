@@ -533,33 +533,39 @@ MultiMEDUSA. The background diversification and all shifts found by
 MEDUSA on the 1000 trees are provided as an R object in S15 File.
 
 % Table 2
-\begin{table}[!h]
-    \caption{\bf{Differences in rates estimated by MEDUSA on the MCC
+\begin{table}[!ht]
+\begin{adjustwidth}{-2.25in}{0in} % Comment out/remove adjustwidth environment if table fits in text column.
+\caption{{\bf Differences in rates estimated by MEDUSA on the MCC
 tree from the sample of trees from the posterior distribution and the
 MultiMEDUSA approach. Shift consistently recovered across the
 sample of trees in bold face.}}
-\begin{tabular}{lcrr}
-Shift.Node & rate by MEDUSA & Median rate by MultiMEDUSA & probability of being recovered \\
-1          & 0.092          & not found                  & 0.000                          \\
-2          & 0.055          & -0.030                     & 0.864                          \\
-\bf{3}     & 0.184          & \bf{0.219}                 & \bf{0.961}                     \\
-\bf{4}     & 0.166          & \bf{0.212}                 & \bf{0.996}                     \\
-\bf{5}     & 0.111          & \bf{0.101}                 & \bf{0.927}                     \\
-6          & 0.119          & 0.039                      & 0.131                          \\
-7          & 0.066          & -0.052                     & 0.195                          \\
-8          & 0.232          & 0.166                      & 0.319                          \\
-9          & 0.042          & -0.049                     & 0.897                          \\
-10         & 0.058          & 0.149                      & 0.619                          \\
-11         & 0.311          & 0.208                      & 0.831                          \\
-\bf{12}    & 0.219          & \bf{0.135}                 & \bf{0.911}                     \\
-13         & 0.082          & 0.117                      & 0.276                          \\
-14         & 0.099          & 0.115                      & 0.379                          \\
-15         & 0.113          & 0.127                      & 0.825                          \\
-16         & 0.222          & -0.005                     & 0.659                          \\
-17         & 0.243          & 0.248                      & 0.785                          \\
-18         & 0.192          & -0.064                     & 0.024                          \\
-19         & 0.064          & -0.087                     & 0.381                         
+\begin{tabular}{|l|c|r|r|}
+    \hline
+Shift.Node & rate by MEDUSA & Median rate by MultiMEDUSA & probability of being recovered \\ \hline
+1          & 0.092          & not found                  & 0.000                          \\ \hline
+2          & 0.055          & -0.030                     & 0.864                          \\ \hline
+\bf{3}     & 0.184          & \bf{0.219}                 & \bf{0.961}                     \\ \hline
+\bf{4}     & 0.166          & \bf{0.212}                 & \bf{0.996}                     \\ \hline
+\bf{5}     & 0.111          & \bf{0.101}                 & \bf{0.927}                     \\ \hline
+6          & 0.119          & 0.039                      & 0.131                          \\ \hline
+7          & 0.066          & -0.052                     & 0.195                          \\ \hline
+8          & 0.232          & 0.166                      & 0.319                          \\ \hline
+9          & 0.042          & -0.049                     & 0.897                          \\ \hline
+10         & 0.058          & 0.149                      & 0.619                          \\ \hline
+11         & 0.311          & 0.208                      & 0.831                          \\ \hline
+\bf{12}    & 0.219          & \bf{0.135}                 & \bf{0.911}                     \\ \hline
+13         & 0.082          & 0.117                      & 0.276                          \\ \hline
+14         & 0.099          & 0.115                      & 0.379                          \\ \hline
+15         & 0.113          & 0.127                      & 0.825                          \\ \hline
+16         & 0.222          & -0.005                     & 0.659                          \\ \hline
+17         & 0.243          & 0.248                      & 0.785                          \\ \hline
+18         & 0.192          & -0.064                     & 0.024                          \\ \hline
+19         & 0.064          & -0.087                     & 0.381                          \\ \hline
 \end{tabular}
+\begin{flushleft}
+\end{flushleft}
+\label{table2}
+\end{adjustwidth}
 \end{table}
 
 We also compared the results from MultiMEDUSA (derived from the sample
