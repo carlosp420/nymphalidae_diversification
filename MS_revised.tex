@@ -460,6 +460,36 @@ years and the AICc score for the best fit model was \texttt{5090.5}
 model was not a better explanation for our data (AICc
 \texttt{= 5449.3}).
 
+% Table 1
+\section*{Tables}
+\begin{table}[!h]
+\caption{\bf{Significant net diversification rate shifts found in the MEDUSA analysis of the Nymphalid maximum clade credibility tree.}}
+\begin{tabular}{lccrrcl}
+Shift N$^\circ$ & Shift.Node & Model & r          & LnLik.part & AICc     & Taxa                                                       \\
+1               & 399        & yule  & 0.092459   & -1055.957  &          & Nymphalidae (root)                                         \\
+2               & 691        & bd    & 0.054129   & -406.3703  &          & Limenitidinae + Heliconiinae                               \\
+3               & 299        & yule  & 0.311199   & -6.3058    &          & \emph{Ypthima}                                             \\
+4               & 224        & yule  & 0.290989   & -6.2601    &          & \emph{Charaxes}                                            \\
+5               & 750        & yule  & 0.186913   & -147.4146  &          & Oleriina + Ithomiina + Napeogenina + Dircennina + Godyrina \\
+6               & 405        & yule  & 0.116252   & -555.0276  &          & Satyrinae                                                   \\
+7               & 495        & yule  & 0.064656   & -124.9143  &          & Coenonymphina                                              \\
+8               & 609        & yule  & 0.240562   & -35.0908   &          & Phyciodina in part                                         \\
+9               & 787        & bd    & 0.042332   & -43.7819   &          & Danaini in part                                            \\
+10              & 231        & yule  & 0.209416   & -4.7955    &          & \emph{Coenonympha}                                         \\
+11              & 478        & yule  & 0.311684   & -9.2218    &          & \emph{Caeruleuptychia} + \emph{Magneuptychia}              \\
+12              & 659        & yule  & 0.219253   & -11.2686   &          & \emph{Callicore} + \emph{Diaethria}                        \\
+13              & 444        & yule  & 0.220615   & -43.7812   &          & Satyrina                                                   \\
+14              & 524        & yule  & 0.190754   & -26.0651   &          & Mycalesina                                                 \\
+15              & 355        & yule  & 0.234041   & -6.2013    &          & \emph{Pedaliodes}                                          \\
+16              & 714        & yule  & 0          & 0          &          & \emph{Dryas} + \emph{Dryadula}                             \\
+17              & 377        & yule  & 0.311671   & -4.1986    &          & \emph{Taenaris}                                            \\
+18              & 688        & yule  & 0.024724   & -17.5256   &          & Pseudergolinae                                             \\
+19              & 583        & yule  & 0          & 0          & 5090.492 & \emph{Anaeomorpha} + \emph{Hypna}                                       
+\end{tabular}
+\begin{flushleft}Shift.Node=node number, Model=preferred diversification model by MEDUSA, r=net diversification rate, LnLik.part=log likelihood value.
+\end{flushleft}
+\end{table}
+
 Some of the 18 changes in diversification correspond to rate increases
 in very species-rich genera: \emph{Ypthima} (\texttt{r = 0.311}),
 \emph{Charaxes} (\texttt{r = 0.291}), \emph{Callicore} +
@@ -498,6 +528,36 @@ Furthermore, the shifts recovered with low net diversification rate on
 the MCC were recovered with negative net diversification rate by
 MultiMEDUSA. The background diversification and all shifts found by
 MEDUSA on the 1000 trees are provided as an R object in S15 File.
+
+% Table 2
+\begin{table}[!h]
+    \caption{\bf{Differences in rates estimated by MEDUSA on the MCC
+tree from the sample of trees from the posterior distribution and the
+MultiMEDUSA approach. Shift consistently recovered across the
+sample of trees in bold face.}}
+\begin{tabular}{lcrr}
+Shift.Node & rate by MEDUSA & Median rate by MultiMEDUSA & probability of being recovered \\
+1          & 0.092          & not found                  & 0.000                          \\
+2          & 0.055          & -0.030                     & 0.864                          \\
+\bf{3}     & 0.184          & \bf{0.219}                 & \bf{0.961}                     \\
+\bf{4}     & 0.166          & \bf{0.212}                 & \bf{0.996}                     \\
+\bf{5}     & 0.111          & \bf{0.101}                 & \bf{0.927}                     \\
+6          & 0.119          & 0.039                      & 0.131                          \\
+7          & 0.066          & -0.052                     & 0.195                          \\
+8          & 0.232          & 0.166                      & 0.319                          \\
+9          & 0.042          & -0.049                     & 0.897                          \\
+10         & 0.058          & 0.149                      & 0.619                          \\
+11         & 0.311          & 0.208                      & 0.831                          \\
+\bf{12}    & 0.219          & \bf{0.135}                 & \bf{0.911}                     \\
+13         & 0.082          & 0.117                      & 0.276                          \\
+14         & 0.099          & 0.115                      & 0.379                          \\
+15         & 0.113          & 0.127                      & 0.825                          \\
+16         & 0.222          & -0.005                     & 0.659                          \\
+17         & 0.243          & 0.248                      & 0.785                          \\
+18         & 0.192          & -0.064                     & 0.024                          \\
+19         & 0.064          & -0.087                     & 0.381                         
+\end{tabular}
+\end{table}
 
 We also compared the results from MultiMEDUSA (derived from the sample
 of 1000 trees) with the shifts found by MEDUSA on the MCC tree derived
@@ -595,6 +655,18 @@ S4 Fig.). A BiSSE analysis to test whether the trait ``feeding on
 Apocynaceae'' had any effect on increased net diversification rates
 found similar speciation rates for lineages feeding on Apocynaceae and
 other plants (S5 Fig.).
+
+% Table 3
+\begin{table}[!h]
+    \caption{\bf{Likelihood ratio test between the model of increased
+diversification of nymphalids feeding on Solanaceae against a model
+forcing equal speciation rates (no effect on diversification).}}
+\begin{tabular}{lcrrlr}
+Df           & lnLik & AIC     & ChiSq  & \multicolumn{1}{r}{p} &         \\
+full         & 6     & -1613.3 & 3238.5 &                       &         \\
+equal.lambda & 5     & -1619.4 & 3248.9 & 12.3                  & 0.00045
+\end{tabular}
+\end{table}
 
 \begin{figure}[h]
 \caption{{\bf BiSSE analysis of diversification of nymphalids due
@@ -979,81 +1051,7 @@ Science Ltd. (Finland) for the allocation of computational resources.
 
 \nolinenumbers
 
-% Table 1
-\section*{Tables}
-\begin{table}[!h]
-\caption{\bf{Significant net diversification rate shifts found in the MEDUSA analysis of the Nymphalid maximum clade credibility tree.}}
-\begin{tabular}{lccrrcl}
-Shift N$^\circ$ & Shift.Node & Model & r          & LnLik.part & AICc     & Taxa                                                       \\
-1               & 399        & yule  & 0.092459   & -1055.957  &          & Nymphalidae (root)                                         \\
-2               & 691        & bd    & 0.054129   & -406.3703  &          & Limenitidinae + Heliconiinae                               \\
-3               & 299        & yule  & 0.311199   & -6.3058    &          & \emph{Ypthima}                                             \\
-4               & 224        & yule  & 0.290989   & -6.2601    &          & \emph{Charaxes}                                            \\
-5               & 750        & yule  & 0.186913   & -147.4146  &          & Oleriina + Ithomiina + Napeogenina + Dircennina + Godyrina \\
-6               & 405        & yule  & 0.116252   & -555.0276  &          & Satyrinae                                                   \\
-7               & 495        & yule  & 0.064656   & -124.9143  &          & Coenonymphina                                              \\
-8               & 609        & yule  & 0.240562   & -35.0908   &          & Phyciodina in part                                         \\
-9               & 787        & bd    & 0.042332   & -43.7819   &          & Danaini in part                                            \\
-10              & 231        & yule  & 0.209416   & -4.7955    &          & \emph{Coenonympha}                                         \\
-11              & 478        & yule  & 0.311684   & -9.2218    &          & \emph{Caeruleuptychia} + \emph{Magneuptychia}              \\
-12              & 659        & yule  & 0.219253   & -11.2686   &          & \emph{Callicore} + \emph{Diaethria}                        \\
-13              & 444        & yule  & 0.220615   & -43.7812   &          & Satyrina                                                   \\
-14              & 524        & yule  & 0.190754   & -26.0651   &          & Mycalesina                                                 \\
-15              & 355        & yule  & 0.234041   & -6.2013    &          & \emph{Pedaliodes}                                          \\
-16              & 714        & yule  & 0          & 0          &          & \emph{Dryas} + \emph{Dryadula}                             \\
-17              & 377        & yule  & 0.311671   & -4.1986    &          & \emph{Taenaris}                                            \\
-18              & 688        & yule  & 0.024724   & -17.5256   &          & Pseudergolinae                                             \\
-19              & 583        & yule  & 0          & 0          & 5090.492 & \emph{Anaeomorpha} + \emph{Hypna}                                       
-\end{tabular}
-\begin{flushleft}Shift.Node=node number, Model=preferred diversification model by MEDUSA, r=net diversification rate, LnLik.part=log likelihood value.
-\end{flushleft}
-\end{table}
 
-
-% Table 2
-\begin{table}[!h]
-    \caption{\bf{Differences in rates estimated by MEDUSA on the MCC
-tree from the sample of trees from the posterior distribution and the
-MultiMEDUSA approach. Shift consistently recovered across the
-sample of trees in bold face.}}
-\begin{tabular}{lcrr}
-Shift.Node & rate by MEDUSA & Median rate by MultiMEDUSA & probability of being recovered \\
-1          & 0.092          & not found                  & 0.000                          \\
-2          & 0.055          & -0.030                     & 0.864                          \\
-\bf{3}     & 0.184          & \bf{0.219}                 & \bf{0.961}                     \\
-\bf{4}     & 0.166          & \bf{0.212}                 & \bf{0.996}                     \\
-\bf{5}     & 0.111          & \bf{0.101}                 & \bf{0.927}                     \\
-6          & 0.119          & 0.039                      & 0.131                          \\
-7          & 0.066          & -0.052                     & 0.195                          \\
-8          & 0.232          & 0.166                      & 0.319                          \\
-9          & 0.042          & -0.049                     & 0.897                          \\
-10         & 0.058          & 0.149                      & 0.619                          \\
-11         & 0.311          & 0.208                      & 0.831                          \\
-\bf{12}    & 0.219          & \bf{0.135}                 & \bf{0.911}                     \\
-13         & 0.082          & 0.117                      & 0.276                          \\
-14         & 0.099          & 0.115                      & 0.379                          \\
-15         & 0.113          & 0.127                      & 0.825                          \\
-16         & 0.222          & -0.005                     & 0.659                          \\
-17         & 0.243          & 0.248                      & 0.785                          \\
-18         & 0.192          & -0.064                     & 0.024                          \\
-19         & 0.064          & -0.087                     & 0.381                         
-\end{tabular}
-\end{table}
-
-
-% Table 3
-\begin{table}[!h]
-    \caption{\bf{Likelihood ratio test between the model of increased
-diversification of nymphalids feeding on Solanaceae against a model
-forcing equal speciation rates (no effect on diversification).}}
-\begin{tabular}{lcrrlr}
-Df           & lnLik & AIC     & ChiSq  & \multicolumn{1}{r}{p} &         \\
-full         & 6     & -1613.3 & 3238.5 &                       &         \\
-equal.lambda & 5     & -1619.4 & 3248.9 & 12.3                  & 0.00045
-\end{tabular}
-\end{table}
-
-\pagebreak
 \bibliography{refs}{}
 
 
