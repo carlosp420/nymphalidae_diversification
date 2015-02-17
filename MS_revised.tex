@@ -120,7 +120,7 @@
 \usepackage[aboveskip=1pt,labelfont=bf,labelsep=period,justification=raggedright,singlelinecheck=off]{caption}
 
 % Use the PLoS provided BiBTeX style
-\bibliographystyle{plos2009}
+\bibliographystyle{plos2015}
 
 % Remove brackets from numbering in List of References
 \makeatletter
@@ -162,7 +162,7 @@
 % Insert Author names, affiliations and corresponding author email.
 \\
 Carlos Pe\~na\textsuperscript{1,*},
-Marianne Espeland\textsuperscript{2,\textcurrency}
+Marianne Espeland\textsuperscript{2,3}
 \\
 \bf{1} Laboratory of Genetics, Department of Biology, University of Turku, Turku, Finland
 \\
@@ -176,7 +176,7 @@ Marianne Espeland\textsuperscript{2,\textcurrency}
 % Primary Equal Contribution Note
 
 % Current address notes
-\textcurrency Current address: McGuire Center for Lepidoptera and Biodiversity,
+\bf{3} Current address: McGuire Center for Lepidoptera and Biodiversity,
 Florida Museum of Natural History, University of Florida, Gainesville,
 FL, US.
 % \textcurrency b Insert current address of second author with an address update
@@ -286,7 +286,7 @@ implemented in the R package \texttt{diversitree} \cite{fitzjohn2012}.
 For analyses, we used the phylogenetic trees from the study of Wahlberg
 et al. (2009) \cite{wahlberg2009} that were generated using DNA sequence data from
 10 gene regions for 398 of the 540 valid genera in Nymphalidae. We
-employed the maximum clade credibility tree (MCC tree) (Fig. 1) as well
+employed the maximum clade credibility tree (MCC tree) (Fig.~\ref{fig1}) as well
 as a random sample of 1000 trees from their BEAST run after burnin
 \cite{wahlberg2009}. Their original BEAST run was for 40 million generations. We
 used a burnin of 25 million generations and took a random sample of 1000
@@ -326,7 +326,7 @@ phylogenies were available (S7 Dataset).
 
 Hostplant data for Nymphalidae species were compiled from several
 sources including \cite{ackery1988}, HOSTS database (\url{http://bit.ly/YI7nwW}),
-\cite{dyer2002, beccaloni2008, janzen2009} and others (S8--S9 Datasets) for a
+\cite{dyer2002, beccaloni2008, janzen2009} and others (S8 and S9 Dataset) for a
 total of 6586
 hostplant records, including 428 Nymphalidae genera and 143 plant
 families and 1070 plant genera. It was not possible to find any
@@ -340,7 +340,7 @@ We used the statistical software R version 3.0.1 \cite{r2013} in combination
 with the APE \cite{popescu2012}, GEIGER \cite{harmon2008}, MEDUSA
 \cite{alfaro2009} and
 \texttt{diversitree} \cite{fitzjohn2012} packages along with our own scripts to
-perform the analyses (included as S10--S12 Supporting Information). All
+perform the analyses (included as S10 and S11 File). All
 analyses were run on the 1000 random trees from Wahlberg et al. (2009)
 \cite{wahlberg2009}, on the maximum clade credibility tree derived from these and
 the MCC tree \cite{wahlberg2009}.
@@ -443,7 +443,7 @@ credibility tree}
 
 The MEDUSA analysis on the MCC tree in combination with richness data
 estimated 18 significant changes in the tempo of diversification in
-Nymphalidae history (Fig. 1; Table 1). The corrected AICc acceptance
+Nymphalidae history (Fig.~\ref{fig1}; Table 1). The corrected AICc acceptance
 threshold for adding subsequent piecewise birth-death processes to the
 overall model was set to 7.8 units, as prescribed by MEDUSA. In all
 MEDUSA analyses, the maximum number of inferred diversification shifts
@@ -588,22 +588,22 @@ Dircennina + Godyridina (\(r = 0.10\)); and (iv) the clade of
 
 MultiMEDUSA provided mean and standard deviation statistics for the
 diversification values on the shifts on the 1000 trees 
-(S16--S17 Text and Figure), and found that the estimated net diversification rate
+(S16 Text and S17 Figure), and found that the estimated net diversification rate
 values had great variation across the posterior distribution of trees. A
 boxplot of the net diversification rate values estimated for the clades
 that appear in the MCC tree shows that some shifts are estimated as
 increased or slowed diversification pace depending on the tree used for
-analysis (Fig. 2). This variation is especially wide for the clade
+analysis (Fig.~\ref{fig2}). This variation is especially wide for the clade
 formed by the genera \emph{Magneuptychia} and \emph{Caeruleuptychia}
 because MEDUSA estimated diversification values from six times the
 background net diversification rate (\texttt{r = 0.5234}) to almost zero
 (\texttt{r = 1.22e-01}). The rates for \emph{Taenaris} were between 0.14
 and 0.44 (mean value 0.25). Similar degrees of variation were found in
 the nodes for \emph{Ypthima}, \emph{Charaxes} and \emph{Coenonympha}
-(Fig. 2). The net diversification rates estimates for the clades
+(Fig.~\ref{fig2}). The net diversification rates estimates for the clades
 (Oleriina + Ithomiina + Napeogenina + Dircennina + Godyridina),
 Limenitidinae + Heliconiinae and Pseudergolinae are relatively
-consistent across the 1000 trees (Fig. 2).
+consistent across the 1000 trees (Fig.~\ref{fig2}).
 
 \begin{figure}[h]
 \caption{{\bf Diversification rates for taxa estimated by MultiMEDUSA on
@@ -615,7 +615,7 @@ It is also evident that not all the diversification shifts estimated on
 the MCC tree are consistently recovered in most of the 1000 trees. Some
 of the shifts in the MCC tree are recovered in very few trees, for
 example the shift for the clade Satyrinae is recovered with a
-probability of 0.18 (Fig. 3).
+probability of 0.18 (Fig.~\ref{fig3}).
 
 \begin{figure}[h]
 \caption{{\bf Results of MultiMEDUSA analysis showing the
@@ -632,14 +632,14 @@ estimated a net diversification rate increase in part of the clade
 Ithomiini across more than 95\% of the trees. Our BiSSE analysis found a
 positive effect of the character state ``feeding on Solanaceae'' on the
 net net diversification rate on part of Ithomiini (Oleriina + Ithomiina
-+ Napeogenina + Dircennina + Godyridina) (Fig. 4). The estimated mean
++ Napeogenina + Dircennina + Godyridina) (Fig.~\ref{fig4}). The estimated mean
 net diversification rate for taxa that do not feed on Solanaceae was
 \texttt{r = 0.11} while the net diversification rate for the Solanaceae
-feeders was \texttt{r = 0.16} (see S1 Fig. for a boxplot of speciation
+feeders was \texttt{r = 0.16} (see S1 Figure for a boxplot of speciation
 and extinction values for the 95\% credibility intervals). The same
 analysis considering \emph{Vanessa} and \emph{Hypanartia} as
 non-Solanaceae feeders due to dubious records produced the same pattern
-and net diversification rates (S2 Fig.). Therefore, the rest of the
+and net diversification rates (S2 Figure). Therefore, the rest of the
 analyses were performed assuming these two genera as Solanaceae feeders.
 We constrained the BiSSE likelihood model to force equal rates of
 speciation for both character states in order to test whether the model
@@ -653,11 +653,11 @@ and mcmc run in S19 Supporting Information). We combined the post-burnin mcmc ge
 from running BiSSE on 250 trees from the random sample of 1000 trees and
 found the same pattern as the BiSSE analysis on the maximum clade
 credibility tree (combined mcmc run in S20 Supporting Information; profiles
-plot of speciation rates in S3 Fig.; boxplot of 95\% credibility intervals in
-S4 Fig.). A BiSSE analysis to test whether the trait ``feeding on
+plot of speciation rates in S3 Figure; boxplot of 95\% credibility intervals in
+S4 Figure). A BiSSE analysis to test whether the trait ``feeding on
 Apocynaceae'' had any effect on increased net diversification rates
 found similar speciation rates for lineages feeding on Apocynaceae and
-other plants (S5 Fig.).
+other plants (S5 Figure).
 
 % Table 3
 \begin{table}[!ht]
@@ -682,7 +682,7 @@ equal.lambda & 5     & -1619.4 & 3248.9 & 12.3                  & 0.00045 \\ \hl
 to feeding on Solanaceae hostplants}.
 Speciation and net diversification
 rates are significantly higher in Solanaceae feeders (speciation rate =
-$\lambda1$, net diversification rate = $r1$}
+$\lambda1$, net diversification rate = $r1$)}
 \label{fig4}
 \end{figure}
 
@@ -703,9 +703,9 @@ random sample of trees from the posterior distribution of a Bayesian
 run. We found that some diversification shifts, estimated on the
 Nymphalidae maximum clade credibility tree, were found with very low
 probability in the random sample of 1000 trees from the posterior
-distribution (Fig. 3, Table 2). We also found that, even though the
+distribution (Fig.~\ref{fig3}, Table 2). We also found that, even though the
 analyses estimated the same diversification shifts on two or more trees,
-the estimated net diversification rates could vary widely (Fig. 2). For
+the estimated net diversification rates could vary widely (Fig.~\ref{fig2}). For
 example, in our Nymphalidae trees, we found that the shift for
 \emph{Magneuptychia} and \emph{Caeruleuptychia} had a rate from
 \texttt{r = 0.5234}, higher than the background net diversification
@@ -735,7 +735,7 @@ tree is likely the reason
 why MEDUSA estimated net diversification rate shifts with a probability
 higher than 0.90 in the sample of trees for only four shifts: the genus
 \emph{Charaxes}, the genus \emph{Ypthima}, part of Ithomiini and the
-clade \emph{Callicore} + \emph{Diaethria} (Fig. 3), while estimating
+clade \emph{Callicore} + \emph{Diaethria} (Fig.~\ref{fig3}), while estimating
 shifts for other lineages with much lower probability.
 
 
@@ -764,7 +764,7 @@ group.
 Our BiSSE analysis, extended to take into account missing taxa and
 phylogenetic uncertainty, shows a significantly higher net
 diversification rate for Ithomiini taxa, which can be attributed to the
-trait ``feeding on Solanaceae hostplants'' (Fig. 4). This is in
+trait ``feeding on Solanaceae hostplants'' (Fig.~\ref{fig4}). This is in
 agreement with previous findings using other statistical methods
 \cite{fordyce2010}. Due to the fact that Ithomiini are virtually the only
 nymphalids using Solanaceae as hostplants, it is possible that the trait
@@ -789,7 +789,7 @@ butterfly groups \cite{wheat2007}.
 The increase in diversification rate inferred by MEDUSA occurred after the
 probable shift from Apocynaceae to Solanaceae, as the Solanaceae feeders
 in the subtribes Melinaeina and Mechanitina are not included in the
-diversification shift (shift number 5 in Fig. 1). The apparent
+diversification shift (shift number 5 in Fig.~\ref{fig1}). The apparent
 conflicting results from MEDUSA and BiSSE can be explained by the low
 species-richness of the subtribes Melinaeina and Mechanitina compared to
 the other subtribes included in the shift (52 versus 272 species). It
@@ -917,134 +917,109 @@ diversified near simultaneously, which is in agreement with the diffuse
 cospeciation hypothesis \cite{nyman2012, janz2011}.
 
 \section*{Supporting Information Legends}
-\subsection*{S1 Fig.}
-\label{S1_Fig.}
-{\bf Boxplot of speciation (\(\lambda\)) and extinction
+\textbf{S1 Figure.
+\bf Boxplot of speciation (\(\lambda\)) and extinction
 (\(\mu\)) values for the 95\% credibility intervals of values estimated
 by BiSSE analysis of diversification due to feeding on Solanaceae
-plants}.
+plants.}
 
-\subsection*{S2 Fig.}
-\label{S2_Fig.}
-{\bf BiSSE analysis of diversification of nymphalids
+\textbf{S2 Figure.
+BiSSE analysis of diversification of nymphalids
 due to feeding on Solanaceae hostplants assuming \emph{Vanessa} and
-\emph{Hypanartia} as non-Solanaceae feeders. The same pattern is
+\emph{Hypanartia} as non-Solanaceae feeders}. The same pattern is
 recovered, speciation and net diversification rates are significantly
-higher for Solanaceae feeders \(\lambda1\), r1)}.
+higher for Solanaceae feeders \(\lambda1\), r1).
 
-\subsection*{S3 Fig.}
-\label{S3_Fig.}
-{\bf Net diversification rates of nymphalids feeding on
+\textbf{S3 Figure.
+Net diversification rates of nymphalids feeding on
 Solanaceae plants as estimated by combining post-burnin runs of BiSSE on
 the 1000 trees from the posterior distribution}.
 
-\subsection*{S4 Fig.}
-\label{S4_Fig.}
-{\bf Boxplot of speciation and extinction values for
+\textbf{S4 Figure.
+Boxplot of speciation and extinction values for
 the 95\% credibility intervals of values estimated by BiSSE analysis of
 diversification due to feeding on Solanaceae plants on the combined
-post-burnin runs on 1000 trees from the posterior distribution.}.
+post-burnin runs on 1000 trees from the posterior distribution.}
 
-\subsection*{S5 Fig.}
-\label{S5_Fig.}
-{\bf BiSSE analysis of diversification of nymphalids
+\textbf{S5 Figure.
+BiSSE analysis of diversification of nymphalids
 due to feeding on Apocynaceae hostplants}. Speciation and net
 diversification rates are similar.
 
-\subsection*{S6 File}
-\label{S6_File}
-{\bf 1000 random trees from \cite{wahlberg2009}}.
+\textbf{S6 File.
+1000 random trees from \cite{wahlberg2009}}.
 
-\subsection*{S7 Dataset}
-\label{S7_Dataset}
-{\bf Species richness for lineages in Nymphalidae}.
+\textbf{S7 Dataset.
+Species richness for lineages in Nymphalidae}.
 
-\subsection*{S8Dataset}
-\label{S8_Dataset}
-{\bf Hostplants of Nymphalidae
+\textbf{S8 Dataset.
+Hostplants of Nymphalidae
 butterflies recorded from the literature}.
 
-\subsection*{S9 Dataset}
-\label{S9_Dataset}
-{\bf References for hostplants data}.
+\textbf{S9 Dataset.
+References for hostplants data}.
 
-\subsection*{S10 Supporting Information}
-\label{S10_Supporting_Information}
-{\bf R script to run MEDUSA on the MCC Nymphalidae tree from
+\textbf{S10 File.
+R script to run MEDUSA on the MCC Nymphalidae tree from
 \cite{wahlberg2009}}. This script removes the outgroup
 taxa and loads the richness data for the tree terminals.
 
-\subsection*{S11 Supporting Information}
-\label{S11_Supporting_Information}
-{\bf R script to run a MultiMEDUSA analysis on 1000 random trees from
+\textbf{S11 File.
+R script to run a MultiMEDUSA analysis on 1000 random trees from
 \cite{wahlberg2009}}.
 
-\subsection*{S12 Supporting Information}
-\label{S12_Supporting_Information}
-{\bf R script to run a MEDUSA
+\textbf{S12 Supporting Information.
+R script to run a MEDUSA
 analysis on the MCC tree from the 1000 random trees selected from the
 posterior distribution}.
 
-\subsection*{S13 Dataset}
-\label{S13_Dataset}
-{\bf Data matrix with character states for hosplant use}.
+\textbf{S13 Dataset.
+Data matrix with character states for hosplant use}.
 
-\subsection*{S14 Supporting Information}
-\label{S14_Supporting_Information}
-{\bf MCC tree from the 1000 random
+\textbf{S14 Supporting Information.
+MCC tree from the 1000 random
 trees selected from the posterior distribution}.
 
-\subsection*{S15 File}
-\label{S15_File}
-{\bf Raw results from the MultiMEDUSA run on the random sample of trees from 
+\textbf{S15 File.
+Raw results from the MultiMEDUSA run on the random sample of trees from 
 the posterior distribution}.
 
-\subsection*{S16 Text}
-\label{S16_Text}
-{\bf Summary results from a
+\textbf{S16 Text.
+Summary results from a
 MultiMEDUSA run on the 1000 random trees selected from the posterior
 distribution}.
 
-\subsection*{S17 Figure}
-\label{S17_Figure}
-{\bf Probability of nodes with
+\textbf{S17 Figure.
+Probability of nodes with
 estimated rates from a MultiMEDUSA run on the 1000 random trees selected
 from the posterior distribution}.
 
-\subsection*{S18 Supporting Information}
-\label{S18_Supporting_Information}
-{\bf R script for running the BiSSE analysis}.
+\textbf{S18 Supporting Information.
+R script for running the BiSSE analysis}.
 
-\subsection*{S19 Supporting Information}
-\label{S19_Supporting_Information}
-{\bf Raw results for the BiSSE analysis}.
+\textbf{S19 Supporting Information.
+Raw results for the BiSSE analysis}.
 
-\subsection*{S20 Supporting Information}
-\label{S20_Supporting_Information}
-{\bf Raw results for the combined BiSSE analysis}.
+\textbf{S20 Supporting Information.
+Raw results for the combined BiSSE analysis}.
 
-\subsection*{S21 Dataset}
-\label{S21_Dataset}
-{\bf MCC Nymphalidae tree from \cite{wahlberg2009}}
+\textbf{S21 Dataset.
+MCC Nymphalidae tree from \cite{wahlberg2009}}
 
-\subsection*{S22 Text}
-\label{S22_Text}
-{\bf Results of running MEDUSA on the MCC tree}.
+\textbf{S22 Text.
+Results of running MEDUSA on the MCC tree}.
 
-\subsection*{S23 Figure}
-\label{S23_Figure}
-{\bf Summary of the MultiMEDUSA
+\textbf{S23 Figure.
+Summary of the MultiMEDUSA
 analysis on the 1000 trees from the posterior distribution}.
 
-\subsection*{S24 Text}
-\label{S24_Text}
-{\bf Summary results from a MEDUSA
+\textbf{S24 Text.
+Summary results from a MEDUSA
 run on the MCC tree from the 1000 random trees selected from the
 posterior distribution}.
 
-\subsection*{S25 Figure}
-\label{S25_Figure}
-{\bf Figure for MEDUSA run on MCC tree from random 1000 trees}.
+\textbf{S25 Figure.
+Figure for MEDUSA run on MCC tree from random 1000 trees}.
 
 \section*{Acknowledgments}
 We are thankful to Mark Cornwall for help with the script to extend
