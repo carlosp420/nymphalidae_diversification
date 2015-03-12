@@ -291,7 +291,7 @@ employed the maximum clade credibility tree (MCC tree) (Fig.~\ref{fig1}) as well
 as a random sample of 1000 trees from their BEAST run after burnin
 \cite{wahlberg2009}. Their original BEAST run was for 40 million generations. We
 used a burnin of 25 million generations and took a random sample of 1000
-trees using Burntrees v.0.1.9 \url{http://www.abc.se/~nylander/} (S6 File)
+trees using Burntrees v.0.1.9 \url{http://www.abc.se/~nylander/} (S9 File)
 in order to account for phylogenetic uncertainty when performing
 the diversification analyses.
 
@@ -323,11 +323,12 @@ to the closest related genus that was included in Wahlberg et al. (2009)
 ortiz2013, desilva2010, freitas2004, pena2006, penz1999, silva2008,
 pena2011, pena2010},
 taxonomical classification and morphological resemblance when no
-phylogenies were available (S7 Dataset).
+phylogenies were available (S13 Dataset).
 
 Hostplant data for Nymphalidae species were compiled from several
 sources including \cite{ackery1988}, HOSTS database (\url{http://bit.ly/YI7nwW}),
-\cite{dyer2002, beccaloni2008, janzen2009} and others (S8 and S9 Dataset) for a
+\cite{dyer2002, beccaloni2008, janzen2009} and others 
+(S14 and S15 Dataset) for a
 total of 6586
 hostplant records, including 428 Nymphalidae genera and 143 plant
 families and 1070 plant genera. It was not possible to find any
@@ -374,7 +375,7 @@ tree is correct. We wanted to study the effects of phylogenetic
 uncertainty on estimation of net diversification rate shifts and
 therefore selected 1000 random genus-level trees from the posterior
 distribution of the Bayesian run from Wahlberg et al., 2009 \cite{wahlberg2009}
-(MultiMEDUSA, S6 File). We calculated a new MCC tree from the
+(MultiMEDUSA, S9 File). We calculated a new MCC tree from the
 selection of trees, ran MEDUSA and MultiMEDUSA on the selection of 1000
 trees and summarized the estimated changes in net diversification rates
 for nodes across all trees. Patterns of change in net diversification
@@ -398,14 +399,14 @@ as implemented in the R package
 was run for 10000 generations discarding the first 7500 as burnin.
 Because most of Nymphalidae butterflies are restricted to
 use one plant family as hostplant (232 genera use only one plant family
-versus 176 that use more than one; based on our data in S8 Dataset),
+versus 176 that use more than one; based on our data in S14 Dataset),
 the character states can be coded as presence/absence, for which the
 BiSSE analysis is better suited. BiSSE was designed to test whether a
 binary character state has had any effect on increased net
 diversification rate for a clade \cite{maddison2007}. We used our compiled data
 of hostplant use to produce a binary dataset for the character ``feeding on
 the plant family Solanaceae'' with two states (absence = 0; presence =
-1) (S13 Dataset). The family Solanaceae include the hostplants of the
+1) (S16 Dataset). The family Solanaceae include the hostplants of the
 diverse Ithomiini butterflies and closest relatives \cite{willmott2006}. 
 We analyzed the data using BiSSE employing the Markov Chain
 Monte Carlo algorithm on the maximum clade credibility tree, taking into
@@ -513,9 +514,9 @@ We used MEDUSA to find out whether taking into account the phylogenetic
 signal from the random sample of 1000 trees from the posterior
 distribution can return similar estimates of diversification to the
 values obtained from the MCC tree. We ran MultiMEDUSA on the random
-sample of 1000 trees (S6 File) from the posterior distribution and
+sample of 1000 trees (S9 File) from the posterior distribution and
 compared the results with a MEDUSA analysis on the MCC tree derived from
-this sample (S14 Supporting Information).
+this sample (S19 Supporting Information).
 
 We found that the analysis by MultiMEDUSA on the 1000 trees estimated
 lower median net diversification rates for the diversification shifts
@@ -525,7 +526,7 @@ MultiMEDUSA was the same, the latter consistently estimated lower rates.
 Furthermore, the shifts recovered with low net diversification rate on
 the MCC were recovered with negative net diversification rate by
 MultiMEDUSA. The background diversification and all shifts found by
-MEDUSA on the 1000 trees are provided as an R object in S15 File.
+MEDUSA on the 1000 trees are provided as an R object in S12 File.
 
 % Table 2
 \begin{table}[!ht]
@@ -589,7 +590,7 @@ Dircennina + Godyridina (\(r = 0.10\)); and (iv) the clade of
 
 MultiMEDUSA provided mean and standard deviation statistics for the
 diversification values on the shifts on the 1000 trees 
-(S16 Text and S17 Fig.), and found that the estimated net diversification rate
+(S6 Fig. and S23 Text), and found that the estimated net diversification rate
 values had great variation across the posterior distribution of trees. A
 boxplot of the net diversification rate values estimated for the clades
 that appear in the MCC tree shows that some shifts are estimated as
@@ -632,7 +633,7 @@ The MEDUSA analyses, taking into account phylogenetic uncertainty,
 estimated a net diversification rate increase in part of the clade
 Ithomiini across more than 95\% of the trees. Our BiSSE analysis found a
 positive effect of the character state ``feeding on Solanaceae'' on the
-net net diversification rate on part of Ithomiini (Oleriina + Ithomiina
+net diversification rate on part of Ithomiini (Oleriina + Ithomiina
 + Napeogenina + Dircennina + Godyridina) (Fig.~\ref{fig4}). The estimated mean
 net diversification rate for taxa that do not feed on Solanaceae was
 \texttt{r = 0.11} while the net diversification rate for the Solanaceae
@@ -650,11 +651,11 @@ diversification rate for nymphalids feeding on Solanaceae is a
 significantly better explanation than this character state having no
 effect on diversification (\(\chi^2 = 12.3; 1 df; p < 0.001\))
 (Table~\ref{table3};
-character states available in S13 Dataset, code in S18 Supporting Information,
-and mcmc run in S19 Supporting Information). We combined the post-burnin mcmc generations
+character states available in S16 Dataset, code in S20 Supporting Information,
+and mcmc run in S21 Supporting Information). We combined the post-burnin mcmc generations
 from running BiSSE on 250 trees from the random sample of 1000 trees and
 found the same pattern as the BiSSE analysis on the maximum clade
-credibility tree (combined mcmc run in S20 Supporting Information; profiles
+credibility tree (combined mcmc run in S22 Supporting Information; profiles
 plot of speciation rates in S3 Fig.; boxplot of 95\% credibility intervals in
 S4 Fig.). A BiSSE analysis to test whether the trait ``feeding on
 Apocynaceae'' had any effect on increased net diversification rates
@@ -954,22 +955,28 @@ post-burnin runs on 1000 trees from the posterior distribution.}
 due to feeding on Apocynaceae hostplants}. Speciation and net
 diversification rates are similar.
 
-\subsection*{S6 File}
-\label{S6_File}
+\subsection*{S6 Fig.}
+#\subsection*{S17 Fig.}
+\label{S6_Figure}
+{\bf Probability of nodes with
+estimated rates from a MultiMEDUSA run on the 1000 random trees selected
+from the posterior distribution}.
+
+\subsection*{S7 Fig.}
+#\subsection*{S23 Fig.}
+\label{S7_Figure}
+{\bf Summary of the MultiMEDUSA
+analysis on the 1000 trees from the posterior distribution}.
+
+\subsection*{S8 Fig.}
+#\subsection*{S25 Fig.}
+\label{S8_Figure}
+{\bf Figure for MEDUSA run on MCC tree from random 1000 trees}.
+
+\subsection*{S9 File}
+#\subsection*{S6 File}
+\label{S9_File}
 {\bf 1000 random trees from \cite{wahlberg2009}}.
-
-\subsection*{S7 Dataset}
-\label{S7_Dataset}
-{\bf Species richness for lineages in Nymphalidae}.
-
-\subsection*{S8 Dataset}
-\label{S8_Dataset}
-{\bf Hostplants of Nymphalidae
-butterflies recorded from the literature}.
-
-\subsection*{S9 Dataset}
-\label{S9_Dataset}
-{\bf References for hostplants data}.
 
 \subsection*{S10 File}
 \label{S10_File}
@@ -982,72 +989,84 @@ taxa and loads the richness data for the tree terminals.
 {\bf R script to run a MultiMEDUSA analysis on 1000 random trees from
 \cite{wahlberg2009}}.
 
-\subsection*{S12 Supporting Information}
-\label{S12_Supporting_Information}
+\subsection*{S12 File}
+#\subsection*{S15 File}
+\label{S12_File}
+{\bf Raw results from the MultiMEDUSA run on the random sample of trees from 
+the posterior distribution}.
+
+\subsection*{S13 Dataset}
+#\subsection*{S7 Dataset}
+\label{S13_Dataset}
+{\bf Species richness for lineages in Nymphalidae}.
+
+\subsection*{S14 Dataset}
+#\subsection*{S8 Dataset}
+\label{S14_Dataset}
+{\bf Hostplants of Nymphalidae
+butterflies recorded from the literature}.
+
+\subsection*{S15 Dataset}
+#\subsection*{S9 Dataset}
+\label{S15_Dataset}
+{\bf References for hostplants data}.
+
+\subsection*{S16 Dataset}
+#\subsection*{S13 Dataset}
+\label{S16_Dataset}
+{\bf Data matrix with character states for hosplant use}.
+
+\subsection*{S17 Dataset}
+#\subsection*{S21 Dataset}
+\label{S17_Dataset}
+{\bf MCC Nymphalidae tree from \cite{wahlberg2009}}
+
+\subsection*{S18 Supporting Information}
+#\subsection*{S12 Supporting Information}
+\label{S18_Supporting_Information}
 {\bf R script to run a MEDUSA
 analysis on the MCC tree from the 1000 random trees selected from the
 posterior distribution}.
 
-\subsection*{S13 Dataset}
-\label{S13_Dataset}
-{\bf Data matrix with character states for hosplant use}.
-
-\subsection*{S14 Supporting Information}
-\label{S14_Supporting_Information}
+\subsection*{S19 Supporting Information}
+#\subsection*{S14 Supporting Information}
+\label{S19_Supporting_Information}
 {\bf MCC tree from the 1000 random
 trees selected from the posterior distribution}.
 
-\subsection*{S15 File}
-\label{S15_File}
-{\bf Raw results from the MultiMEDUSA run on the random sample of trees from 
-the posterior distribution}.
+\subsection*{S20 Supporting Information}
+#\subsection*{S18 Supporting Information}
+\label{S20_Supporting_Information}
+{\bf R script for running the BiSSE analysis}.
 
-\subsection*{S16 Text}
-\label{S16_Text}
+\subsection*{S21 Supporting Information}
+#\subsection*{S19 Supporting Information}
+\label{S21_Supporting_Information}
+{\bf Raw results for the BiSSE analysis}.
+
+\subsection*{S22 Supporting Information}
+#\subsection*{S20 Supporting Information}
+\label{S22_Supporting_Information}
+{\bf Raw results for the combined BiSSE analysis}.
+
+\subsection*{S23 Text}
+#\subsection*{S16 Text}
+\label{S23_Text}
 {\bf Summary results from a
 MultiMEDUSA run on the 1000 random trees selected from the posterior
 distribution}.
 
-\subsection*{S17 Fig.}
-\label{S17_Figure}
-{\bf Probability of nodes with
-estimated rates from a MultiMEDUSA run on the 1000 random trees selected
-from the posterior distribution}.
-
-\subsection*{S18 Supporting Information}
-\label{S18_Supporting_Information}
-{\bf R script for running the BiSSE analysis}.
-
-\subsection*{S19 Supporting Information}
-\label{S19_Supporting_Information}
-{\bf Raw results for the BiSSE analysis}.
-
-\subsection*{S20 Supporting Information}
-\label{S20_Supporting_Information}
-{\bf Raw results for the combined BiSSE analysis}.
-
-\subsection*{S21 Dataset}
-\label{S21_Dataset}
-{\bf MCC Nymphalidae tree from \cite{wahlberg2009}}
-
-\subsection*{S22 Text}
-\label{S22_Text}
+\subsection*{S24 Text}
+#\subsection*{S22 Text}
+\label{S24_Text}
 {\bf Results of running MEDUSA on the MCC tree}.
 
-\subsection*{S23 Fig.}
-\label{S23_Figure}
-{\bf Summary of the MultiMEDUSA
-analysis on the 1000 trees from the posterior distribution}.
-
-\subsection*{S24 Text}
-\label{S24_Text}
+\subsection*{S25 Text}
+\label{S25_Text}
 {\bf Summary results from a MEDUSA
 run on the MCC tree from the 1000 random trees selected from the
 posterior distribution}.
 
-\subsection*{S25 Fig.}
-\label{S25_Figure}
-{\bf Figure for MEDUSA run on MCC tree from random 1000 trees}.
 
 \section*{Acknowledgments}
 We are thankful to Mark Cornwall for help with the script to extend
